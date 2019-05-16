@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<script>
+    window.onload=function(ev){
+        var banner = document.querySelectorAll(".ban");
+        var btns=document.querySelectorAll(".btns");
+        var num=0;
+        setInterval(function() {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (let i = 0; i < banner.length;i++) {
+                    // console.log(banner.length);
+                    banner[0].style.display = "none";
+                    btns[i].style.background="#000";
+                }
+                // console.log(num);
+                banner[num].style.display = "block";
+                btns[num].style.background="orange";
+                num++;
+            }
+            ,1000);
+    }
+</script>
+
+<!--表头-->
+<header class="head">
+    <div class="head1">
+        <div class="h1"></div>
+        <div class="h2"></div>
+    </div>
+</header>
+<!--导航栏-->
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="" class="active">首页</a>
+            <a href="" class="active">国内机票</a>
+            <a href="" class="active">国际机票</a>
+            <a href="" class="active">民航资讯</a>
+            <a href="" class="active">民航问答</a>
+        </div>
+        <div class="right">
+            <a href="">登陆</a>
+            <a href="">注册</a>
+            <a href="">用户中心</a>
+            <div class="sanjiao"></div>
+        </div>
+    </div>
+</div>
+<!--热门城市-->
+<div class="city">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+<!--轮播图-->
+<div class="banner">
+    <div class="ban banner1"></div>
+    <div class="ban banner2"></div>
+    <div class="btn">
+        <div class="btns btn1"></div>
+        <div class="btns btn2"></div>
+    </div>
+</div>
+
+<!--购票流程-->
+<div class="piao">
+    <div class="piao-left">
+        <h3>购票流程:</h3>
+    </div>
+    <ul class="piao-right">
+        <li>
+        <div class="arrow">
+            <div class="elem1"></div>
+            <div class="elem2"></div>
+            <div class="elem3">航班查询</div>
+            <span>选择出行航班</span>
+        </div>
+    </li>
+        <li>
+            <div class="arrow">
+                <div class="elem1"></div>
+                <div class="elem21"></div>
+                <div class="elem3">提交订单</div>
+                <span>登记乘机人和联系人</span>
+            </div>
+        </li>
+        <li>
+            <div class="arrow">
+                <div class="elem1"></div>
+                <div class="elem22"></div>
+                <div class="elem3">在线支付</div>
+                <span>支付机票款</span>
+            </div>
+        </li>
+        <li>
+            <div class="arrow1">
+                <div class="elem1"></div>
+                <div class="elem23"></div>
+                <div class="elem3">无需取票</div>
+                <span>凭电子客票号换登机牌</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="blank">
+</div>
+<!--资讯-->
+<div class="consult">
+    <div class="consult1">
+        <div class="consult1-elem1"></div>
+        <span>订单管理</span>
+        <div class="consult1-elem2"></div>
+    </div>
+    <div class="consult2">
+        <div class="consult1-elem3"></div>
+        <span>价格趋势</span>
+    </div>
+    <div class="consult3">
+        <div class="consult1-elem4"></div>
+        <span>航班动态</span>
+    </div>
+    <div class="line"></div>
+    <!--<div class="consult4">
+        <div class="consult1-elem5"></div>
+        <span>航班动态</span>
+    </div>-->
+    <ul class="consult4">
+        <li>
+            <div class="consult-elem5"></div>
+            <div class="consult-elem8">支付中心</div>
+        </li>
+        <li>
+            <div class="consult-elem6"></div>
+            <div class="consult-elem9">机票验真</div>
+        </li>
+        <li>
+            <div class="consult-elem7"></div>
+            <div class="consult-elem10">新手指南</div>
+        </li>
+    </ul>
+    <div class="content">
+        <div class="title">最新资讯</div>
+        <div class="a">
+            <a href="" class="a1">简单了解一下金鹏航空官网机票购买流程</a>
+            <a href="" class="a1">东方航空去哪儿网合作举办“校园旅行家</a>
+            <a href="" class="a1">网上买飞机票为什么只能买9张,10人 </a>
+            <a href="" class="a1">想知道南方航空机票购买流程</a>
+        </div>
+        <div class="more">更多</div>
+        <div class="i"></div>
+    </div>
+    <div class="content1">
+        <div class="title">网站公告</div>
+        <div class="a">
+            <a href="" class="a2">带你认识飞机经停是什么意思</a>
+            <a href="" class="a2">12306机票网上订票官网请上民航在</a>
+            <a href="" class="a2">1岁婴儿机票怎么买 能够从网上购买婴 </a>
+            <a href="" class="a2">了解订机票用什么软件好对你出门旅游帮</a>
+        </div>
+        <div class="more1">更多</div>
+        <div class="i1"></div>
+    </div>
+</div>
+<!--热门航线-->
+<div class="air">
+    <strong>热门航线预定</strong>
+    <div class="air1">
+        <a href="">全国</a>
+        <a href="">深圳</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">武汉</a>
+        <a href="">成都</a>
+        <a href="">海口</a>
+        <a href="">重庆</a>
+        <a href="">沈阳</a>
+    </div>
+</div>
+<!--航线-->
+<div class="route">
+    <div class="item">
+        <span class="start1">海口</span>
+        <div class="item1"></div>
+        <span class="end1">郑州</span>
+        <div class="time">12月16日</div>
+        <div class="plane"></div>
+            <span class="price1">票价：</span>
+            <span class="price2">￥</span>
+            <span class="price3">150</span>
+    </div>
+    <div class="item">
+        <span class="start1">海口</span>
+        <div class="item1"></div>
+        <span class="end1">长沙</span>
+        <div class="time">10月15日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">110</span>
+    </div>
+    <div class="item">
+        <span class="start1">武汉</span>
+        <div class="item1"></div>
+        <span class="end1">神农架</span>
+        <div class="time">05月18日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">117</span>
+    </div>
+    <div class="item">
+        <span class="start1">银川</span>
+        <div class="item1"></div>
+        <span class="end1">昆明</span>
+        <div class="time">05月16日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">220</span>
+    </div>
+    <div class="item">
+        <span class="start1">太原</span>
+        <div class="item1"></div>
+        <span class="end1">昆明</span>
+        <div class="time">11月11日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">250</span>
+    </div>
+    <div class="item">
+        <span class="start1">南京</span>
+        <div class="item1"></div>
+        <span class="end1">上海浦东</span>
+        <div class="time">07月03日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">150</span>
+    </div>
+    <div class="item">
+        <span class="start1">西安</span>
+        <div class="item1"></div>
+        <span class="end1">上海浦东</span>
+        <div class="time">01月25日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">200</span>
+    </div>
+    <div class="item">
+        <span class="start1">合肥</span>
+        <div class="item1"></div>
+        <span class="end1">海口</span>
+        <div class="time">05月28日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">279</span>
+    </div>
+    <div class="item">
+        <span class="start1">天津</span>
+        <div class="item1"></div>
+        <span class="end1">三亚</span>
+        <div class="time">05月22日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">399</span>
+    </div>
+    <div class="item">
+        <span class="start1">银川</span>
+        <div class="item1"></div>
+        <span class="end1">大连</span>
+        <div class="time">06月23日</div>
+        <div class="plane"></div>
+        <span class="price1">票价：</span>
+        <span class="price2">￥</span>
+        <span class="price3">209</span>
+    </div>
+
+</div>
+
+
+<div class="blank1">
+
+</div>
+<!--热门航空公司-->
+<div class="company">
+    <strong>热门航空公司</strong>
+    <div class="image"></div>
+</div>
+<div class="line1"></div>
+
+<div class="com">
+    <div class="co">
+        <div class="com1">
+            <div class="com2"></div>
+        </div>
+        <div class="com3">
+            <span>中国国际航空公司</span>
+        </div>
+    </div>
+    <div class="txt">&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。</div>
+    <div class="symbol"></div>
+
+    <ul class="images">
+        <li>
+            <div class="images1"></div>
+            <div class="images2"></div>
+            <div class="txt1">中国南方航空公司</div>
+        </li>
+        <li>
+            <div class="images3"></div>
+            <div class="images4"></div>
+            <div class="txt2">中国东方航空公司</div>
+        </li>
+        <li>
+            <div class="images5"></div>
+            <div class="images6"></div>
+            <div class="txt3">海南航空公司</div>
+        </li>
+        <li>
+            <div class="images7"></div>
+            <div class="images8"></div>
+            <div class="txt4">深圳航空公司</div>
+        </li>
+        <li>
+            <div class="images9"></div>
+            <div class="images10"></div>
+            <div class="txt5">四川航空公司</div>
+        </li>
+        <li>
+            <div class="images11"></div>
+            <div class="images12"></div>
+            <div class="txt6">春秋航空公司</div>
+        </li>
+    </ul>
+</div>
+
+<div class="blank2"></div>
+
+<!--热门国际机场-->
+<div class="p">
+    <div class="p1">
+        <h2>热门国际机场</h2>
+        <div class="p2"></div>
+        <div class="p3">最新客户咨询</div>
+        <div class="p4"></div>
+        <div class="p5">国际特价</div>
+        <div class="p6"></div>
+        <div class="p7">北美</div>
+        <span>亚洲</span>
+        <span>欧洲</span>
+    </div>
+</div>
+</body>
+</html>
