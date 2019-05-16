@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        div{
+            width: 30px;
+            height: 30px;
+            background: red;
+          /*  transition: all 1s;*/
+        }
+        div:hover{
+           /* animation: animate  .1s;*/
+            animation-name: animate;
+            animation-duration: .1s;
+            animation-timing-function: linear ;
+            animation-iteration-count: 6;/*次数*/
+            animation-direction: alternate;  /*反向动画*/
+        }
+        /*关键帧*/
+       @keyframes  animate{
+           0%{
+               transform:rotate(0deg);
+           }
+           100%{
+               transform:rotate(30deg);
+           }
+       }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>民航机票</title>
+   <!-- 引入外部样式表-->
+    <link rel="stylesheet" href="../css/index.css">
+   <!-- js代码-->
+    <script>
+        window.onload=function () {
+            var   banner = document.querySelectorAll(".banner");
+            var   btns = document.querySelectorAll(".btn");
+            var num= 0;
+            setInterval(function () {
+                if(num==2){
+                    num=0
+                }else{
+                    for(var i = 0;i<banner.length;i++){
+                        banner[i].style.display="none"
+                        btns[i].style.backgroundColor="#000000"
+                    }
+                    banner[num].style.display="block"
+                    btns[num].style.backgroundColor="#FFA500"
+                    num++
+                }
+            },3000)
+        }
+    </script>
+</head>
+<body>
+    <!--顶部图片-->
+    <header>
+        <img src="../image/left_header.png" alt="" hspace="40">
+        <img src="../image/right_header.jpg" alt="">
+    </header>
+    <!--导航栏-->
+    <div class="daohang-box">
+        <div class="daohang-content">
+            <div class="daohang-left">
+                <a href="" class="active">首页</a>
+                <a href="" >国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航资讯</a>
+                <a href="">民航问答</a>
+            </div>
+            <div class="daohang-right">
+                <a href=""class="login">登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心<div class="sanjiao"></div></a>
+            </div>
+        </div>
+    </div>
+    <!--热门城市-->
+    <div class="hotCity">
+       <span>热门城市</span>
+        <a href="">深圳</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">南京</a>
+        <a href="">天津</a>
+        <a href="">武汉</a>
+        <a href="">长沙</a>
+        <a href="">昆明</a>
+        <a href="">贵阳</a>
+        <a href="">成都</a>
+        <a href="">重庆</a>
+        <a href="">海口</a>
+        <a href="">哈尔滨</a>
+        <a href="">更多</a>
+
+    </div>
+    <!--轮播图-->
+    <div class="lunbo-box">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+            <!--按钮-->
+            <div class="btns">
+                <div class="btn"></div>
+                <div class="btn"></div>
+            </div>
+    </div>
+    <!--购票流程-->
+    <div class="process">
+        <div class="process-left"><h3 align="center">购票流程：</h3></div>
+        <div class="process-right">
+           <div class="process-item">
+                <div class="circle">
+                    <div class="icon1"></div>
+
+                </div>
+               <div class="process-titletop">航班查询</div>
+               <div class="process-titletbottom">选择出行航班</div>
+               <div class="process-jiantou">
+                   <div class="process-jiantou-img"></div>
+               </div>
+
+           </div>
+            <div class="process-item">
+                <div class="circle">
+                    <div class="icon2">
+
+                    </div>
+                    <div class="process-titletop">提交订单</div>
+                    <div class="process-titletbottom">登记乘机人和联系人</div>
+                    <div class="process-jiantou">
+                        <div class="process-jiantou-img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="process-item">
+                <div class="circle">
+                    <div class="icon3">
+
+                    </div>
+                    <div class="process-titletop">在线支付</div>
+                    <div class="process-titletbottom">支付机票款</div>
+                    <div class="process-jiantou">
+                        <div class="process-jiantou-img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="process-item">
+                <div class="circle">
+                    <div class="icon4">
+
+                    </div>
+                    <div class="process-titletop">无需取票</div>
+                    <div class="process-titletbottom">凭电子客票号换登机牌</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--空白间隔-->
+    <div class="whiteSpace"></div>
+    <!--功能模块和资讯模块-->
+    <div class="module">
+        <div class="module-left">
+            <div class="module-table">
+                <div class="module-tableleft">
+                    <div class="tableleft-img1"></div>
+                </div>
+                <div class="module-tableright">订单管理</div>
+            </div>
+            <div class="module-table">
+                <div class="module-tableleft">
+                    <div class="tableleft-img2"></div>
+                </div>
+                <div class="module-tableright">支付中心</div>
+            </div>
+            <div class="module-table">
+                <div class="module-tableleft">
+                    <div class="tableleft-img3"></div>
+                </div>
+                <div class="module-tableright">价格趋势</div>
+            </div>
+            <div class="module-table">
+                <div class="module-tableleft">
+                    <div class="tableleft-img4"></div>
+                </div>
+                <div class="module-tableright">机票验真</div>
+            </div>
+            <div class="module-table">
+                <div class="module-tableleft">
+                    <div class="tableleft-img5"></div>
+                </div>
+                <div class="module-tableright">航班动态</div>
+            </div>
+            <div class="module-table">
+                <div class="module-tableleft">
+                    <div class="tableleft-img6"></div>
+                </div>
+                <div class="module-tableright">新手指南</div>
+            </div>
+        </div>
+        <div class="module-right">
+            <div class="zixun-left">
+                <div class="right-span">最新资讯</div>
+                <div class="test">
+                    <a href="">更多>></a>
+                </div>
+                <div class="right-a">
+                   <a href="">简单了解一下金鹏航空官网机票购买流程</a>
+                   <a href="">东方航空去哪儿网合作举办“校园旅行家</a>
+                    <a href="">网上买飞机票为什么只能买9张,10人</a>
+                    <a href="">想知道南方航空机票购买流程，南航手机</a>
+                </div>
+            </div>
+            <div class="zixun-right">
+                <div class="right-span">网站公告</div>
+                <div class="test">
+                    <a href="">更多>></a>
+                </div>
+                <div class="right-right-a">
+                    <a href="">带你认识飞机经停是什么意思</a>
+                    <a href="">12306机票网上订票官网请上民航在线安全有保障</a>
+                    <a href="">1岁婴儿机票怎么买 能够从网上购买婴儿机票吗</a>
+                    <a href="">了解订机票用什么软件好对你出门旅游帮助很大</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--热门航线预定-->
+    <div class="space"></div>
+    <div class="order">
+        <div class="order-left-title">
+            热门航线预定
+        </div>
+        <div class="order-right-title">
+            <a href="">全国</a>
+            <a href="">深圳</a>
+            <a href="">北京</a>
+            <a href="">上海</a>
+            <a href="">广州</a>
+            <a href="">武汉</a>
+            <a href="">成都</a>
+            <a href="">海口</a>
+            <a href="">重庆</a>
+            <a href="">沈阳</a>
+        </div>
+        <!-- 车票-->
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    海口<div class="jiantou"></div>郑州
+                </div>
+                <div class="middle">
+                    12月16日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">150</span>
+                </div>
+            </div>
+        </div>
+        <div class="picket" onmouseover="imgmove()">
+            <div class="list">
+                <div class="top">
+                    海口<div class="jiantou"></div>长沙
+                </div>
+                <div class="middle">
+                    10月15日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">110</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    武汉<div class="jiantou"></div>神农架
+                </div>
+                <div class="middle">
+                    05月18日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">117</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    银川<div class="jiantou"></div>昆明
+                </div>
+                <div class="middle">
+                    05月18日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">220</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    太原<div class="jiantou"></div>昆明
+                </div>
+                <div class="middle">
+                    11月11日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">250</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    南京<div class="jiantou"></div>上海浦东
+                </div>
+                <div class="middle">
+                    07月03日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">150</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    西安<div class="jiantou"></div>上海浦东
+                </div>
+                <div class="middle">
+                    01月25日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">200</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    合肥<div class="jiantou"></div>海口
+                </div>
+                <div class="middle">
+                    05月28日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">279</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    天津<div class="jiantou"></div>三亚
+                </div>
+                <div class="middle">
+                    05月22日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">399</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="picket">
+            <div class="list">
+                <div class="top">
+                    哈尔滨<div class="jiantou"></div>三亚
+                </div>
+                <div class="middle">
+                    05月15日
+                </div>
+                <div class="bottom">
+                    票价：<span class="span">￥</span><span class="span2">540</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom-line"></div>
+    <!--热门航空公司-->
+    <div class="space2"></div>
+    <div class="order">
+        <div class="order-left-title">
+           热门航空公司
+        </div>
+    </div>
+    <div class="bottom-line"></div>
+    <div class="whiteSpace"></div>
+    <div class="company">
+        <div class="company-left">
+            <div class="company-left-img"></div>
+            <div class="company-left-text">中国国际航空公司</div>
+            <div class="company-left-right"> 中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，
+                其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空
+                总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。</div>
+        </div>
+        <div class="company-right">
+            <div class="company-right-card">
+                <div class="company-right-img1"></div>
+                <div class="text">中国南方航空公司</div>
+            </div>
+            <div class="company-right-card">
+                <div class="company-right-img2"></div>
+                <div class="text">中国东方航空公司</div>
+            </div>
+            <div class="company-right-card">
+                <div class="company-right-img3"></div>
+                <div class="text">海南航空公司</div>
+            </div>
+            <div class="company-right-card">
+                <div class="company-right-img4"></div>
+                <div class="text">深圳航空公司</div>
+            </div>
+            <div class="company-right-card">
+                <div class="company-right-img5"></div>
+                <div class="text">四川航空公司</div>
+            </div>
+            <div class="company-right-card">
+                <div class="company-right-img6"></div>
+                <div class="text">春秋航空公司</div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--热门国际机场-->
+    <br><br>
+   <!-- <div class="order">
+        <div class="order-left-title">热门国际机场</div>
+    </div>-->
+    <div class="bottom-box">
+        <div class="hotAirPlane">
+            热门国际机场
+            <div class="more">全球机场>></div>
+        </div>
+
+        <div class="hotAirPlane">
+            最新客户咨询
+            <div class="more">更多>></div>
+        </div>
+        <div class="guoji">
+            国际特价
+            <div class="guoji-right">
+                <div class="guoji-more">北美</div>
+                <div class="guoji-more">亚洲</div>
+                <div class="guoji-more">欧洲</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="airplane">
+        <div class="airplane-left">
+            <a href="">>>香港赤腊角机场</a>
+            <a href="">>>首尔仁川机场</a>
+            <a href="">>>首尔金浦机场</a>
+            <a href="">>>澳门国际机场</a>
+            <a href="">>>东京羽田机场</a>
+            <a href="">>>东京成田机场</a>
+            <a href="">>>新加坡樟宜机场</a>
+            <a href="">>>台北桃园中正机场</a>
+            <a href="">>>曼谷素万那普机场</a>
+            <a href="">>>曼谷廊曼机场</a>
+            <a href="">>>大阪伊丹机场</a>
+            <a href="">>>马尼拉国际机场</a>
+            <a href="">>>胡志明市国际机场</a>
+            <a href="">>>伦敦国际机场</a>
+            <a href="">>>吉隆坡国际机场</a>
+            <a href="">>>釜山国际机场</a>
+        </div>
+        <div class="airplane-left">
+            <div class="middle-text">
+                <a href="">>>怀孕28+6周可以坐飞机吗，还需要什么东西吗</a>
+
+                <a href="">>>护照可以定机票登机嘛</a>
+
+                <a href="">>>你好。怀孕7乘坐需要办理证明吗</a>
+
+                <a href="">>>你好，小孩才32个月，没有身份证，怎么取票？是否一定要身份证？</a>
+
+                <a href="">>>你好，小孩才32个月，没有身份证，怎么取...</a>
+
+                <a href="">>>你好，请问出生两个月的婴儿应该在网上怎么买票？还是去柜台买。</a>
+            </div>
+        </div>
+
+        <div class="airplane-right">
+            <div class="picket">
+                <div class="list">
+                    <div class="top">
+                        海口<div class="jiantou"></div>郑州
+                    </div>
+                    <div class="middle">
+                        12月16日
+                    </div>
+                    <div class="bottom">
+                        票价：<span class="span">￥</span><span class="span2">150</span>
+                    </div>
+                </div>
+            </div>
+            <div class="picket">
+                <div class="list">
+                    <div class="top">
+                        海口<div class="jiantou"></div>郑州
+                    </div>
+                    <div class="middle">
+                        12月16日
+                    </div>
+                    <div class="bottom">
+                        票价：<span class="span">￥</span><span class="span2">150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
