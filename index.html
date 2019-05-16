@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./demo.css">
+    <script>
+        window.onload=function(ev){
+            var lun = document.querySelectorAll(".lun");
+            var btn=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < lun.length; i++) {
+                    lun[i].style.display = "none"
+                    btn[i].style.background="#000"
+                }
+                lun[num].style.display = "block";
+                btn[num].style.background="orange"
+                num++
+            },3000)
+        }
+    </script>
+
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <img src="imgs/header.jpg">
+</header>
+</div>
+<div class="one">
+    <div class="left">
+        <a href=""> 首页</a>
+        <a href=""> 国内机票</a>
+        <a href=""> 国际机票</a>
+        <a href=""> 民航咨询</a>
+    </div>
+    <div class="right">
+        <a href=""> 登陆</a>
+        <a href=""> 注册</a>
+        <a href=""> 个人中心</a>
+    </div>
+</div>
+<div class="city">
+<span>热门城市:</span>
+<a href=""></a>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">南京</a>
+    <a href="">广州</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+<div class="wheel-box">
+    <div class="lun lun1">
+
+    </div>
+    <div class="lun lun2"></div>
+    <div class="btns">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+<!--购票流程-->
+<div class="ticket">
+    <div class="left">购票流程：</div>
+    <div class="right">
+        <div class="mode">
+            <div class="out_icon">
+                <div class="in_icon1 in_icon"></div>
+            </div>
+            <div class="text">
+                <span class="title">航班查询</span><br>
+                <span class="describe">选择出行航班</span>
+            </div>
+            <div class="icon"></div>
+        </div>
+        <div class="mode">
+            <div class="out_icon">
+                <div class="in_icon2 in_icon"></div>
+            </div>
+            <div class="text">
+                <span class="title">提交订单</span><br>
+                <span class="describe">登记乘机人和联系人</span>
+            </div>
+            <div class="icon"></div>
+        </div>
+        <div class="mode">
+            <div class="out_icon">
+                <div class="in_icon3 in_icon"></div>
+            </div>
+            <div class="text">
+                <span class="title">在线支付</span><br>
+                <span class="describe">支付机票款</span>
+            </div>
+            <div class="icon"></div>
+        </div>
+        <div class="mode">
+            <div class="out_icon">
+                <div class="in_icon4 in_icon"></div>
+            </div>
+            <div class="text">
+                <span class="title">无需取票</span><br>
+                <span class="describe">凭电子客票号换登机牌</span>
+            </div>
+            <div class="icon"></div>
+        </div>
+    </div>
+</div>
+<div class="ticket_bottom">
+    <div class="left">
+        <div class="mode">
+            <a class="icon_mode1 icon_mode"></a>
+            <a class="info_mode">订单管理</a>
+        </div>
+        <div class="mode">
+            <a class="icon_mode2 icon_mode"></a>
+            <a class="info_mode">支付中心</a>
+        </div>
+        <div class="mode">
+            <a class="icon_mode3 icon_mode"></a>
+            <a class="info_mode">价格趋势</a>
+        </div>
+        <div class="mode">
+            <a class="icon_mode4 icon_mode"></a>
+            <a class="info_mode">机票验真</a>
+        </div>
+        <div class="mode">
+            <a class="icon_mode5 icon_mode"></a>
+            <a class="info_mode">航班动态</a>
+        </div>
+        <div class="mode">
+            <a class="icon_mode6 icon_mode"></a>
+            <a class="info_mode">新手指南</a>
+        </div>
+    </div>
+    <div class="info">
+        <div class="left_info">
+            <div class="top_info">
+                <span>最新资讯</span>
+                <a href="">更多>></a>
+            </div>
+            <div class="bottom_info">
+                <a href="">简单了解一下金鹏航空官网机票购买流程</a>
+                <a href="">东方航空去哪儿网合作举办“校园旅行家</a>
+                <a href="">网上买飞机票为什么只能买9张,10人</a>
+                <a href="">想知道南方航空机票购买流程，南航手机</a>
+            </div>
+        </div>
+        <div class="right_info">
+            <div class="top_info">
+                <span>网站公告</span>
+                <a href="">更多>></a>
+            </div>
+            <div class="bottom_info">
+                <a href="">带你认识飞机经停是什么意思</a>
+                <a href="">12306机票网上订票官网请上民航在</a>
+                <a href="">1岁婴儿机票怎么买 能够从网上购买婴</a>
+                <a href="">了解订机票用什么软件好对你出门旅游帮</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="load">
+    <div class="title">热门航线预定</div>
+    <div class="city">
+        <a href="" class="all country active" >全国</a>
+        <a href="" class="all">深圳</a>
+        <a href="" class="all">北京</a>
+        <a href="" class="all">上海</a>
+        <a href="" class="all">广州</a>
+        <a href="" class="all">武汉</a>
+        <a href="" class="all">成都</a>
+        <a href="" class="all">海口</a>
+        <a href="" class="all">重庆</a>
+        <a href="" class="all">沈阳</a>
+    </div>
+</div>
+<div class="two">
+    <div class="show" id="s1">
+        <div>
+            <span>海口-->郑州</span>
+            <span>12月16日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>海口-->长沙</span>
+            <span>10月15日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>武汉-->神农架</span>
+            <span>05月18日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>银川-->昆明</span>
+            <span>05月18日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>太原-->昆明</span>
+            <span>11月11日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>南京-->上海浦东</span>
+            <span>07月03日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>西安-->上海浦东</span>
+            <span>01月25日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>合肥-->海口</span>
+            <span>05月28日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>天津-->三亚</span>
+            <span>05月22日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>哈尔滨-->三亚</span>
+            <span>05月15日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+    </div>
+    <div class="show" id="s2">
+        <div>
+            <span>深圳-->昆明</span>
+            <span>10月09日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->武汉</span>
+            <span>10月15日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->兰州</span>
+            <span>10月22日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->海口</span>
+            <span>09月11日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->沈阳</span>
+            <span>06月12日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->上海浦东</span>
+            <span>06月07日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->北京</span>
+            <span>05月27日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->重庆</span>
+            <span>10月11日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->成都</span>
+            <span>10月11日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳-->郑州</span>
+            <span>09月03日</span>
+            <span>票价</span>
+        </div>
+    </div>
+    <div class="show" id="s3">
+        <div>
+            <span>深圳-->昆明</span>
+            <span>10月09日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->武汉</span>
+            <span>10月15日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->兰州</span>
+            <span>10月22日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->海口</span>
+            <span>09月11日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->沈阳</span>
+            <span>06月12日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->上海浦东</span>
+            <span>06月07日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->北京</span>
+            <span>05月27日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->重庆</span>
+            <span>10月11日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->成都</span>
+            <span>10月11日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳-->郑州</span>
+            <span>09月03日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+    </div>
+</div>
+
+<div class="company">
+    <div class="hot_company">
+        热门航空公司
+    </div>
+    <div class="big">
+        <img src="./img/ca3.png" alt="">
+        <span class="info_img">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，
+      简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通
+      过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司
+      和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为
+      基础 ，组建新的中国国际航空公司。</p>
+    </span>
+        <div class="icon"></div>
+        <span class="lable">中国国际航空公司</span>
+    </div>
+    <div class="small">
+        <div class="company_small company_small1">
+            <span>中国南方航空公司</span>
+        </div>
+        <div class="company_small company_small2">
+            <span>中国东方航空公司</span>
+        </div>
+        <div class="company_small company_small3">
+            <span>海南航空公司</span>
+        </div>
+        <div class="company_small company_small4">
+            <span>深圳航空公司</span>
+        </div>
+        <div class="company_small company_small5">
+            <span>四川航空公司</span>
+        </div>
+        <div class="company_small company_small6">
+            <span>春秋航空公司</span>
+        </div>
+    </div>
+</div>
+<div class="down">
+   <!-- <h3>© 2019 http://www.161580.com 民航在线|沪ICP备12008257号-2 关于161580|联系我们|合作伙伴|诚征英才|用户建议</h3>
+    <img src="imgs/a.jpg">
+    <h4> 161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。
+        友情链接QQ434441778:
+        美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿
+    </h4>-->
+</div>
+</body>
+</html>
