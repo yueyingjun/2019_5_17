@@ -1,0 +1,609 @@
+
+/*导航栏*/
+body{
+    margin: 0px; padding: 0px;
+}
+
+.topbox{
+
+    width: 1300px;
+    height: 95px;
+    margin: auto;
+    position: relative;
+
+}
+.logo{
+
+
+    width: 350px;
+    height: 90px;
+    background: url("../imgs/4.png") no-repeat 0 0;
+}
+.topimg{
+ float: right;
+    position: absolute; right: 0px; top: 5px;
+
+
+
+}
+.box{
+
+    width: 100%;
+    background: #3b8de3;
+    height: 40px;
+
+
+}
+.two{
+    width: 1300px;
+    margin: auto;
+
+
+}
+.right{
+    float: right;
+    background: #0185e1;
+    height: 100%;
+    position: relative;
+}
+.left{
+
+}
+.left a{
+    padding: 0 30px;
+    float: left;
+
+}
+.right a{
+    padding: 0 25px;
+    font-size: 14px;
+
+}
+ .box a{
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 40px;
+    color: white;
+
+
+}
+.box .active{
+    color: #3b8de3;
+    background-color: white;
+    border-top: 2px orange solid;
+}
+.left a:hover{
+    color: #3b8de3;
+    background-color: white;
+    border-top: 2px orange solid;
+}
+.right a:hover{
+    color: #3b8de3;
+    background-color: white;
+    border-top: 2px orange solid;
+}
+.head{
+    background: url("../imgs/logo.png") no-repeat -314px -500px;
+}
+
+.sanjiao{
+    width: 0; height: 0;
+    border-top: 10px solid #fff;
+    border-left: 5px solid #0185e1;
+    border-right: 5px solid #0185e1;
+    position:absolute; left: 245px; top: 15px;
+}
+
+/*
+热门城市*/
+.city{
+    width: 100%;
+    height: 30px;
+    color: #3b8de3;
+    float: left;
+    margin-left: 120px;
+
+}
+.city .hot{
+    color: #000;
+    float: left;
+
+
+}
+.city a{
+    text-decoration: none;
+    float: left;
+    margin: 0 10px;
+    color: #3b8de3;
+}
+.banner{
+    height: 380px; width: 100%;
+    position:relative;
+}
+.banner.banner1{
+    float: left;
+    background: url("../imgs/lunbo1.png") no-repeat 0 0;
+
+    position: absolute; left: 0; top: 0;
+}
+.banner.banner2{
+    float: left;
+    background: url("../imgs/lunbo2.png") no-repeat 0 0;
+    position: absolute; left: 0; top: 0;
+
+}
+.banner.btn{
+    float: left;
+    height: 20px;
+    width: 200px;
+    position: absolute; right: 20px; top: 340px;
+    z-index: 999;
+
+}
+
+.banner.btn.btn1{
+    height: 10px; width: 50px;
+    position: absolute; left: 2px;top: 0px;
+    background-color: black;
+
+
+}
+
+.banner.btn.btn2{
+    height: 10px; width: 50px;
+    position: absolute; left: 80px;top: 0px;
+    background-color: orange;
+
+}
+
+.buyway{
+    width: 1300px; height: 100px;
+    margin: auto;
+    background-color: #f5f5f5;
+
+}
+
+.buyway .tishi {
+    margin-top: 40px;
+    width: 140px;
+    height: 80px;
+    float: left;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.buyway .liucheng{
+    width: 980px; height: 100px;
+    float: right;
+    margin: 0px 5px;
+
+}
+.buyway .step{
+
+    width:200px; height: 100px;
+    float: left;
+}
+.step .icon{
+    float: left;
+    width: 60px; height: 100px ;
+    background: url("../imgs/main.png") no-repeat -165px -115px;
+}
+.step1 .iconin{
+    width: 50px; height: 100px;
+    background: url("../imgs/main.png") no-repeat 10px -160px;
+
+}
+
+.step2 .iconin{
+    width: 50px; height: 100px;
+    background: url("../imgs/main.png") no-repeat -190px -38px;
+
+}
+.step3 .iconin{
+    width: 50px; height: 100px;
+    background: url("../imgs/main.png") no-repeat -243px -43px;
+
+}
+.step4 .iconin{
+    width: 50px; height: 100px;
+    background: url("../imgs/main.png") no-repeat -295px -43px;
+
+}
+
+.step1 .iconin:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.step2 .iconin:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.step3 .iconin:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.step4 .iconin:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+.step .rightliucheng{
+    padding-top: 20px;
+    float: right;
+    width: 130px; height: 30px;
+    font-size: 20px;
+    color: #0185e1;
+    padding-bottom: 0px;
+}
+.step .blackliucheng{
+
+    float: right;
+    width: 130px; height: 50px;
+
+
+}
+
+.liucheng .zhixiang{
+    float: left;
+    height: 100%; width: 40px;
+    background: url("../imgs/main.png") no-repeat -360px -112px;
+}
+
+.table {
+    width: 1300px;
+    height: 245px;
+    border: 1px solid #000000;
+    margin: 30px 110px;
+}
+.table .tool{
+    float: left;
+    height: 100%;
+    width: 400px;
+}
+
+.tool .new{
+    float: left;
+    height: 80px;width:198px;
+    border: 1px solid #000;
+
+}
+.table .zixun{
+    float: left;
+    width: 896px; height: 100%;
+}
+.zixun .zixun1{
+    float: left;
+    width: 446px; height: 100%;
+
+}
+.zixun .zixun2{
+    float: left;
+    width: 446px; height: 100%;
+
+}
+
+.zixun1 .title{
+    float: left;
+    width: 200px; height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+.zixun1 .newtalk{
+    float: left;
+    width: 100%; height: 160px;
+    padding-left: 20px;
+}
+.newtalk a{
+    text-decoration: none;
+}
+.zixun1 .gengduo{
+    float: right;
+    width: 200px; height: 80px;
+    font-size: 10px;
+}
+.gengduo a{
+    text-decoration: none;
+}
+.zixun2 .title{
+    float: left;
+    width: 200px; height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+.zixun2 .newtalk{
+    float: left;
+    width: 100%; height: 160px;
+    padding-left: 20px;
+}
+.zixun2 .gengduo{
+    float: right;
+    width: 200px; height: 80px;
+    font-size: 10px;
+}
+
+.shuangjiantou {
+    float: right;
+    font-size: 14px;
+    margin-bottom: 0;
+    position: absolute;right: 0px; bottom: 2px;
+}
+
+
+.new .tubiao{
+    float: left;
+    width: 50px; height: 100px;
+}
+ .dingdan{
+    background: url("../imgs/main.png") no-repeat 10px -25px;
+}
+.zhifu{
+    background: url("../imgs/main.png") no-repeat 10px -90px;
+}
+.jiage{
+    background: url("../imgs/main.png") no-repeat 10px -160px;
+}
+.jipiao{
+    background: url("../imgs/main.png") no-repeat -60px -90px;
+}
+.hangban{
+    background: url("../imgs/main.png") no-repeat -60px -25px;
+}
+.xinshou{
+    background: url("../imgs/main.png") no-repeat -60px -160px;
+}
+
+
+.dingdan:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.zhifu:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.jiage:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.jipiao:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.hangban:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+.xinshou:hover{
+    animation:animate 0.5s;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+
+.new .wenzi{
+    line-height: 100px;
+}
+
+
+.hotload{
+    height: 80px; width: 1300px; margin: auto;
+    border-bottom: 5px solid #ccc;
+    position: relative;
+
+}
+.hotloadhead{
+    font-size: 30px;
+    position: absolute; left: 30px; bottom: 10px;
+}
+.hotloadfoot{
+    float: right;
+    position: absolute;bottom: -10px; right: 15px;
+    z-index: 2;
+}
+.hotloadfoot a{
+
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0px 20px;
+    line-height: 50px;
+    color: black;
+}
+
+.hotloadfoot a:hover{
+    color: #3b8de3;
+    border-bottom: 5px solid #3b8de3;
+
+}
+
+.hotloadfoot .active a{
+    color: #3b8de3;
+    background-color: #3b8de3;
+    border-bottom: 5px solid #3b8de3;
+}
+.piaobox{
+
+    width: 1300px;height: 400px;
+    margin: 60px 110px;
+
+}
+
+.piaobox div:hover{
+    background: url("../imgs/go.png") repeat-x -250px 0px;
+    background-size: 200% 100%;
+
+
+}
+.piaobox div{
+
+    width: 250px; height: 170px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 28px;
+    background: url("../imgs/go.png") repeat-x 0px 0px;
+    background-size: 200% 100%;
+
+    line-height: 30px;
+
+}
+
+.jiantou{
+    width: 1300px; height: 300px;
+    position: relative;
+    float: left;
+    z-index: 100
+
+}
+.jiantou.jiantoutu{
+
+    width: 80px; height: 50px;
+    border: 1px solid red;
+    position: absolute; left: 200px; top: 50px;
+    z-index: 9999;
+    background-color: red;
+
+}
+
+.gongsi{
+    width: 1300px; height: 400px;
+    margin: 30px 110px;
+    position: relative;
+
+}
+
+.dagongsi{
+    width: 500px;height: 364px;
+    padding: 20px;
+    background-color: #e8e8e8;
+    position: relative;
+}
+.dagongsi .img{
+   width: 225px; height: 290px;
+    position: relative;
+}
+.img img{
+    position: absolute; top: 0px;left: 0px;
+}
+.daname{
+    position: absolute; left:0px;top: 190px;
+    width: 220px; height: 40px;
+    float: left;
+    background-color: #6d6d6d;
+    box-sizing: border-box;
+    text-align: center;
+}
+.words{
+    width: 225px; height: 290px;
+    float: right;
+    position: absolute;top: 20px;right: 20px;
+}
+.biaodian{
+    float: right;
+    width: 500px; height: 100px;
+    background:url("../imgs/main.png") no-repeat -250px -250px;
+}
+
+.xiaogongsi{
+
+    width: 750px;height:400px;
+    position:absolute; top: 0px;right: 0px;
+}
+.xiaoxiaogongsi{
+    float: left;
+    width: 220px;
+    height: 160px;
+    margin: 20px 10px;
+    position: relative;
+
+}
+.box1{
+    background: url("../imgs/cz3.png");
+}
+.box2{
+    background: url("../imgs/mu3.png");
+}
+.box3{
+    background: url("../imgs/hu3.png");
+}
+.box4{
+    background: url("../imgs/zh3.png");
+}
+.box5{
+    background: url("../imgs/3u3.png");
+}
+.box6{
+    background: url("../imgs/9c3.png");
+}
+.name{
+    width: 220px; height: 20px;
+    float: left;
+    background-color: #6d6d6d;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;bottom: 0px;left: 0px;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+@keyframes big {
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.05,1.04);
+    }
+}
