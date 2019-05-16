@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文档</title>
+    <style>
+        div{
+            width:96px;
+            height:48px;
+            border:2px solid #000;
+            border-bottom:50px solid #000;
+            border-radius:50%;
+            position:absolute;
+            left:0;
+            right:0;
+            bottom:0;
+            top:0;
+            margin:auto;
+            transition:all 2s ease;
+        }
+        div:before {
+            content:"";
+            position:absolute;
+            width:8px;
+            height:8px;
+            border:20px solid #000;
+            background:#fff;
+            border-radius:50%;
+            left:0;
+            top:50%;
+
+        }
+        div:after{
+            content:"";
+            position:absolute;
+            width:8px;
+            height:8px;
+            border:20px solid #fff;
+            background:#000;
+            border-radius: 50%;
+            right:0;
+            top:50%;
+        }
+    </style>
+</head>
+<script>
+    window.onload=function(ev){
+        var div=document.querySelector("div");
+        div.onmouseover=function(ev2){
+            div.style.transform="rotate(180deg)";
+        }
+
+    }
+</script>
+<body>
+<div>
+    <!--没有任何意义的标签 可以是任何意义-->
+</div>
+<hr align="center" color="green" size="25"/>
+<a href="http://baidu.com"  >百度</a>
+<img src="Imgs/1.jpg" alt="这是一张图片" width="100" height="" title="这是一张图片" ><!--引入图片  alt相当于在图片显示不了的时候一个解释作用-->
+<ul>
+    <!--无序列表 块元素-->
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<ol>
+    <!--有序列表 块元素-->
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ol>
+<table>
+    <!--表格-->
+    <tr>
+        <th>
+           姓名 <!--表头-->
+        </th>
+        <th>
+           班级 <!--表头-->
+        </th>
+        <th>
+           年龄 <!--表头-->
+        </th>
+    </tr>
+
+    <tr>
+        <!--表头-->
+        <td>李荣浩</td>
+        <td>一班</td>
+        <td>38</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<h1 align="left">一级标签</h1>
+<h2 align="right">二级标签</h2>
+<h3 align="center">三级标签</h3>
+<h4 align="center">四级标签</h4>
+<h5>五级标签</h5>
+<h6>六级标签</h6>
+从功能来说：
+b  strong 加粗 em 倾斜
+表现形式:呈现出来的都是矩形
+排列方式:
+        块元素：不能和别的元素共享一行,能设置宽高
+        行内元素:可以和别的元素在同一行显示,不能设置宽高  所有修饰
+        行内块元素:既有块元素的特点又有行内元素的特点
+对于文字修饰的属性
+<span>
+    <!--
+    -->
+
+
+</span>
+    <em>倾斜</em>
+<i>倾斜</i>
+    <strong>粗体</strong>
+<b>粗体</b>
+    <del>删除线</del>
+<s>删除线</s>
+<img src="Imgs/1.jpg" alt="">
+<img src="Imgs/1.jpg" alt="">
+<div></div>
+</body>
+</html>
