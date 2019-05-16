@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        4种定位
+        静态定位:static
+        绝对定位:absolute 就是相对于原点位置的设定，但是原点会找具有定位属性的前辈元素,如果前辈元素都没有定位属性,那么会找相对于浏览器的左上角来进行定位
+                设置了这个，没有设置left和top,他也是有作用的,相对于其他标签你的层次会高一级
+        相对定位:relative  就是相对于自己的位置来进行定位,但是自己原来的位置并不会消失,给绝对定位的元素提供原点又不会影响其他元素的排列,按照之后的位置进行一个绝对路径
+         固定定位:始终是以页面的左上角作为参照
+         行内样式:zhiie  style
+         嵌入式:嵌入到html中<style>
+         外部样式  通过link链入
+         放图片
+        */
+        div{
+            width: 200px;
+            position: static; /**<!--静态定位 -->**/
+            position: absolute;<!-- 绝对定位 伴随着left 和top  -->
+            left: 0;top: 0;/** 谁的左上角，具有定位属性的父元素 如果前辈元素没有定位属性，则直接相对于浏览器的左上角定位
+                                 “懒运动",不设置left和top的值就会待在原地不动
+                                  层级的问题  z-index   只有具有定位属性的设置才有用处
+                                  **/
+
+        }
+        .one{
+            width: 100px;
+            height: 200px;
+            border: 2px solid red;
+            position: relative;/** 相对定位**/
+            left: 100px;
+
+        }
+        .two{
+            width: 50px;
+            height: 50px;
+            border: 2px solid green;
+            position: absolute;/** 绝对定位**/
+            left: 0;
+            top: 0;
+
+
+        }
+        .three{
+            width: 100px;
+            height: 200px;
+            border: 2px solid black;
+            position:absolute;
+            left: 10px;
+            top:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+
+        <div class="two">2</div>
+    </div>
+
+    <div class="three"></div>
+</body>
+</html>
