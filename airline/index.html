@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload = function (ev) {
+            var banner = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+                num++;
+
+                if(num==2){
+                    num=0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    console.log(banner[i]);
+                    console.log(btns[i]);
+                    banner[i].style.display="none";
+                    btns[i].style.background="black";
+                }
+                // console.log(num);
+                banner[num].style.display="block";
+                btns[num].style.background="orange";
+            },3000)
+
+        }
+    </script>
+</head>
+
+<body>
+<!--头部-->
+<header>
+<div class="header-box">
+    <img src="./img/login.png" alt="">
+    <img src="img/top.jpg" class="top" alt="">
+</div>
+</header>
+<!--导航条-->
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <div class="active-in">
+                <a href="" class="active">首页</a>
+                </div>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航咨询</a>
+                <a href="">民航问答</a>
+            </div>
+
+            <div class="right">
+                <a href="">登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心
+                    <div class="triangle"></div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+<!--热门城市-->
+<div class="header-city">
+    <div class="header-city-list">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="" >北京</a>
+    <a href="" >上海</a>
+    <a href="" >广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+    </div>
+</div>
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner2"></div>
+    <div class="banner banner1"></div>
+
+    <div class="btns">
+        <div class="btn btn1"></div>
+        <div class="btn btn2"></div>
+    </div>
+</div>
+
+<!--购票流程-->
+<div class="bprocess">
+    <div class="bp_tit">购票流程：</div>
+    <ul>
+        <li><a href=""><span class="bp-n1"></span><p><b>航班查询</b>选择出行航班 </p></a></li>
+        <li><a href=""><span class="bp-n2"></span><p><b>提交订单</b>登记乘机人和联系人</p></a></li>
+        <li><a href=""><span class="bp-n3"></span><p><b>在线支付</b>支付机票款 </p></a></li>
+        <li class="last"><a href="")><span class="bp-n4"></span><p><b>无需取票</b>凭电子客票号换登机牌</p></a></li>
+    </ul>
+</div>
+<!--&lt;!&ndash;购票流程&ndash;&gt;-->
+<!--<div class="ordersteps">-->
+<!--    <div class="order-left">-->
+<!--        <h3>购票流程:</h3>-->
+<!--    </div>-->
+<!--    <ul class="order-right">-->
+<!--        <li>-->
+<!--            <div class="icon">-->
+<!--                <div class="icon-out"></div>-->
+<!--                <div class="icon-in i1"></div>-->
+<!--            </div>-->
+<!--            <div class="order-text">-->
+<!--                <div class="order-title">-->
+<!--                    航班查询-->
+<!--                </div>-->
+<!--                <div class="order-con">-->
+<!--                    选择出行航班-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="arrow">-->
+
+<!--            </div>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <div class="icon">-->
+<!--                <div class="icon-out"></div>-->
+<!--                <div class="icon-in i2"></div>-->
+<!--            </div>-->
+<!--            <div class="order-text">-->
+<!--                <div class="order-title">-->
+<!--                    在线支付-->
+<!--                </div>-->
+<!--                <div class="order-con">-->
+<!--                    支付机票款-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="arrow">-->
+
+<!--            </div>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <div class="icon">-->
+<!--                <div class="icon-out"></div>-->
+<!--                <div class="icon-in i3"></div>-->
+<!--            </div>-->
+<!--            <div class="order-text">-->
+<!--                <div class="order-title">-->
+<!--                    航班查询-->
+<!--                </div>-->
+<!--                <div class="order-con">-->
+<!--                    选择出行航班-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--            <div class="arrow">-->
+
+<!--            </div>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <div class="icon">-->
+<!--                <div class="icon-out"></div>-->
+<!--                <div class="icon-in i4"></div>-->
+<!--            </div>-->
+<!--            <div class="order-text">-->
+<!--                <div class="order-title">-->
+<!--                    无需取票-->
+<!--                </div>-->
+<!--                <div class="order-con">-->
+<!--                    凭电子票换登机牌-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="arrow">-->
+
+<!--            </div>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--</div>-->
+<div class="h4"></div>
+<!--热门航线预定-->
+<div class="remenhangxian">
+    <div class="remen-left">
+        <span class="remenhangxianyuding"><strong>热门航线预定</strong></span>
+    </div>
+    <div class="remen-right">
+        <ul class="tabctn" id="cities">
+            <li><span>全国</span></li>
+            <li><span>深圳</span></li>
+            <li><span>北京</span></li>
+            <li><span>上海</span></li>
+            <li><span>广州</span></li>
+            <li><span>武汉</span></li>
+            <li><span>成都</span></li>
+            <li><span>海口</span></li>
+            <li><span>重庆</span></li>
+            <li><span>沈阳</span></li>
+
+        </ul>
+    </div>
+</div>
+<!--图片-->
+<div class="hot-flight">
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="out">
+        <div class="in">
+            <a href="">
+                <div class="one">
+                    <div class="first">海口</div>
+                    <div class="arrow"></div>
+                    <div class="second">郑州</div>
+                </div>
+                <div class="two">
+                    12月16日
+                </div>
+                <div class="three">
+                    <div class="plane"></div>
+                    <div class="ticket-price">票价：</div>
+                    <div class="dollor">￥</div>
+                    <div class="real-price">150</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="h4"></div>
+<div class="remenhangxian">
+    <div class="remen-left">
+        <span class="remenhangxianyuding"><strong>热门航空公司</strong></span>
+    </div>
+</div>
+<div class="h4"></div>
+<div class="dabox">
+    <div class="tupianca3">
+    <img src="./img/ca3.png" alt="">
+    <p>中国国际航空公司</p>
+    </div>
+    <div class="wenzi1"><p>&nbsp;&nbsp;&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。</p>
+    </div>
+</div>
+<div class="tupiann">
+    <img src="./img/1%20(1).png" alt="">
+    <img src="./img/1%20(2).png" alt="">
+    <img src="./img/1%20(3).png" alt="">
+    <img src="./img/1%20(4).png" alt="">
+    <img src="./img/1%20(5).png" alt="">
+    <img src="./img/1%20(6).png" alt="">
+
+</div>
+<div class="h4"></div>
+<div class="remenguojijichang">
+    <div class="remenguojijichang-left">
+        <span ><strong>热门国际机场</strong></span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+    </div>
+</div>
+<div class="remenguojijichang">
+    <div class="remenguojijichang-left">
+        <span ><strong>最新客户咨询</strong></span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+    </div>
+
+
+</div>
+<div class="remenguojijichang">
+    <div class="remenguojijichang-left">
+        <span ><strong>国际特价</strong></span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+        <span class="xiaodezi">>>香港赤腊角机场</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xiaodezi">>>香港赤腊角机场</span>
+        <br>
+    </div>
+</div>
+<div class="h4"></div>
+
+<table width="950" align="center" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+        <td><p style="text-align: center"><span style="text-align: center; text-transform: none; background-color: rgb(238,245,254); text-indent: 0px; display: inline !important; font: 12px/25px Simsun; white-space: normal; float: none; letter-spacing: normal; color: rgb(0,0,0); word-spacing: 0px; -webkit-text-stroke-width: 0px">161580官方网站：</span><a target="_blank" style="text-align: center; padding-bottom: 0px; text-transform: none; text-indent: 0px; padding-left: 3px; padding-right: 3px; font: 12px/25px Simsun; white-space: normal; letter-spacing: normal; color: rgb(2,87,172); word-spacing: 0px; text-decoration: none; padding-top: 0px; -webkit-text-stroke-width: 0px" href=""
+        80.com"><span style="color: #ff6600"><span style="font-family: Comic Sans MS"><span style="font-size: medium">161580.com</span></span></span></a><span style="text-align: center; text-transform: none; background-color: rgb(238,245,254); text-indent: 0px; display: inline !important; font: 12px/25px Simsun; white-space: normal; float: none; letter-spacing: normal; color: rgb(0,0,0); word-spacing: 0px; -webkit-text-stroke-width: 0px"><span class="Apple-converted-space">&nbsp;</span>| 全国统一服务热线：<span style="color: #ff6600"><span style="font-family: Comic Sans MS"><span style="font-size: medium">4000-161580</span></span></span><span style="font-family: Comic Sans MS"><span style="font-size: medium">&nbsp;</span></span><span style="color: #ff6600"><span style="font-family: Comic Sans MS"><span style="font-size: medium"> </span></span></span>|&nbsp;<span class="Apple-converted-space">&nbsp;</span></span><a href="">在线咨询</a><span style="text-align: center; text-transform: none; background-color: rgb(238,245,254); text-indent: 0px; display: inline !important; font: 12px/25px Simsun; white-space: normal; float: none; letter-spacing: normal; color: rgb(0,0,0); word-spacing: 0px; -webkit-text-stroke-width: 0px"><span class="Apple-converted-space">&nbsp;</span></span>&nbsp;</p>
+            <table border="0" cellspacing="1" cellpadding="1" width="100%">
+                <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </tbody>
+            </table>
+            <p style="text-align: left">&nbsp;<span style="color: #999999">161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。</span></p>
+            <p style="text-align: left"><span style="color: #999999">&nbsp;</span></p>
+            <p style="text-indent: 24px"><font style="color: rgb(153,153,153)">友情链接QQ434441778</font><span style="text-transform: none; text-indent: 24px; display: inline !important; font: 12px/15px Simsun; white-space: normal; float: none; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-stretch: normal">:</span></p>
+            <p style="text-indent: 24px"><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">美国旅</span><span style="color: #999999">游</span></a></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">韩国旅游</span><span style="color: #999999">攻略</span></a></span></span><span style="color: #808080"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px">|<a target="_blank" href=""><span style="color: #999999">订机票最便宜的网站</span></a>|<a target="_blank" href=""><span style="color: #999999">北京旅</span><span style="color: #999999">行社</span></a></span></span></span></span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span></span></span><a onclick="window.open(this.href,'','resizable=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,fullscreen=no,dependent=no,status'); return false" href=""><span style="color: #999999">打折</span><span style="color: #999999">机票</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px">|<a target="_blank" href=""><span style="color: #999999">酒店加盟代理</span></a></span></span></span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|<a target="_blank" href=""><span style="color: #999999">爱侣游网</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span></span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">杭州户外俱乐部</span></a></span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">四喜居门票网</span></a></span></span><span style="color: #999999"><font face="Simsun"><span style="line-height: 15px">|</span></font></span><font color="#999999" face="Simsun"><span style="line-height: 15px"><a target="_blank" href=""><span style="color: #999999">深圳国旅</span></a></span></font><span style="color: #999999">|</span><span style="color: #999999"><!--StartFragment --></span><a target="_blank" href=""><span style="color: #999999">澳洲自</span><span style="color: #999999">由行</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun">|</span></span><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; color: rgb(153,153,153)"><span style="color: #999999"><a target="_blank" href=""><span style="color: #999999">汽车票预定</span></a></span><!--StartFragment --></span><font color="#999999" face="Simsun"><!--StartFragment --><span style="color: #999999"><span style="line-height: 15px"><!--StartFragment --><!--StartFragment -->|</span></span><span style="line-height: 15px"><a target="_blank" href=""><span style="color: #999999">四川青年旅行社</span></a></span><span style="line-height: 15px"><span style="color: #999999">|</span><a target="_blank" href=""><span style="color: #999999">百程旅行网</span></a><span style="color: #999999"><span style="color: #999999"><!--StartFragment --><!--StartFragment --><span style="color: #999999"><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">重庆青</span><span style="color: #999999">年旅行社</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px">|</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font><span style="line-height: 15px; font-family: Simsun; color: rgb(153,153,153)"><span style="font-stretch: normal"><a target="_blank" href=""><span style="color: rgb(153,153,153)">俄</span><span style="color: #999999">罗</span><span style="color: #808080">斯</span><span style="color: #999999">旅</span></a></span></span><span style="background-color: #ffffff"><span style="line-height: 15px; font-family: Simsun; color: rgb(153,153,153)"><span style="font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">游</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">美国旅游</span></a></span></span></span></span></span><span style="color: #999999"><span style="background-color: #ffffff"><span style="line-height: 15px; font-family: Simsun"><span style="font-stretch: normal">|</span></span></span></span><span style="line-height: 15px; font-family: Simsun; color: rgb(153,153,153)"><span style="font-stretch: normal"><a target="_blank" href=""><span style="color: #999999"><span style="background-color: #ffffff">深</span></span><span style="color: #999999"><span style="background-color: #ffffff">圳</span></span><span style="color: #999999">旅</span><span style="color: #999999">游论</span><span style="color: #999999">坛</span></a></span></span><span style="color: #999999"><span style="line-height: 15px; font-family: Simsun"><span style="font-stretch: normal"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span></span></span><span style="line-height: 15px; font-family: Simsun; color: rgb(153,153,153)"><span style="font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">重</span><span style="color: #999999">庆中国青年旅行社</span></a><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><span style="color: #999999"><span style="line-height: 15px; font-family: Simsun"><span style="font-stretch: normal"><span style="color: #999999"><span style="line-height: 15px; font-family: Simsun"><span style="font-stretch: normal">|</span></span></span><span style="color: #999999"><span style="line-height: 15px; font-family: Simsun"><span style="font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">青</span><span style="color: #999999">岛崂山</span></a><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px">|</span></span><span style="color: #999999"><span style="text-transform: none; text-indent: 24px; font: 12px/15px Simsun; white-space: normal; letter-spacing: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px"><a target="_blank" href=""><span style="color: #999999">长岛旅</span><span style="color: #999999">游</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|</span></span><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal"><a target="_blank" href=""><span style="color: #999999">南宁旅行社</span></a><span style="color: #999999"><span style="line-height: 15px; text-indent: 24px; font-family: Simsun; font-stretch: normal">|<span style="color: #999999"><!--StartFragment --></span><a target="_blank" href=""><span style="color: #999999">青驿</span></a> </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p></td>
+    </tr>
+</table>
+</body>
+</html>
