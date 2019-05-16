@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>售票系统</title>
+    <link rel="stylesheet" href="css/demo.css">
+
+    <script>
+
+        /*window.onload=function(ev){
+            var banner=document.querySelector(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+
+                if(num==2){
+                    num=0;
+                }
+                for(var i=0;i<banner.length;i++){
+                    banner[i].style.display="none";
+                    btns[i].style.background="#000";
+                }
+                banner[num].style.display="block";
+                btns[num].style.background="orange";
+                num++;
+            },3000)
+        }*/
+
+
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="orange"
+                num++
+            },3000)
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="image/logo.png" alt="">
+    <img src="image/head.jpg" alt="">
+
+</header>
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="" class="active">首页</a>
+            <a href="">国内机票</a>
+            <a href="">国际机票</a>
+            <a href="">民航资讯</a>
+            <a href="">民航问答</a>
+
+
+        </div>
+        <div class="right">
+            <a href="" class="login">登录</a>
+            <a href="">注册</a>
+            <a href="">用户中心</a>
+            <a href="" class="sanjiao"></a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">深圳 </a>
+    <a href="">北京 </a>
+    <a href="">上海</a>
+    <a href="">广州 </a>
+    <a href="">南京</a>
+    <a href="">天津 </a>
+    <a href="">武汉 </a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都 </a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+
+<!--购票流程-->
+
+<div class="buy">
+    <div class="buy_left">
+        <h2>购票流程</h2>
+    </div>
+    <ul class="buy_right">
+        <li>
+            <div class="icon">
+                <div class="icon_out">
+                    <div class="icon_in_one">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text_title">
+                    航班查询
+                </div>
+                <div class="text_desc">
+                    选择出行航班
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon_out">
+                    <div class="icon_in_two">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text_title">
+                    提交订单
+                </div>
+                <div class="text_desc">
+                    登记乘机人和联系人
+                </div>
+
+            </div>
+
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon_out">
+                    <div class="icon_in_three">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text_title">
+                    在线支付
+                </div>
+                <div class="text_desc">
+                    支付机票款
+                </div>
+
+            </div>
+
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon_out">
+                    <div class="icon_in_four">
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text_title">
+                    无需取票
+                </div>
+                <div class="text_desc">
+                    凭电子客票号换登机牌
+                </div>
+
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<!--最新消息-->
+<div class="recently_message">
+    <div class="one">
+        <div class="first">
+            <div class="photo1"></div>
+            <div class="text">订单管理</div>
+            <div class="photo2"></div>
+        </div>
+        <div class="first">
+            <div class="photo3"></div>
+            <div class="text">价格趋势</div>
+        </div>
+        <div class="first">
+            <div class="photo4"></div>
+            <div class="text">航班动态</div>
+        </div>
+
+    </div>
+    <div class="one">
+        <div class="first">
+            <div class="photo5"></div>
+            <div class="text">支付中心</div>
+        </div>
+        <div class="first">
+            <div class="photo6"></div>
+            <div class="text">机票验真</div>
+        </div>
+        <div class="first">
+            <div class="photo7"></div>
+            <div class="text">新手指南</div>
+        </div>
+    </div>
+    <div class="three">
+        <div class="head">
+            <div class="left">最新资讯</div>
+            <div class="rightt">
+                <a href="">
+                    <div class="text">更多</div>
+                    <div class="text_icon1"></div>
+                </a>
+            </div>
+        </div>
+        <div class="message">
+            <a href="">简单了解一下金鹏航空官网机票购买流程</a><br/>
+            <a href="">东方航空去哪儿网合作举办“校园旅行家”推广活动</a><br/>
+            <a href="">网上买飞机票为什么只能买9张，10人以上怎么办</a><br>
+            <a href="">想知道南方航空机票购买流程，南航手机</a><br>
+
+        </div>
+    </div>
+    <div class="three four">
+        <div class="head">
+            <div class="left">网站公告</div>
+            <div class="rightt">
+                <a href="">
+                    <div class="text">更多</div>
+                    <div class="text_icon1"></div>
+                </a>
+            </div>
+        </div>
+        <div class="message">
+            <a href="">带你认识飞机经停是什么意思</a>
+            <a href="">12306机票网上订票官网请上民航在线安全有保障</a>
+            <a href="">1岁婴儿机票怎么买能够从网上购买婴儿票吗</a>
+            <a href="">了解订机票用什么软件好对你出门旅游帮助很大</a>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--热门航线预定-->
+<div class="hotLine">
+    <div class="h">
+        <div class="hLeft">热门航向预定</div>
+        <div class="hRight">
+            <a href="" class="nation">全国</a>
+            <a href="">深圳</a>
+            <a href="">北京</a>
+            <a href="">上海</a>
+            <a href="">广州</a>
+            <a href="">武汉</a>
+            <a href="">成都</a>
+            <a href="">海口</a>
+            <a href="">重庆</a>
+            <a href="">沈阳</a>
+        </div>
+    </div>
+    <hr/>
+    <div class="ticket">
+        <div class="t">
+            <div class="address">
+                <span class="start">海口</span>
+                <span class="picture"></span>
+                <span class="end">郑州</span>
+            </div>
+            <div class="time">12月16日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥150</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">海口</span>
+                <span class="picture"></span>
+                <span class="end">长沙</span>
+            </div>
+            <div class="time">10月15日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥110</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">武汉</span>
+                <span class="picture"></span>
+                <span class="end">神农架</span>
+            </div>
+            <div class="time">05月08日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥117</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">银川</span>
+                <span class="picture"></span>
+                <span class="end">昆明</span>
+            </div>
+            <div class="time">05月08日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥220</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">太原</span>
+                <span class="picture"></span>
+                <span class="end">昆明</span>
+            </div>
+            <div class="time">11月11日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥250</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">南京</span>
+                <span class="picture"></span>
+                <span class="end">上海浦东</span>
+            </div>
+            <div class="time">07月03日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥150</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">西安</span>
+                <span class="picture"></span>
+                <span class="end">上海浦东</span>
+            </div>
+            <div class="time">01月25日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥200</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">合肥</span>
+                <span class="picture"></span>
+                <span class="end">海口</span>
+            </div>
+            <div class="time">05月27日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥279</span>
+            </div>
+        </div>
+        <div class="t">
+            <div class="address">
+                <span class="start">天津</span>
+                <span class="picture"></span>
+                <span class="end">三亚</span>
+            </div>
+            <div class="time">05月22日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥299</span>
+            </div>
+        </div>
+        <div class="t ten">
+            <div class="address address1">
+                <span class="start">哈尔滨</span>
+                <span class="picture"></span>
+                <span class="end">三亚</span>
+            </div>
+            <div class="time">05月15日</div>
+            <div class="prices">
+                <span class="pictures"></span>
+                <span class="Desc_price">票价：</span>
+                <span class="price">￥540</span>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+
+<!--热门航空公司-->
+<div class="company">
+    <div class="head_title">
+        <div class="title_name"><h1>热门航空公司</h1></div>
+        <div class="head_right"></div>
+    </div>
+    <hr/>
+    <div class="company_content">
+        <div class="con_left">
+            <div class="con_left_left">
+                <div class="left_picture"></div>
+                <div class="left_desc">中国国际航空公司</div>
+            </div>
+            <div class="con_right_right">
+                中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”， 简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准 通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公 司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源 为基础 ，组建新的中国国际航空公司。
+            </div>
+            <div class="right_bottom"></div>
+        </div>
+        <div class="con_right">
+            <div class="con_right_picture1">
+                <div class="con_right_text">中国南方航空公司</div>
+            </div>
+            <div class="con_right_picture2">
+                <div class="con_right_text">中国东方航空公司</div>
+            </div>
+            <div class="con_right_picture3">
+                <div class="con_right_text">海南航空公司</div>
+            </div>
+            <div class="con_right_picture4">
+                <div class="con_right_text">深圳航空公司</div>
+            </div>
+            <div class="con_right_picture5">
+                <div class="con_right_text">四川航空公司</div>
+            </div>
+            <div class="con_right_picture6">
+                <div class="con_right_text">春秋航空公司</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--底部-->
+
+<div class="page_bottom">
+    <div class="bottom_left">
+        <div class="bottom_left_head">
+            <div class="lh_title"><h1>热门国际机场</h1></div>
+            <div class="ln_airport">
+                <a href="">
+                    <div class="world_airport">全球机场</div>
+                    <div class="wolrd_airport_img"></div>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom_left_end">
+            <div class="left_end_left">
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">香港赤腊角机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">首尔金浦机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">东京羽田机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">新加坡樟宜机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">曼谷素万那普机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">大阪伊丹机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">胡志明市国际机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">吉隆坡国际机场</a></div>
+                </div>
+            </div>
+            <div class="left_end_left">
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">首尔仁川机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">澳门国际机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">东京成田机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">台北桃园中正机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">曼谷廊曼机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">马尼拉国际机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">伦敦国际机场</a></div>
+                </div>
+                <div class="end_airport">
+                    <div class="s"></div>
+                    <div class="w"><a href="">釜山国际机场</a></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bottom_left bottom_center">
+        <div class="bottom_left_head">
+            <div class="lh_title"><h1>最新客户咨询</h1></div>
+            <div class="ln_airport">
+                <a href="">
+                    <div class="world_airport">更多</div>
+                    <div class="wolrd_airport_img"></div>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom_center_message">
+            <div class="mess">
+                <p>2019/5/16&nbsp;&nbsp;22:00:35</p>
+                <div class="message">
+                    <div class="message_icon"></div>
+                    <div class="message_content"><a href="">你好，怀孕7个月乘坐需要办理证明吗</a></div>
+                </div>
+            </div>
+            <div class="mess">
+                <p>2019/5/16&nbsp;&nbsp;21:59:07</p>
+                <div class="message">
+                    <div class="message_icon"></div>
+                    <div class="message_content"><a href="">你好，怀孕7个月乘坐需要办理证明吗</a></div>
+                </div>
+            </div>
+            <div class="mess">
+                <p>2019/5/16&nbsp;&nbsp;21:35:27</p>
+                <div class="message">
+                    <div class="message_icon"></div>
+                    <div class="message_content"><a href="">你好，小孩才32个月，没有身份证，怎么取票</a></div>
+                </div>
+            </div>
+            <div class="mess">
+                <p>2019/5/16&nbsp;&nbsp;17:57:21</p>
+                <div class="message">
+                    <div class="message_icon"></div>
+                    <div class="message_content"><a href="">护照可以定机票登机吗</a></div>
+                </div>
+            </div>
+            <div class="mess">
+                <p>2019/5/16&nbsp;&nbsp;14:44:39</p>
+                <div class="message">
+                    <div class="message_icon"></div>
+                    <div class="message_content"><a href="">你好，请问出生2个月的婴儿应该在网上怎么订票</a></div>
+                </div>
+            </div>
+            <div class="mess">
+                <p>2019/5/16&nbsp;&nbsp;14:28:19</p>
+                <div class="message">
+                    <div class="message_icon"></div>
+                    <div class="message_content"><a href="">你好，我现在有事情赶不上了能不能改签</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom_right">
+        <div class="bottom_right_head">
+            <div class="lh_title"><h1>国际特价</h1></div>
+            <div class="ln_airport">
+                    <div class="america appendix"><a href="">北美 </a></div>
+                    <div class="america"><a href="">亚洲</a></div>
+                    <div class="america"><a href="">欧洲</a></div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="ending">
+            <div class="ticket1">
+                <div class="t1">
+                    <div class="address2">
+                        <span class="start1">上海</span>
+                        <span class="picture1"></span>
+                        <span class="end1">华盛顿</span>
+                    </div>
+                    <div class="time1">06月10日</div>
+                    <div class="prices1">
+                        <span class="pictures1"></span>
+                        <span class="Desc_price1">票价：</span>
+                        <span class="price1">￥1395</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket1">
+                <div class="t1">
+                    <div class="address2">
+                        <span class="start1">北京</span>
+                        <span class="picture1"></span>
+                        <span class="end1">洛杉矶</span>
+                    </div>
+                    <div class="time1">07月19日</div>
+                    <div class="prices1">
+                        <span class="pictures1"></span>
+                        <span class="Desc_price1">票价：</span>
+                        <span class="price1">￥2950</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer-->
+
+<div class="footer">
+    <div class="middle">
+        <div class="one">
+            <div class="footer_icon">
+                <div class="footer_icon_out">
+                    <div class="footer_icon_in1">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_desc">
+                <p class="p1">支付安全</p>
+                <p class="p2">在线支付100%认证</p>
+            </div>
+        </div>
+        <div class="one">
+            <div class="footer_icon">
+                <div class="footer_icon_out">
+                    <div class="footer_icon_in2">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_desc">
+                <p class="p1">实时同步</p>
+                <p class="p2">全球机票联网售票</p>
+            </div>
+        </div>
+        <div class="one">
+            <div class="footer_icon">
+                <div class="footer_icon_out">
+                    <div class="footer_icon_in3">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_desc">
+                <p class="p1">全天服务</p>
+                <p class="p2">7*24小时专业客服人员为您服务</p>
+            </div>
+        </div>
+        <div class="one">
+            <div class="footer_icon">
+                <div class="footer_icon_out">
+                    <div class="footer_icon_in4">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_desc">
+                <p class="p1">方便快捷</p>
+                <p class="p2">电子客票，身份证直接换登机牌</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="abc">
+    <div class="abc1">
+        <div class="abc2">
+            <h3>新手上路</h3>
+            <p>
+                <div class="abc_icon"></div>
+                <div class="abc_text"><a href="">-查询预定</a></div>
+            </p>
+            <p>
+                <div class="abc_icon"></div>
+                <div class="abc_text"><a href="">-订单填写</a></div>
+            </p>
+            <p>
+                <div class="abc_icon"></div>
+                <div class="abc_text"><a href="">-支付出票</a></div>
+            </p>
+        </div>
+        <div class="abc2">
+            <h3>付款方式</h3>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-网上银行</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-微信支付</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-信用卡</a></div>
+            </p>
+        </div>
+        <div class="abc2">
+            <h3>旅客保障</h3>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-航协认证</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-支付出票</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-安全保障</a></div>
+            </p>
+        </div>
+        <div class="abc2">
+            <h3>常见问题</h3>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-了解多彩贵州航</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-关于南昌昌北机</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-不再网上买机票</a></div>
+            </p>
+        </div>
+        <div class="abc2">
+            <h3>关于我们</h3>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-联系我们</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-网站介绍</a></div>
+            </p>
+            <p>
+            <div class="abc_icon"></div>
+            <div class="abc_text"><a href="">-公司简介</a></div>
+            </p>
+        </div>
+        <div class="abc3">
+            <div class="center">
+            </div>
+            <input type="text" placeholder="请输入关键字" class="in"/><input type="submit" value="搜索" class="su"/>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer12">
+            <em>© 2019 http://www.161580.com 民航在线</em>
+            <b>|</b>
+            <span><a  href="">沪ICP备12008257号-2</a></span>
+
+            <a href="">关于161580</a><b>|</b>
+            <a href="">联系我们</a><b>|</b>
+            <a href="">合作伙伴</a><b>|</b>
+            <a href="">诚征英才</a><b>|</b>
+            <a href="">用户建议</a>
+</div>
+<p align="center"><a href=""><img src="image/qw.jpg"></a></p>
+<p class="bb">161580官方网站：161580.com | 全国统一服务热线：4000-161580  |  在线咨询  </p>
+
+<p class="bbb">161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。
+<br/>
+</p>
+<p class="bbbb">
+    美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿
+
+
+
+</p>
+</body>
+</html>
