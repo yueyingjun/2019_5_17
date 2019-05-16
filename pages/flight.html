@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>民航</title>
+    <link rel="stylesheet" href="../css/flight.css">
+    <script>
+
+        window.onload = function () {
+            var banner = document.querySelectorAll(".banner")
+            var gan = document.querySelectorAll(".gan")
+            var num = 0
+          /*  s = document.querySelectorAll(".show");*/
+
+            setInterval(function () {
+
+                if(num==2){
+                    num = 0
+                }
+                for (var i = 0;i<banner.length;i++) {
+                    banner[i].style.display = "none"
+                    gan[i].style.background = "black"
+                }
+                banner[num].style.display = "block"
+                gan[num].style.background = "orange"
+
+                num++
+            },3000)
+
+
+
+        }
+      /*  var c = document.querySelectorAll(".city")*/
+
+        function f(ev) {
+            /*获取点击的content属性的值*/
+            var evcontent = ev.getAttribute("content");
+            /*获取id为指定的一个标签*/
+            var target = document.getElementById(evcontent)
+            var a = target.getAttribute("id")
+
+            /*获取我的票展示*/
+            var show = document.querySelectorAll(".show")
+            for(var i=0;i<show.length;i++){
+                /*获取票里面的某个块的内容*/
+                var a1 = show[i].getAttribute("id");
+                if(a1==a){
+                    /*id相等的东西显示出来，其他的不要*/
+                    target.style.display = "block"
+
+                }else{
+                    document.getElementById(a1).style.display="none"
+                }
+            }
+
+
+        }
+
+        function f2(ev) {
+            /*获取点击的content属性的值*/
+            var evcontent = ev.getAttribute("content");
+            /*获取id为指定的一个标签*/
+            var target = document.getElementById(evcontent)
+            var a = target.getAttribute("id")
+            /*获取我的票展示*/
+            var show = document.querySelectorAll(".te")
+            for(var i=0;i<show.length;i++){
+                /*获取票里面的某个块的内容*/
+                var a1 = show[i].getAttribute("id");
+                if(a1==a){
+                    /*id相等的东西显示出来，其他的不要*/
+                    target.style.display = "block"
+
+                }else{
+                    document.getElementById(a1).style.display="none"
+                }
+            }
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <img src="../images/pingtai.jpg">
+    </div>
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <a href="" class="active">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航咨讯</a>
+                <a href="">民航问答</a>
+            </div>
+            <div class="right">
+                <a href=""><spane class="login">&nbsp;&nbsp;&nbsp;&nbsp;</spane>登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心
+                    <span class="sanjiao"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--&lt;!&ndash;热门城市->-->
+    <div class="hot">
+        <span >热门城市：</span>
+        <a href="" >深圳</a>
+        <a href="" >北京</a>
+        <a href="" >上海</a>
+        <a href="" >广州</a>
+        <a href="" >南京</a>
+        <a href="" >天津</a>
+        <a href="" >武汉</a>
+        <a href="" >长沙</a>
+        <a href="" >昆明</a>
+        <a href="" >贵阳</a>
+        <a href="" >成都</a>
+        <a href="" >重庆</a>
+        <a href="" >海口</a>
+        <a href="" >哈尔滨</a>
+        <a href="" >更多</a>
+    </div>
+<!--轮播图 -->
+    <div class="banners">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+        <div class="gan gan1"></div>
+        <div class="gan gan2"></div>
+    </div>
+<!-- 购票流程--->
+    <div class="liucheng">
+        <!--购票流程文字-->
+        <div class="wenzi">
+            <h2>购票流程</h2>
+        </div>
+        <ul class="left_right">
+            <li>
+                <div class="tu">
+                    <div class="hang"></div>
+                </div>
+                <div class="title">
+                    <div class="title_up">
+                        航班查询
+                    </div>
+                    <div class="title_down">
+                        选择出行航班
+                    </div>
+                </div>
+                <!--放箭头-->
+                <div class="jian"></div>
+            </li>
+            <li>
+                <div class="tu">
+                    <div class="ding"></div>
+                </div>
+                <div class="title">
+                    <div class="title_up">
+                        提交订单
+                    </div>
+                    <div class="title_down">
+                        登记乘机人和联系人
+                    </div>
+                </div>
+                <!--放箭头-->
+                <div class="jian"></div>
+
+            </li>
+            <li>
+                <div class="tu">
+                    <div class="zai"></div>
+                </div>
+                <div class="title">
+                    <div class="title_up">
+                        在线支付
+                    </div>
+                    <div class="title_down">
+                        支付机票款
+                    </div>
+                </div>
+                <!--放箭头-->
+                <div class="jian"></div>
+            </li>
+            <li>
+                <div class="tu">
+                    <div class="wu"></div>
+                </div>
+                <div class="title">
+                    <div class="title_up">
+                        无需取票
+                    </div>
+                    <div class="title_down">
+                        凭电子客票换登记牌
+                    </div>
+                </div>
+                <!--放箭头-->
+                <div class="jian"></div>
+            </li>
+            
+        </ul>
+    </div>
+    <!--订单-管理-->
+    <div class="dingdan">
+        <table>
+            <tr>
+                <td ><span class="t11">&nbsp;&nbsp;&nbsp;</span>订单管理</td>
+                <td ><span class="t12">&nbsp;&nbsp;&nbsp;</span>支付中心</td>
+            </tr>
+            <tr>
+                <td ><span class="t21">&nbsp;&nbsp;&nbsp;</span>价格趋势</td>
+                <td ><span class="t22">&nbsp;&nbsp;&nbsp;</span>机票验真</td>
+            </tr>
+            <tr>
+                <td ><span class="t31">&nbsp;&nbsp;&nbsp;</span>航班动态</td>
+                <td ><span class="t32">&nbsp;&nbsp;&nbsp;</span>新手指南</td>
+            </tr>
+        </table>
+
+        <div class="zixun">
+            <div class="l">
+                <div class="t">
+                    <h3>最新资讯</h3>
+                    <div class="gengduo">
+                        <h5>更多</h5>
+                        <span class="duo">&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+
+                    <a href="">简单了解一下金鹏航空官网机票购买流程</a>
+                    <a href="">东方航空去哪儿网合作举办“校园旅行家”</a>
+                    <a href="">网上买飞机票为什么只能买9张，10人</a>
+                    <a href="">想知道南方航空机票购买流程，南航手机</a>
+
+
+            </div>
+
+            <div class="r">
+                <div class="t">
+                    <h3>最新资讯</h3>
+                    <div class="gengduo">
+                        <h5>更多</h5>
+                        <span class="duo">&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                </div>
+
+                <a href="">带你认识飞机经停是什么意思</a>
+                <a href="">12306机票网上订票官网请上民航在</a>
+                <a href="">1岁婴儿及机票怎么买 能够从网上买婴</a>
+                <a href="">了解订机票用什么软件好对你出门旅游帮</a>
+
+
+            </div>
+
+        </div>
+    </div>
+<!--热门航线预定-->
+    <div class="hangxian">
+        <div class="flight_title">
+            <h2>热门航线预定</h2>
+            <span class="city" onclick="f(this)" content="quanguo">全国</span>
+            <span class="city" onclick="f(this)" content="shenzhen">深圳</span>
+            <span class="city"  onclick="f(this)" content="beijing">北京</span>
+            <span class="city"  onclick="f(this)" content="shanghai">上海</span>
+            <span class="city"  onclick="f(this)" content="guangzhou">广州</span>
+            <span class="city"  onclick="f(this)" content="wuhan">武汉</span>
+            <span class="city"  onclick="f(this)" content="chengdu">成都</span>
+            <span class="city"  onclick="f(this)" content="haikou">海口</span>
+            <span class="city"  onclick="f(this)" content="chongqing">重庆</span>
+            <span class="city"  onclick="f(this)" content="shenyang">沈阳</span>
+        </div>
+        <hr />
+    </div>
+    <div class="out">
+        <div class="show " id="quanguo">
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>昆明
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥399</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>昆明
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥399</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>武汉
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>上海浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>北京
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    全国<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+        </div>
+        <div class="show shenzhen" id="shenzhen">
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>昆明
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥399</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>武汉
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>上海浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>北京
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    深圳<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="show beijing"  id="beijing">
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>海口
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>武汉
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>上海浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>北京
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    北京<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+
+        </div>
+        <div class="show shanghai"  id="shanghai">
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>海口
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>武汉
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>上海浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>上海
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    上海<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+        </div>
+        <div class="show guangzhou"  id="guangzhou">
+
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>海口
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>武汉
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>广州浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>广州
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    广州<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+        </div>
+        <div class="show wuhan"  id="wuhan">
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>海口
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>武汉
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>武汉浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>武汉
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    武汉<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+        </div>
+        <div class="show chengdu" id="chengdu">
+
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>海口
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>成都
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>成都浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>成都
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>成都
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    成都<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+        </div>
+        <div class="show haikou" id="haikou">
+
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>海口
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>海口
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>海口
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>海口浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>海口
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>海口
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    海口<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+        </div>
+        <div class="show chongqing" id="chongqing">
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>重庆
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    重庆<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+        </div>
+        <div class="show shenyang" id="shenyang">
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    10月09日
+                    <br>
+                    票价：
+                    <span>￥427</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    10月15日
+                    <br>
+                    票价：
+                    <span>￥450</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>兰州
+                    <br>
+                    10月22日
+                    <br>
+                    票价：
+                    <span>￥500</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    09月11日
+                    <br>
+                    票价：
+                    <span>￥240</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    06月12日
+                    <br>
+                    票价：
+                    <span>￥749</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳浦东
+                    <br>
+                    06月07日
+                    <br>
+                    票价：
+                    <span>￥518</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    05月27日
+                    <br>
+                    票价：
+                    <span>￥748</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥410</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>沈阳
+                    <br>
+                    10月11日
+                    <br>
+                    票价：
+                    <span>￥470</span>
+                </div>
+            </a>
+            <a href="">
+                <div class="piao">
+                    沈阳<span class="dizhi"></span>郑州
+                    <br>
+                    09月03日
+                    <br>
+                    票价：
+                    <span>￥520</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+<!--热门航空公司-->
+    <div class="des">
+        <h2>热门航空公司</h2>
+        <!--小箭头-->
+        <div class="rj">
+
+        </div>
+        <hr/>
+
+    </div>
+    <!--图标开始描述-->
+    <div class="out">
+        <div class="guoji">
+            <div class="guojileft">
+                <div class="guojitu"></div>
+                <div class="guojizi">
+                    中国国际航空公司
+                </div>
+            </div>
+            <div class="guojitext">
+                中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。
+            </div>
+        </div>
+        <!--其他航空公司-->
+        <div class="q">
+            <div class="qita">
+                <div class="qitatu nf">
+                    <div class="qitazi">中国南方航空公司</div>
+                </div>
+
+            </div>
+            <div class="qita">
+                <div class="qitatu df">
+                  <div class="qitazi">中国东方航空公司</div>
+                </div>
+            </div>
+            <div class="qita">
+                <div class="qitatu hn">
+                     <div class="qitazi">海南航空公司</div>
+                </div>
+            </div>
+            <div class="qita">
+                <div class="qitatu sz">
+                  <div class="qitazi">深圳航空公司</div>
+                </div>
+            </div>
+            <div class="qita">
+                <div class="qitatu sc">
+                     <div class="qitazi">四川航空公司</div>
+                </div>
+            </div>
+            <div class="qita">
+                <div class="qitatu cq">
+                  <div class="qitazi">春秋航空公司</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--热门国际机场-->
+    <div class="san">
+        <div class="jichang">
+            <div class="rtop">
+                <h3>热门国际机场</h3>
+                <div class="aa">
+                    <h5>全球机场</h5>
+                    <span class="duo">&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <hr>
+            </div>
+            <div class="tbootm">
+                <table border="0">
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                    <tr><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td><td><span>&nbsp;&nbsp;&nbsp;</span><a href=" ">香港赤腊角机场</a></td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="zuixin">
+            <div class="rtop">
+                <h3>最新客户咨询</h3>
+                <div class="aa">
+                    <h5>更多</h5>
+                    <span class="duo">&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <hr>
+            </div>
+            <div class="tbootm2">
+                <span class="time">2019/5/16  17:57:21</span>
+                <span class="d">&nbsp;&nbsp;&nbsp;</span><a href=" ">护照可以订机票登记吗</a>
+                <span  class="time">2019/5/16  17:57:21</span>
+                <span  class="d">&nbsp;&nbsp;&nbsp;</span><a href=" ">你好，请问出生两个月的婴儿应该在网上怎么</a>
+                <span  class="time">2019/5/16  17:57:21</span>
+                <span  class="d">&nbsp;&nbsp;&nbsp;</span><a href=" ">你好我现在有事情飞机赶不上了能改签一下吗</a>
+                <span  class="time">2019/5/16  17:57:21</span>
+                <span  class="d">&nbsp;&nbsp;&nbsp;</span><a href=" ">温州到徐州的机票哪里买</a>
+                <span  class="time">2019/5/16  17:57:21</span>
+                <span  class="d">&nbsp;&nbsp;&nbsp;</span><a href=" ">临西至哈尔滨</a>
+                <span  class="time">2019/5/16  17:57:21</span>
+                <span  class="d">&nbsp;&nbsp;&nbsp;</span><a href=" ">显示出票没有票号吗</a>
+            </div>
+
+        </div>
+        <div class="tejia">
+            <div class="hangxian">
+                <div class="flight_title">
+                    <h2>国际特价</h2>
+                    <span class="city" onclick="f2(this)" content="beimei">北美</span>
+                    <span class="city" onclick="f2(this)" content="yazhou">亚洲</span>
+                    <span class="city"  onclick="f2(this)" content="ouzhou">欧洲</span>
+                </div>
+                <hr />
+            </div>
+            <div class="tjpiao">
+                <!--北美特价-->
+                <div class="show beimei te"  id="beimei" >
+                    <a href="">
+                        <div class="piao">
+                            上海<span class="dizhi"></span>华盛顿
+                            <br>
+                            10月09日
+                            <br>
+                            票价：
+                            <span>￥1395</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="piao">
+                            北京<span class="dizhi"></span>洛杉矶
+                            <br>
+                            10月15日
+                            <br>
+                            票价：
+                            <span>￥2950</span>
+                        </div>
+                    </a>
+                </div>
+    <!--亚洲特价-->
+                <div class="show yazhou te"  id="yazhou">
+                    <a href="">
+                        <div class="piao">
+                            广州<span class="dizhi"></span>首尔
+                            <br>
+                            10月09日
+                            <br>
+                            票价：
+                            <span>￥1395</span>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="piao">
+                            北京<span class="dizhi"></span>东京
+                            <br>
+                            10月15日
+                            <br>
+                            票价：
+                            <span>￥2950</span>
+                        </div>
+                    </a>
+                </div>
+<!--欧洲-->
+                <div class="show ouzhou te"  id="ouzhou">
+                    <a href="">
+                        <div class="piao">
+                            西安咸阳<span class="dizhi"></span>伦敦
+                            <br>
+                            10月09日
+                            <br>
+                            票价：
+                            <span>￥1395</span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+<!--蓝色的字，支付安全那-->
+    <div class="lanse">
+        <ul class="left_right">
+            <li>
+                <div class="tu">
+                    <div class="zhi"></div>
+                </div>
+                <div class="title_up">
+                    支付安全
+                    <br>
+                    在线支付100%认证
+                </div>
+                <!--放箭头-->
+            </li>
+            <li>
+                <div class="tu">
+                    <div class="shi"></div>
+                </div>
+                <div class="title_up">
+                    实时同步
+                    <br>
+                    全球票联网售票
+                </div>
+
+            </li>
+            <li>
+                <div class="tu">
+                    <div class="quan"></div>
+                </div>
+                <div class="title_up">
+                    全天服务
+                    <br>
+                    7*24小时专业客服人员为
+                </div>
+            </li>
+            <li>
+                <div class="tu">
+                    <div class="fangbian"></div>
+                </div>
+                <div class="title_up">
+                    方便快捷
+                    <br>
+                    电子客票，身份证直接换登
+                </div>
+            </li>
+        </ul>
+    </div>
+<!--新手上路、付款方式、旅客保障-->
+<div class="xfl">
+    <div class="x">
+        <h4>新手上路</h4>
+        <a href="">-查询预订</a>
+        <a href="">-订单填写</a>
+        <a href="">-支付出票</a>
+    </div>
+
+    <div class="x">
+        <h4>付款方式</h4>
+        <a href="">-网上银行</a>
+        <a href="">-微信支付</a>
+        <a href="">-信用卡</a>
+    </div>
+
+    <div class="x">
+        <h4>旅客保障</h4>
+        <a href="">-航协认证</a>
+        <a href="">-支付出票</a>
+        <a href="">-安全保障</a>
+    </div>
+
+    <div class="x">
+        <h4>常见问题</h4>
+        <a href="">-了解多彩杭州</a>
+        <a href="">-关于南昌昌北</a>
+        <a href="">-网上买票</a>
+    </div>
+    <div class="x">
+        <h4>关于我们</h4>
+        <a href="">-联系我们</a>
+        <a href="">-网站介绍</a>
+        <a href="">-公司简介</a>
+    </div>
+    <div class="x">
+        <h4>服务热线</h4>
+        <div class="call"></div>
+    </div>
+</div>
+
+<!--底部-->
+    <div class="footer">
+            <em>© 2019 http://www.161580.com 民航在线</em>
+            <b>|</b>
+            <span><a  href="http://www.miibeian.gov.cn" target="_blank"  rel="nofollow">沪ICP备12008257号-2</a></span>
+
+            <a href=" " >关于161580</a><b>|</b>
+            <a href=" " >联系我们</a><b>|</b>
+            <a href="" >合作伙伴</a><b>|</b>
+            <a href="" >诚征英才</a><b>|</b>
+            <a href="" >用户建议</a>
+    </div>
+    <div class="img">
+        <img src="../images/jingcha.jpg" alt="">
+    </div>
+
+    <p class="jiewei">
+        <span style="color: #999999">
+        161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。
+        通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。
+        订火车票上12306订机票最便宜的网站，上中国民航机票网。
+        </span>
+        <br>
+
+    <span>
+
+
+    友情链接QQ434441778:
+
+    美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿
+    </span>
+</p>
+
+</body>
+</html>
