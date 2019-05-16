@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+           里面的内容将外面的容器撑开
+           默认的宽度是浏览器的宽度
+           默认的高度是没有
+
+           当一个元素浮动以后，层级提高了，外面的容器就撑不起来了
+           1.如果一个元素浮动以后并且父元素没有指定高度，那么父元素是撑不开的
+             就会导致后面的元素出现排列错误，解决方式如下：
+             a.给父元素设置高度（麻烦，需要计算）
+             b.清除浮动带来的问题
+             c.可以给父元素设置一个属性 overflow:hidden;
+           2.float:left 第一个浮动的元素之后元素会一次靠在前一个元素的左上角
+             父元素剩下的空间不足以放下后面的元素的时候，后面的元素会换行处理
+           3.在使用浮动的时候，要保证同一行浮动的元素的高度要统一，否则会出现
+             排列错乱的情况
+         */
+        .box{
+            border: 1px solid red;
+            overflow:hidden;
+            /*
+               overflow 对于超出的内容做处理 visible hidden scroll auto
+             */
+        }
+        .box .inner:nth-child(1){
+            float: left;
+            width: 200px;height: 200px;border: 1px solid blue;
+        }
+        .box .inner:nth-child(2){
+            float: left;
+            width: 100px;height: 100px;border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        为了让某一个元素和其他元素共享一行，并且能够设置宽高，还能忽略空格
+        达到布局的目的
+    -->
+    <div class="box">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <!--
+        <div style="clear: both"></div>
+        -->
+    </div>
+    <div>
+        123
+    </div>
+</body>
+</html>
