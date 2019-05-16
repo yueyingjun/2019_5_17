@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <link rel="stylesheet" href="css/demo1.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="orange"
+                num++
+            },3000)
+        }
+    </script>
+
+</head>
+<header>
+    <img src="picture/top2.png" alt="">
+    <img src="picture/top1.jpg" alt="">
+</header>
+<body>
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="" class="active">首页</a>
+            <a href="">国内机票</a>
+            <a href="">国际机票</a>
+            <a href="">民航咨询</a>
+            <a href="">民航问答</a>
+        </div>
+        <div class="right">
+            <a href="" class="login">登录</a>
+            <a href="">注册</a>
+            <a href="">用户中心</a>
+            <div class="sanjiao"></div>
+        </div>
+    </div>
+</div>
+<!--热门城市-->
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner lunbo1"></div>
+    <div class="banner lunbo2"></div>
+    <div class="btns">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+    </div>
+
+</div>
+<!--购票流程-->
+<!--div和ul从布局上看没有区别，都是容器-->
+<div class="piao">
+    <div class="piao-left">
+        <h3 >购票流程：</h3>
+    </div>
+    <ul class="piao-right">
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in-1">
+
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">
+                    航班查询
+                </div>
+                <div class="text-info">
+                    选择出行航班
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in-2">
+
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">
+                    提交订单
+                </div>
+                <div class="text-info">
+                    登记乘机人和联系人
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in-3">
+
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">
+                    在线支付
+                </div>
+                <div class="text-info">
+                    支付机票款
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in-4">
+
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">
+                    无需取票
+                </div>
+                <div class="text-info">
+                    凭电子客票号换登机牌
+                </div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+    </ul>
+</div>
+
+
+<!--new-->
+<div class="new">
+    <div class="new1">
+        <a class="no1">订单管理</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--热门航线预订-->
+<div class="hangxian">
+    <div class="hang">
+        <div class="left">
+            <a href="" >热门航线预订</a>
+        </div>
+        <div class="right">
+            <a href="" >全国</a>
+            <a href="">深圳</a>
+            <a href="" >北京</a>
+            <a href="" >上海</a>
+            <a href="" >广州</a>
+            <a href="" >武汉</a>
+            <a href="" >成都</a>
+            <a href="" >海口</a>
+            <a href="" >重庆</a>
+            <a href="" >沈阳</a>
+
+        </div>
+    </div>
+
+<!--热门航线票信息-->
+    <div class="ticktenBox">
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 海口</a>
+                <a class="jiantou"></a>
+                <a class="">郑州</a>
+            </div>
+            <div class="date">12月16日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3"> 150</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 海口</a>
+                <a class="jiantou"></a>
+                <a class="">长沙</a>
+            </div>
+            <div class="date">10月15日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">110</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 武汉</a>
+                <a class="jiantou"></a>
+                <a class="">神龙架</a>
+            </div>
+            <div class="date">05月18日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">117</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 银川</a>
+                <a class="jiantou"></a>
+                <a class="">昆明</a>
+            </div>
+            <div class="date">05月18日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">220</a>
+            </div>
+        </div> <div class="tickten quanguo">
+        <div class="city">
+            <a class=""> 太原</a>
+            <a class="jiantou"></a>
+            <a class="">昆明</a>
+        </div>
+        <div class="date">11月11日</div>
+        <div class="money">
+            <a class="type"></a>
+            <a class="type1">票价：</a>
+            <a class="type2"> ￥</a>
+            <a class="type3">250</a>
+        </div>
+    </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 南京</a>
+                <a class="jiantou"></a>
+                <a class="">上海浦东</a>
+            </div>
+            <div class="date">07月03日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">150</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 西安</a>
+                <a class="jiantou"></a>
+                <a class="">上海浦东</a>
+            </div>
+            <div class="date">01月25日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">200</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 合肥</a>
+                <a class="jiantou"></a>
+                <a class="">海口</a>
+            </div>
+            <div class="date">05月28日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">279</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 天津</a>
+                <a class="jiantou"></a>
+                <a class="">三亚</a>
+            </div>
+            <div class="date">05月22日</div>
+            <div class="money">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">399</a>
+            </div>
+        </div>
+        <div class="tickten quanguo">
+            <div class="city">
+                <a class=""> 银川</a>
+                <a class="jiantou"></a>
+                <a class="">大连</a>
+            </div>
+            <div class="date">06月23日</div>
+            <div class="money ">
+                <a class="type"></a>
+                <a class="type1">票价：</a>
+                <a class="type2"> ￥</a>
+                <a class="type3">209</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--热门航空公司-->
+<div class="company">
+    <div class="company1">
+            <a href="" >热门航空公司</a>
+    </div>
+</div>
+<div class="picture">
+    <div class="picture1">
+        <div class="picture11"></div>
+        <div class="picture12">中国国际航空公司</div>
+    </div>
+    <div class="picture2">
+
+    </div>
+</div>
+
+
+</body>
+</html>
