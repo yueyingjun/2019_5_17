@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航栏</title>
+    <link rel="stylesheet" href="css/daohang.css">
+    <script>
+        window.onload = function () {
+            var pic = document.querySelectorAll(".pic");
+            var btn = document.querySelectorAll(".btn");
+            var num=0;
+            setInterval(function () {
+                num++;
+                if(num == 2){
+                    num = 0;
+                }
+                for(var i=0;i<pic.length;i++){
+                    pic[i].style.display="none";
+                    btn[i].style.background="#000";
+                }
+                pic[num].style.display="block";
+                btn[num].style.background="orange";
+            },3000)
+
+        }
+    </script>
+
+</head>
+<!--头部-->
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="" >
+    </div >
+    <div class="head">
+        <img src="img/head.jpg" alt="" >
+    </div>
+</header>
+
+
+<body>
+<!--导航栏-->
+    <div class="one">
+        <div class="two">
+            <div class="left">
+                <a href="" class="active">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航咨询</a>
+                <a href="">民航问答</a>
+            </div>
+            <div class="right">
+                <a href="" class="back">登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心</a>
+                <div class="sanjiao">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--热门城市-->
+    <div class="hot">
+        <div class="hotcity">热门城市：</div>
+        <div class="city">
+            <a href="">深圳</a>
+            <a href="">北京</a>
+            <a href="">上海</a>
+            <a href="">广州</a>
+            <a href="">南京</a>
+            <a href="">天津</a>
+            <a href="">武汉</a>
+            <a href="">长沙</a>
+            <a href="">昆明</a>
+            <a href="">贵阳</a>
+            <a href="">成都</a>
+            <a href="">重庆</a>
+            <a href="">海口</a>
+            <a href="">哈尔滨</a>
+            <a href="">更多</a>
+        </div>
+    </div>
+<!--轮播图-->
+    <div class="whole-pictures">
+            <div class="pic pic1"></div>
+            <div class="pic pic2"></div>
+            <div class="but">
+                <div class="but1 btn"></div>
+                <div class="but2 btn" ></div>
+            </div>
+
+    </div>
+<!--购票流程-->
+    <div class="buy">
+        <div class="buy-left">
+            <h1>购票流程：</h1>
+        </div>
+        <ul class="buy-right">
+            <li class="buy-right-1">
+
+                    <div class="icon-out-1">
+                        <div class="icon-in-1"></div>
+                    </div>
+
+
+                <div class="text-1">
+                    <div class="text-title-1">
+                        航班查询
+                    </div>
+                    <div class="text-info-1">
+                        选择出行航班
+                    </div>
+                </div>
+                <div class="buy-jiantou"></div>
+            </li>
+            <li class="buy-right-2">
+
+                <div class="icon-out-1">
+                    <div class="icon-in-2"></div>
+                </div>
+
+
+                <div class="text-1">
+                    <div class="text-title-2">
+                        提交订单
+                    </div>
+                    <div class="text-info-2">
+                        登记乘车人和联系人
+                    </div>
+                </div>
+                <div class="buy-jiantou"></div>
+            </li>
+            <li class="buy-right-3">
+
+                <div class="icon-out-1">
+                    <div class="icon-in-3"></div>
+                </div>
+
+
+                <div class="text-1">
+                    <div class="text-title-3">
+                        在线支付
+                    </div>
+                    <div class="text-info-3">
+                        支付机票款
+                    </div>
+                </div>
+                <div class="buy-jiantou"></div>
+            </li>
+            <li class="buy-right-4">
+
+                <div class="icon-out-1">
+                    <div class="icon-in-4"></div>
+                </div>
+
+
+                <div class="text-1">
+                    <div class="text-title-4">
+                        无需取票
+                    </div>
+                    <div class="text-info-4">
+                        凭电子客票号换登机牌
+                    </div>
+                </div>
+                <div class="buy-jiantou"></div>
+            </li>
+        </ul>
+    </div>
+<!--表格-->
+    <div class="biaoge">
+
+        <ul class="biaoge-left">
+            <a href="">
+                <li>
+                    <div class="li-left"></div>
+                    <div class="li-right">
+                        订单管理
+                        <div class="li-right-new"></div>
+                    </div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <div class="li-left2"></div>
+                    <div class="li-right2">
+                        支付中心
+                    </div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <div class="li-left3"></div>
+                    <div class="li-right3">
+                        价格趋势
+                    </div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <div class="li-left4"></div>
+                    <div class="li-right4">
+                        机票验真
+                    </div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <div class="li-left5"></div>
+                    <div class="li-right5">
+                        航班动态
+                    </div>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <div class="li-left6"></div>
+                    <div class="li-right6">
+                        新手指南
+                    </div>
+                </li>
+            </a>
+        </ul>
+        <div class="biaoge-right">
+            <div class="biaoge-right-1">
+                <div class="right-top">
+                    <h3>最新咨询</h3>
+                    <a href="">更多>></a>
+                </div>
+                <div class="right-bottom">
+                    <a  href="" class="yihang">简单了解一下金鹏航空官网机票购买流程</a>
+                    <a  href="" class="erhang">东方航空去哪儿网合作举办“校园旅行家</a>
+                    <a  href="" class="sanhang">网上买飞机票为什么只能买9张,10人</a>
+                    <a  href="" class="sihang">想知道南方航空机票购买流程，南航手机</a>
+                </div>
+            </div>
+            <div class="biaoge-right-2">
+                <div class="right-top">
+                    <h3>网站公告</h3>
+                    <a href="">更多>></a>
+                </div>
+                <div class="right-bottom1">
+                    <a  href="" class="yihang1">带你认识飞机经停是什么意思</a>
+                    <a  href="" class="erhang1">12306机票网上订票官网请上民航在</a>
+                    <a  href="" class="sanhang1">1岁婴儿机票怎么买 能够从网上购买婴</a>
+                    <a  href="" class="sihang1">了解订机票用什么软件好对你出门旅游帮</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+<!--热门航线预定-->
+    <div class="hotlink">
+        <div class="hotlinkone">
+            <div class="hotlinkleft">
+                热门航线预订
+            </div>
+            <div class="hotlinkright">
+                <a href="" class="active">全国</a>
+                <a href="">深圳</a>
+                <a href="">北京</a>
+                <a href="">上海</a>
+                <a href="">广州</a>
+                <a href="">武汉</a>
+                <a href="">成都</a>
+                <a href="">海口</a>
+                <a href="">重庆</a>
+                <a href="">沈阳</a>
+            </div>
+
+        </div>
+        <div class="hotlinktwo">
+            <div class="fly1">
+                <a href="">
+                    <div class="fly11">
+                        <div class="top">
+                            <div class="zi1">海口</div>
+                            <div class="jiantou"></div>
+                            <div class="zi2">郑州</div>
+                        </div>
+                        <div class="middle">
+                            <div class="zi3">12月16日</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="zi4">票价：</div>
+                            <div class="zi5">￥</div>
+                            <div class="zi6">150</div>
+                            <div class="feiji"></div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="fly2">
+                <div class="fly21">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+            </div>
+        </div>
+            <div class="fly3">
+                <div class="fly31">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly4">
+                <div class="fly41">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly5">
+                <div class="fly51">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly6">
+                <div class="fly61">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly7">
+                <div class="fly71">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly8">
+                <div class="fly81">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly9">
+                <div class="fly91">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fly10">
+                <div class="fly101">
+                    <div class="top">
+                        <div class="zi1">海口</div>
+                        <div class="jiantou"></div>
+                        <div class="zi2">长沙</div>
+
+                    </div>
+                    <div class="middle">
+                        <div class="zi3">10月15日</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="feiji"></div>
+                        <div class="zi4">票价：</div>
+                        <div class="zi5">￥</div>
+                        <div class="zi6">110</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+<!--热门航空公司-->
+    <div class="company">
+        <div class="c-top">
+            <h2>热门航空公司</h2>
+            <div class="c-top-img"></div>
+        </div>
+        <div class="c-tom">
+            <div class="c-t-left">
+                <div class="zhengti">
+                    <a href="">
+                        <div class="c-t-l-picture">
+                        </div>
+                    </a>
+                    <div class="c-t-l-timu">
+                        <span>中国国际航空公司</span>
+                    </div>
+                </div>
+                <div class="c-t-l-wenzi">
+                    <span>中国国际航空股份有限公司简称“国航”，
+                        英文名称为“Air China Limited”，简称“Air China”，
+                        其前身 中国国际航空公司成立于1988年。
+                        根据国务院批准通过的《民航体制改革方案》，
+                        2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，
+                        成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，
+                        组建新的中国国际航空公司。</span>
+                </div>
+                <div class="c-t-l-yinhao"></div>
+
+            </div>
+            <ul class="c-t-right">
+                <li>
+                    <div class="yi">
+                        <div class="tu1"></div>
+                        <div class="heibian">
+                            <span>中国南方航空公司</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="yi">
+                        <div class="tu2"></div>
+                        <div class="heibian">
+                            <span>中国东方航空公司</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="yi">
+                        <div class="tu3"></div>
+                        <div class="heibian">
+                            <span>海南航空公司</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="yi">
+                        <div class="tu4"></div>
+                        <div class="heibian">
+                            <span>深圳航空公司</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="yi">
+                        <div class="tu5"></div>
+                        <div class="heibian">
+                            <span>四川航空公司</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="yi">
+                        <div class="tu6"></div>
+                        <div class="heibian">
+                            <span>春秋航空公司</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--热门国际机场 最新客户咨询 国际特价-->
+    <div class="airport">
+        <div class="a-left">
+            <div class="a-l-top">
+                <h2>热门国际机场</h2>
+                <a href="">全球机场</a>
+                <div class="a-l-t-tu"></div>
+            </div>
+            <ul class="a-l-bot">
+
+                <a href="" class="yi">香港赤腊角机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="er">首尔仁川机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="san">首尔金浦机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="si">澳门国际机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="wu">东京羽田机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="liu">东京成田机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="qi">新加坡樟宜机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="ba">台北桃园中正机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="jiu">曼谷素万那普机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shi">曼谷廊曼机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shiyi">大阪伊丹机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shier">马尼拉国际机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shisan">胡志明市国际机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shisi">伦敦国际机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shiwu">吉隆坡国际机场
+                    <div class="xiaojiantou"></div>
+                </a>
+                <a href="" class="shiliu">釜山国际机场
+                    <div class="xiaojiantou"></div>
+                </a>
+            </ul>
+        </div>
+        <div class="a-middle">
+            <div class="a-l-top">
+                <h2>最新客户咨询</h2>
+                <a href="">更多</a>
+                <div class="a-l-t-tu"></div>
+            </div>
+            <ul class="a-m-bom">
+                <li>
+                    <span>2019/5/16 22:31:30</span>
+                    <a href="">怀孕28+6周可以坐飞机吗，还需要什么东...
+                        <div class="xiaojiantou1"></div>
+                    </a>
+                </li>
+                <li>
+                    <span>2019/5/16 22:00:35</span>
+                    <a href="">你好。怀孕7个月乘坐需要办理证明吗
+                        <div class="xiaojiantou1"></div>
+                    </a>
+                </li>
+                <li>
+                    <span>2019/5/16 21:59:07</span>
+                    <a href="">你好。怀孕7乘坐需要办理证明吗
+                        <div class="xiaojiantou1"></div>
+                    </a>
+                </li>
+                <li>
+                    <span>2019/5/16 21:35:27</span>
+                    <a href="">你好，小孩才32个月，没有身
+                        <div class="xiaojiantou1"></div>
+                    </a>
+                </li>
+                <li>
+                    <span>2019/5/16 17:57:21</span>
+                    <a href="">护照可以定机票登机嘛可以吗
+                        <div class="xiaojiantou1"></div>
+                    </a>
+                </li>
+                <li>
+                    <span>2019/5/16 14:44:39</span>
+                    <a href="">你好，请问出生两个月的婴儿应该在网上怎么...
+                        <div class="xiaojiantou1"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="a-right">
+            <div class="a-l-top-right">
+                <h2>国际特价</h2>
+                <div class="country">
+                    <a href="" class="active" style="">北美</a>
+                    <a href="" class="country1">亚洲</a>
+                    <a href="" class="country1">欧洲</a>
+                </div>
+            </div>
+            <div class="a-l-bom">
+                <div class="ul">
+                    <div class="fly21">
+                        <div class="top">
+                            <div class="zi1">海口</div>
+                            <div class="jiantou"></div>
+                            <div class="zi2">长沙</div>
+
+                        </div>
+                        <div class="middle">
+                            <div class="zi3">10月15日</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="feiji"></div>
+                            <div class="zi4">票价：</div>
+                            <div class="zi5">￥</div>
+                            <div class="zi6">110</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ul">
+                    <div class="fly21">
+                        <div class="top">
+                            <div class="zi1">海口</div>
+                            <div class="jiantou"></div>
+                            <div class="zi2">长沙</div>
+
+                        </div>
+                        <div class="middle">
+                            <div class="zi3">10月15日</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="feiji"></div>
+                            <div class="zi4">票价：</div>
+                            <div class="zi5">￥</div>
+                            <div class="zi6">110</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
