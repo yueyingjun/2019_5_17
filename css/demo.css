@@ -1,0 +1,619 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.box {
+    background: #3b8ed3;
+    overflow: hidden;
+}
+
+.box div.con {
+    width: 1200px;
+    margin: auto;
+}
+
+.box div.left {
+    float: left;
+}
+
+.box div.right {
+    position: relative;
+    float: right;
+    height: 44px;
+}
+
+div.box a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.box div.left a {
+    border-top: 4px solid #3b8ed3;
+    float: left;
+    padding: 10px 20px;
+}
+
+.box div.right a {
+    float: left;
+    padding: 14px 20px 10px;
+
+}
+
+.box div.left a.active {
+    border-top: 4px solid orange;
+    background-color: white;
+    color: #3b8ed3;
+}
+
+.box div.left a:hover {
+    background-color: white;
+    border-top: 4px solid orange;
+    color: #3b8ed3;
+}
+
+.box div.right a:hover {
+    background-color: #2f5991;
+}
+
+.box div.triangle {
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid #ffffff;
+    border-left: 5px solid #3b8ed3;
+    border-right: 5px solid #3b8ed3;
+}
+
+header {
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img.header {
+    height: 80px;
+}
+
+div.hotcities {
+    padding-left: 150px;
+    font-size: 14px;
+    background-color: rgba(180, 180, 180, 0.21);
+}
+
+span.hotcities {
+    margin: auto 3px;
+}
+
+a.cities {
+    color: #6264be;
+    margin: auto 2px;
+}
+
+div.banner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+
+div.banner1 {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/banner1.png") no-repeat center;
+    position: absolute;
+    top: 0;
+}
+
+div.banner2 {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/banner2.png") no-repeat center;
+    position: absolute;
+    top: 0;
+}
+
+div.ordersteps {
+    width: 1180px;
+    height: 80px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+div.order-left {
+    float: left;
+    width: 170px;
+    height: 100%;
+    text-align: center;
+
+
+}
+
+ul.order-right {
+    float: right;
+    width: 1010px;
+    height: 100%;
+
+}
+
+ul.order-right li {
+    float: left;
+    width: 25%;
+    height: 100%;
+
+
+}
+
+h3 {
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    margin: auto;
+}
+
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/**/
+ul.order-right div.icon {
+    position: relative;
+    float: left;
+    width: 28%;
+    height: 100%;
+
+}
+
+ul.order-right div.icon-out {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/icons2.png") -160px -126px;
+}
+
+ul.order-right div.icon-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul.order-right div.icon-in:hover {
+    animation: ani .2s ease;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+ul.order-right div.i1 {
+    background: url("../imgs/icons2.png") -134px -57px;
+}
+
+ul.order-right div.i2 {
+    background: url("../imgs/icons2.png") -185px -55px;
+}
+
+ul.order-right div.i3 {
+    background: url("../imgs/icons2.png") -237px -57px;
+}
+
+ul.order-right div.i4 {
+    background: url("../imgs/icons2.png") -290px -57px;
+}
+
+div.order-text {
+    float: left;
+    width: 54%;
+    height: 100%;
+    line-height: 200%;
+}
+
+div.order-text .order-title {
+
+    font-size: 20px;
+    color: #3b8ed3;
+    padding-top: 10px;
+
+
+}
+
+div.ordersteps div.arrow {
+
+    float: left;
+    width: 18%;
+    height: 100%;
+    background: url("../imgs/icons2.png") -360px -125px;
+}
+
+/*热门航线预定*/
+.hot-line {
+    position: relative;
+    margin: 35px auto;
+    height: 45px;
+    width: 1180px;
+    border-bottom: 3px solid #a2a2a2;
+}
+
+.hot-line div.left {
+    position: absolute;
+    bottom: 10px;
+    width: 30%;
+    float: left;
+    font-size: 28px;
+}
+
+
+.hot-line ul.right {
+    height: 100%;
+    width: 70%;
+    float: right;
+    font-size: 20px;
+}
+
+.hot-line ul.right li {
+    color: #000000;
+    float: left;
+    height: 100%;
+    width: 10%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.hot-line ul.right li:hover {
+    border-bottom: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+
+.hot-line ul.right li.active {
+    color: dodgerblue;
+    background: lightskyblue;
+}
+
+/*热门预定班次(未完成)*/
+.hot-flight {
+    margin: -30px auto 0px;
+    width: 1180px;
+    height: 300px;
+}
+
+.hot-flight div.out {
+    position: relative;
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+
+.hot-flight div.out div.in {
+    border: 1px solid #d0d0d0;
+    background: rgb(245, 246, 249);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+.hot-flight div.out div.in:hover {
+    background: #ffffff;
+    border-color: #3b8ed3;
+}
+
+.hot-flight div.out div.in a {
+    height: 100%;
+    width: 100%;
+}
+
+.hot-flight div.out div.in div.one {
+    height: 30px;
+    padding: 20px 20px 0;
+    font-size: 19px;
+}
+
+.hot-flight div.out div.in div.one div.first {
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hot-flight div.out div.in div.one div.arrow {
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    background: url("../imgs/icons.png") -20px -70px;
+}
+
+.hot-flight div.out div.in div.one div.second {
+    float: right;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hot-flight div.out div.in div.two {
+    width: 100%;
+    text-align: center;
+}
+
+.hot-flight div.out div.in div.three {
+
+
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
+    height: 40px;
+}
+
+.hot-flight div.out div.in div.three div.plane {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 18px;
+    left: 10px;
+    width: 35px;
+    background: url("../imgs/icons.png") -36px -106px;
+
+}
+
+.hot-flight div.out div.in div.three div.ticket-price {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 15px;
+    left: 38px;
+    font-size: 16px;
+}
+
+.hot-flight div.out div.in div.three div.dollor {
+    color: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    font-size: 16px;
+}
+
+.hot-flight div.out div.in div.three div.real-price {
+    color: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 7px;
+    left: 100px;
+    font-size: 26px;
+}
+
+/*购票流程下>*/
+div.order-bottom {
+    height: 240px;
+    width: 1180px;
+    margin: 20px auto 0;
+}
+
+div.order-bottom div.right-button {
+    float: left;
+    height: 100%;
+    width: 30%;
+    border-top: 1px solid #b9b3b0;
+}
+
+div.order-bottom div.right-button div.out {
+    border-bottom: 1px solid #b9b3b0;
+    border-left: 1px solid #b9b3b0;
+    box-sizing: border-box;
+    float: left;
+    height: 33.33%;
+    width: 50%;
+
+}
+
+div.order-bottom div.right-button div.out div.button-in {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+div.order-bottom div.right-button div.out div.button-icon {
+    float: left;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 17px;
+    left: 30px;
+}
+
+div.order-bottom div.right-button div.out div.button-icon:hover {
+    animation: ani .2s ease;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+div.order-bottom div.right-button div.out div.i1 {
+    background: url("../imgs/icons2.png") 0 -50px;
+}
+
+div.order-bottom div.right-button div.out div.i2 {
+    background: url("../imgs/icons2.png") 0 -120px;
+}
+
+div.order-bottom div.right-button div.out div.i3 {
+    background: url("../imgs/icons2.png") -70px -120px;
+}
+
+div.order-bottom div.right-button div.out div.i4 {
+    background: url("../imgs/icons2.png") 0 -190px;
+}
+
+div.order-bottom div.right-button div.out div.i5 {
+    background: url("../imgs/icons2.png") -70px -50px;
+}
+
+div.order-bottom div.right-button div.out div.i6 {
+    background: url("../imgs/icons2.png") -70px -190px;
+}
+
+div.order-bottom div.right-button div.out div.button-text {
+    float: right;
+    height: 100%;
+    width: 60%;
+    font-size: 18px;
+    line-height: 75px;
+    color: #000;
+}
+
+div.order-bottom div.left-news {
+    border: 1px solid #b9b3b0;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+
+div.order-bottom div.left-news div.half {
+    float: left;
+    height: 100%;
+    width: 50%;
+
+}
+
+div.order-bottom div.left-news div.news {
+    margin: 20px;
+}
+
+div.order-bottom div.left-news div.news div.title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top: 30px;
+}
+
+div.order-bottom div.left-news div.news div.title-left {
+    float: left;
+    font-size: 20px;
+}
+
+div.order-bottom div.left-news div.news div.right {
+    float: right;
+    position: absolute;
+    width: 80px;
+    top: 2px;
+    right: 0px;
+}
+
+div.order-bottom div.left-news div.news div.a {
+    width: 100%;
+    margin: 15px 0;
+}
+div.order-bottom div.left-news div.news div.a a:hover {
+    color: red;
+}
+/*热门航空公司*/
+div.hot-company{
+
+    height: 350px;
+    width: 1180px;
+    margin: auto;
+}
+div.hot-company div.company-left{
+    height: 100%;
+    width: 40%;
+    float: left;
+    background: #f4f4f4;
+}
+div.hot-company div.company-left div.left{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+div.hot-company div.company-left div.left div.container{
+
+    margin: 40px 10px 60px;
+
+}
+div.hot-company div.company-left div.left div.container div.out{
+    border: 2px solid red;
+    box-sizing: border-box;
+    height:200px;
+    width: 100%;
+    position: relative;
+    background-color: #cadfff;
+
+}
+
+div.hot-company div.company-left div.left div.container div.out div.in{
+    border: 2px solid red;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: url("");
+}
+
+div.hot-company div.company-left div.left div.container div.name{
+
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+div.hot-company div.company-left div.right{
+    height: 100%;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+div.hot-company div.company-left div.right div.text{
+    margin: 20px 10px 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-indent:14px;
+}
+
+div.hot-company div.company-left div.right div.icon{
+    position: absolute;
+    height:30px ;
+    width: 30px;
+    background: url("../imgs/icons2.png") -374px -270px;
+    bottom: 20px;
+    right: 20px;
+}
+
+div.hot-company div.company-right{
+    border: 2px solid red;
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+    float: right;
+}
+
+
