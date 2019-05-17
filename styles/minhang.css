@@ -416,7 +416,7 @@ a{
     width: 175px;
 }
 
-#hot-hangxian .right-tab {
+#hot-hangxian .right-tab1 {
     height: 44px;
     width: 800px;
     float: right;
@@ -430,7 +430,7 @@ a{
     padding: 0;
 }
 
-#hot-hangxian .right-tab a {
+#hot-hangxian .right-tab1 a {
     float: left;
     height: 43px;
     width: 80px;
@@ -441,13 +441,13 @@ a{
     color: rgb(85, 85, 85);
 }
 
-#hot-hangxian .right-tab .show {
+#hot-hangxian .right-tab1 .show {
     background: rgb(200, 227, 252);
     border-bottom: 2px solid #3b8de3;
     color: #3b8de3;
 }
 
-#hot-hangxian .right-tab a:hover {
+#hot-hangxian .right-tab1 a:hover {
     border-bottom: 2px solid #3b8de3;
     color: #3b8de3;
 }
@@ -808,9 +808,11 @@ div.hangxian:hover .to{
     width: 120px;
 }
 
-.tejia-menu .right {
+.tejia-menu .right-tab2 {
+    float: right;
     height: 45px;
-    width: 180px;
+    width: 182px;
+
 
 }
 
@@ -822,7 +824,7 @@ div.hangxian:hover .to{
     padding: 0;
 }
 
-.tejia-menu .right a {
+.tejia-menu .right-tab2 a {
     float: left;
     height: 44px;
     width: 60px;
@@ -831,21 +833,28 @@ div.hangxian:hover .to{
     text-align: center;
     line-height: 55px;
     color: rgb(85, 85, 85);
+
 }
 
-.tejia-menu .right .beimei {
+.tejia-menu .right-tab2 .beimei {
     background: rgb(200, 227, 252);
     border-bottom: 2px solid rgb(200, 227, 252);
     color: rgb(85,85,85);
 }
 
-.tejia-menu .right a:hover {
+.tejia-menu .right-tab2 a:hover {
     color: #3b8de3;
 }
 .tejia-all{
     float: left;
     width:481px ;
     height: 345px;
+    position: relative;
+}
+.tejia-hangxian{
+    width:481px ;
+    height: 345px;
+    position: absolute;
 }
 .footer{
     width: 100%;
