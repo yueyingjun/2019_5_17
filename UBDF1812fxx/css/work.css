@@ -959,6 +959,7 @@ body .active{
 }
 .internationalinfo .mod-hd .mod-more a {
     color: #666;
+    text-decoration: none;
 }
 .internationalinfo .jc-info, .internationalinfo2 .jc-info, .internationalinfo .jc-info2 {
     height: 300px;
