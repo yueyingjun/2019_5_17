@@ -15,6 +15,9 @@ h1 h2 h3 h4 h5 h6 ul li {
     font-size: 16px;
     list-style: none;
 }
+a{
+    color: #0055AA;
+}
 
 .box {
     width: 100%;
@@ -194,7 +197,6 @@ h1 h2 h3 h4 h5 h6 ul li {
     left: 0;
     top: 0;
 
-
 }
 
 .mod-bd {
@@ -247,6 +249,22 @@ body .nati {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 20px;
+
+}
+@keyframes pingyi {
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(5px);
+    }
+}
+.to:hover{
+    animation: pingyi .5s linear infinite;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+
 
 }
 
@@ -830,8 +848,8 @@ body .nati {
     position: relative;
 }
 .zx-left{
-    width: 420px;height: 453px;
-   
+    width: 400px;height: 453px;
+
 }
 .zx-lt-top{
     width: 100%;height: 60px;
@@ -844,12 +862,11 @@ body .nati {
     float: left;
 }
 .zx-tp-right{
-    width: 180px;height: 60px;
+    width: 120px;height: 60px;
     float: right;
 }
 .zx-lt-btm{
     width: 420px;height: 390px;
-    
 }
 .zx-bm-left{
     width: 49%;height:100% ;
@@ -891,23 +908,86 @@ body .nati {
     text-align: center;
 }
 .zx-center{
-    width: 420px;height: 453px;
-    position: absolute;left: 423px;top: 0;
-    border: 1px solid red;
+    width: 380px;height: 453px;
+    position: absolute;left: 402px;top: 0;
+
 }
-.internationalinfo {
-    width: 340px;
+.zx-ct-top {
+    width: 100%;
+    height: 60px;
     float: left;
-    margin-right: 20px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+
 }
+.zx-mod-hd{
+    width: 240px;height: 100%;
+    float: left;
+}
+.zx-mod-more{
+    width: 120px;height: 100%;
+    float: right;
+}
+.mod-more{
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 70px;
+    height: 40px;
+    float: right;
+    font-size: 12px;
+    text-align: center;
+}
+.mod-more  a {
+    float: left;
+    display: block;
+    padding-left: 12px;
+    text-decoration: none;
 
+}
+.zx-ct-btm{
+    width: 100%;height: 390px;
+    overflow: auto;
+}
+.zx-ct-btm a{
+    text-decoration: none;
+    color: #0055AA;
+}
+.zx-right{
+    width: 390px;height: 453px;
 
+    float: right;
+    position: absolute;right: 0;top: 0;
+}
+.tj-top{
+    width: 100%;
+    height: 60px;
+    float: left;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+}
+.tj-mod-bd{
+    float: right;
+    height: 60px;
+    width:260px ;
 
+}
+.tj-header{
+    width: 100px;height: 60px;
 
-
-
-
-
+}
+.tj-mod-bd a{
+    text-decoration: none;
+    float: left;
+    color: black;
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+}
 
 
 
