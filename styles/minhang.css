@@ -564,6 +564,7 @@ a{
 }
 .company-left .company-imgbox .company-img:hover{
     transform: scale(1.05);
+    cursor:pointer;
 }
 #ca3{
     background: url("../images/airpic/ca3.png") -10px -7px;
@@ -628,6 +629,7 @@ a{
 }
 .company-right .company-imgbox .company-img:hover{
     transform: scale(1.05);
+    cursor:pointer;
 }
 .company-right .company-imgbox .company-name{
     width: 220px;
