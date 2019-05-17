@@ -915,3 +915,185 @@ body .active{
     animation-fill-mode:forwards;
 
 }
+/*热门国际机场 最新资讯。。*/
+.main-wrap {
+    margin-top: 30px;
+    width: 1180px;
+    height: 400px;
+}
+.internationalinfo {
+    width: 340px;
+    float: left;
+    margin-right: 20px;
+}
+.internationalinfo .mod-hd, .internationalinfo2 .mod-hd {
+    height: 40px;
+    font-family:微软雅黑;
+    margin: 0px;
+    border-bottom: 2px solid rgb(204, 204, 204);
+}
+.internationalinfo .mod-hd h2 {
+    color: #555;
+    float: left;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    width: 60%;
+}
+.internationalinfo .mod-hd .mod-more {
+    font-family: "simsun";
+    padding: 0 15px 0 0;
+    margin-top: 15px;
+    position: relative;
+    float: right;
+}
+.internationalinfo .mod-hd .mod-more s {
+    background-image: url(../images/1.png);
+    background-position: -324px -415px;
+    height: 9px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 11px;
+}
+.internationalinfo .mod-hd .mod-more a {
+    color: #666;
+}
+.internationalinfo .jc-info, .internationalinfo2 .jc-info, .internationalinfo .jc-info2 {
+    height: 300px;
+    overflow: hidden;
+    padding: 5px;
+}
+.internationalinfo .jc-info a {
+    float: left;
+    display: block;
+    width: 153px;
+    font: 16px/37px Microsoft Yahei;
+    padding-left: 12px;
+    background: url(../images/up.gif) no-repeat left;
+    text-decoration: none;
+    color: #666666;
+}
+.internationalinfo {
+    width: 340px;
+    float: left;
+    margin-right: 20px;
+}
+.internationalinfo2 {
+    width: 460px;
+    float: left;
+    overflow: hidden;
+}
+.list-item {
+    float: left;
+    color: #666;
+    padding: 20px 20px 0 0;
+}
+.list-item a {
+    background: url(../images/jipiao.png) no-repeat;
+    background-position: -3px -3px;
+    width: 220px;
+    height: 134px;
+    display: inline-block;
+    text-decoration: none;
+}
+.list-item .ncoach_name {
+    height: 40px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.list-item .ncoach_name_start {
+    text-align: right;
+    padding-right: 10px;
+}
+.list-item .ncoach_name_end {
+    text-align: left;
+    padding-left: 10px;
+}
+.list-item .ncoach_name span, .list-item .ncoach_name i, .list-item .ncoach_type span, .list-item .ncoach_type i {
+    display: inline-block;
+}
+.list-item .ncoach_name_arrow {
+    width: 40px;
+    height: 5px;
+    background: url(../images/1.png) no-repeat;
+    background-position: -28px -79px;
+    overflow: hidden;
+}
+.list-item .ncoach_date {
+    cursor: pointer;
+    font: 14px arial;
+    text-align: center;
+    padding-top: 2px;
+}
+.list-item .ncoach_type {
+    text-align: center;
+    line-height: 48px;
+    padding-top: 20px;
+}
+.list-item .ncoach_type_bus {
+    width: 22px;
+    height: 20px;
+    background: url(../images/1.png) no-repeat;
+    background-position: -36px -106px;
+    vertical-align: -5px;
+}
+.list-item .ncoach_type_t1 {
+    font: 14px Simsun;
+}
+.list-item .ncoach_type_t2 {
+    color: #f60;
+    font: 16px Microsoft Yahei;
+    vertical-align: 3px;
+    position: relative;
+    top: 5px;
+    left: -1px;
+}
+.list-item .ncoach_type_t3 {
+    color: #F60;
+    font: 28px arial;
+    vertical-align: -2px;
+}
+.jc-info2 a{
+    text-decoration: none;
+    color: #666666;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.internationalinfo2 .mod-hd h2 {
+    color: #555;
+    float: left;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    width: 130px;
+}
+.internationalinfo2 .tabctn {
+    float: right;
+    overflow: hidden;
+    display: inline-block;
+    height: 42px;
+}
+.internationalinfo2 .tabctn li {
+    float: left;
+    height: 40px;
+    padding: 0 15px;
+    min-width: 50px;
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.list-item :hover .ncoach_name_arrow{
+    animation: pingyi .5s linear 1;
+    animation-fill-mode: forwards;
+}
