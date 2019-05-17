@@ -124,6 +124,7 @@ a{
 }
 
 .banner {
+    margin: auto;
     width: 1920px;
     height: 380px;
     position: absolute;
@@ -415,10 +416,10 @@ a{
     width: 175px;
 }
 
-#hot-hangxian .right {
+#hot-hangxian .right-tab {
     height: 44px;
     width: 800px;
-
+    float: right;
 }
 
 .hot-menu .left p {
@@ -429,7 +430,7 @@ a{
     padding: 0;
 }
 
-#hot-hangxian .right a {
+#hot-hangxian .right-tab a {
     float: left;
     height: 43px;
     width: 80px;
@@ -440,28 +441,37 @@ a{
     color: rgb(85, 85, 85);
 }
 
-#hot-hangxian .right .quanguo {
+#hot-hangxian .right-tab .show {
     background: rgb(200, 227, 252);
     border-bottom: 2px solid #3b8de3;
     color: #3b8de3;
 }
 
-#hot-hangxian .right a:hover {
+#hot-hangxian .right-tab a:hover {
     border-bottom: 2px solid #3b8de3;
     color: #3b8de3;
 }
 
-.hangxians {
-    width: 1180px;
-    height: 335px;
+.hangxians-all{
+    width: 1220px;
+    height: 315px;
     margin: auto;
-}
+    position: relative;
 
+}
+.hangxians{
+    width: 1220px;
+    height: 315px;
+    margin: auto;
+
+    position: absolute;
+    padding: 5px 10px;
+}
 .hangxian {
     float: left;
     width: 223px;
     height: 140px;
-    margin: 15px 6px;
+    margin:5px 8px;
     color: rgb(0, 85, 170);
 
     background: #fff url(../images/hangxian_bg.png) 0 0;
@@ -472,6 +482,9 @@ a{
     color: rgb(85, 85, 85);
 }
 
+div.hangxian:hover .to{
+    transform:translate(5px,0);
+}
 .hangxian .place1 {
     float: left;
     width: 35px;
@@ -486,9 +499,7 @@ a{
     transition:.3s all ease-in 0s;
     background: url("../images/img.png") -25px 676px;
 }
-.hangxian .to:hover{
-    transform:translate(5px,0);
-}
+
 .hangxian .place2 {
     float: left;
     width: 70px;
@@ -755,12 +766,12 @@ a{
 .consult{
     float: left;
     margin-left: 10px;
-    width: 345px;
+    width: 340px;
     height: 400px;
 
 }
 .consult-all{
-    width: 345px;
+    width: 340px;
     height: 340px;
 
 }
@@ -778,32 +789,33 @@ a{
 .tejia{
     float: left;
     margin-left: 2px;
-    width: 476px;
+    width: 481px;
     height: 400px;
 
 }
 
 .tejia-menu {
     float: left;
-    height: 55px;
-    width: 476px;
-    margin: auto;
+    height: 45px;
+    width: 470px;
+    margin: 8px;
     border-bottom: 2px solid darkgray;
 }
 
 .tejia-menu .left {
-    height: 55px;
+    margin-left: 5px;
+    height: 45px;
     width: 120px;
 }
 
 .tejia-menu .right {
-    height: 55px;
+    height: 45px;
     width: 180px;
 
 }
 
 .tejia-menu .left p {
-    line-height: 55px;
+    line-height: 45px;
     font-size: 26px;
     color: rgb(85, 85, 85);
     margin: 0;
@@ -812,7 +824,7 @@ a{
 
 .tejia-menu .right a {
     float: left;
-    height: 54px;
+    height: 44px;
     width: 60px;
     margin: 0;
     padding: 0;
@@ -832,7 +844,7 @@ a{
 }
 .tejia-all{
     float: left;
-    width:476px ;
+    width:481px ;
     height: 345px;
 }
 .footer{
