@@ -895,3 +895,7 @@ th{
     text-align: center;
     margin: auto;
 }
+
+.center .top strong{
+    font-size: x-large;
+}
