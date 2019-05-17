@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="CSS/nav.css">
+    <script>
+        /*function toWhite(e) {
+            document.getElementById(e).style.backgroundColor="#fff";
+            document.getElementById(e).style.color="#0055AA";
+        }*/
+        window.onload=function () {
+            var divs=document.querySelectorAll(".all");
+            var shows=document.querySelectorAll(".show");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].index = i;
+                divs[i].onclick=function(){
+                    for(var n=0;n<shows.length;n++){
+                        shows[n].style.zIndex = "0";
+                        shows[n].style.display = "none";
+                    }
+                    shows[this.index].style.zIndex = "3";
+                    shows[this.index].style.display="block";
+
+                    for(var j=0;j<divs.length;j++){
+                        divs[j].style.background="#fff";
+                    }
+                    this.style.backgroundColor="#49a2f8";
+
+                }
+            }
+
+            var link=document.querySelectorAll(".link");
+            var list=document.querySelectorAll(".list");
+            for (var i = 0; i < link.length; i++) {
+                link[i].index = i;
+                link[i].onclick=function(){
+                    for(var n=0;n<list.length;n++){
+                        list[n].style.zIndex = "0";
+                        list[n].style.display = "none";
+                    }
+                    list[this.index].style.zIndex = "3";
+                    list[this.index].style.display="block";
+
+                    for(var j=0;j<divs.length;j++){
+                        link[j].style.background="#fff";
+                    }
+                    this.style.backgroundColor="#49a2f8";
+
+                }
+            }
+
+            var num=0;
+            setInterval(function () {
+
+                if(num==2){
+                    num=0;
+                }
+                    var imgs = document.querySelectorAll(".imgs");
+                    console.log(num);
+                    var btns = document.querySelectorAll(".btns");
+
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].style.background = "#000";
+                        imgs[i].style.display = "none";
+                    }
+                    btns[num].style.background = "orange";
+                    imgs[num].style.display = "block";
+
+                num++;
+            },3000)
+
+            /*var show=document.querySelector("#"+n);*/
+
+
+
+        }
+        /*function toShow(a) {
+           document.getElementById("two").innerHTML='<iframe src="'+a.href+'" width=100% height=100%></iframe>';
+           a.style.backgroundColor="#49a2f8";
+           a.href="#";
+        }*/
+    </script>
+</head>
+<body>
+    <header>
+        <div class="img"><img src="pictures/20190515172834.jpg"></div>
+    </header>
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <a href="" class="active">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航资讯</a>
+                <a href="">民航问答</a>
+            </div>
+            <div class="right">
+                <a href="" class="active">登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心<span class="sanjiao"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="hot">
+        <span>热门城市：</span>
+        <a href="">深圳</a>
+        <a href="">北京</a>
+        <a href="">上海</a>
+        <a href="">广州</a>
+        <a href="">南京</a>
+        <a href="">天津</a>
+        <a href="">武汉</a>
+        <a href="">长沙</a>
+        <a href="">昆明</a>
+        <a href="">贵阳</a>
+        <a href="">成都</a>
+        <a href="">重庆</a>
+        <a href="">海口</a>
+        <a href="">哈尔滨</a>
+        <a href="">更多</a>
+    </div>
+    <!--轮播图-->
+    <div class="whole-sheet">
+        <div class="imgs img1"></div>
+        <div class="imgs img2"></div>
+        <div class="btns btn1"></div>
+        <div class="btns btn2"></div>
+        <div class="form">
+            <form style="z-index: 4">
+                <table style="text-align: center">
+                    <tr style="background-color: #c6c6c6;color: #49a2f8">
+                        <th>国内机票</th>
+                        <th>国外机票</th>
+                    </tr>
+                    <tr>
+                        <td>行程类别</td>
+                        <td><input type="radio" name="a" checked >单程 <input type="radio" name="a">往返</td>
+                    </tr>
+                    <tr>
+                        <td>出发城市</td>
+                        <td><input type="text" value="上海"></td>
+                    </tr>
+                    <tr>
+                        <td>到达城市</td>
+                        <td><input type="text" placeholder="中文/拼音"></td>
+                    </tr>
+                    <tr>
+                        <td>出发日期</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <tr>
+                        <td>返程日期</td>
+                        <td><input type="datetime-local"></td>
+                    </tr>
+                    <!--<tr class="button">
+                        <td></td>
+                    </tr>-->
+                    <input type="submit" value="搜索" style="width: 100px;background-color: orange;color: white" class="button">
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="goupiao">
+        <div class="left">
+            <h3>购票流程：</h3>
+        </div>
+        <ul class="right">
+            <li>
+                <div class="circle">
+                    <div class="icon1"></div>
+                </div>
+                <div class="h3 blue">航班查询</div>
+                <div class="content">选择出行航班</div>
+                <div class="arrow"></div>
+            </li>
+            <li>
+                <div class="circle">
+                    <div class="icon2"></div>
+                </div>
+                <div class="h3 blue">提交订单</div>
+                <div class="content">登记乘机人和联系人</div>
+                <div class="arrow"></div>
+            </li>
+            <li>
+                <div class="circle">
+                    <div class="icon3"></div>
+                </div>
+                <div class="h3 blue">在线支付</div>
+                <div class="content">支付机票款</div>
+                <div class="arrow"></div>
+            </li>
+            <li>
+                <div class="circle">
+                    <div class="icon4"></div>
+                </div>
+                <div class="h3 blue">无需取票</div>
+                <div class="content">凭电子客票号换登记牌</div>
+            </li>
+        </ul>
+    </div>
+    <div class="table">
+        <div class="table_left">
+            <ul>
+                <li ><div class="li li1"></div>订单管理<div class="new"></div></li>
+                <li ><div class="li li2"></div>价格趋势</li>
+                <li ><div class="li li3"></div>航班动态</li>
+            </ul>
+        </div>
+        <div class="table_right">
+            <ul>
+                <li><div class="li li1"></div>支付中心</li>
+                <li><div class="li li2"></div>机票验真</li>
+                <li><div class="li li3"></div>新手指南</li>
+            </ul>
+        </div>
+        <div class="right_right">
+            <div class="big big1">
+                <h3>最新资讯</h3>
+                <a>简单了解一下金鹏航空官网机票购买流程</a><br>
+                <a>东方航空去哪儿网合作举办“校园旅行家</a><br>
+                <a>网上买飞机票为什么只能买9张,10人</a><br>
+                <a>想知道南方航空机票购买流程，南航手机</a>
+            </div>
+            <div class=" more more1"><span>更多>></span></div>
+            <div class="big big2">
+                <h3>网站公告</h3>
+                <a>带你认识飞机经停是什么意思</a><br>
+                <a>12306机票网上订票官网请上民航在</a><br>
+                <a>1岁婴儿机票怎么买 能够从网上购买婴</a><br>
+                <a>了解订机票用什么软件好对你出门旅游帮</a>
+            </div>
+            <div class=" more more2"><span>更多>></span></div>
+        </div>
+    </div>
+    <div class="one">
+        <span class="left" style="font-size: x-large">热门航线预定</span>
+        <span class="right">
+            <a href="javascript:;" class="all active" >全国</a>
+            <a href="javascript:;" class="all " >深圳</a>
+            <a href="javascript:;" class="all " >北京</a>
+            <a href="javascript:;" class="all " >上海</a>
+            <a href="javascript:;" class="all " >广州</a>
+            <a href="javascript:;" class="all " >武汉</a>
+            <a href="javascript:;" class="all " >成都</a>
+            <a href="javascript:;" class="all " >海口</a>
+            <a href="javascript:;" class="all " >重庆</a>
+            <a href="javascript:;" class="all " >沈阳</a>
+        </span>
+    </div>
+    <div class="two">
+        <div class="show" id="s1">
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>海口</div><div class="jiantou"></div><div>郑州</div></div>
+                <div class="center "><div class="center_left">12月16日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red" style="font-size: x-large"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>海口</div><div class="jiantou"></div><div>长沙</div></div>
+                <div class="center "><div class="center_left">10月15日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>武汉</div><div class="jiantou"></div><div>神农架</div></div>
+                <div class="center "><div class="center_left">05月18日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>银川</div><div class="jiantou"></div><div>昆明</div></div>
+                <div class="center "><div class="center_left">05月18日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>太原</div><div class="jiantou"></div><div>昆明</div></div>
+                <div class="center "><div class="center_left">11月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>南京</div><div class="jiantou"></div><div>上海浦东</div></div>
+                <div class="center "><div class="center_left">07月03日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>西安</div><div class="jiantou"></div><div>上海浦东</div></div>
+                <div class="center "><div class="center_left">01月25日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>合肥</div><div class="jiantou"></div><div>海口</div></div>
+                <div class="center "><div class="center_left">05月28日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>天津</div><div class="jiantou"></div><div>三亚</div></div>
+                <div class="center "><div class="center_left">05月22日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>哈尔滨</div><div class="jiantou"></div><div>三亚</div></div>
+                <div class="center "><div class="center_left">05月15日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="show" id="s2">
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>昆明</div></div>
+                <div class="center "><div class="center_left">10月09日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>武汉</div></div>
+                <div class="center "><div class="center_left">10月15日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>兰州</div></div>
+                <div class="center "><div class="center_left">10月22日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>海口</div></div>
+                <div class="center "><div class="center_left">09月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>沈阳</div></div>
+                <div class="center "><div class="center_left">06月12日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>上海浦东</div></div>
+                <div class="center "><div class="center_left">06月07日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>北京</div></div>
+                <div class="center "><div class="center_left">05月27日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>重庆</div></div>
+                <div class="center "><div class="center_left">10月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>成都</div></div>
+                <div class="center "><div class="center_left">10月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>深圳</div><div class="jiantou"></div><div>郑州</div></div>
+                <div class="center "><div class="center_left">09月03日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+        </div>
+        <div class="show" id="s3">
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>昆明</div></div>
+                <div class="center "><div class="center_left">10月09日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>武汉</div></div>
+                <div class="center "><div class="center_left">10月15日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>兰州</div></div>
+                <div class="center "><div class="center_left">10月22日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>海口</div></div>
+                <div class="center "><div class="center_left">09月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>沈阳</div></div>
+                <div class="center "><div class="center_left">06月12日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>上海浦东</div></div>
+                <div class="center "><div class="center_left">06月07日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>北京</div></div>
+                <div class="center "><div class="center_left">05月27日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>重庆</div></div>
+                <div class="center "><div class="center_left">10月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>成都</div></div>
+                <div class="center "><div class="center_left">10月11日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+            <div class="show_inner">
+                <div class="center show_inner_left"><div>北京</div><div class="jiantou"></div><div>郑州</div></div>
+                <div class="center "><div class="center_left">09月03日</div></div>
+                <div class="center">
+                    <div class="flight"></div><span class="top">票价<strong class="red"><span style="font-size: small" class="red">￥</span>427</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company">
+        <span class="left" style="font-size: x-large">热门航空公司</span>
+        <span class="right">>></span>
+    </div>
+    <div class="company_down">
+        <div class="left">
+            <div class="c1"></div>
+            <div class="c1_desc">中国国际航空公司</div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。</span>
+        </div>
+        <div class="right">
+            <div class="c c2"><div>中国南方航空公司</div></div>
+            <div class="c c3"><div>中国东方航空公司</div></div>
+            <div class="c c4"><div>海南航空公司</div></div>
+            <div class="c c5"><div>深圳航空公司</div></div>
+            <div class="c c6"><div>四川航空公司</div></div>
+            <div class="c c7"><div>春秋航空公司</div></div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="left">
+            <span style="font-size: x-large">热门国际机场</span>
+            <span style="float: right; cursor: pointer; line-height: 35px;">全球机场>></span>
+            <div class="inner">
+                <ul class="ul_left">
+                    <li>>><a href="">香港赤腊角机场</a></li>
+                    <li>>><a href="">首尔金浦机场</a></li>
+                    <li>>><a href="">东京羽田机场</a></li>
+                    <li>>><a href="">新加坡樟宜机场</a></li>
+                    <li>>><a href="">曼谷素万那普机场</a></li>
+                    <li>>><a href="">大阪伊丹机场</a></li>
+                    <li>>><a href="">胡志明市国际机场</a></li>
+                    <li>>><a href="">吉隆坡国际机场</a></li>
+                </ul>
+                <ul class="ul_right">
+                    <li>>><a href="">首尔仁川机场</a></li>
+                    <li>>><a href="">澳门国际机场</a></li>
+                    <li>>><a href="">东京成田机场</a></li>
+                    <li>>><a href="">台北桃园中正机场</a></li>
+                    <li>>><a href="">曼谷廊曼机场</a></li>
+                    <li>>><a href="">马尼拉国际机场</a></li>
+                    <li>>><a href="">伦敦国际机场</a></li>
+                    <li>>><a href="">釜山国际机场</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="left middle">
+            <span style="font-size: x-large">最新客户咨询</span>
+            <span style="float: right; cursor: pointer; line-height: 35px;">更多>></span>
+            <div class="inner">
+                <ul class="ul_middle">
+                    <li class="black">2019/5/16 21:35:27 </li>
+                    <li>>><a href="">你好，小孩才32个月，没有身份证，怎么取...</a></li>
+                    <li class="black">2019/5/16 17:57:21 </li>
+                    <li>>><a href="">护照可以定机票登机嘛</a></li>
+                    <li class="black">2019/5/16 14:44:39 </li>
+                    <li>>><a href="">你好，请问出生两个月的婴儿应该在网上怎么...</a></li>
+                    <li class="black">2019/5/16 14:28:19 </li>
+                    <li>>><a href="">你好我现在有事情飞机赶不上了能改签一下吗</a></li>
+                    <li class="black">2019/5/16 12:15:01 </li>
+                    <li>>><a href="">温州到徐州的机票哪里买</a></li>
+                    <li class="black">2019/5/15 15:54:39 </li>
+                    <li>>><a href="">临沂至哈尔滨</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <span style="font-size: x-large;line-height: 60px">国际特价</span>
+            <span class="one_right">
+                <a href="javascript:;" class="link active">北美</a>
+                <a href="javascript:;" class="link">亚洲</a>
+                <a href="javascript:;" class="link">欧洲</a>
+            </span>
+            <div class="right_inner">
+                <div class="list">
+                    <div>
+                        <span>上海&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>华盛顿</span>
+                        <span>06月10日</span>
+                        <div class="flight"></div>
+                        <span class="top">票价<strong class="red">￥1395</strong></span>
+                    </div>
+                    <div>
+                        <span>北京&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>洛杉矶</span>
+                        <span>06月10日</span>
+                        <div class="flight"></div>
+                        <span class="top">票价<strong class="red">￥1395</strong></span>
+                    </div>
+                </div>
+                <div class="list">
+                    <div>
+                        <span>广州&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>首尔</span>
+                        <span>06月10日</span>
+                        <div class="flight"></div>
+                        <span class="top">票价<strong class="red">￥139</strong></span>
+                    </div>
+                    <div>
+                        <span>北京&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>东京</span>
+                        <span>06月10日</span>
+                        <div class="flight"></div>
+                        <span class="top">票价<strong class="red">￥135</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="out">
+        <div class="in">
+            <div class="circle">
+                <div class="in_icon1"></div>
+            </div>
+            <div class="white bigger">支付安全</div>
+            <div class="white">在线支付100%认证</div>
+        </div>
+        <div class="in">
+            <div class="circle">
+                <div class="in_icon2"></div>
+            </div>
+            <div class="white bigger">实时同步</div>
+            <div class="white">全球机票联网售票</div>
+        </div>
+        <div class="in">
+            <div class="circle">
+                <div class="in_icon3"></div>
+            </div>
+            <div class="white bigger">全天服务</div>
+            <div class="white">7*24小时专业客服人员为您服务</div>
+        </div>
+        <div class="in">
+            <div class="circle">
+                <div class="in_icon4"></div>
+            </div>
+            <div class="white bigger">方便快捷</div>
+            <div class="white">电子客票，身份证直接换登机牌</div>
+        </div>
+        <div class="foot">
+            <div class="foot_in">
+                <ul><h3 style="font-size: large">新手上路</h3>
+                    <li><div class="sanjiao"></div><a href="">-查询预订</a></li>
+                    <li><div class="sanjiao"></div><a href="">-订单填写</a></li>
+                    <li><div class="sanjiao"></div><a href="">-支付出票</a></li>
+                </ul>
+            </div>
+            <div class="foot_in">
+                <ul><h3 style="font-size: large">付款方式</h3>
+                    <li><div class="sanjiao"></div><a href="">-网上银行</a></li>
+                    <li><div class="sanjiao"></div><a href="">-微信支付</a></li>
+                    <li><div class="sanjiao"></div><a href="">-信用卡</a></li>
+                </ul>
+            </div>
+            <div class="foot_in">
+                <ul><h3 style="font-size: large">旅客保障</h3>
+                    <li><div class="sanjiao"></div><a href="">-航协认证</a></li>
+                    <li><div class="sanjiao"></div><a href="">-支付出票</a></li>
+                    <li><div class="sanjiao"></div><a href="">-安全保障</a></li>
+                </ul>
+            </div>
+            <div class="foot_in">
+                <ul><h3 style="font-size: large">常见问题</h3>
+                    <li><div class="sanjiao1"></div><a href="">-了解多彩贵州航空</a></li>
+                    <li><div class="sanjiao1"></div><a href="">-关于南昌昌北机场</a></li>
+                    <li><div class="sanjiao1"></div><a href="">-不在网上买机票直</a></li>
+                </ul>
+            </div>
+            <div class="foot_in">
+                <ul><h3 style="font-size: large">关于我们</h3>
+                    <li><div class="sanjiao"></div><a href="">-联系我们</a></li>
+                    <li><div class="sanjiao"></div><a href="">-网站介绍</a></li>
+                    <li><div class="sanjiao"></div><a href="">-公司简介</a></li>
+                </ul>
+            </div>
+            <div class="foot_in tel">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>© 2019 http://www.161580.com 民航在线|沪ICP备12008257号-2 关于161580|联系我们|合作伙伴|诚征英才|用户建议</span><br>
+        <img src="pictures/pic.jpg" style="margin: auto"><br>
+        <span>161580官方网站：161580.com | 全国统一服务热线：4000-161580  |  在线咨询</span><br>
+        <span>161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。</span><br>
+        <span>友情链接QQ434441778:</span><br>
+        <span>美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿</span><br>
+    </div>
+</body>
+</html>

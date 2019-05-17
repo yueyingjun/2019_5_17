@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UBDF</title>
+    <style>
+        div{
+            width:96px;
+            height: 46px;
+            border:2px solid #000;
+            border-bottom: 50px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top:0;
+            margin: auto;
+            transition: all 2s ease;
+        }
+
+        div:before{
+            content: "";
+            position:absolute;
+            width: 8px;
+            height: 8px;
+            border: 20px solid #000;
+            background: #fff;
+            border-radius: 50%;
+            left: 0;
+            top:50%
+        }
+        div:after{
+            content: "";
+            position:absolute;
+            width: 8px;
+            height: 8px;
+            border: 20px solid #fff;
+            background: #000;
+            border-radius: 50%;
+            right: 0;
+            top:50%
+        }
+    </style>
+    <script>
+        window.onload=function (ev) {
+            var div=document.querySelector("div");
+            div.onmouseover=function (ev2) {
+                div.style.transform="rotate(180deg)";
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+
+</div>
+<a href="http://www.baidu.com">百度</a>
+<img src="./pictures\wv_1549081797810.jpg" alt="图片不存在" width="200" height="200" title="这一张图片">
+    <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<ol>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<table>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <th>班级</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>12</td>
+        <td>男</td>
+        <td>1班</td>
+    </tr>
+    <tr>
+        <td>李四</td>
+        <td>11</td>
+        <td>男</td>
+        <td>1班</td>
+    </tr>
+</table>
+<span>a</span>
+<span>b</span>
+</body>
+</html>
