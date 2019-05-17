@@ -753,6 +753,9 @@ h1,h2,h3,h4,h5,h6,ul,li{
     text-decoration: none;
     color: rgb(0,85,170);
 }
+.airport-all li a:hover{
+    color: #ff6600;
+}
 .consult{
     float: left;
     margin-left: 10px;
@@ -768,6 +771,9 @@ h1,h2,h3,h4,h5,h6,ul,li{
 .consult-all a{
     color:rgb(0,85,170);
     text-decoration: none;
+}
+.consult-all a:hover{
+    color: #ff6600;
 }
 .consult-all p{
     color: rgb(85,85,85);
