@@ -47,21 +47,18 @@
                     myDiv[this.index].style.display = "block";
                 }
             }
-        }
-        window.onload = function () {
-
             var mySelect2 = document.querySelectorAll(".right-tab2 a");
             var myDiv2 = document.querySelectorAll(".tejia-hangxian");
             //数组
 
-            for (var i = 0; i < mySelect2.length; i++) {
-                mySelect2[i].index = i;
-                mySelect2[i].onclick = function () {
-                    for (var j = 0; j < mySelect2.length; j++) {
-                        mySelect2[j].style.background = "white";
-                        mySelect2[j].style.borderBottom ="none";
-                        mySelect2[j].style.color = "rgb(85,85,85)";
-                        myDiv2[j].style.display = "none";
+            for (var k = 0; k < mySelect2.length; k++) {
+                mySelect2[k].index = k;
+                mySelect2[k].onclick = function () {
+                    for (var l = 0; l < mySelect2.length; l++) {
+                        mySelect2[l].style.background = "white";
+                        mySelect2[l].style.borderBottom ="none";
+                        mySelect2[l].style.color = "rgb(85,85,85)";
+                        myDiv2[l].style.display = "none";
 
                     }
                     this.style.background = "rgb(200,227,252)";
