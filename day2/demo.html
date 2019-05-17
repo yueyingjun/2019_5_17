@@ -7,6 +7,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/demo.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner")
+            var btns = document.querySelectorAll(".btn")
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="orange"
+
+                num++
+            },3000)
+
+        }
+    </script>
+
 </head>
 <body>
     <!--header-->
@@ -59,11 +84,11 @@
     </div>
     <!--轮播图-->
     <div class="wheel-box">
-        <div class="banner1"></div>
-        <div class="banner2"></div>
+            <div class="banner banner1"></div>
+            <div class="banner banner2"></div>
         <div class="bots">
-            <div class="btn1 select"></div>
-            <div class="btn2"></div>
+            <div class="btn btn1 select"></div>
+            <div class="btn btn2"></div>
         </div>
     </div>
     <!--购票流程-->
@@ -147,7 +172,6 @@
         </div>
         <div class="center">
             <h3>最新资讯</h3>
-
             <div>
                 <a href="">简单了解一下金鹏航空官网机票购买流程</a>
             </div>
@@ -185,90 +209,198 @@
         <div class="top">
             <div class="left">热门航线预订</div>
             <div class="rright">
-                <a href="" class="contry">全国</a>
-                <a href="">深圳</a>
-                <a href="">北京</a>
-                <a href="">上海</a>
-                <a href="">广州</a>
-                <a href="">武汉</a>
-                <a href="">成都</a>
-                <a href="">海口</a>
-                <a href="">重庆</a>
-                <a href="">沈阳</a>
+                <a href="javascript:;" class="contry">全国</a>
+                <a href="javascript:;">深圳</a>
+                <a href="javascript:;">北京</a>
+                <a href="javascript:;">上海</a>
+                <a href="javascript:;">广州</a>
+                <a href="javascript:;">武汉</a>
+                <a href="javascript:;">成都</a>
+                <a href="javascript:;">海口</a>
+                <a href="javascript:;">重庆</a>
+                <a href="javascript:;">沈阳</a>
             </div>
         </div>
         <div class="bottom">
             <div class="head">
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">海口-->郑州</div>
-                        <div class="date">12月16日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">150</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">郑州</div>
+                            </div>
+                            <div class="content-middle">12月16日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">海口-->长沙</div>
-                        <div class="date">10月15日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">110</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">长沙</div>
+                            </div>
+                            <div class="content-middle">10月15日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">110</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">武汉-->神农架</div>
-                        <div class="date">05月18日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">117</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">神农架</div>
+                            </div>
+                            <div class="content-middle">05月18日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">117</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">银川-->昆明</div>
-                        <div class="date">12月16日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">220</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">银川</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">昆明</div>
+                            </div>
+                            <div class="content-middle">05月18日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">220</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">太原-->昆明</div>
-                        <div class="date">11月11日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">250</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">济南</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">309</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">南京-->上海浦东</div>
-                        <div class="date">07月03日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">150</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">太原</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">昆明</div>
+                            </div>
+                            <div class="content-middle">11月11日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">西安-->上海浦东</div>
-                        <div class="date">01月25日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">200</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">南昌</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">赣州</div>
+                            </div>
+                            <div class="content-middle">05月27日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">180</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">合肥-->海口</div>
-                        <div class="date">05月28日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">279</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">南京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">上海浦东</div>
+                            </div>
+                            <div class="content-middle">07月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">天津-->三亚</div>
-                        <div class="date">05月22日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">399</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">西安</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">上海浦东</div>
+                            </div>
+                            <div class="content-middle">01月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">200</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">哈尔滨-->三亚</div>
-                        <div class="date">05月15日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">540</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">合肥</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">279</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,28 +427,28 @@
             </div>
             <div class="boxright">
                 <div class="one">
-                   中国南方航空公司
-                    <div class="back"></div>
+
+                    <div class="back">中国南方航空公司</div>
                 </div>
                 <div class="two">
-                    中国东方航空公司
-                    <div class="back"></div>
+
+                    <div class="back">中国东方航空公司</div>
                 </div>
                 <div class="three">
-                    海南航空公司
-                    <div class="back"></div>
+
+                    <div class="back">海南航空公司</div>
                 </div>
                 <div class="four">
-                    深圳航空公司
-                    <div class="back"></div>
+
+                    <div class="back">深圳航空公司</div>
                 </div>
                 <div class="five">
-                    四川航空公司
-                    <div class="back"></div>
+
+                    <div class="back">四川航空公司</div>
                 </div>
                 <div class="six">
-                    春秋航空公司
-                    <div class="back"></div>
+
+                    <div class="back">春秋航空公司</div>
                 </div>
             </div>
         </div>
@@ -409,18 +541,40 @@
                 </div>
             </div>
             <div class="bottom">
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">上海-->华盛顿</div>
-                        <div class="date">06月10日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">1395</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">华盛顿</div>
+                            </div>
+                            <div class="content-middle">06月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">1395</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="one">
-                    <div class="content">
-                        <div class="chufa">北京-->洛杉矶</div>
-                        <div class="date">07月19日</div>
-                        <div class="price">票价：<span class="money">￥</span><span class="number">295</span> </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">洛杉矶</div>
+                            </div>
+                            <div class="content-middle">07月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">2950</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -469,6 +623,158 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <!--关于我们-->
+    <div class="about">
+        <div class="aboutus">
+            <div class="footinfo">
+                <h3>新手上路</h3>
+                <div>
+                    <a href="">-查询预定</a>
+                </div>
+                <div>
+                    <a href="">-订单填写</a>
+                </div>
+                <div>
+                    <a href="">-支付出票</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>付款方式</h3>
+                <div>
+                    <a href="">-网上银行</a>
+                </div>
+                <div>
+                    <a href="">-微信支付</a>
+                </div>
+                <div>
+                    <a href="">-信用卡</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>旅客保障</h3>
+                <div>
+                    <a href="">-航协认证</a>
+                </div>
+                <div>
+                    <a href="">-支付出票</a>
+                </div>
+                <div>
+                    <a href="">-安全保障</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>常见问题</h3>
+                <div>
+                    <a href="">-了解多彩贵州航空</a>
+                </div>
+                <div>
+                    <a href="">-关于南昌昌北机场</a>
+                </div>
+                <div>
+                    <a href="">-不在网上买机票直</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>关于我们</h3>
+                <div>
+                    <a href="">-联系我们</a>
+                </div>
+                <div>
+                    <a href="">-网站介绍</a>
+                </div>
+                <div>
+                    <a href="">-公司简介</a>
+                </div>
+            </div>
+            <div class="connectus">
+                <div class="servicephone">服务热线</div>
+                <div class="phonenumber">
+                    <div class="number-icon"></div>
+                    <div class="number">
+                        4000161580
+                    </div>
+
+                </div>
+                <div class="serach">
+                    <div class="ser">
+                        <input type="search"  value="请输入关键字">
+                    </div>
+                    <div class="btn">
+                        <input type="button"  value="搜索">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部说明-->
+    <div class="bottom-info">
+        <div class="copy">
+            <div class="left">&copy;2019 http://www.161580.com 民航在线&nbsp;|</div>
+            <div class="right">
+                <div class="one"><a href="">沪ICP备12008257号-2</a></div>
+                <div class="two"><a href="">关于161580</a></div>
+                <div class="three">
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;联系我们</a></div>
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;合作伙伴</a></div>
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;诚征英才</a></div>
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;用户建议</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="licence"></div>
+        <div class="regularweb">
+            <div class="webcenter">
+                <div class="one">161580官方网站：</div>
+                <div class="two"><a href=""><span>161580</span>.com</a>&nbsp;&nbsp;</div>
+                <div class="three">
+                    |&nbsp;全国统一服务热线：
+                    <span>4000-161580</span>
+                    |&nbsp;
+                    <a href="">在线咨询</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="web-info">
+            161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预
+            订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港
+            航班实时售票系统，围绕客户提供方 便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订
+            机票最便宜的网站，上中国民航机票网。
+        </div>
+        <div class="friendlink">
+            <div class="friendlink-top">
+                友情链接QQ434441778:
+            </div>
+            <div class="friendlink-bottom">
+                <div class="otherweb">
+                    <div class="otherweb-in"><a href="" class="aa">美国旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">韩国旅游攻略</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">订机票最便宜的网站</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">北京旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="" class="bold">打折机票</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">酒店加盟代理</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">爱侣游网</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">杭州户外俱乐部</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">四喜居门票网</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">深圳国旅</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="" class="bold">澳洲自由行</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">汽车票预定</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">四川青年旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">百程旅行网</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">重庆青年旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">俄罗斯旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">美国旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">深圳旅游论坛</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">重庆中国青年旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">青岛崂山</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">长岛旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">南宁旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">青驿</a></div>
+                </div>
             </div>
         </div>
     </div>
