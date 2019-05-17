@@ -1,0 +1,561 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*头部*/
+header {
+    width: 1180px;
+    height: 70px;
+    margin: auto;
+}
+header .logo {
+    width: 285px;
+    height: 70px;
+    background: url("../img/logo.png");
+    background-position: 0 -10px;
+    float: left;
+}
+header img {
+    width: 810px;
+    height: 70px;
+    float: right;
+    background: url("../img/header.jpg");
+    background-position: 0 -10px;
+
+}
+/*导航*/
+.box {
+    height: 40px;
+    background: #3b8de3;
+}
+.box .con {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    position: relative;left: 0;top: 0;
+}
+.box .con .left {
+    width: 690px;
+    height: 100%;
+    float: left;
+}
+.box .con .right {
+    width: 240px;
+    height: 100%;
+    float: right;
+    background-image: url("../img/img.png");
+    background-position: -315px -500px;
+    background-repeat: no-repeat;
+}
+.box a {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+.box .con .left a {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.box .con .right a {
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+.box .con .left a:hover {
+    color: #3b8de3;
+    background: #fff;
+    border-top: 1px solid orange;
+}
+.box .con .sanjiao {
+    width: 0;height: 0;
+    border-top: 10px solid #fff;
+    border-left: 5px solid #3b8de3;
+    border-right: 5px solid #3b8de3;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+/*热门城市*/
+.hot_city {
+    width: 1180px;
+    margin: auto;
+    padding: 5px;
+    font-size: 12px;
+}
+.hot_city span {
+    float: left;
+}
+.hot_city a {
+    float: left;
+    margin: 0 5px;
+    color: #3b8de3;
+    text-decoration: none;
+}
+
+/*轮播图*/
+.spells {
+    height: 380px;
+    position: relative;
+    left: 0;
+    top: 15px;
+}
+.spells .img1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../img/spell01.png") no-repeat center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.spells .img2 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/spell02.png") no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.spells .btns {
+    width: 140px;
+    height: 15px;
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    z-index: 3;
+}
+.spells .btn1 {
+    width: 60px;
+    height: 15px;
+    float: left;
+    background-color: #000;
+}
+.spells .btn2 {
+    width: 60px;
+    height: 15px;
+    float: right;
+    background-color: #000;
+}
+
+/*热门航线预定*/
+.mod-hd {
+    width: 1180px;
+    height: 42px;
+    border-bottom: 2px solid #888888;
+    margin: 50px auto;
+}
+.mod-hd .left {
+    float: left;
+    /*border: 1px solid red;*/
+    font-size: 30px;
+    color: #555;
+}
+.mod-hd .right {
+    float: right;
+    /*border: 1px solid red;*/
+    line-height: 40px;
+    font-size: 20px;
+}
+.mod-hd .right a {
+    float: left;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+}
+.mod-hd .right a:hover {
+    color: #1d19e3;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #1d19e3;
+}
+.mod-hd-list {
+    width: 1180px;
+    margin: -30px auto 0;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    color: fuchsia;
+}
+.mod-hd-list .out {
+    width: 19%;
+    height: 140px;
+    /*border: 1px solid blue;*/
+    float: left;
+    margin: 5px 4px;
+    background: url("../img/carl_bg.png") left no-repeat;
+    z-index: 0;
+    cursor: pointer;
+}
+.mod-hd-list .ncoach_name {
+    width: 220px;
+    height: 45px;
+    position: relative;
+    left: 0;
+    top: 0;
+    /*border: 1px solid red;*/
+}
+
+/*购票流程*/
+.ticket {
+    width: 1180px;
+    height: 80px;
+    /*border: 1px solid red;*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color: #f7f7f6;
+    color: #555;
+}
+.ticket .left {
+    float: left;
+    width: 140px;
+    height: 100%;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+}
+.ticket .right {
+    width: 1040px;
+    height: 100%;
+    float: right;
+    font-size: 13px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+.ticket .mode {
+    width: 260px;
+    height: 100%;
+    float: left;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ticket .text {
+    width: 135px;
+    height: 62px;
+    float: left;
+    margin-top: 15px;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.ticket .title {
+    color: #3b8de3;
+    font-size: 20px;
+}
+.ticket .out_icon {
+    width: 65px;
+    height: 65px;
+    /*width: 105px;
+    height: 105px;*/
+    float: left;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+    margin: 5px;
+    background: url("../img/main.png") no-repeat -164px -134px;
+}
+.ticket .in_icon {
+    width: 35px;
+    height: 35px;
+    float: left;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+    margin: 15px;
+    box-sizing: border-box;
+}
+.ticket .in_icon1 {
+    background: url("../img/main.png") no-repeat -150px -80px;
+}
+.ticket .in_icon2 {
+    background: url("../img/main.png") no-repeat -205px -80px;
+}
+.ticket .in_icon3 {
+    background: url("../img/main.png") no-repeat -258px -80px;
+}
+.ticket .in_icon4 {
+    background: url("../img/main.png") no-repeat -313px -80px;
+}
+.ticket .icon {
+    width: 45px;
+    height: 100%;
+    /*border: 1px solid gray;*/
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 210px;
+    background: url("../img/main.png") no-repeat -360px -125px;
+}
+/*设置摇动*/
+@keyframes sway {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+.ticket .mode:hover {
+    animation-name: sway;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation: alternate;
+}
+.ticket_bottom {
+    width: 1180px;
+    height: 215px;
+    /*border: 1px solid red;*/
+    margin: 20px auto;
+}
+.ticket_bottom .left {
+    width: 380px;
+    height: 100%;
+    /*border: 1px solid gray;*/
+    float: left;
+    /*box-sizing: border-box;*/
+}
+.ticket_bottom .info {
+    width: 800px;
+    height: 100%;
+    border: 1px solid gray;
+    float: right;
+    box-sizing: border-box;
+}
+.ticket_bottom .mode {
+    width: 50%;
+    height: 71px;
+    float: left;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+.ticket_bottom .left_info {
+    width: 50%;
+    height: 100%;
+    /*border: 1px solid gray;*/
+    float: left;
+    box-sizing: border-box;
+}
+.ticket_bottom .right_info {
+    width: 50%;
+    height: 100%;
+    /*border: 1px solid gray;*/
+    float: left;
+    box-sizing: border-box;
+}
+.ticket_bottom .top_info {
+    width: 398px;
+    height: 71px;
+    float: left;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.ticket_bottom .top_info span {
+    margin: 10px 15px;
+    color: #888;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    float: left;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.ticket_bottom .top_info a {
+    margin: 10px 15px;
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: #888;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.ticket_bottom .top_info icon_info {
+    width: 11px;
+    height: 9px;
+    float: right;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.ticket_bottom .bottom_info a {
+    float: left;
+    margin: 5px 15px;
+    text-decoration: none;
+    color: #888;
+}
+.ticket_bottom .right_info .bottom_info a {
+    color: #3b8de3;
+}
+.ticket_bottom .info_mode {
+    float: right;
+    text-align: left;
+    line-height: 71px;
+    width: 90px;
+    height: 100%;
+    /*border: 1px solid gray;*/
+}
+.ticket_bottom .icon_mode1 {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background: url("../img/main.png") no-repeat 35px -40px;
+    /*border: 1px solid gray;*/
+}
+.ticket_bottom .icon_mode2 {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background: url("../img/main.png") no-repeat 45px -105px;
+    /*border: 1px solid gray;*/
+}
+.ticket_bottom .icon_mode3 {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background: url("../img/main.png") no-repeat -35px -105px;
+    /*border: 1px solid gray;*/
+}
+.ticket_bottom .icon_mode4 {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background: url("../img/main.png") no-repeat 45px -170px;
+    /*border: 1px solid gray;*/
+}
+.ticket_bottom .icon_mode5 {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background: url("../img/main.png") no-repeat -35px -40px;
+    /*border: 1px solid gray;*/
+}
+.ticket_bottom .icon_mode6 {
+    float: left;
+    width: 90px;
+    height: 100%;
+    background: url("../img/main.png") no-repeat -35px -170px;
+    /*border: 1px solid gray;*/
+}
+.hot_company {
+    margin: 10px auto;
+    width: 1180px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 40px;
+    color: #555;
+    padding: 0;
+    border-bottom: 2px solid #555;
+}
+.company {
+    margin: 0 auto;
+    width: 1180px;
+    height: 340px;
+    /*border: 1px solid red;*/
+}
+.company .big {
+    width: 460px;
+    height: 100%;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+    float: left;
+    color: #555;
+    font-size: 14px;
+    background: #f6f6f6;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.company .big img {
+    width: 220px;
+    height: 205px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.company .big .info_img {
+    width: 210px;
+    height: 255px;
+    float: right;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.company .big .lable {
+    width: 220px;
+    height: 50px;
+    float: left;
+    margin-top: -5px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 50px;
+    background: #ccc;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+}
+.company .big .icon {
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid gray;*/
+    position: absolute;
+    left: 400px;
+    top: 265px;
+    background: url("../img/main.png") no-repeat -370px -270px;
+}
+.company .small {
+    width: 720px;
+    height: 100%;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    float: right;
+}
+.company .small .company_small {
+    width: 220px;
+    height: 160px;
+    float: left;
+    /*border: 1px solid gray;*/
+    margin-top: 10px;
+    margin-left: 15px;
+    box-sizing: border-box;
+}
+.company .small span {
+    width: 220px;
+    float: left;
+    height: 38px;
+    /*border: 1px solid gray;*/
+    box-sizing: border-box;
+    margin-top: 120px;
+    text-align: center;
+    line-height: 38px;
+    background: #555;
+    color: #fff;
+}
+.company .small .company_small1 {
+    background: url("../img/cz3.png") no-repeat;
+}
+.company .small .company_small2 {
+    background: url("../img/mu3.png") no-repeat;
+}
+.company .small .company_small3 {
+    background: url("../img/hu3.png") no-repeat;
+}
+.company .small .company_small4 {
+    background: url("../img/zh3.png") no-repeat;
+}
+.company .small .company_small5 {
+    background: url("../img/3u3.png") no-repeat;
+}
+.company .small .company_small6 {
+    background: url("../img/9c3.png") no-repeat;
+}
+
+
