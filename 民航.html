@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/minhang.css">
+    <script type="text/javascript" src="./js/minhang.js"></script>
+
+</head>
+<body onload="lb();ycload()">
+<div class="header" style="height: 75px;">
+    <div style="width: 1180px;height: 100%;margin: auto">
+        <img src="./img/h1.png" alt="" style="margin-right: 80px">
+        <img src="./img/h2.jpg" alt="" style="position: relative;top: -7px;">
+    </div>
+</div>
+    <div class="one">
+        <div class="two">
+            <div class="left">
+                <a href="" style="background:#fff;
+    color:#3b8de3;
+    border-top: 3px solid;
+    line-height: 37px;
+    border-top-color: #f4a140;">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航咨询</a>
+                <a href="">民航问答</a>
+
+            </div>
+
+            <div class="right">
+                <div class="touxiang"></div>
+                <a href="">登录</a>
+                <a href="">注册</a>
+                <a href="" class="yh">用户中心</a>
+                    <div class="sanjiao"></div>
+            </div>
+
+        </div>
+    </div>
+
+<!--hot-->
+    <div class="hot1">
+        <div class="hot2">
+            <span style="font-size: 12px">热门城市：</span>
+            <a href="">深圳&nbsp;</a><a href="">北京&nbsp;</a><a href="">上海&nbsp;</a><a href="">广州&nbsp;</a><a href="">南京&nbsp;</a><a href="">天津&nbsp;</a><a
+                href="">武汉&nbsp;</a><a href="">长沙&nbsp;</a><a href="">昆明&nbsp;</a><a href="">贵阳&nbsp;</a><a href="">成都&nbsp;</a><a href="">重庆&nbsp;</a><a
+                href="">海口&nbsp;</a><a href="">哈尔滨&nbsp;</a><a href="">更多</a>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="lunbb" >
+        <img id="lunbo" class="lunbo" src="./img/l1.png" alt="">
+        <div class="spots">
+            <div id="spot1" class="spot" style="height: 100%;width: 28px;float: left;background: #ff6600"></div>
+            <div id="spot2" class="spot" style="height: 100%;width: 28px;float: right;background: black"></div>
+        </div>
+    </div>
+
+    <div class="line3">
+        <div class="line31">
+            <div class="line31-left">
+                <h3 style="font-family: 'Microsoft YaHei';font-size: 18px">购票流程:</h3>
+            </div>
+            <div class="line31-right">
+                <ul>
+                    <li >
+                        <div class="icon" style="width: 70px;height: 70px">
+                            <div class="out">
+                                <div class="in"></div>
+                            </div>
+                        </div>
+                        <div class="text" style="width: 120px;">
+                            <div class="tital" style="width: auto;padding-top: 19px;color: #5f9ff1;font-size: 18px">航班查询</div>
+                            <div class="info" style="font-size: 14px;color: #999999;">选择出行航班</div>
+                        </div>
+                        <div class="jiantou" style="float: right"></div>
+                    </li>
+                    <li id="card">
+                        <div class="icon" style="width: 70px;height: 70px">
+                            <div class="out">
+                                <div class="in" id="li2"></div>
+                            </div>
+                        </div>
+                        <div class="text" style="width: 120px;">
+                            <div class="tital" style="width: auto;padding-top: 19px;color: #5f9ff1;font-size: 18px">提交订单</div>
+                            <div class="info" style="font-size: 14px;color: #999999;">乘机人和联系人</div>
+                        </div>
+                        <div class="jiantou" style="float: right"></div>
+                    </li>
+                    <li>
+                        <div class="icon" style="width: 70px;height: 70px">
+                            <div class="out">
+                                <div class="in" id="li3"></div>
+                            </div>
+                        </div>
+                        <div class="text" style="width: 120px;">
+                            <div class="tital" style="width: auto;padding-top: 19px;color: #5f9ff1;font-size: 18px">在线支付</div>
+                            <div class="info" style="font-size: 14px;color: #999999;">支付机票款</div>
+                        </div>
+                        <div class="jiantou" style="float: right"></div>
+                    </li>
+                    <li style="width: 200px">
+                        <div class="icon" style="width: 70px;height: 70px">
+                            <div class="out">
+                                <div class="in" id="li4"></div>
+                            </div>
+                        </div>
+                        <div class="text" style="width: 120px;">
+                            <div class="tital" style="width: auto;padding-top: 19px;color: #5f9ff1;font-size: 18px">无需取票</div>
+                            <div class="info" style="font-size: 14px;color: #999999;">电子客票换登机牌</div>
+                        </div>
+                        <!--<div class="jiantou" style="float: right"></div>-->
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%;height: 20px;"></div>
+
+    <div class="yudingb" style="width: 1180px;height: 42px;margin: auto ;position: relative;border-bottom: 2px solid #ccc;">
+        <div style="height: 42px;
+            font-size: 28px;
+            width: 295px;
+            font-family: 'Microsoft YaHei';
+            position: absolute;
+            left: 0;
+            top: -5px;
+            color: #555555;
+            "
+        >热门航线预订</div>
+        <ul class="yc" style="float: right" id="yc" onmouseover="c()" onload="load()">
+
+            <li class="yca">全国</li>
+            <li>深圳</li>
+            <li>北京</li>
+            <li>上海</li>
+            <li>广州</li>
+            <li>武汉</li>
+            <li>成都</li>
+            <li>海口</li>
+            <li>重庆</li>
+            <li>沈阳</li>
+        </ul>
+    </div>
+
+    <div style="width: 1180px;height: 310px;margin: auto;" id="cards">
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">海口</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">郑州</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">北京</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">深圳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 1201px;height: 308px;" class="listul">
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+
+            <li  class="card">
+                <div class="card-t" style="width: 218px;height: 45px;padding: 5px 0 0 0 ;color: #0055aa;">
+                    <div style="height: 40px;width: 75px;padding-right: 10px;line-height: 40px;text-align: right;color: #0055aa;font-size: 16px">沈阳</div>
+                    <div class="xj" style="width: 40px;height: 40px;"></div>
+                    <div style="height: 40px;width: 75px;padding-left: 10px;line-height: 40px;text-align: left;color: #0055aa;font-size: 16px">全国</div>
+                    <div style="width:100%;height: 21px;padding: 2px 0 0 0 ;font-size: 12px;text-align: center;line-height: 21px">05月81日</div>
+                </div>
+
+                <div class="card-b" style="width: 220px;height: 44px;margin: 40px 0 0 0;position: relative;">
+                    <div class="fj"> </div>
+                    <span style="font-size: 14px;color: #0055aa;position: absolute;top: 10px;left: 67px">票价:</span>
+                    <div style="color: #ff6600;position: absolute;top: 9.5px;left: 110px;font-size: 16px">￥</div>
+                    <div style="color: #ff6600;position: absolute;top: -2.5px;left: 129px;font-size: 28px">123</div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div style="width: 100%;height: 50px;"></div>
+<div class="yudingb" style="width: 1180px;height: 42px;margin: auto ;position: relative;border-bottom: 2px solid #ccc;">
+    <div style="height: 42px;
+            font-size: 28px;
+            width: 295px;
+            font-family: 'Microsoft YaHei';
+            position: absolute;
+            left: 0;
+            top: -5px;
+            color: #555555;
+            "
+    >热门航空公司</div>
+</div>
+<div style="width: 100%;height: 20px;"></div>
+<div id="rcb" style="width: 1180px;height: 340px;margin: auto;position: relative">
+    <div class="rc" >
+        <div class="rc1" >
+            <div style="width: 220px;">
+                <div style="height: 200px;width: 220px;overflow: hidden"><img src="./img/ca3.png" alt="" class="rimg"></div>
+                <div style="height: 37px;background: #ccc;margin-top: -5px;color: #555;font-size: 12px;font-family: Tahoma;text-align: center;line-height: 37px">中国国际航空公司</div>
+            </div>
+            <p style="width: 192px;font-size: 12px;font-family: Tahoma;float: right;margin-top: -240px;line-height: 22px">
+                中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。
+            </p>
+        </div>
+
+        </div>
+    <div class="rc2">
+        <ul style="float: left">
+            <li><div><img src="img/cz3.png" alt="" class="rimg"></div></li>
+            <li><div><img src="img/mu3.png" alt="" class="rimg"></div></li>
+            <li><div><img src="img/hu3.png" alt="" class="rimg"></div></li>
+            <li><div><img src="img/zh3.png" alt="" class="rimg"></div></li>
+            <li><div><img src="img/3u3.png" alt="" class="rimg"></div></li>
+            <li><div><img src="img/9c3.png" alt="" class="rimg"></div></li>
+        </ul>
+    </div>
+</div>
+
+<div style="width: 100%;height: 40px;"></div>
+</body>
+</html>

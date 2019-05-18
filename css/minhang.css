@@ -1,0 +1,359 @@
+body{
+    margin: 0;
+}
+
+div{
+    font-family: "Microsoft YaHei";
+}
+
+ul,li,h1,h2,h3,h4,h5,h6{
+    padding: 0;margin: 0;list-style: none;
+}
+.one{
+    margin-top: 3px;
+    height: 40px;
+    background: #3b8de3;
+}
+.two{
+    width: 1180px;
+    margin: auto;
+    height: 100%;
+}
+
+.left{
+    float: left;
+    width: 690px;
+}
+
+.right{
+    float: right;
+    position:relative ;
+}
+
+.left a{
+    float: left;
+    padding: 0 20px 0 20px;
+    line-height: 40px;
+    text-decoration: #75bee3;
+    color: #fff;
+    border-top-color: #f4a140;
+    border-bottom-color: #fff;
+
+}
+
+.right a{
+    float: left;
+    padding: 0 20px 0 20px;
+    line-height: 38px;
+    text-decoration: #ff0000;
+    color: #fff;
+    background: rgb(11,133,223);
+}
+
+yh{
+    float: left;
+    margin: 0 0 0 0px;
+    line-height: 38px;
+    text-decoration: #ff0000;
+    color: #fff;
+}
+.sanjiao{
+    float: right;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 5px solid #3b8de3;
+    border-right: 5px solid #3b8de3;
+    position: absolute;
+    top:40%;left: 95%;
+}
+.sanjiao:hover{
+    float: right;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 5px solid #3b8de3;
+    border-right: 5px solid #3b8de3;
+    position: absolute;
+    top:40%;left: 95%;
+}
+.left a:hover:not(:first-child){
+    background:#fff;
+    color:#3b8de3;
+    border-top: 3px solid;
+    line-height: 37px;
+    border-top-color: #f4a140;
+}
+.right a:hover{
+    background:rgb(11,120,199);
+    color:#fff;
+
+    border-top-color: #f4a140;
+}
+
+.touxiang{
+
+    background: url("../img/jl.png");
+    background-size: 20px;
+}
+
+.hot1{
+
+    width: 100%;
+    height: 34px;
+}
+.hot2{
+
+    height: 100%;
+    width: 1181px;
+    margin: auto;
+    position: relative;
+}
+.hot2 span{
+
+    left: 3px;
+    top: 5px;
+}
+
+.hot2 a{
+    color: #0055AA;
+    margin: 0 5px;
+    font-size: 12px;
+    text-decoration: #ff0000;
+}
+
+.lunbb{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.lunbo{
+
+    margin-left: -180px;
+    margin-top: -10px;
+}
+
+.spots{
+    height: 5px;
+    width: 68px;
+
+    position: absolute;
+    left: 87%;
+    top: 97.5%;
+}
+
+
+
+.line3{
+    height: 80px;
+
+}
+
+.line31{
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    background: #f7f7f6;
+}
+.line31 div{
+    float: left;
+}
+.line31-left{
+    width: 170px;
+    height: 100%;
+}
+.line31-right{
+    width: 1000px;
+    height: 100%;
+
+
+}
+.line31-left h3{
+    text-align: center;
+    line-height: 80px;
+    color: #555;
+    font-family: "Microsoft YaHei";
+}
+.line31-right li{
+    height: 78px;
+    margin-left: 10px;
+    float: left;
+    width: 25%;
+
+
+}
+
+@keyframes ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+
+.in:hover{
+    animation: ani .2s linear alternate infinite;
+}
+
+.jiantou{
+    width: 45px;
+    height: 80px;
+
+}
+
+.out{
+    margin-top: 12px;
+   width: 100%;
+    height: 100%;
+    background: url("../img/main.png") no-repeat -163px -135px;
+}
+.in{
+    width: 80%;
+    height: 80%;
+    background: url("../img/main.png") no-repeat -135px -63px;
+}
+.jiantou{
+    float: right;
+    height: 100%;
+    width: 50px;
+    background: url("../img/main.png") no-repeat -360px -125px;
+}
+.text div{
+    float: left;
+}
+
+#li2{
+    background: url("../img/main.png") no-repeat -188px -65px;
+}
+#li3{
+    background: url("../img/main.png") no-repeat -240px -65px;
+}
+#li4{
+    background: url("../img/main.png") no-repeat -295px -65px;
+}
+
+.listul li{
+    list-style: none;
+    float: left;
+    width: 220px;
+    height: 134px;
+    margin: 20px 20px 0 0;
+    /*border: yellow solid 1px;*/
+    /*background: rgb(248,248,248);*/
+}
+
+
+.card{
+    background: url("../img/card.png") no-repeat -3px -5px;
+    background-size: 102% 108%;
+    transition: all .5s  ease 0s;
+    cursor: pointer;
+}
+.xj{
+    transition: all .3s  ease 0s;
+}
+.card:hover .xj{
+
+    transform: translate(8px,0px);
+
+}
+
+.card:hover{
+    background: url("../img/card2.png") no-repeat -3px -5px;
+    background-size: 102% 108%;
+}
+
+.card-t div{
+    float: left;
+}
+.xj{
+    background: url("../img/img.png") -30px -62px;
+}
+.fj{
+    width: 22px;
+    height: 20px;
+    background: url("../img/img.png") -33px -105px;
+    position: absolute;
+    top: 8px;
+    left: 37px;
+
+}
+
+.yca{
+    color: #3b8de3;
+    border-bottom: 2px solid #137cfc;
+    background: #c8e3f7;
+    list-style: none;
+    float: left;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    padding-top: 2px;
+}
+.ycb{
+
+    color: #555;
+    background: #fff;
+}
+.ycb:hover{
+    color:rgb(60,141,225) ;
+    border-bottom: 2px solid rgb(27,124,250);
+}
+.yc li{
+    float: left;
+    list-style: none;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    padding-top: 2px;
+    transition: background-color ease .5s;
+}
+
+.rc{
+    width: 430px;
+    height: 297px;
+    padding: 20px 15px 20px 15px;
+    background: rgb(245,245,245);
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.rc2{
+    width: 720px;
+    height: 340px;
+   /* position: absolute;*/
+    float: right;
+}
+.rc2 li{
+    width: 220px;
+    height: 160px;
+    padding: 0 0 18px 20px;
+    float: left;
+}
+.rc2 li div{
+    width: 220px;
+    height: 160px;
+    overflow: hidden;
+}
+.rc2 li div img{
+    width: 220px;
+    height: 160px;
+    display: flex;
+    transition: .5s;
+}
+
+#rcb img:hover{
+    transform: scale(1.05,1.05);
+    transform-origin: center;
+}
+.rimg{
+    transition: .5s;
+}
