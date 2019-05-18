@@ -25,6 +25,25 @@
             }, 3000)
         }
     </script>
+    <script>
+
+        // 热门航线
+        window.onload=function(ev) {
+
+            var links = document.querySelectorAll(".mod-bd a");
+            var con = document.querySelectorAll(".list");
+
+            for (var i = 0; i < links.length; i++) {
+                links[i].index = i;
+                links[i].onclick = function (ev) {
+                    for (var j = 0; j < con.length; j++) {
+                        con[j].style.display = "none";
+                    }
+                    con[this.index].style.display = "block";
+                }
+            }
+        }
+    </script>
 </head>
 <body>
 <!--头部-->
@@ -225,112 +244,998 @@
             </h2>
         </div>
         <div class="mod-bd">
-            <a href="" class="a1 nati">全国</a>
-            <a href="" class="a2">深圳</a>
-            <a href="" class="a3">北京</a>
-            <a href="" class="a4">上海</a>
-            <a href="" class="a5">广州</a>
-            <a href="" class="a6">武汉</a>
-            <a href="" class="a7">成都</a>
-            <a href="" class="a8">海口</a>
-            <a href="" class="a9">重庆</a>
-            <a href="" class="a10">沈阳</a>
+            <a href="javascript:" class="a1 nati">全国</a>
+            <a href="javascript:" class="a2">深圳</a>
+            <a href="javascript:" class="a3">北京</a>
+            <a href="javascript:" class="a4">上海</a>
+            <a href="javascript:" class="a5">广州</a>
+            <a href="javascript:" class="a6">武汉</a>
+            <a href="javascript:" class="a7">成都</a>
+            <a href="javascript:" class="a8">海口</a>
+            <a href="javascript:" class="a9">重庆</a>
+            <a href="javascript:" class="a10">沈阳</a>
         </div>
     </div>
-    <div class="list">
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span></div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span>
-                <span class="ncoach_type_t3">150</span>
+    <div class="list-box">
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口1</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">长沙</span></div>
-            <div class="ncoach_date">10月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span>
-                <span class="ncoach_type_t3">110</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口2</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span></div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口3</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span></div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span>
-                <span class="ncoach_type_t3">150</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口4</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span></div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span>
-                <span class="ncoach_type_t3">150</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口5</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span></div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span>
-                <span class="ncoach_type_t3">150</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口6</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span></div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口7</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
-        <div class="list-item">
-            <div class="ncoach_name">
-                <span class="ncoach_name_start">海口</span>
-                <div class="to"></div>
-                <span class="ncoach_name_end">郑州</span>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口8</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
             </div>
-            <div class="ncoach_date">12月16日</div>
-            <div class="ncoach_type">
-                <span class="ncoach_type_t1">票价：</span>
-                <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
             </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口9</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="list">
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口10</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <div class="ncoach_type-t0"></div>
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">长沙</span></div>
+                <div class="ncoach_date">10月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">110</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span>
+                    <span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span></div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+            <div class="list-item">
+                <div class="ncoach_name">
+                    <span class="ncoach_name_start">海口</span>
+                    <div class="to"></div>
+                    <span class="ncoach_name_end">郑州</span>
+                </div>
+                <div class="ncoach_date">12月16日</div>
+                <div class="ncoach_type">
+                    <span class="ncoach_type_t1">票价：</span>
+                    <span class="ncoach_type_t2">￥</span><span class="ncoach_type_t3">150</span>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -455,17 +1360,29 @@
         </div>
         <div class="zx-ct-btm">
             <p>2019/5/16 22:31:30</p>
-            <a href=""><div>怀孕28+6周可以坐飞机吗，还需要什么东...</div></a>
+            <a href="">
+                <div>怀孕28+6周可以坐飞机吗，还需要什么东...</div>
+            </a>
             <p>2019/5/16 22:00:35</p>
-                <a href=""> <div>你好。怀孕7个月乘坐需要办理证明吗</div></a>
+            <a href="">
+                <div>你好。怀孕7个月乘坐需要办理证明吗</div>
+            </a>
             <p>2019/5/16 21:59:07</p>
-            <a href="" > <div>你好。怀孕7乘坐需要办理证明吗</div>    </a>
+            <a href="">
+                <div>你好。怀孕7乘坐需要办理证明吗</div>
+            </a>
             <p>2019/5/16 21:35:27</p>
-            <a href=""><div>你好，小孩才32个月，没有身份证，怎么取...</div></a>
+            <a href="">
+                <div>你好，小孩才32个月，没有身份证，怎么取...</div>
+            </a>
             <p>2019/5/16 17:57:21</p>
-            <a href=""><div>护照可以定机票登机嘛</div></a>
+            <a href="">
+                <div>护照可以定机票登机嘛</div>
+            </a>
             <p>2019/5/16 14:44:39</p>
-            <a href=""><div>你好，请问出生两个月的婴儿应该在网上怎么...</div></a>
+            <a href="">
+                <div>你好，请问出生两个月的婴儿应该在网上怎么...</div>
+            </a>
         </div>
     </div>
     <div class="zx-right">
@@ -481,8 +1398,8 @@
                 <a href="" class="a3">欧洲</a>
 
             </div>
-        <div class="tj-btm"></div>
-    </div>
+            <div class="tj-btm"></div>
+        </div>
         <div class="tj-btm">
             <div class="list-item">
                 <div class="ncoach_name">
@@ -509,6 +1426,7 @@
                 </div>
             </div>
         </div>
+    </div>
 </div>
 <!--底部导航-->
 <div class="foot-main">
@@ -540,13 +1458,12 @@
             </div>
 
 
-
             <div class="help_l">
                 <strong>付款方式</strong>
                 <ul>
-                    <li><a href="" >-网上银行</a></li>
-                    <li><a href="" >-微信支付</a></li>
-                    <li><a href="" >-信用卡</a></li>
+                    <li><a href="">-网上银行</a></li>
+                    <li><a href="">-微信支付</a></li>
+                    <li><a href="">-信用卡</a></li>
 
                 </ul>
             </div>
@@ -554,8 +1471,8 @@
             <div class="help_l">
                 <strong>旅客保障</strong>
                 <ul>
-                    <li><a href="" >-航协认证</a></li>
-                    <li><a href="" >-支付出票</a></li>
+                    <li><a href="">-航协认证</a></li>
+                    <li><a href="">-支付出票</a></li>
                     <li><a href="">-安全保障</a></li>
 
                 </ul>
@@ -581,7 +1498,8 @@
             </div>
 
             <div class="help_last">
-                <div class="help_time" style="margin-left:-50px;"><strong style="margin-left:40px">服务热线</strong><p style="margin-left:30px"><span></span><b>4000161580</b></p>
+                <div class="help_time" style="margin-left:-50px;"><strong style="margin-left:40px">服务热线</strong>
+                    <p style="margin-left:30px"><span></span><b>4000161580</b></p>
 
                 </div>
             </div>
