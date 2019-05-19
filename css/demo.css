@@ -1,0 +1,1210 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.box {
+    background: #3b8ed3;
+    overflow: hidden;
+}
+
+.box div.con {
+    width: 1200px;
+    margin: auto;
+}
+
+.box div.left {
+    float: left;
+}
+
+.box div.right {
+    position: relative;
+    float: right;
+    height: 44px;
+}
+
+div.box a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.box div.left a {
+    border-top: 4px solid #3b8ed3;
+    float: left;
+    padding: 10px 20px;
+}
+
+.box div.right a {
+    float: left;
+    padding: 14px 20px 10px;
+
+}
+
+.box div.left a.active {
+    border-top: 4px solid orange;
+    background-color: white;
+    color: #3b8ed3;
+}
+
+.box div.left a:hover {
+    background-color: white;
+    border-top: 4px solid orange;
+    color: #3b8ed3;
+}
+
+.box div.right a:hover {
+    background-color: #2f5991;
+}
+
+.box div.triangle {
+    position: absolute;
+    right: 0px;
+    top: 18px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid #ffffff;
+    border-left: 5px solid #3b8ed3;
+    border-right: 5px solid #3b8ed3;
+}
+
+header {
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img.header {
+    height: 80px;
+}
+
+div.hotcities {
+    padding-left: 150px;
+    font-size: 14px;
+    background-color: rgba(180, 180, 180, 0.21);
+}
+
+span.hotcities {
+    margin: auto 3px;
+}
+
+a.cities {
+    color: #6264be;
+    margin: auto 2px;
+}
+
+a.cities:hover {
+    color: red;
+}
+
+div.banner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+}
+
+
+div.banner1 {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/banner1.png") no-repeat center;
+    position: absolute;
+    top: 0;
+}
+
+div.banner2 {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/banner2.png") no-repeat center;
+    position: absolute;
+    top: 0;
+}
+
+div.ordersteps {
+    width: 1180px;
+    height: 80px;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+div.order-left {
+    float: left;
+    width: 170px;
+    height: 100%;
+    text-align: center;
+
+
+}
+
+ul.order-right {
+    float: right;
+    width: 1010px;
+    height: 100%;
+
+}
+
+ul.order-right li {
+    float: left;
+    width: 25%;
+    height: 100%;
+
+
+}
+
+h3 {
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    margin: auto;
+}
+
+ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/**/
+ul.order-right div.icon {
+    position: relative;
+    float: left;
+    width: 28%;
+    height: 100%;
+
+}
+
+ul.order-right div.icon-out {
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/icons2.png") -160px -126px;
+}
+
+ul.order-right div.icon-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul.order-right div.icon-in:hover {
+    animation: ani .2s ease;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+@keyframes ani {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+ul.order-right div.i1 {
+    background: url("../imgs/icons2.png") -134px -57px;
+}
+
+ul.order-right div.i2 {
+    background: url("../imgs/icons2.png") -185px -55px;
+}
+
+ul.order-right div.i3 {
+    background: url("../imgs/icons2.png") -237px -57px;
+}
+
+ul.order-right div.i4 {
+    background: url("../imgs/icons2.png") -290px -57px;
+}
+
+div.order-text {
+    float: left;
+    width: 54%;
+    height: 100%;
+    line-height: 200%;
+}
+
+div.order-text .order-title {
+
+    font-size: 20px;
+    color: #3b8ed3;
+    padding-top: 10px;
+
+
+}
+
+div.ordersteps div.arrow {
+
+    float: left;
+    width: 18%;
+    height: 100%;
+    background: url("../imgs/icons2.png") -360px -125px;
+}
+
+/*热门航线预定*/
+.hot-line {
+    position: relative;
+    margin: 35px auto;
+    height: 45px;
+    width: 1180px;
+    border-bottom: 3px solid #a2a2a2;
+}
+
+.hot-line div.left {
+    position: absolute;
+    bottom: 10px;
+    width: 30%;
+    float: left;
+    font-size: 28px;
+}
+
+
+.hot-line ul.right {
+    height: 100%;
+    width: 70%;
+    float: right;
+    font-size: 20px;
+}
+
+.hot-line ul.right li {
+    color: #000000;
+    float: left;
+    height: 100%;
+    width: 10%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.hot-line ul.right li:hover {
+    border-bottom: 2px solid dodgerblue;
+    color: dodgerblue;
+}
+
+.hot-line ul.right li.active {
+    color: dodgerblue;
+    background: lightskyblue;
+}
+
+/*热门预定班次*/
+.hot-flight {
+    margin: -30px auto 0px;
+    width: 1189px;
+    height: 300px;
+    transform: translateX(-5px);
+}
+
+.hot-flight div.out {
+    position: relative;
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+
+.hot-flight div.out div.in {
+    background: url("../imgs/carl_bg.png") -3px -3px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 220px;
+    height: 134px;
+
+}
+
+.hot-flight div.out div.in:hover {
+    background: url("../imgs/carl_bg.png") -227px -3px;
+}
+
+.hot-flight div.out div.in a {
+    height: 100%;
+    width: 100%;
+}
+
+.hot-flight div.out div.in div.one {
+    height: 30px;
+    padding: 20px 20px 0;
+    font-size: 19px;
+}
+
+.hot-flight div.out div.in div.one div.first {
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hot-flight div.out div.in div.arrow-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s linear;
+
+}
+
+.hot-flight div.out div.in div.arrow-in {
+    position: absolute;
+    left: 80px;
+    top: 18px;
+    width: 60px;
+    height: 20px;
+    background: url("../imgs/icons.png") -20px -70px;
+
+}
+
+.hot-flight div.out div.in div.arrow-out:hover {
+    transform: translateX(20px);
+    transition: all .5s linear;
+}
+
+.hot-flight div.out div.in div.one div.second {
+    float: right;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    line-height: 20px;
+}
+
+.hot-flight div.out div.in div.two {
+    width: 100%;
+    text-align: center;
+}
+
+.hot-flight div.out div.in div.three {
+
+
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
+    height: 40px;
+}
+
+.hot-flight div.out div.in div.three div.plane {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 18px;
+    left: 10px;
+    width: 35px;
+    background: url("../imgs/icons.png") -36px -106px;
+
+}
+
+.hot-flight div.out div.in div.three div.ticket-price {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 15px;
+    left: 38px;
+    font-size: 16px;
+}
+
+.hot-flight div.out div.in div.three div.dollor {
+    color: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    font-size: 16px;
+}
+
+.hot-flight div.out div.in div.three div.real-price {
+    color: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 7px;
+    left: 100px;
+    font-size: 26px;
+}
+
+/*购票流程下>*/
+div.order-bottom {
+    height: 240px;
+    width: 1180px;
+    margin: 20px auto 0;
+}
+
+div.order-bottom div.right-button {
+    float: left;
+    height: 100%;
+    width: 30%;
+    border-top: 1px solid #b9b3b0;
+}
+
+div.order-bottom div.right-button div.out {
+    border-bottom: 1px solid #b9b3b0;
+    border-left: 1px solid #b9b3b0;
+    box-sizing: border-box;
+    float: left;
+    height: 33.33%;
+    width: 50%;
+    position: relative;
+
+}
+
+div.order-bottom div.right-button div.out div.button-in {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+div.order-bottom div.right-button div.out div.button-icon {
+    float: left;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+div.order-bottom div.right-button div.out div.button-icon:hover {
+    animation: ani2 .2s ease;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+@keyframes ani2 {
+    0% {
+        transform-origin: 27% 30%;
+        transform: rotate(0);
+    }
+    25% {
+        transform-origin: 27% 30%;
+        transform: rotate(30deg);
+    }
+    50% {
+        transform-origin: 27% 30%;
+        transform: rotate(0deg);
+    }
+    75% {
+        transform-origin: 27% 30%;
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform-origin: 27% 30%;
+        transform: rotate(0deg);
+    }
+}
+
+div.order-bottom div.right-button div.out div.button-icon div.b {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+div.order-bottom div.right-button div.out div.i1 {
+
+    background: url("../imgs/icons2.png") 0 -50px;
+}
+
+div.order-bottom div.right-button div.out div.i2 {
+    background: url("../imgs/icons2.png") 0 -120px;
+}
+
+div.order-bottom div.right-button div.out div.i3 {
+    background: url("../imgs/icons2.png") -70px -120px;
+}
+
+div.order-bottom div.right-button div.out div.i4 {
+    background: url("../imgs/icons2.png") 0 -190px;
+}
+
+div.order-bottom div.right-button div.out div.i5 {
+    background: url("../imgs/icons2.png") -70px -50px;
+}
+
+div.order-bottom div.right-button div.out div.i6 {
+    background: url("../imgs/icons2.png") -70px -190px;
+}
+
+div.order-bottom div.right-button div.out div.button-text {
+    float: right;
+    height: 100%;
+    width: 60%;
+    font-size: 18px;
+    line-height: 75px;
+    color: #000;
+}
+
+div.order-bottom div.left-news {
+    border: 1px solid #b9b3b0;
+    box-sizing: border-box;
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+
+div.order-bottom div.left-news div.half {
+    float: left;
+    height: 100%;
+    width: 50%;
+
+}
+
+div.order-bottom div.left-news div.news {
+    margin: 20px;
+}
+
+div.order-bottom div.left-news div.news div.title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-top: 30px;
+}
+
+div.order-bottom div.left-news div.news div.title-left {
+    float: left;
+    font-size: 20px;
+}
+
+div.order-bottom div.left-news div.news div.right {
+    float: right;
+    position: absolute;
+    width: 80px;
+    top: 2px;
+    right: 0px;
+}
+
+div.order-bottom div.left-news div.news div.a {
+    width: 100%;
+    margin: 15px 0;
+}
+
+div.order-bottom div.left-news div.news div.a a:hover {
+    color: red;
+}
+
+/*热门航空公司*/
+div.hot-company {
+
+    height: 350px;
+    width: 1180px;
+    margin: auto;
+    position: relative;
+}
+
+div.hot-company div.company-left {
+    height: 100%;
+    width: 40%;
+    float: left;
+    background: #f4f4f4;
+}
+
+div.hot-company div.company-left div.left {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+div.hot-company div.company-left div.left div.container {
+    margin: 40px 10px 60px;
+    position: relative;
+
+}
+
+div.hot-company div.company-left div.left div.container div.out {
+
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+div.hot-company div.company-left div.left div.container div.out img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .5s linear;
+}
+
+div.hot-company div.company-left div.left div.container div.out img:hover {
+    transform: scale(1.1);
+    transition: all .5s linear;
+}
+
+
+div.hot-company div.company-left div.left div.container div.name {
+
+    float: top;
+    width: 100%;
+    line-height: 200%;
+    text-align: center;
+    background-color: #a2a2a2;
+}
+
+div.hot-company div.company-left div.right {
+    height: 100%;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+div.hot-company div.company-left div.right div.text {
+    margin: 20px 10px 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-indent: 14px;
+}
+
+div.hot-company div.company-left div.right div.icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: url("../imgs/icons2.png") -374px -270px;
+    bottom: 20px;
+    right: 20px;
+}
+
+div.hot-company div.company-right {
+    position: absolute;
+    top: -11px;
+    right: 0;
+    height: 106%;
+    width: 60%;
+    float: right;
+}
+
+div.hot-company div.company-right div.certain-company {
+    position: relative;
+    height: 50%;
+    width: 33.33%;
+    float: left;
+}
+
+div.hot-company div.company-right div.certain-company div.out {
+    position: absolute;
+    margin: 10px;
+    float: left;
+    overflow: hidden;
+    top: 2px;
+    left: 5px;
+    right: 0px;
+    bottom: 2px;
+
+}
+
+div.hot-company div.company-right div.certain-company div.out img {
+    height: 100%;
+    width: 100%;
+    transition: all .5s linear;
+}
+
+div.hot-company div.company-right div.certain-company div.out img:hover {
+
+    transform: scale(1.1);
+    transition: all .5s linear;
+}
+
+div.hot-company div.company-right div.certain-company div.out div.name {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(66, 71, 83, 0.38);
+}
+
+/*三个热门*/
+div.threehot {
+
+    height: 400px;
+    width: 1180px;
+    margin: 40px auto 0;
+}
+
+div.threehot .hotinternational {
+    float: left;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+
+div.threehot .hotinternational .in {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+}
+
+div.threehot .hotinternational .title {
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid #a2a2a2;
+    box-sizing: border-box;
+}
+
+div.threehot .hotinternational .title .title-left {
+    float: left;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+div.threehot .hotinternational .title .right {
+    float: right;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+div.threehot .hotinternational .info {
+
+    width: 100%;
+    height: 85%;
+}
+
+div.threehot .hotinternational .info .term {
+
+    height: 100%;
+    float: left;
+    width: 50%;
+}
+
+div.threehot .hotinternational .info .term a {
+    width: 100%;
+    height: 12.5%;
+    display: block;
+    line-height: 40px;
+
+
+}
+
+div.threehot .hotinternational .info .term a:hover {
+    color: #be4533;
+}
+
+div.threehot .news {
+    float: left;
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+
+div.threehot .news .in {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+}
+
+div.threehot .news .title {
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid #a2a2a2;
+    box-sizing: border-box;
+
+}
+
+div.threehot .news .title .title-left {
+    float: left;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+div.threehot .news .title .right {
+    float: right;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+div.threehot .news .con {
+    width: 100%;
+    height: 85%;
+}
+
+div.threehot .news .con .term {
+    height: 16.6%;
+
+}
+
+div.threehot .news .con .term .date {
+    margin-left: 20px;
+}
+
+div.threehot .news .con .term a:hover {
+    color: #be4533;
+}
+
+div.threehot .special-price {
+    float: left;
+    height: 100%;
+    width: 40%;
+
+}
+
+div.threehot .special-price .up {
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid #a2a2a2;
+    box-sizing: border-box;
+}
+
+div.threehot .special-price .up .left {
+    float: left;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+div.threehot .special-price .up .right {
+    float: right;
+    margin-top: 20px;
+    height: 40px;
+    width: 270px;
+
+}
+
+div.threehot .special-price .up .right li {
+    height: 100%;
+    width: 90px;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+}
+
+div.threehot .special-price .up .right .active {
+    background-color: #c8e3fc;
+}
+
+
+/*复制航班代码*/
+
+div.threehot .special-price .down {
+    width: 100%;
+    height: 80%;
+}
+
+div.threehot .special-price .down .out {
+
+    position: relative;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+div.threehot .special-price .down .out div.in {
+    background: url("../imgs/carl_bg.png") -3px -3px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 220px;
+    height: 134px;
+
+}
+
+div.threehot .special-price .down .out div.in:hover {
+    background: url("../imgs/carl_bg.png") -227px -3px;
+}
+
+div.threehot .special-price .down .out div.in a {
+    height: 100%;
+    width: 100%;
+}
+
+div.threehot .special-price .down .out div.in div.one {
+    height: 30px;
+    padding: 20px 20px 0;
+    font-size: 19px;
+}
+
+div.threehot .special-price .down .out div.in div.one div.first {
+    float: left;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    line-height: 20px;
+}
+
+div.threehot .special-price .down .out div.in div.arrow-out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s linear;
+
+}
+
+div.threehot .special-price .down .out div.in div.arrow-in {
+    position: absolute;
+    left: 80px;
+    top: 18px;
+    width: 60px;
+    height: 20px;
+    background: url("../imgs/icons.png") -20px -70px;
+
+}
+
+div.threehot .special-price .down .out div.in div.arrow-out:hover {
+    transform: translateX(20px);
+    transition: all .5s linear;
+}
+
+div.threehot .special-price .down .out div.in div.one div.second {
+    float: right;
+    height: 100%;
+    width: 33.33%;
+    text-align: center;
+    line-height: 20px;
+}
+
+div.threehot .special-price .down .out div.in div.two {
+    width: 100%;
+    text-align: center;
+}
+
+div.threehot .special-price .down .out div.in div.three {
+
+
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    right: 30px;
+    height: 40px;
+}
+
+div.threehot .special-price .down .out div.in div.three div.plane {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 18px;
+    left: 10px;
+    width: 35px;
+    background: url("../imgs/icons.png") -36px -106px;
+
+}
+
+div.threehot .special-price .down .out div.in div.three div.ticket-price {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 15px;
+    left: 38px;
+    font-size: 16px;
+}
+
+div.threehot .special-price .down .out div.in div.three div.dollor {
+    color: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    font-size: 16px;
+}
+
+div.threehot .special-price .down .out div.in div.three div.real-price {
+    color: red;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    top: 7px;
+    left: 100px;
+    font-size: 26px;
+}
+
+/*蓝色的那一条*/
+.buttom1 {
+    height: 56px;
+    background-color: #3b8de3;
+}
+
+.buttom1 .center {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+}
+
+.buttom1 .center div.one {
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.buttom1 .center div.one .left {
+    width: 56px;
+    height: 56px;
+    float: left;
+}
+
+.buttom1 .center div.one .left .icon-out {
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+    background: url("../imgs/footer.png") -280px -5px;
+}
+
+.buttom1 .center div.one .left .icon-out .icon-in {
+    margin: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.buttom1 .center div.one .left .icon-out .i1 {
+    background: url("../imgs/footer.png") -5px -5px;
+
+}
+
+.buttom1 .center div.one .left .icon-out .i2 {
+    background: url("../imgs/footer.png") -83px -5px;
+
+}
+
+.buttom1 .center div.one .left .icon-out .i3 {
+    background: url("../imgs/footer.png") -160px -5px;
+
+}
+
+.buttom1 .center div.one .left .icon-out .i4 {
+    background: url("../imgs/footer.png") -227px -5px;
+
+}
+
+.buttom1 .center div.one .right {
+    height: 100%;
+    float: left;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.buttom1 .center div.one .right .up {
+    height: 50%;
+    font-size: 18px;
+
+}
+
+.buttom1 .center div.one .right .down {
+    height: 50%;
+    font-size: 12px;
+}
+
+.buttom1 .center div.one:hover .icon-in {
+    animation: ani .2s ease;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+}
+
+/*<!--最下面那一层灰色的-->*/
+.buttom2 {
+    height: 150px;
+    background-color: #f6f6f6;
+}
+
+
+.buttom2 .center {
+
+    width: 1080px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+
+}
+
+.buttom2 .center .con {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.buttom2 .center .middle-line {
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    height: 110px;
+}
+
+.buttom2 .center .middle-line div {
+    width: 179px;
+    border-right: 1px solid #a2a2a2;
+    height: 100%;
+    float: left;
+}
+
+
+.buttom2 .center .term {
+    height: 110px;
+    width: 16.6%;
+    float: left;
+}
+
+
+.buttom2 .center .term .title {
+    height: 30%;
+    font-size: 20px;
+}
+
+.buttom2 .center .term .one-line {
+    height: 20%;
+    cursor: pointer;
+}
+
+.buttom2 .center .term .one-line:hover {
+    color: #be4533;
+}
+
+.buttom2 .center .term .one-line .arrow {
+    float: left;
+    height: 100%;
+    width: 10px;
+    background: url("../imgs/page-bg.png") -50px -170px;
+}
+
+.buttom2 .center .term .one-line .words {
+    height: 100%;
+    float: left;
+    font-family: 黑体;
+}
+
+.buttom2 .center .term .down .icon {
+    float: left;
+    width: 20px;
+    height: 30px;
+    background: url("../imgs/footer.png") -135px -108px;
+}
+
+.buttom2 .center .term .down {
+    padding-top: 20px;
+}
+
+.buttom2 .center .term .down .number {
+    float: left;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.buttom3 , .buttom4 , .buttom5 , .buttom6 {
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 12px;
+}
+
+
+
+
+
+
