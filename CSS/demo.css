@@ -23,7 +23,6 @@
 /*}*/
 body{
     margin: 0;
-    height: 2000px;
 }
 h1,h2,h3,h4,h5,h6,ul,li{
     padding: 0;
@@ -85,7 +84,7 @@ h1,h2,h3,h4,h5,h6,ul,li{
     border-top: 3px solid orange;
 }
 .user{
-    background: url("../img.png") no-repeat  -315px -500px ;
+    background: url("../imgs/img.png") no-repeat  -315px -500px ;
 }
 .sanjiao{
     width: 0;
@@ -180,100 +179,7 @@ span{
     top: 10px;
 }
 
-.hothangxian{
-    height: 44px;
-    width: 1180px;
-    margin: auto;
-    border-bottom:2px solid darkgray;
-}
-.hothangxian .left{
-    height: 44px;
-    width:175px;
-    float: left;
-}
-.hothangxian .right{
-    height: 44px;
-    width: 800px;
-    float: right;
-}
-.hothangxian .left p{
-    line-height: 44px;
-    font-size:26px;
-    color:black;
-    margin: 0;
-    padding: 0;
-}
-.hothangxian .right a{
-    float: left;
-    height: 44px;
-    width: 80px;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    line-height: 44px;
-    color: black;
 
-}
-.hothangxian .right .quanguo{
-    background:rgb(200,227,252);
-    border-bottom: 2px solid #3b8de3;
-    color: #3b8de3;
-}
-.hothangxian .right a:hover{
-    border-bottom: 2px solid #3b8de3;
-    color: #3b8de3;
-}
-
-
-
-.hangxians{
-    width: 1180px;
-    height: 335px;
-    margin: auto;
-
-}
-.hangxian{
-    float: left;
-    width:220px;
-    height: 135px;
-    margin: 15px 7px;
-    border: 1px solid darkgray;
-    background:rgb(249,249,249);
-}
-.hangxian:hover{
-    background: white;
-    border: 1px solid rgb(200,227,252);
-}
-.hangxian p{
-    width: 220px;
-    height: 20px;
-    text-align: center;
-    color: rgb(0,85,170);
-
-}
-.hangxian .place{
-    margin-top: 15px;
-
-}
-.hangxian .date{
-    font-size: small;
-    margin-top: 15px;
-}
-.hangxian .piaojia{
-    margin-left: 60px;
-}
-.hangxian .¥{
-    color: rgb(255,102,0);
-}
-.hangxian .price{
-    color: rgb(255,102,0);
-}
-.hangxian p:hover{
-    text-align: center;
-    color: rgb(85,85,85);
-}
-/*购票流程*/
 .piao{
     width: 1180px;
     height: 80px;
@@ -739,11 +645,11 @@ li .a6{
     height: 100%;
     background: url("../imgs/9c3.png") no-repeat;
 }
-li:hover{
+.station-city li:hover{
     animation: fangda .5s linear ;
     animation-fill-mode: forwards;
 }
-li span{
+.station-city li span{
     width: 150px;
     height: 30px;
     position: absolute;
@@ -766,9 +672,15 @@ li span{
     height: 352px;
     float: left;
 }
+.internationalinfo2{
+    width: 460px;
+    height: 200px;
+    float: right;
+}
 .mod-hd{
     width: 100%;
     height: 42px;
+    border-bottom: 3px solid darkgray;
 
 }
 .mod-hd h2{
@@ -831,4 +743,457 @@ li span{
     text-align: center;
     line-height: 42px;
 
+}
+.flight{
+    width: 460px;
+    height: 150px;
+    float: left;
+}
+.item-list{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.item-list a{
+    width :230px;
+    height: 140px;
+    background: url("../imgs/carl_bg.png") no-repeat;
+    float: left;
+}
+.n-name{
+    float: left;
+    width: 220px;
+    height: 45px;
+}
+.n-date{
+    width: 220px;
+    height: 22px;
+    float: left;
+}
+.n-type{
+    width: 220px;
+    height: 68px;
+    float: left;
+}
+.n-name-start{
+    width: 80px;
+    height: 40px;
+    float: left;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: right;
+    margin: 0px;
+}
+.n-name-end{
+    width: 80px;
+    height: 40px;
+    float: right;
+    text-align: left;
+    font-size: 14px;
+    line-height: 40px;
+}
+.n-arrow{
+    width: 40px;
+    height: 40px;
+    background: url("../imgs/img.png") no-repeat -30px -60px;
+    float: left;
+    margin-left: 8px;
+}
+.n-date{
+    text-align: center;
+}
+.n-type span{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-height: 68px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.h40{
+    width: 1180px;
+    height: 40px;
+    float: left;
+}
+.foot-main{
+    width: 100%;
+    height: 56px;
+    float: left;
+    background: #3b8de3;
+}
+.foot-nav{
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+}
+.foot-nav ul{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.foot-nav li{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.foot-n1{
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: url("../imgs/footer.png") no-repeat -280px -3px;
+}
+.foot-n11{
+    width: 45px;
+    height: 45px;
+    background: url("../imgs/footer.png") no-repeat -2px -3px;
+}
+.foot-n11:hover{
+    animation: ani .2s linear infinite;
+}
+.foot-zhifu{
+    font-size: large;
+    width: 190px;
+    height: 15px;
+    margin: 5px 10px;
+    color: #fff;
+}
+.foot-zhifu1{
+    width: 190px;
+    height: 15px;
+    font-size: 12px;
+    margin: 5px 10px;
+    color: #fff;
+}
+
+.foot-n2{
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: url("../imgs/footer.png") no-repeat -280px -3px;
+}
+.foot-n21{
+    width: 45px;
+    height: 45px;
+    background: url("../imgs/footer.png") no-repeat -78px -3px;
+}
+.foot-n21:hover{
+    animation: rot .8s linear infinite;
+}
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.foot-n3{
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: url("../imgs/footer.png") no-repeat -280px -3px;
+}
+.foot-n31{
+    width: 45px;
+    height: 45px;
+    background: url("../imgs/footer.png") no-repeat -155px -3px;
+}
+.foot-n31:hover{
+    animation: rot .8s ease-in infinite;
+}
+.foot-n4{
+    width: 45px;
+    height: 45px;
+    float: left;
+    background: url("../imgs/footer.png") no-repeat -280px -3px;
+}
+.foot-n41{
+    width: 45px;
+    height: 45px;
+    background: url("../imgs/footer.png") no-repeat -220px -3px;
+}
+.foot-n41:hover{
+    animation: ani .2s linear infinite;
+}
+.helper{
+    width: 100%;
+    height: 160px;
+    float: left;
+    margin-top: 30px;
+}
+.helpwarp{
+    width: 1180px;
+    height: 112px;
+    margin: auto;
+}
+.helplist{
+    width: 100%;
+    height: 100px;
+
+
+}
+
+.help1{
+    float: left;
+    width: 180px;
+    height: 100px;
+}
+.xinshou{
+    width: 100px;
+    height: 25px;
+}
+.help1 li a{
+    width: 100px;
+    height: 25px;
+    font-size: 14px;
+    float: left;
+    text-decoration: none;
+}
+.help1 li a:hover{
+    color: orange;
+}
+.helplast{
+    width: 280px;
+    height: 108px;
+    float: left;
+}
+.fuwu{
+    font-size: 13px;
+}
+.phone{
+    width: 280px;
+    height: 50px;
+    background: url("../imgs/footer.png") no-repeat -130px -96px;
+    float: left;
+}
+.footer{
+    width: 100%;
+    height: 140px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerr{
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+}
+.footer-bd{
+    width: 1180px;
+    height: 45px;
+
+}
+.footer-bd p{
+    width: 500px;
+    height: 27px;
+    float: left;
+    margin-left: 40px;
+}
+.footer-bd span{
+    float: left;
+}
+.footer-bd em{
+    font-style: normal;
+    float: left;
+}
+.footer-bd b{
+    float: left;
+    margin: 0 3px;
+    display: inline;
+}
+.footer-bd a{
+    text-decoration: none;
+    float: left;
+}
+.footer-bd a:hover{
+    color: orange;
+}
+
+
+.footer-bd2{
+    width: 1180px;
+    height: 95px;
+    float: left;
+}
+.aaaa{
+    margin-left: 540px;
+    margin-top: 4px;
+    float: left;
+    width: 62px;
+    height: 74px;
+    background: url("../imgs/biaoji.jpg") no-repeat ;
+}
+
+.table{
+    width: 100%;
+    height: 160px;
+    float: left;
+}
+
+.tbody{
+    margin: auto;
+    width: 1180px;
+    height: 200px;
+}
+.table p{
+    width: 760px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+}
+.table span{
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+}
+.table a{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: #444;
+}
+.table b{
+    float: left;
+}
+.table a:hover{
+    color:orange;
+}
+.table .fifi1{
+    width: 940px;
+    height: 50px;
+    font-size: 10px;
+    margin: auto;
+}
+
+.abox{
+    width: 1180px;
+    height: 44px;
+    border-bottom:2px solid grey;
+    margin: auto;
+}
+.a-left{
+    width: 200px;
+    height: 40px;
+    float: left;
+    font-size: 28px;
+}
+.a-right{
+    width: 810px;
+    height: 44px;
+    float: right;
+}
+.a-right a{
+    width: 10%;
+    height: 35px;
+    text-decoration: none;
+    float: left;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+.a-right a:hover{
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.select{
+    background: cadetblue;
+}
+.ooo{
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+.bbox{
+    width: 1190px;
+    height: 310px;
+    position: absolute;
+    left: 170px;
+    right: auto;
+}
+.bbox-opt{
+    width: 20%;
+    height: 150px;
+    float: left;
+}
+.cal{
+    width: 225px;
+    height: 140px;
+    float: left;
+    background: url("../imgs/carl_bg.png") no-repeat ;
+}
+.cal:hover .one-2{
+    transform: translate(8px);
+}
+.cal:hover{
+    background: white;
+}
+.one{
+    width: 220px;
+    height: 45px;
+
+}
+.one-1{
+    width: 65px;
+    height: 30px;
+    margin-left: 30px;
+    padding-top: 10px;
+    line-height: 30px;
+    text-align: right;
+}
+.one-2{
+    width: 40px;
+    height: 50px;
+    float: left;
+    background: url("../imgs/img.png") no-repeat -30px -55px;
+    transition: transform 1s linear;
+}
+.one-3{
+    width: 65px;
+    height: 30px;
+    padding-top: 10px;
+    line-height: 30px;
+    text-align: left;
+}
+.two{
+    width: 220px;
+    height: 20px;
+    text-align: center;
+    float: left;
+}
+.three{
+    margin-top: 10px;
+    width: 220px;
+    height: 50px;
+    float: left;
+}
+.three-1{
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: url("../imgs/img.png") no-repeat -30px -96px;
+    margin-left: 50px;
+}
+.three-2{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+.three-3{
+    width: 20px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+    color: red;
+}
+.three-4{
+    width: 70px;
+    height: 40px;
+    float: left;
+    margin-top: 5px;
+    color: red;
+    font-size: x-large;
 }
