@@ -31,211 +31,9 @@
   }
 </script>
 
+
+
 <style>
-
-.gongsi{
-  width: 1180px;
-  height: 440px;
-  /*border: 1px solid red;*/
-  margin: auto;
-}
-  .gs-hd{
-    height: 40px;
-    border-bottom: 2px solid #ccc;
-    font-family: "微软雅黑";
-  }
-
-  .gs-hd h2{
-    color: #555;
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: normal;
-    font-family: "微软雅黑";
-    width: 295px;
-  }
-
-  .gs-more{
-    position: relative;
-    float: right;
-    margin-top: 15px;
-  }
-  .h20{
-    height: 20px;
-    clear: both;
-    overflow: hidden;
-  }
-  .gs-con-left{
-    border: 1px solid orange;
-    background: #f6f6f6;
-    float: left;
-    height: 350px;
-    width: 450px;
-  }
-
-  .gs-con-right{
-    /*border: 1px solid red;*/
-    float: left;
-    width: 720px;
-    height: 350px;
-  }
-  .gs-con-left ul{
-    float: left;
-    position: relative;
-    width: 220px;
-    height: 245px;
-  }
-  .gs-con-left ul a{
-    text-decoration: none;
-  }
-  .gs-con-left li .img:hover img{
-    transform:scale(1.05,1.05);
-    transition:all 0.5s linear;
-  }
-  .gs-con-left li .img{
-    width: 220px;
-    height: 206px;
-    position: relative;
-    left: 10px;
-    top: 20px;
-    overflow: hidden;
-  }
-
-  .gs-con-left li span{
-    position: relative;
-    left: 5px;
-    top: 5px;
-    width: 220px;
-    height: 37px;
-    /*border: 1px solid red;*/
-    line-height: 37px;
-    display: block;
-    background: #ccc;
-    text-align: center;
-    color: #555;
-
-  }
-
-  label{
-    cursor:pointer;
-  }
-
-  .gs-con-left .info{
-    /*border: 1px solid blue;*/
-    float: right;
-    color: #555;
-    width: 192px;
-    position: relative;
-    line-height: 22px;
-    margin-right: 10px;
-  }
-
-  .gs-con-left span{
-    font-size: 12px;
-    font-family: "微软雅黑";
-  }
-
-  .gs-con-right li a:hover{
-    transform:scale(1.05,1.05);
-    transition:all 0.5s linear;
-  }
-
-.gs-con-right img{
-  width: 220px;
-  height: 160px;
-}
-.gs-con-right li{
-  float: left;
-  padding: 0 0 18px 20px;
-  display: inline-block;
-}
-
-  .gs-con-right li span{
-    background: url("img/mask.png");
-    position:absolute;
-    left: 10px;
-    top: 10px;
-    /*border: 1px solid red;*/
-    width:220px;
-    height: 37px;
-    display: block;
-    overflow: hidden;
-    text-align: center;
-    color: #fff;
-    font:16px "微软雅黑";
-    z-index: 1;
-  }
-
-
-/*热门国际机场*/
-.h50{
-  width: 1180px;
-  height: 50px;
-  margin: auto;
-  clear: both;
-  overflow: hidden;
-}
-.jc{
-  /*border:1px solid red;*/
-  width:1180px;
-  margin: auto;
-  height: 350px;
-}
-
-.main-wrap{
-  margin-right: 50px;
-  /*border:1px solid red;*/
-  width:340px;
-  float: left;
-  height: 40px;
-  border-bottom: 2px solid #ccc;
-  font-family: "微软雅黑";
-}
-  .mod-hd h2{
-    color: #555;
-    float: left;
-    font-size: 28px;
-    line-height: 28px;
-    width: 60%;
-  }
-
-  .mod-hd .mod-more{
-    margin-top:15px;
-    position: relative;
-    float: right;
-    padding: 0 15px 0 0;
-  }
-
-  .main-wrap .jc-info a{
-    margin-top: 15px;
-    float: left;
-    display: block;
-    width: 153px;
-    font: 16px "微软雅黑";
-    padding-left:12px;
-    text-decoration: none;
-    /*background: url("img/img.png");*/
-  }
-
-  .foot{
-    background:#3b8de3;
-    height: 80px;
-    width: 100%;
-  }
-
-.foot-nav{
-  width: 1180px;
-  height: 80px;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-}
-  .foot-nav li{
-    width: 300px;
-    float: left;
-    color: #fff;
-    position: relative;
-    background:#3b8de3;
-  }
 
 </style>
 <body>
@@ -287,12 +85,75 @@
 
 </div>
 <!--轮播图-->
+
 <div class="wheel-box">
 
-  <div class="banner banner1">1</div>
+  <div class="tableBox">
+    <div class="table">
+      <div class="tablehead">
+        <div class="tab-left">
+          <s></s>
+          <span>国际机票</span>
+        </div>
+        <div class="tab-right">
+          <s></s>
+          <span>国际机票</span>
+        </div>
+      </div>
+      <div class="tabledown">
+        <form action="">
+          <ul>
+            <li class="clearfix">
+              <label for="">行程列表</label>
+              <label for="">
+                <input type="radio">单程
+              </label>
+              <label for="">
+                <input type="radio">往返
+              </label>
+            </li>
+            <li class="clearfix">
+              <label>出发城市</label>
+              <div class="inputbox">
+                <span>上海</span>
+                <i></i>
+              </div>
+            </li>
+            <li class="clearfix">
+              <label>到达城市</label>
+              <div class="inputbox">
+                <span>中文/拼音</span>
+                <i></i>
+              </div>
+            </li>
+            <li class="clearfix">
+              <label>出发日期</label>
+              <div class="inputbox">
+                <span>YYYY-MM-DD</span>
+                <i></i>
+              </div>
+            </li>
+            <li class="clearfix">
+              <label>返程日期</label>
+              <div class="inputbox">
+                <span>YYYY-MM-DD</span>
+                <i></i>
+              </div>
+            </li>
+            <li class="pl-btn" style="text-align: center;">
+              <span class="search-btn">
+                <i></i>
+                搜索
+              </span>
+            </li>
+          </ul>
+        </form>
 
-  <div class="banner banner2">2</div>
-
+      </div>
+    </div>
+  </div>
+  <div class="banner banner1"></div>
+  <div class="banner banner2"></div>
   <div class="btns">
     <div class="btn1 btn"></div>
     <div class="btn2 btn"></div>
@@ -368,37 +229,38 @@
     <ul>
       <li>
         <a href="">
-          <span1></span1>
+          <span1 class="icon-in"></span1>
           <p style="font-size: 20px;">订单管理</p>
+          <em>新</em>
         </a>
       </li>
       <li>
         <a href="">
-          <span2></span2>
+          <span2 class="icon-in"></span2>
           <p style="font-size: 20px;">支付中心</p>
         </a>
       </li>
       <li>
         <a href="">
-          <span3></span3>
+          <span3 class="icon-in"></span3>
           <p style="font-size: 20px;">价格优势</p>
         </a>
       </li>
       <li>
         <a href="">
-          <span4></span4>
+          <span4 class="icon-in"></span4>
           <p style="font-size: 20px;">价格优势</p>
         </a>
       </li>
       <li>
         <a href="">
-          <span5></span5>
+          <span5 class="icon-in"></span5>
           <p style="font-size: 20px;">价格优势</p>
         </a>
       </li>
       <li>
         <a href="">
-          <span6></span6>
+          <span6 class="icon-in"></span6>
           <p style="font-size: 20px;">价格优势</p>
         </a>
       </li>
@@ -424,33 +286,34 @@
         <dd><a href="" title="简单了解一下金鹏航空官网机票购买流程，金鹏航空手机版订票流程介绍" target="_blank">带你认识飞机经停是什么意思</a></dd>
         <dd><a href="" title="东方航空去哪儿网合作举办“校园旅行家”推广活动" target="_blank">12306机票上订票官网请上民航在</a></dd>
         <dd><a href="" titel="网上买飞机票为什么只能买9张,10人以上怎么办" target="_blank">1岁婴儿机票怎么买 能够从网上购买婴</a></dd>
-        <dd><a href="" title="想知道南方航空机票购买流程，南航手机版订票流程介绍" target="_blank">了解订机票用什么软件好对你出门旅游帮助很大</a></dd>
+        <dd><a href="" title="想知道南方航空机票购买流程，南航手机版订票流程介绍" target="_blank">了解订机票用什么软件好对你出门旅游帮助</a></dd>
       </dl>
     </div>
   </div>
 </div>
 <!--热门航线预定-->
+
 <div class="hangxian">
   <div class=h1><span>热门航线预定</span></div>
 <div class="h2">
-  <a href="" class="active">全国</a>
-  <a href="">深圳</a>
-  <a href="">北京</a>
-  <a href="">上海</a>
-  <a href="">广州</a>
-  <a href="">武汉</a>
-  <a href="">成都</a>
-  <a href="">海口</a>
-  <a href="">重庆</a>
-  <a href="">沈阳</a>
+  <a href="#" class="active">全国</a>
+  <a href="#">深圳</a>
+  <a href="#">北京</a>
+  <a href="#">上海</a>
+  <a href="#">广州</a>
+  <a href="#">武汉</a>
+  <a href="#">成都</a>
+  <a href="#">海口</a>
+  <a href="#">重庆</a>
+  <a href="#">沈阳</a>
 </div>
 </div>
 <div class="jipiao">
-<ul>
+<ul class="list">
   <li class="list_item">
     <a href="" class="list_item_a">
     <div class="difang">
-      <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+      <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口1</span>
       <span class="jiantou"></span>
       <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
     <div class="difang">
@@ -463,7 +326,6 @@
     </div>
     </a>
   </li>
-
   <li class="list_item">
     <a href="" class="list_item_a">
       <div class="difang">
@@ -611,15 +473,695 @@
     </a>
   </li>
 </ul>
+  <ul class="list">
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口2</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <ul class="list">
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口3</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <ul class="list">
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口1</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <ul class="list">
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口1</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="list_item">
+      <a href="" class="list_item_a">
+        <div class="difang">
+          <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+          <span class="jiantou"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+        <div class="difang">
+          <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+        </div>
+        <div class="difang">
+          <span class="feiji"></span>
+          <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+          <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+        </div>
+      </a>
+    </li>
+  </ul>
 </div>
+<script>
+
+  var links = document.querySelectorAll(".h2 a")
+  var con=document.querySelectorAll(".list")
+
+  for (var i= 0;i<links.length;i++){
+
+    links[i].index=i;
+    links[i].onclick=function (ev) {
+
+      for (var j=0;j<con.length;j++){
+        con[j].style.display="none";
+        links[j].classList.remove("active");
+      }
+      con[this.index].style.display="block"
+      for (a=0;a<10;a++){
+        links[a].style.background="white"
+      }
+      links[this.index].classList.add("active");
+    }
+
+  }
+
+</script>
 <!--热门航空公司-->
 <div class="gongsi">
   <div class="gs-hd">
+    <span class="gs-more"></span>
     <h2>
       <em></em>
       热门航空公司
     </h2>
-    <span class="gs-more">>></span>
   </div>
   <div class="h20"></div>
   <div class="gs-con">
@@ -656,9 +1198,9 @@
       <ul>
         <li>
           <a href="">
-            <div>
+            <div class="gs-con-right-img">
               <img src="img/nf.png" alt="中国南方航空公司机票">
-              <span class="title">
+              <span>
                 <label>中国南方航空公司</label>
               </span>
             </div>
@@ -666,50 +1208,50 @@
         </li>
         <li>
           <a href="">
-            <div>
-              <img src="img/nf.png" alt="中国南方航空公司机票">
-              <span class="title">
-                <label>中国南方航空公司</label>
+            <div class="gs-con-right-img">
+              <img src="img/df.png" alt="中国东方航空公司机票">
+              <span>
+                <label>中国东方航空公司机票</label>
               </span>
             </div>
           </a>
         </li>
         <li>
           <a href="">
-            <div>
-              <img src="img/nf.png" alt="中国南方航空公司机票">
-              <span class="title">
-                <label>中国南方航空公司</label>
+            <div class="gs-con-right-img">
+              <img src="img/hn.png" alt="海南航空公司机票">
+              <span>
+                <label>海南航空公司机票</label>
               </span>
             </div>
           </a>
         </li>
         <li>
           <a href="">
-            <div>
-              <img src="img/nf.png" alt="中国南方航空公司机票">
-              <span class="title">
-                <label>中国南方航空公司</label>
+            <div class="gs-con-right-img">
+              <img src="img/sz.png" alt="深圳航空公司机票">
+              <span>
+                <label>深圳航空公司机票</label>
               </span>
             </div>
           </a>
         </li>
         <li>
           <a href="">
-            <div>
-              <img src="img/nf.png" alt="中国南方航空公司机票">
-              <span class="title">
-                <label>中国南方航空公司</label>
+            <div class="gs-con-right-img">
+              <img src="img/sc.png" alt="四川航空公司机票">
+              <span>
+                <label>四川航空公司机票</label>
               </span>
             </div>
           </a>
         </li>
         <li>
           <a href="">
-            <div>
-              <img src="img/nf.png" alt="中国南方航空公司机票">
-              <span class="title">
-                <label>中国南方航空公司</label>
+            <div class="gs-con-right-img">
+              <img src="img/cq.png" alt="春秋航空公司机票">
+              <span>
+                <label>春秋航空公司机票</label>
               </span>
             </div>
           </a>
@@ -728,8 +1270,8 @@
       热门国际机场
     </h2>
     <span class="mod-more">
-      <s></s>
       <a href="">全球机场</a>
+      <s></s>
     </span>
   </div>
   <div class="jc-info">
@@ -758,203 +1300,269 @@
         最新客户咨询
       </h2>
       <span class="mod-more">
-      <s></s>
       <a href="">更多</a>
+        <s></s>
     </span>
     </div>
-    <div class="jc-info">
-      <p></p><br>
-        <p>2019/5/16 22:00:35</p>
-        <p>你好。怀孕7个月乘坐需要办理证明码？</p>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
+    <div class="jc-info2">
+      <a href="">
+        <p>2019/5/17 13:45:04</p>
+        <div class="jc-info2bj">您好能帮我查询我的订票信息吗？</div>
+      </a>
+      <a href="">
+        <p>2019/5/17 13:45:04</p>
+        <div class="jc-info2bj">您好能帮我查询我的订票信息吗？</div>
+      </a>
+      <a href="">
+        <p>2019/5/17 13:45:04</p>
+        <div class="jc-info2bj">您好能帮我查询我的订票信息吗？</div>
+      </a>
+      <a href="">
+        <p>2019/5/17 13:45:04</p>
+        <div class="jc-info2bj">您好能帮我查询我的订票信息吗？</div>
+      </a>
+      <a href="">
+        <p>2019/5/17 13:45:04</p>
+        <div class="jc-info2bj">您好能帮我查询我的订票信息吗？</div>
+      </a>
+      <a href="">
+        <p>2019/5/17 13:45:04</p>
+        <div class="jc-info2bj">您好能帮我查询我的订票信息吗？</div>
+      </a>
+
+
     </div>
   </div>
-  <div class="main-wrap">
+  <div class="main-wrap" style=" width:470px;">
     <div class="mod-hd">
       <h2>
         <em></em>
         国际特价
      </h2>
-      <span class="mod-more">
-      <s></s>
-      <a href="" style="text-decoration: none;">北美&nbsp亚洲&nbsp欧洲</a>
-
+      <span class="mod-more1">
+      <a href="" style="background:#3b8de3;text-align: center;height: 40px; width:60px;">北美</a>
+       <a href="">亚洲</a>
+        <a href="">欧洲</a>
     </span>
     </div>
-    <div class="jc-info">
-      <p></p><br>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
-      <p>2019/5/16 22:00:35</p>
-      <p>你好。怀孕7个月乘坐需要办理证明码？</p>
+      <ul>
+        <li class="list_item">
+          <a href="" class="list_item_a">
+            <div class="difang">
+              <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+              <span class="jiantou"></span>
+              <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+            <div class="difang">
+              <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+            </div>
+            <div class="difang">
+              <span class="feiji"></span>
+              <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+              <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+            </div>
+          </a>
+        </li>
+        <li class="list_item">
+          <a href="" class="list_item_a">
+            <div class="difang">
+              <span style="font-size: 16px; text-align: right;padding-right: 10px; padding: 10px;">海口</span>
+              <span class="jiantou"></span>
+              <span style="font-size: 16px; text-align: right;padding-right: 10px;">郑州</span></div>
+            <div class="difang">
+              <span style="font-size: 16px; text-align: center;padding-right: 10px;">12月16日</span>
+            </div>
+            <div class="difang">
+              <span class="feiji"></span>
+              <span style="font-size: 16px; text-align: right;padding-right: 10px;padding: 10px;">票价：</span>
+              <span style="color: red; font-size: 18px">￥<span style="color: red;font-size: 30px;">120</span></span>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
+
 <!--底部-->
+<div class="h50"></div>
 <div class="foot">
 <div class="foot-nav clearfix">
   <ul>
     <li>
       <div class="icon">
-        <div class="icon-in3"></div>
-        <div class="icon-out"></div>
+        <div class="foot-in1"></div>
+        <div class="foot-out"></div>
       </div>
       <div class="title">
-        <div class="title-top" style="margin-top:-20px">支付安全</div>
-        <div class="title-down">在线支付100%认证</div>
+        <div class="title-top" style="color: #fff;">支付安全</div>
+        <div class="title-down" style="width: 150px;">在线支付100%认证</div>
       </div>
     </li>
     <li>
       <div class="icon">
-        <div class="icon-in3"></div>
-        <div class="icon-out"></div>
+        <div class="foot-in2"></div>
+        <div class="foot-out"></div>
       </div>
       <div class="title">
-        <div class="title-top" style="margin-top:-20px">支付安全</div>
-        <div class="title-down">在线支付100%认证</div>
+        <div class="title-top" style="color: #fff;">实时同步</div>
+        <div class="title-down" style="width: 150px;">全球机票联网销售</div>
       </div>
     </li>
     <li>
       <div class="icon">
-        <div class="icon-in3"></div>
-        <div class="icon-out"></div>
+        <div class="foot-in3"></div>
+        <div class="foot-out"></div>
       </div>
       <div class="title">
-        <div class="title-top" style="margin-top:-20px">支付安全</div>
-        <div class="title-down">在线支付100%认证</div>
+        <div class="title-top" style="color: #fff;">全天服务</div>
+        <div class="title-down" style="width: 180px;">7*24小时专业人员为您服务</div>
       </div>
     </li>
     <li>
       <div class="icon">
-        <div class="icon-in3"></div>
-        <div class="icon-out"></div>
+        <div class="foot-in4"></div>
+        <div class="foot-out"></div>
       </div>
       <div class="title">
-        <div class="title-top" style="margin-top:-20px">支付安全</div>
-        <div class="title-down">在线支付100%认证</div>
+        <div class="title-top" style="color: #fff;">方便快捷</div>
+        <div class="title-down" style="width: 150px;">电子客票，身份证直接</div>
       </div>
     </li>
   </ul>
 </div>
 </div>
 <div class="helpserver">
-  <div style="width:1180px; margin:auto">
+  <div class="help">
     <div class="helplist">
-      <div class="help_1" style="display: inline;float:left;width: 177px;margin:0 5px 0 10px;">
-        <strong style="font-size:16px;color: #545454; padding-bottom: 8px;">新手上路</strong>
+      <div class="help-1">
+        <strong>新手上路</strong>
         <ul>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
         </ul>
       </div>
-      <div class="help_1" style="display: inline;float:left;width: 177px;margin:0 5px 0 10px;">
-        <strong style="font-size:16px;color: #545454; padding-bottom: 8px;">新手上路</strong>
+      <div class="help-1">
+        <strong>付款方式</strong>
         <ul>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
         </ul>
       </div>
-      <div class="help_1" style="display: inline;float:left;width: 177px;margin:0 5px 0 10px;">
-        <strong style="font-size:16px;color: #545454; padding-bottom: 8px;">新手上路</strong>
+      <div class="help-1">
+        <strong>旅客保障</strong>
         <ul>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
         </ul>
       </div>
-      <div class="help_1" style="display: inline;float:left;width: 177px;margin:0 5px 0 10px;">
-        <strong style="font-size:16px;color: #545454; padding-bottom: 8px;">新手上路</strong>
+      <div class="help-1">
+        <strong>常见问题</strong>
         <ul>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
         </ul>
       </div>
-      <div class="help_1" style="display: inline;float:left;width: 177px;margin:0 5px 0 10px;">
-        <strong style="font-size:16px;color: #545454; padding-bottom: 8px;">新手上路</strong>
+      <div class="help-1">
+        <strong>关于我们</strong>
         <ul>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
           <li>
-            <a href="">查询预订</a>
+            <a href="">-查询预订</a>
           </li>
         </ul>
       </div>
-      <div class="help_1" style="display: inline;float:left;width: 177px;margin:0 5px 0 10px;">
-        <strong style="font-size:16px;color: #545454; padding-bottom: 8px;">新手上路</strong>
+      <div class="help-2">
+        <strong style="font-size:10px;font-weight: bold;">服务热线</strong>
         <ul>
           <li>
-            <a href="">查询预订</a>
+            <span class="fuwu"></span>
+            <b style="padding-left: 24px; color:#888;">4000161580</b>
           </li>
-          <li>
-            <a href="">查询预订</a>
-          </li>
-          <li>
-            <a href="">查询预订</a>
-          </li>
-          <li>
-            <a href="">查询预订</a>
-          </li>
+            <input  value="请输入你的内容" type="text" style="margin-top: 10px;">
+          <i>搜索</i>
         </ul>
       </div>
 
     </div>
 
   </div>
+</div>
+<div class="footer">
+  <div class="footer-bd">
+    <p style="font-family: 微软雅黑;">
+      <em>© 2019 http://www.161580.com 民航在线</em>
+      <b>|</b>
+      <sapn>沪ICP备12008257号-2</sapn>
+    </p>
+    <p>
+      关于161580
+      <b>|</b>
+      联系我们
+      <b>|</b>
+      合作伙伴
+      <b>|</b>
+      诚征英才
+      <b>|</b>
+      用户建议
+    </p>
+  </div>
+  <p align="center">
+    <img src="img/yingye.jpg">
+  </p>
+  <p align="center">161580官方网站：<span style="color:orange;font-size:18px">161580.com</span>| 全国统一服务热线：<span style="color:orange;font-size:18px">4000-161580</span >在线咨询</p>
+  <p>161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。</p>
+  <p align="left">友情链接QQ434441778</p>
+  <p align="center">订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站
+    |订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站|订机票最便宜的网站
+  </p>
 </div>
 </body>
 </html>
