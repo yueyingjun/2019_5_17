@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform</title>
+    <style>
+        /*
+         * 变换：平移 缩放 旋转 斜切
+         * 过渡：transition
+         * 动画：
+         */
+        div{
+            width: 200px;height: 200px;
+            background: red;
+        }
+        div:hover{
+            animation-name: animate;/*动画名称*/
+            animation-duration: 0.01s;/*持续时间*/
+            animation-timing-function: linear;
+            animation-iteration-count: 30;/*次数 无限*/
+            animation-direction:alternate ;/*反向动画*/
+        }
+        /*定义一个动画*/
+        @keyframes animate {
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform: rotate(30deg);
+            }
+        }
+
+        .jiaodu {
+            width: 200px;height: 200px;
+            background: red;
+            border-radius: 50%;
+            box-shadow:10px 10px 10px  #000 inset;/*阴影：偏移 范围 颜色 内投影*/
+        }
+    </style>
+</head>
+<body>
+    <!--<div></div>-->
+    <div class="jiaodu"></div>
+</body>
+</html>
