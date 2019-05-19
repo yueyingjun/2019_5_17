@@ -77,7 +77,7 @@ h1,h2,h3,h4,h5,h6{
     color: white;
 }
 .box1 .conn .right .login{
-    background: url("../image/img.png") no-repeat  -315px -500px;
+    background: url("../image/shoupiao/img.png") no-repeat  -315px -500px;
 }
 .sanjiao{
     width: 0;height: 0;
@@ -119,14 +119,14 @@ h1,h2,h3,h4,h5,h6{
 }
 .box3 .lbt1{
     width: 100%;height: 380px;
-    background: url("../image/lbt1.png") no-repeat center ;
+    background: url("../image/shoupiao/lbt1.png") no-repeat center ;
     display: block;
     position: absolute;
     z-index: 1;
 }
 .box3 .lbt2{
     width: 100%;height: 380px;
-    background: url("../image/lbt2.png") no-repeat center ;
+    background: url("../image/shoupiao/lbt2.png") no-repeat center ;
     position: absolute;
 }
 .box3 .n{
@@ -191,7 +191,7 @@ h1,h2,h3,h4,h5,h6{
 
 .box4 .right .pro .icon .icon1-out{
     width: 60px; height: 80px;
-    background: url("../image/main.png") no-repeat -165px -126px;
+    background: url("../image/shoupiao/main.png") no-repeat -165px -126px;
     position: absolute;
 }
 
@@ -204,28 +204,28 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
-.icon-in1:hover{
+.box4 .right .pro .icon .icon-in1:hover{
     animation-name: animate;
     animation-duration: 0.1s;
     animation-timing-function: initial;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.icon-in2:hover{
+.box4 .right .pro .icon .icon-in2:hover{
     animation-name: animate;
     animation-duration: 0.1s;
     animation-timing-function: initial;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.icon-in3:hover{
+.box4 .right .pro .icon .icon-in3:hover{
     animation-name: animate;
     animation-duration: 0.1s;
     animation-timing-function: initial;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.icon-in4:hover{
+.box4 .right .pro .icon .icon-in4:hover{
     animation-name: animate;
     animation-duration: 0.1s;
     animation-timing-function: initial;
@@ -236,28 +236,28 @@ h1,h2,h3,h4,h5,h6{
 .box4 .right .pro .icon .icon-in1{
     width: 40px; height: 40px;
     margin: 20px 10px;
-    background: url("../image/main.png") no-repeat -146px -74px;
+    background: url("../image/shoupiao/main.png") no-repeat -146px -74px;
     position: absolute;
     z-index: 1;
 }
 .box4 .right .pro .icon .icon-in2{
     width: 40px; height: 40px;
     margin: 20px 10px;
-    background: url("../image/main.png") no-repeat -199px -74px;
+    background: url("../image/shoupiao/main.png") no-repeat -199px -74px;
     position: absolute;
     z-index: 1;
 }
 .box4 .right .pro .icon .icon-in3{
     width: 40px; height: 40px;
     margin: 20px 10px;
-    background: url("../image/main.png") no-repeat -252px -74px;
+    background: url("../image/shoupiao/main.png") no-repeat -252px -74px;
     position: absolute;
     z-index: 1;
 }
 .box4 .right .pro .icon .icon-in4{
     width: 40px; height: 40px;
     margin: 20px 10px;
-    background: url("../image/main.png") no-repeat -306px -74px;
+    background: url("../image/shoupiao/main.png") no-repeat -306px -74px;
     position: absolute;
     z-index: 1;
 }
@@ -278,7 +278,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .box4 .right .pro .arrow{
     width: 80px; height: 80px;
-    background: url("../image/main.png") no-repeat -350px -128px;
+    background: url("../image/shoupiao/main.png") no-repeat -350px -128px;
     position: absolute;
     right: 0px;top: 0px;
 }
@@ -324,27 +324,27 @@ h1,h2,h3,h4,h5,h6{
     top: 15px;left: 45px;
 }
 .box5 .left .lists .list .imag1{
-    background: url("../image/main.png") no-repeat -4px -53px;
+    background: url("../image/shoupiao/main.png") no-repeat -4px -53px;
     left: 35px;top: 20px;
 }
 .box5 .left .lists .list .imag2{
-    background: url("../image/main.png") no-repeat -4px -125px;
+    background: url("../image/shoupiao/main.png") no-repeat -4px -125px;
     left: 35px;top: 20px;
 }
 .box5 .left .lists .list .imag3{
-    background: url("../image/main.png") no-repeat -76px -125px;
+    background: url("../image/shoupiao/main.png") no-repeat -76px -125px;
     left: 35px;top: 20px;
 }
 .box5 .left .lists .list .imag4{
-    background: url("../image/main.png") no-repeat -4px -193px;
+    background: url("../image/shoupiao/main.png") no-repeat -4px -193px;
     left: 35px;top: 20px;
 }
 .box5 .left .lists .list .imag5{
-    background: url("../image/main.png") no-repeat -76px -57px;
+    background: url("../image/shoupiao/main.png") no-repeat -76px -57px;
     left: 35px;top: 20px;
 }
 .box5 .left .lists .list .imag6{
-    background: url("../image/main.png") no-repeat -76px -195px;
+    background: url("../image/shoupiao/main.png") no-repeat -76px -195px;
     left: 35px;top: 20px;
 }
 
@@ -402,7 +402,7 @@ h1,h2,h3,h4,h5,h6{
 .box5 .left .lists .list .lab{
     width: 17px;height: 18px;
     display: inline-block;
-    background: url("../image/main.png") no-repeat -250px 0;
+    background: url("../image/shoupiao/main.png") no-repeat -250px 0;
     float: right;
     margin: 23px 37px;
 }
@@ -526,7 +526,7 @@ h1,h2,h3,h4,h5,h6{
     margin-right: 17px;
 }
 .box6 .flight .ticket .list a{
-    background: url("../image/list.png") no-repeat left;
+    background: url("../image/shoupiao/list.png") no-repeat left;
     width: 223px;
     height: 140px;
     text-decoration-line: none;
@@ -548,7 +548,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .box6 .flight .ticket .list .name .arrow{
     width: 40px;height: 20px;
-    background: url("../image/img.png") no-repeat -30px -70px;
+    background: url("../image/shoupiao/img.png") no-repeat -30px -70px;
     position: absolute;
     left: 85px;top: -20px;
 }
@@ -570,7 +570,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .box6 .flight .ticket .list .active1{
     width: 30px;height: 20px;
-    background: url("../image/img.png") no-repeat -30px -110px;
+    background: url("../image/shoupiao/img.png") no-repeat -30px -110px;
     position: absolute;
     left: 30px; top: -10px;
 }
@@ -596,10 +596,11 @@ h1,h2,h3,h4,h5,h6{
     top: -25px;
 }
 .box6 .flight .ticket a:hover{
-    background: url("../image/list.png") no-repeat right;
+    background: url("../image/shoupiao/list.png") no-repeat right;
     display: inline-block;
 }
 
+/*热门航空公司*/
 .box7{
     width: 78%; height: 402px;
     margin: auto;padding: 0;
@@ -621,7 +622,7 @@ h1,h2,h3,h4,h5,h6{
     width: 20px; height: 20px;
     float: right;
     margin-top: 11px;
-    background: url("../image/img.png") no-repeat -320px -410px;
+    background: url("../image/shoupiao/img.png") no-repeat -320px -410px;
 }
 .box7 .line{
     width: 100%;
@@ -673,7 +674,7 @@ h1,h2,h3,h4,h5,h6{
     display: inline-block;
     width: 40px;height: 40px;
     position: absolute;
-    background: url("../image/main.png") no-repeat -370px -260px;
+    background: url("../image/shoupiao/main.png") no-repeat -370px -260px;
     bottom: 45px;right: 10px;
 }
 .box7 .bottom .b2{
@@ -697,7 +698,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;padding: 0;
 }
 .box7 .bottom .b2 li .title{
-    background:url("../image/mask.png") ;
+    background:url("../image/shoupiao/mask.png") ;
     position: absolute;
     bottom: 0;left: 0;
     width: 220px;
@@ -818,7 +819,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 20px;
 }
 .box8 .r1 .list a{
-    background: url("../image/list.png") no-repeat left;
+    background: url("../image/shoupiao/list.png") no-repeat left;
     width: 223px;
     height: 140px;
     text-decoration-line: none;
@@ -841,7 +842,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .box8 .r1 .list .name .arrow{
     width: 40px;height: 20px;
-    background: url("../image/img.png") no-repeat -30px -70px;
+    background: url("../image/shoupiao/img.png") no-repeat -30px -70px;
     position: absolute;
     left: 85px;top: -20px;
 }
@@ -865,7 +866,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .box8 .r1 .list .active1{
     width: 30px;height: 20px;
-    background: url("../image/img.png") no-repeat -30px -110px;
+    background: url("../image/shoupiao/img.png") no-repeat -30px -110px;
     position: absolute;
     left: 30px; top: -10px;
 }
@@ -891,46 +892,228 @@ h1,h2,h3,h4,h5,h6{
     top: -25px;
 }
 .box8 .r1  a:hover{
-    background: url("../image/list.png") no-repeat right;
+    background: url("../image/shoupiao/list.png") no-repeat right;
     display: inline-block;
 }
 
 .box9{
+    width: 100%;
+    height: 60px;
+    background: #3b8de3;
+}
+.box9 ul{
     width: 78%;
-    height: 80px;
+    height: 60px;
     margin: auto;
-    background: #5b95e3;
-    border: 1px solid red;
 }
 .box9 .pro{
     float: left;
-    width: 25%; height: 100%;
+    width: 24%; height: 100%;
     cursor: pointer;
-    margin-top: -10px;
+    margin: 0px;padding: 0;
     position: relative;
 }
 .box9 .pro .icon{
     float: left;
-    width: 80px; height: 80px;
+    width: 60px; height:60px;
     position: relative;
 }
-
 .box9 .pro .icon .icon1-out{
-    width: 60px; height: 80px;
-    background: url("../image/main.png") no-repeat -165px -126px;
+    width: 50px; height: 50px;
+    background: url("../image/shoupiao/footer.png") no-repeat -279px -2px;
     position: absolute;
+    margin: 5px 5px;
 }
+.box9 .pro .icon .icon-in1{
+    width: 40px; height: 40px;
+    margin: 20px 10px;
+    background: url("../image/shoupiao/footer.png") no-repeat -5px -18px;
+    position: absolute;
+    z-index: 1;
+}
+.box9 .pro .icon .icon-in2{
+    width: 40px; height: 40px;
+    margin: 20px 10px;
+    background: url("../image/shoupiao/footer.png") no-repeat -82px -18px;
+    position: absolute;
+    z-index: 1;
+}
+.box9 .pro .icon .icon-in3{
+    width: 40px; height: 40px;
+    margin: 20px 10px;
+    background: url("../image/shoupiao/footer.png") no-repeat -160px -18px;
+    position: absolute;
+    z-index: 1;
+}
+.box9 .pro .icon .icon-in4{
+    width: 40px; height: 40px;
+    margin: 20px 10px;
+    background: url("../image/shoupiao/footer.png") no-repeat -226px -18px;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes an {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box9 .pro .icon .icon-in1:hover{
+    animation-name: animate;
+    animation-duration: 0.1s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.box9 .pro .icon .icon-in2:hover{
+    animation-name: an;
+    animation-duration: 0.5s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+}
+.box9 .pro .icon .icon-in3:hover{
+    animation-name: an;
+    animation-duration: 0.5s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+}
+.box9 .pro .icon .icon-in4:hover{
+    animation-name: animate;
+    animation-duration: 0.1s;
+    animation-timing-function: initial;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 .box9 .pro .text{
-    margin-top: 15px;
-    width:128px;height: 50px;
-    margin-left:-12px;
+    margin-top: 12px;
+    width:180px;height: 60px;
+    margin-left:10px;
     float: left;
 }
 .box9 .text .text-top{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 15px;
 }
 .box9 .text .text-down{
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+/*结尾部分*/
+.box10{
+    width: 100%;height: 170px;
+    background: #f6f6f6;
+    margin: 0;padding: 0;
+}
+.box10 .context{
+    width: 78%;height: 170px;
+    margin: 0px auto;
+}
+.box10 .context .end{
+    width: 14%;height: 170px;
+    float: left;
+}
+.box10 .context .end span{
+    display: inline-block;
+    font-size: 16px;
+    color: #545454;
+    float: left;
+    margin-top: 30px;
+    margin-left: 37px;
+}
+.box10 .context .end ul {
+    background: url("../image/shoupiao/vline_l.png") 160px top repeat-y;
+    float: left;
+    margin-top:10px ;
+}
+.box10 .context .end ul li{
+    background: url("../image/shoupiao/page-bg.png") no-repeat -50px -170px;
+    float: left;
+    width: 100px;height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    margin-top: 3px;
+    padding-left: 10px;
+}
+.box10 .context .end ul li a{
+    text-decoration-line: none;
+    color: #666666;
+}
+.box10 .context .end6{
+    width: 28%;height: 180px;
+    float: left;
+}
+.box10 .context .end6 .img1{
+    display: block;
+    width: 120px;height: 30px;
+    float: left;
+    margin: 20px 50px;
+    background: url("../image/shoupiao/footer.png") no-repeat -120px -68px;
+}
+.box10 .context .end6 .img2{
+    display: block;
+    background: url("../image/shoupiao/footer.png") no-repeat -130px -98px;
+    width: 200px;height: 40px;
+    float: left;
+    margin: -20px 50px;
+}
+
+/*最底部*/
+.footer{
+     width: 100%; height: 300px;
+ }
+.footer .one{
+    width: auto; height: 30px;
+    margin: 10px 350px;
+}
+.footer .one p{
+    display:block;
+    float: left;
+    text-indent: 2em;
+    font-size: 12px;
+}
+.footer .one p em{
+    float: left;
+    font-style: normal;
+    color: #444444;
+}
+.footer .one p a{
+    margin: 0 4px;
+    color: #464849;
+    text-decoration-line: none;
+}
+.footer .img img{
+    vertical-align: middle;
+    margin: 10px 750px;
+}
+.footer .desc{
+    width: 100%; height: 20px;
+    line-height: 20px;
+    margin-left: 400px;
+}
+.footer .desc span{
+    display: inline-block;
+    float: left;
+    margin-left: 50px;
+    font-size: 12px;
+    color: #555555;
+}
+.footer .desc1,.footer .desc2{
+    display: block;
+    width: 70%; height: 40px;
+    font-size: 12px;
+    color: #999999;
+    margin: 0 auto;
+}
+.footer .desc3{
+    display: block;
+    width: 70%; height: 40px;
+    font-size: 12px;
+    color: #999999;
+    margin: 0 auto;
 }
