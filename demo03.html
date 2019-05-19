@@ -23,6 +23,16 @@
         btns[count].style.cssText="background-color:orange";
         console.log(count);
       },3000);
+
+      function getElementById(id) {
+        return document.getElementById(id);
+      }
+      getElementById("user").onmouseover = function () {
+        getElementById("box-con-right-user-lists").style.display="block";
+      }
+      getElementById("user").onmouseout = function () {
+        getElementById("box-con-right-user-lists").style.display="none";
+      }
     }
 
   </script>
@@ -44,9 +54,17 @@
         <a href="">民航问答</a>
       </div>
       <div class="right">
-        <a href="">登录</a>
+        <a href="" id="user">
+          用户中心
+          <div id="box-con-right-user-lists">
+            <div class="box-con-right-user-list">我的订单</div>
+            <div class="box-con-right-user-list">个人资料</div>
+          </div>
+        </a>
         <a href="">注册</a>
-        <a href="">用户中心</a>
+        <a href="">
+          登录
+        </a>
       </div>
       <div class="sanjiao"></div>
     </div>
@@ -159,10 +177,10 @@
         <a href="">更多>></a>
       </div>
       <div class="bottom_info">
-        <a href="">简单了解一下金鹏航空官网机票购买流程</a>
-        <a href="">东方航空去哪儿网合作举办“校园旅行家</a>
-        <a href="">网上买飞机票为什么只能买9张,10人</a>
-        <a href="">想知道南方航空机票购买流程，南航手机</a>
+        <a href="" class="ticket-info-bottom-link">简单了解一下金鹏航空官网机票购买流程</a>
+        <a href="" class="ticket-info-bottom-link">东方航空去哪儿网合作举办“校园旅行家</a>
+        <a href="" class="ticket-info-bottom-link">网上买飞机票为什么只能买9张,10人</a>
+        <a href="" class="ticket-info-bottom-link">想知道南方航空机票购买流程，南航手机</a>
       </div>
     </div>
     <div class="right_info">
@@ -171,10 +189,10 @@
         <a href="">更多>></a>
       </div>
       <div class="bottom_info">
-        <a href="">带你认识飞机经停是什么意思</a>
-        <a href="">12306机票网上订票官网请上民航在</a>
-        <a href="">1岁婴儿机票怎么买 能够从网上购买婴</a>
-        <a href="">了解订机票用什么软件好对你出门旅游帮</a>
+        <a href="" class="ticket-info-bottom-link">带你认识飞机经停是什么意思</a>
+        <a href="" class="ticket-info-bottom-link">12306机票网上订票官网请上民航在</a>
+        <a href="" class="ticket-info-bottom-link">1岁婴儿机票怎么买 能够从网上购买婴</a>
+        <a href="" class="ticket-info-bottom-link">了解订机票用什么软件好对你出门旅游帮</a>
       </div>
     </div>
   </div>
@@ -183,16 +201,16 @@
   <div class="mod-hd">
     <div class="left"><span>热门航线预订</span></div>
     <div class="right">
-      <a href="">全国</a>
-      <a href="">深圳</a>
-      <a href="">北京</a>
-      <a href="">上海</a>
-      <a href="">广州</a>
-      <a href="">武汉</a>
-      <a href="">成都</a>
-      <a href="">海口</a>
-      <a href="">重庆</a>
-      <a href="">沈阳</a>
+      <a href="javascript:;">全国</a>
+      <a href="javascript:;">深圳</a>
+      <a href="javascript:;">北京</a>
+      <a href="javascript:;">上海</a>
+      <a href="javascript:;">广州</a>
+      <a href="javascript:;">武汉</a>
+      <a href="javascript:;">成都</a>
+      <a href="javascript:;">海口</a>
+      <a href="javascript:;">重庆</a>
+      <a href="javascript:;">沈阳</a>
     </div>
   </div>
   <div class="mod-hd-list">
@@ -377,13 +395,249 @@
 </div>
 <!-- 热门国际  最新资讯  国际特价 -->
 <div class="moreout">
-  <div class="hot_air">
-    <div class="top"></div>
-    <div class="bottom"></div>
+  <div class="moreout-hot_air">
+    <div class="moreout-top">
+      <span class="moreout-hot_air-top-title">热门国际机场</span>
+      <a href="" class="moreout-hot_air-top-link">全球机场>></a>
+    </div>
+    <div class="moreout-hot_air-bottom">
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>香港赤腊角机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>首尔仁川机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>首尔金浦机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>澳门国际机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>东京羽田机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>东京成田机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>新加坡樟宜机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>台北桃园中正机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>曼谷素万那普机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>曼谷廊曼机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>大阪伊丹机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>马尼拉国际机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>胡志明市国际机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>伦敦国际机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>吉隆坡国际机场</a>
+      <a href="" class="moreout-hot_air-bottom-link"><span class="moreout-hot_air-bottom-link-icon"></span>釜山国际机场</a>
+    </div>
   </div>
-  <div class="new_info"></div>
-  <div class="price"></div>
+  <div class="moreout-new_info">
+    <div class="moreout-top">
+      <span class="moreout-hot_air-top-title">最新客户咨询</span>
+      <a href="" class="moreout-hot_air-top-link">更多>></a>
+    </div>
+    <div class="moreout-new_info-bottom">
+      <div class="moreout-new_info-bottom-info">
+        <span class="moreout-new_info-bottom-info-date">2019/5/17 13:45:04</span>
+        <a href="" class="moreout-new_info-bottom-info-data"><span class="moreout-hot_air-bottom-link-icon"></span>您好，能帮我查询订票信息吗</a>
+      </div>
+      <div class="moreout-new_info-bottom-info">
+        <span class="moreout-new_info-bottom-info-date">2019/5/17 10:11:36</span>
+        <a href="" class="moreout-new_info-bottom-info-data"><span class="moreout-hot_air-bottom-link-icon"></span>机票如何改签</a>
+      </div>
+      <div class="moreout-new_info-bottom-info">
+        <span class="moreout-new_info-bottom-info-date">2019/5/17 10:03:07</span>
+        <a href="" class="moreout-new_info-bottom-info-data"><span class="moreout-hot_air-bottom-link-icon"></span>那取票呢，怎么取票</a>
+      </div>
+      <div class="moreout-new_info-bottom-info">
+        <span class="moreout-new_info-bottom-info-date">2019/5/17 9:50:23</span>
+        <a href="" class="moreout-new_info-bottom-info-data"><span class="moreout-hot_air-bottom-link-icon"></span>我家宝宝6岁了，没身份证，网上怎么买票</a>
+      </div>
+      <div class="moreout-new_info-bottom-info">
+        <span class="moreout-new_info-bottom-info-date">2019/5/17 9:12:17</span>
+        <a href="" class="moreout-new_info-bottom-info-data"><span class="moreout-hot_air-bottom-link-icon"></span>请问行李箱尺寸</a>
+      </div>
+      <div class="moreout-new_info-bottom-info">
+        <span class="moreout-new_info-bottom-info-date">2019/5/17 8:49:07</span>
+        <a href="" class="moreout-new_info-bottom-info-data"><span class="moreout-hot_air-bottom-link-icon"></span>你好，块7个月的孕妇可以坐飞机吗</a>
+      </div>
+    </div>
+  </div>
+  <div class="moreout-price">
+    <div class="moreout-top">
+      <div class="moreout-price-top-title">国际特价</div>
+      <a href="javascript:;" class="moreout-price-top-area">北美</a>
+      <a href="javascript:;" class="moreout-price-top-area">亚洲</a>
+      <a href="javascript:;" class="moreout-price-top-area">欧洲</a>
+    </div>
+    <div class="moreout-price-bottom">
+      <div class="moreout-price-bottom-card">
+      <div class="ncoach_name">
+        <span class="ncoach_name_start">上海</span>
+        <i class="ncoach_name_arrow"></i>
+        <span class="ncoach_name_end">华盛顿</span>
+      </div>
+      <div class="nocach_data">06月10日</div>
+      <div class="nocach_type">
+        <i class="nocach_type_bus"></i>
+        <span class="nocach_type_t1">票价：</span>
+        <span class="nocach_type_t2">￥</span>
+        <span class="nocach_type_t3">1395</span>
+      </div>
+    </div>
+      <div class="moreout-price-bottom-card">
+        <div class="ncoach_name">
+          <span class="ncoach_name_start">北京</span>
+          <i class="ncoach_name_arrow"></i>
+          <span class="ncoach_name_end">洛杉矶</span>
+        </div>
+        <div class="nocach_data">07月19日</div>
+        <div class="nocach_type">
+          <i class="nocach_type_bus"></i>
+          <span class="nocach_type_t1">票价：</span>
+          <span class="nocach_type_t2">￥</span>
+          <span class="nocach_type_t3">2950</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- footer -->
+<div class="footer">
+  <div class="footer-out">
+    <div class="footer-in">
+      <div class="footer-in-left">
+        <div class="footer-in-left1"></div>
+      </div>
+      <div class="footer-in-right">
+        <span class="advantage-in-right-title">支付安全</span>
+        <span class="advantage-in-right-info">在线支付100%认证</span>
+      </div>
+    </div>
+    <div class="footer-in">
+      <div class="footer-in-left">
+        <div class="footer-in-left2"></div>
+      </div>
+      <div class="footer-in-right">
+        <span class="advantage-in-right-title">实时同步</span>
+        <span class="advantage-in-right-info">全球机票联网售票</span>
+      </div>
+    </div>
+    <div class="footer-in">
+      <div class="footer-in-left">
+        <div class="footer-in-left3"></div>
+      </div>
+      <div class="footer-in-right">
+        <span class="advantage-in-right-title">全天服务</span>
+        <span class="advantage-in-right-info">7*24小时专业客服人员为您服务</span>
+      </div>
+    </div>
+    <div class="footer-in">
+      <div class="footer-in-left">
+        <div class="footer-in-left4"></div>
+      </div>
+      <div class="footer-in-right">
+        <span class="advantage-in-right-title">方便快捷</span>
+        <span class="advantage-in-right-info">电子客票，身份证直接换登机牌</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="help">
+  <div class="help-out">
+    <div class="help-in-left">
+      <div class="help-in-left-smail">
+        <span class="help-in-left-smail-title">新手上路</span>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-查询预订</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-订单填写</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-支付出票</a>
+      </div>
+    </div>
+    <div class="help-in-left">
+      <div class="help-in-left-smail">
+        <span class="help-in-left-smail-title">付款方式</span>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-网上银行</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-微信支付</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-信用卡</a>
+      </div>
+    </div>
+    <div class="help-in-left">
+      <div class="help-in-left-smail">
+        <span class="help-in-left-smail-title">旅客保障</span>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-航协认证</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-支付出票</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-安全保障</a>
+      </div>
+    </div>
+    <div class="help-in-left">
+      <div class="help-in-left-smail">
+        <span class="help-in-left-smail-title">常见问题</span>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-洛阳北郊</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-不太清楚</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-了解多彩</a>
+      </div>
+    </div>
+    <div class="help-in-left">
+      <div class="help-in-left-smail">
+        <span class="help-in-left-smail-title">关于我们</span>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-联系我们</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-网站介绍</a>
+        <a href="" class="help-in-left-smail-link"><span class="help-in-left-smail-title-icon"></span>-公司简介</a>
+      </div>
+    </div>
+    <div class="help-in-right">
+      <div class="help-in-right-img"></div>
+      <div class="help-in-right-bottom">
+        <input type="text" class="help-in-right-bottom-input" placeholder="请输入关键字" style="height: 34px;line-height: 34px">
+        <input type="submit" class="help-in-right-bottom-submit" value="搜索">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-bd">
+  <span class="footer-bd-name">&copy;&nbsp;2019&nbsp;http://www.161580.com&nbsp;民航在线</span>
+  <span class="footer-bd-divide"></span>
+  <a href="" class="footer-bd-link">沪ICP备12008257号-2&nbsp;&nbsp;关于161580</a>
+  <span class="footer-bd-divide">|</span>
+  <a href="" class="footer-bd-link">联系我们</a>
+  <span class="footer-bd-divide">|</span>
+  <a href="" class="footer-bd-link">合作伙伴</a>
+  <span class="footer-bd-divide">|</span>
+  <a href="" class="footer-bd-link">诚征英才</a>
+  <span class="footer-bd-divide">|</span>
+  <a href="" class="footer-bd-link">用户建议</a>
+</div>
+<div class="national-emblem"></div>
+<div class="contact">
+  <span class="contact-name">161580官方网站：</span>
+  <a href="" class="contact-left">161580.com</a>
+  <span class="footer-bd-divide">|</span>
+  <span class="contact-name">全国统一服务热线：</span>
+  <a href="" class="contact-left">4000-161580</a>
+  <span class="footer-bd-divide">|</span>
+  <a href="" class="cotact-link">在线咨询</a>
+</div>
+
+<div class="end">
+  <span class="history">161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。</span>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友情链接QQ434441778:</p>
+  <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美国旅游</a><span class="end-divide">|</span>
+  <a href="">韩国旅游攻略</a><span class="end-divide">|</span>
+  <a href="">订机票最便宜的网站</a><span class="end-divide">|</span>
+  <a href="">北京旅行社</a><span class="end-divide">|</span>
+  <a href="">打折机票</a><span class="end-divide">|</span>
+  <a href="">酒店加盟代理</a><span class="end-divide">|</span>
+  <a href="">爱侣游网</a><span class="end-divide">|</span>
+  <a href="">杭州户外俱乐部</a><span class="end-divide">|</span>
+  <a href="">四喜居门票网</a><span class="end-divide">|</span>
+  <a href="">深圳国旅</a><span class="end-divide">|</span>
+  <a href="">澳洲自由行</a><span class="end-divide">|</span>
+  <a href="">汽车票预定</a><span class="end-divide">|</span>
+  <a href="">四川青年旅行社</a><span class="end-divide">|</span>
+  <a href="">百程旅行网</a><span class="end-divide">|</span>
+  <a href="">重庆青年旅行社</a><span class="end-divide">|</span>
+  <a href="">俄罗斯旅游</a><span class="end-divide">|</span>
+  <a href="">美国旅游</a><span class="end-divide">|</span>
+  <a href="">深圳旅游论坛</a><span class="end-divide">|</span>
+  <a href="">重庆中国青年旅行社</a><span class="end-divide">|</span>
+  <a href="">青岛崂山</a><span class="end-divide">|</span>
+  <a href="">长岛旅游</a><span class="end-divide">|</span>
+  <a href="">南宁旅行社</a><span class="end-divide">|</span>
+  <a href="">青驿</a><span class="end-divide">|</span>
+</div>
+<div class="end-body"></div>
+
+
+
+
 
 </body>
 
