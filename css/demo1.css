@@ -580,13 +580,16 @@ body{
     top: 60px;
     width:1600px;
     height:400px;
-
     position: relative;
 }
+.hangxianshows a{
+     text-decoration: none;
+ }
 .hangxianshow{
+    text-decoration: none;
     background-image: url("../imgs/航线.png");
     background-size: 200% 100%;
-    width:200px;
+    width:230px;
     height:150px;
      float: left;
     position: absolute;
@@ -598,9 +601,105 @@ body{
 .hangxianshow1{
     float: left;
     line-height: 10px;/*文字的高度*/
-    width:100px;
-    height:10px;
+    width:150px;
+    height:30px;
     position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.hangxianshow11{
+
+    float: left;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+}
+.hangxianshow12{
+height: 100%;
+    width: 40%;
+    float: left;
+    position: relative;
+    background-image: url("../imgs/img.png");
+    background-position: 310px 680px;
+
+}
+.hangxianshow13{
+
+    float: left;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+}
+.hangxianshow2{
+    font-size: 14px;
+    float: left;
+    line-height: 30px;/*文字的高度*/
+    width:150px;
+    height:30px;
+    position: absolute;
+
+    top: 50px;
+    left: 70px;
+}
+div.hangxianshow3:hover hangxianshow31{
+    transition: c 1s;
+}
+.hangxianshow3{
+    float: left;
+    line-height: 10px;/*文字的高度*/
+    width:150px;
+    height:30px;
+    position: absolute;
+
+    top: 100px;
+    left: 40px;
+}
+
+.hangxianshow31{
+    float: left;
+    width: 20%;
+    height: 100%;
+background-image: url("../imgs/img.png");
+    background-position: 295px 650px;
+}
+.hangxianshow31:hover{
+    animation: c 5s;
+}
+@keyframes c{
+    0%{
+        transform:translate(0 ,0);
+    }
+    100%{
+        transform:translate(100px 100px);
+    }
+}
+.hangxianshow32{
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.hangxianshow33{
+    color: rgb(255,107,97);
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    width: 10%;
+    height: 100%;
+
+}
+.hangxianshow34{
+    color: rgb(255,107,97);
+    font-size: 25px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+
 }
 /*热门航空公司*/
 .gongsi{
@@ -639,14 +738,24 @@ body{
 
 
  }
-.gongsi11{
+.gongsi111{
     height: 83%;
     width: 100%;
     background-size: 100% 100%;
-    background-image: url("../imgs/0.png");
     position: relative;
 
 }
+.gongsi11{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url("../imgs/0.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
 .gongsi11:hover{
     animation: b 0.5s;
     animation-direction:alternate ;
@@ -817,7 +926,11 @@ float: left;
      position: relative;
 
  }
+.guoji3 a{
+    text-decoration: none;
+}
 .guoji3{
+
     float: left;
     left: 4%;
     height: 100%;
@@ -918,6 +1031,7 @@ position: relative;
     float: left;
     position: relative;
     top: 70px;
+
 }
 .kuai1{
     height: 100%;
@@ -957,9 +1071,9 @@ position: relative;
     float: left;
     width: 50px;
     height: 50px;
-    background-color: rgb(247,247,246);
-    background-image: url("../imgs/购票流程.png");
-    background-position: 230px 189px;
+
+   background-image: url("../imgs/最后1.png");
+    background-position: 44px 137px;
 
 }
 .kuai16{
@@ -970,9 +1084,41 @@ position: relative;
     float: left;
     width: 30px;
     height: 30px;
-
-    background-image: url("../imgs/购票流程.png");
-    background-position: 250px 250px;
+  background-image: url("../imgs/最后1.png");
+    background-position: 317px 127px;
+}
+.kuai19{
+    position: relative;
+     left: 7px;
+     top: 7px;
+     float: left;
+     width: 30px;
+     height: 30px;
+     background-image: url("../imgs/最后1.png");
+     background-position: 240px 127px;
+    z-index: 1;
+ }
+.kuai20{
+    z-index: 1;
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-image: url("../imgs/最后1.png");
+    background-position: 161px 128px;
+}
+.kuai21{
+    z-index: 1;
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-image: url("../imgs/最后1.png");
+    background-position: 95px 127px;
 }
 .kuai17{
     font-size: 20px;
@@ -982,6 +1128,37 @@ position: relative;
     top: 7px;
     float: left;
 
+}
+@keyframes d1{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.kuai16:hover{
+    animation: a 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai19:hover{
+    animation: d1 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai20:hover{
+    animation: d1 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai21:hover{
+    animation: d1 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
 }
 .kuai18{
     color: white;
@@ -994,8 +1171,79 @@ position: relative;
 }
 .zuihou{
     width: 100%;
-    height: 300px;
+    height: 160px;
     position: relative;
     background-color: rgb(239,239,239);
     top: 528px;
 }
+.zuihou1{
+    z-index: 1;
+    float: left;
+    width: 14%;
+    height: 160px;
+    position: relative;
+    top: -460px;
+    border-right: 1px solid rgb(229,229,228)
+}
+.zuihou11{
+    float: left;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: -50px;
+}
+.zuihou111{
+    top: 15%;
+    float: left;
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+.zuihou111 a{
+    text-decoration: none;
+}
+.zuihou1111{
+    top: 15%;
+    float: left;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    background-image: url("../imgs/最后1.png");
+    background-position: 200px 68px;
+}
+.zuihou2{
+    font-size: 13px;
+    width: 80%;
+
+    position: relative;
+    top: 90px;
+    left: 320px;
+
+}
+.zuihou21{
+    width: 80%;
+    height: 74px;
+    background-image:url("../imgs/营业执照.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 90px;
+    left: 640px;
+
+}
+.zuihou22{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.zuihou23{
+    color: rgb(166,156,166);
+    font-size: 11px;
+    width: 50%;
+
+    position: relative;
+    top: 90px;
+    left: 320px;
+
+}
+
+
