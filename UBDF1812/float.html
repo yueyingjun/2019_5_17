@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            overflow: hidden;
+        }
+        .box .inner{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            float:left;
+        }
+
+    </style>
+</head>
+
+<body>
+<!--
+目的是为了让某一个元素和其他元素共享一行并且能够设置宽高,并且能够忽略空格,从而达到布局的目的
+出现的问题
+默认的宽度和高度是浏览器的宽度默认的高度是没有
+当一个元素浮动之后,它的层级就提高了
+1.如果元素浮动之后,并且父元素没有指定高度,那么父元素是撑不开的就会导致后面的元素出现排列问题
+    解决:给父元素设置高度;清除浮动带来的问题(clear: both);可以给父元素设置属性叫overfloat(对于超出父元素的内容做一些处理):hidden(不可见的) visible可见的  scroll(滚动条) auto
+    nth-child()
+2.当设置了浮动要靠在父元素的左上角,后面的依次靠在前一个元素的左上角,如果父元素的宽度不足以放下父元素的内容,那么会自动换行显示
+3.在使用浮动的时候我们要保证同一行浮动的元素的高度要统一,否则会出现排列错误的情况
+-->
+<div class="box" >
+    <div class="inner"></div>
+    <div class="inner"></div>
+</div>
+<span>122</span>
+<div></div>
+</body>
+</html>
