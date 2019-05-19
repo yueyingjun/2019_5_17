@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    height: 3000px;
 }
 h1,h2,h3,h4,h5,h6,ul,li{
     padding: 0;
@@ -11,7 +10,7 @@ h1,h2,h3,h4,h5,h6,ul,li{
 }
 /* 头部信息*/
 header{
-   width: 1180px;
+    width: 1180px;
     height:70px;
     margin:auto;
 
@@ -200,21 +199,21 @@ header  .code{
     z-index: 2  ;
 }
 .listitem{
-    width: 234px;
-    height: 158px;
-    float: left;
-}
-.items{
-    width: 210px;
+    width: 227px;
     height: 148px;
-    margin:10px;
-    background: rgb(249,249,249);
-    border: 1px solid rgb(221,221,221);
+    float: left;
+    margin-top:10px;
+    margin-right: 11px;
+    background:url("../image/carl_bg.png") no-repeat;
+
 }
-.items:hover{
-    background: #ffffff;
-    color:#000;
-    border: 1px solid rgb(171 ,219 ,253);
+.listitem2{
+    width: 227px;
+    height: 148px;
+    float: left;
+    margin-top:10px;
+margin-left: 1px;
+    background:url("../image/carl_bg.png") no-repeat;
 }
 .cityto{
     width: 210px;
@@ -244,39 +243,51 @@ header  .code{
     height: 30px;
     font-size: 14px;
 }
-.items span{
+.listitem span{
     text-align: center;
     color: rgb(0,120,197);
 }
 .price{
-    margin-top: 20px;
     width: 100%;
     height: 70px;
-
+    line-height: 20px;
     text-align: center;
 }
 .price .rmb{
     color:rgb(255,102,0);
     font-size:25px;
 }
+.price .rm{
+    color:rgb(255,102,0);
+    font-size:14px;
+}
 .jpg1{
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 10px;
     width: 20px;
     height: 20px;
     background: url("../image/img.png") no-repeat  -36px -106px ;
     display: inline-block;
 }
 .jiantou{
-   margin-top:20px ;
+    margin-top:20px ;
     width: 50px;
     height: 20px;
     background: url("../image/img.png") no-repeat  -29px -78px ;
     display: inline-block;
     float: left;
 }
-.citytocity span{
-    margin:10px;
+@keyframes  ani3 {
+    0%{
+        transform: translate(0px,0px);
+    }
+
+    100%{
+        transform:translate(10px,0px);
+    }
+}
+.listitem:hover .jiantou{
+    animation: ani3 1s linear alternate  1;
 }
 .price span{
     margin: 5px;
@@ -345,7 +356,7 @@ header  .code{
     }
 }
 .icon-in:hover{
-animation: ani 1s linear alternate  6;
+    animation: ani 1s linear alternate  6;
 }
 .icon-in1{
     width:100%;
@@ -428,11 +439,11 @@ animation: ani 1s linear alternate  6;
     float: left;
 }
 .domain1icon1{
-     width:50%;
-     height: 100%;
-     background: url("../image/main.png") no-repeat 33px -40px;
-     float: left;
- }
+    width:50%;
+    height: 100%;
+    background: url("../image/main.png") no-repeat 33px -40px;
+    float: left;
+}
 .sfg{
     width:10%;
     height: 100%;
@@ -508,6 +519,9 @@ animation: ani 1s linear alternate  6;
     font-size: 12px;
     text-decoration: none;
 }
+.domain  a:hover{
+    color: #ff553a;
+}
 /*热门航空公司*/
 .remengongsi{
     width: 1180px;
@@ -532,6 +546,14 @@ animation: ani 1s linear alternate  6;
     left: 0;
     top: 20px;
 
+}
+.poc{
+    width: 50px;
+    height: 50px;
+   background: url("../image/main.png") no-repeat -360px -260px;
+    position: absolute;
+    left:  390px;
+    top: 260px;
 }
 .company-pic{
     width: 697px;
@@ -629,6 +651,7 @@ animation: ani 1s linear alternate  6;
     height: 30px;
     background: rgba(127,127,127,0.8);
     text-align: center;
+    color: #ffffff;
 }
 .compic{
     overflow: hidden;
@@ -647,10 +670,16 @@ animation: ani 1s linear alternate  6;
     margin: auto;
 }
 .jichang{
-    width: 31%;
+    width: 332px;
     height: 100%;
     float: left;
     margin-right: 20px;
+    border-bottom:3px solid rgb(204,204,204);
+}
+.jichang2{
+    width: 476px;
+    height: 100%;
+    float: left;
     border-bottom:3px solid rgb(204,204,204);
 }
 .jichang-1{
@@ -660,7 +689,7 @@ animation: ani 1s linear alternate  6;
 }
 .jichang-2{
     font-size: 14px;
-    margin-left: 135px;
+    margin-left: 80px;
     line-height: 20px;
     color: rgb(85,85,85);
 }
@@ -670,7 +699,7 @@ animation: ani 1s linear alternate  6;
     float: left;
 }
 .aa2{
-    width: 240px;
+    width: 200px;
     height: 100%;
     float: right;
 }
@@ -679,6 +708,11 @@ animation: ani 1s linear alternate  6;
     width: 33%;
     text-decoration: none;
     font-size: 18px;
+    line-height: 40px;
+    color: #000;
+}
+.aa21{
+    background: rgb(200,227,252);
 }
 .fdsg{
     width: 1180px;
@@ -692,17 +726,17 @@ animation: ani 1s linear alternate  6;
 
 }
 .Info-air{
-    width: 370px;
+    width: 350px;
     height: 100%;
     float: left;
 }
 .Info-an{
-    width: 370px;
+    width: 350px;
     height: 100%;
     float: left;
 }
 .Info-ticket{
-    width: 400px;
+    width: 476px;
     height: 100%;
     float: left;
 }
@@ -713,6 +747,13 @@ animation: ani 1s linear alternate  6;
 .left1{
     height:100%;
     width: 50%;
+    float: left;
+}
+.leftpic{
+    width:10px;
+    height: 10px;
+    margin-top: 6px;
+    background: url("../image/up.jpg");
     float: left;
 }
 .right1{
@@ -726,7 +767,7 @@ animation: ani 1s linear alternate  6;
     font-size:16px;
     color: rgb(0,85,170);
 }
-.Info-air a:hover{
+.Info a:hover{
     color: #ff515b;
 }
 .jic1.jic2{
@@ -845,6 +886,7 @@ animation: ani 1s linear alternate  6;
 .notice{
     width: 100%;
     height:150px;
+    background: rgb(246,246,246);
 }
 .model{
     margin-left: 20px;
@@ -861,19 +903,53 @@ animation: ani 1s linear alternate  6;
     text-decoration: none;
     font-size: 12px;
 }
-.picph{ margin-left: 20px;
-    margin-top: 30px;
+.picph1{ margin-left: 20px;
     width: 300px;
-    height: 80px;
+    height: 70px;
     float: left;
     background:url("../image/footer.png") no-repeat -100px -70px;
+}
+.picph2{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 35px;
+    float: left;
+    border-radius:10px;
+
+}
+.hint{
+    width: 68%;
+    height: 95%;
+    border-radius:6px 0  0 6px;
+    background: #ffffff;
+    float: left;
+    border: 2px solid rgb(27,124,237);
+}
+.sousuo{
+    width: 18%;
+    border-radius:0 10px 10px 0 ;
+    height: 110%;
+    background: rgb(27,124,237);
+    float: left;
+    border: 2px solid rgb(27,124,237);
 }
 .model a:hover{
     color: #ff553a;
 }
 .jkh{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 73px;
     background: url("../image/aa.jpg") no-repeat;
     margin: auto;
+}
+p{
+    font-size: 12px
+}
+.webinfo{
+    background: rgb(235,245,254);
+}
+.webinfo a{
+    font-size: 12px;
+    text-decoration: none;
 }
