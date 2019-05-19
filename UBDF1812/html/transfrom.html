@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+
+
+        }
+        div:hover{
+
+            animation-name: animal;
+            animation-duration: 0.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes animal {  <!--关键帧 -->
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(30deg);
+            }
+        }
+        div{
+            width:100px;
+            height: 200px;
+            border-radius-topleft: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="transforms">
+
+
+
+    </div>
+<div>
+
+</div>
+</body>
+</html>
