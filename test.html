@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页案例</title>
+  <!--  <style>
+  太极图
+        div{
+            width: 96px;
+            height: 40px;
+            border: 2px solid #000000;
+            border-bottom: 50px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto ;
+            transiton: all  2s ease;
+        }
+
+        div:before{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 20px solid #000;
+            background: #fff;
+            border-radius: 50%;
+            left: 0;
+            top:50%;
+        }
+        div:after{
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border: 20px solid white;
+            background: black;
+            border-radius: 50%;
+            right: 0;
+            top: 50%;
+
+        }
+
+    </style>
+    <script>
+        window.onload=function(e){
+            var div = document.querySelector("div");
+            div.onmouseleave=function () {
+                div.style.transform="rotate(180deg)"
+            }
+        }
+
+
+    </script>-->
+    <style>
+        *{
+            padding: 0;
+            max-resolution: 0;
+        }
+
+        .one{
+            height: 100px;
+            background: #3b8de3;
+            width: 100px;
+            box-shadow: 10px 10px 10px 10px gainsboro inset;
+
+        }
+        .one:hover{
+          /*  animation: animate .5s;
+            animation-direction: 回来的时候也是运动;
+            animation-fill-mode: 弄完回来还是，弄外就停在那里;*/
+        }
+        /* 动画  要起名字*/
+        @keyframes animate {
+            0%{
+                transform: rotate(-30deg);
+            }
+            100%{
+                transform: rotate(30deg);
+            }
+        }
+        .two{
+            width: 90%;
+            margin: auto;
+            height: 30px;
+            line-height: 30px;
+        }
+        .left{
+            float: left;
+            width: 70%;
+        }
+        .left a{
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+        }
+        .left a:hover{
+            color: #3b8de3;
+            background: white;
+        }
+
+        .right{
+
+            float: right;
+            width: 30%;
+        }
+        .right a{
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .right a:hover{
+            color: #3b8de3;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        
+    </div>
+</body>
+</html>
