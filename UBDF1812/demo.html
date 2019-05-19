@@ -24,7 +24,46 @@
                 btns[num].style.background="orange"
                 num++
             },3000)
+            //1
+            var mySelect = document.querySelectorAll(".right-tab1 a");
+            var myDiv = document.querySelectorAll(".hangxians");
+
+            for (var i = 0; i < mySelect.length; i++) {
+                mySelect[i].index = i;
+                mySelect[i].onclick = function () {
+                    for (var j = 0; j < mySelect.length; j++) {
+                        mySelect[j].style.background = "white";
+                        mySelect[j].style.borderBottom = "none";
+                        mySelect[j].style.color = "rgb(85,85,85)";
+                        myDiv[j].style.display = "none";
+                    }
+                    this.style.background = "rgb(200,227,252)";
+                    this.style.color = "#3b8de3"
+                    this.style.borderBottom = "2px solid #3b8de3";
+                    myDiv[this.index].style.display = "block";
+                }
+            }
+            //2
+            var mySelect2 = document.querySelectorAll(".right-tab2 a");
+            var myDiv2 = document.querySelectorAll(".tejia-hangxian");
+            for (var k = 0; k < mySelect2.length; k++) {
+                mySelect2[k].index = k;
+                mySelect2[k].onclick = function () {
+                    for (var l = 0; l < mySelect2.length; l++) {
+                        mySelect2[l].style.background = "white";
+                        mySelect2[l].style.borderBottom ="none";
+                        mySelect2[l].style.color = "rgb(85,85,85)";
+                        myDiv2[l].style.display = "none";
+
+                    }
+                    this.style.background = "rgb(200,227,252)";
+                    this.style.borderBottom = "2px solid rgb(200,227,252)";
+
+                    myDiv2[this.index].style.display = "block";
+                }
+            }
         }
+
     </script>
 </head>
 <header>
@@ -213,169 +252,920 @@
     </div>
 </div>
 <!--热门航线-->
-<div class="hothangxian">
+<div class="hot-menu" id="hot-hangxian">
     <div class="left">
         <p>热门航线预定</p>
     </div>
-    <div class="right">
-        <a href="" class="quanguo">全国</a>
-        <a href="">深圳</a>
-        <a href="">北京</a>
-        <a href="">上海</a>
-        <a href="">广州</a>
-        <a href="">武汉</a>
-        <a href="">成都</a>
-        <a href="">海口</a>
-        <a href="">重庆</a>
-        <a href="">沈阳</a>
+    <div class="right-tab1">
+        <a href="javascript:;" class="show">全国</a>
+        <a href="javascript:;">深圳</a>
+        <a href="javascript:;">北京</a>
+        <a href="javascript:;">上海</a>
+        <a href="javascript:;">广州</a>
+        <a href="javascript:;">武汉</a>
+        <a href="javascript:;">成都</a>
+        <a href="javascript:;">海口</a>
+        <a href="javascript:;">重庆</a>
+        <a href="javascript:;">沈阳</a>
     </div>
 </div>
-<div class="hangxians">
-    <div class="hangxian">
-        <p class="place">海口→郑州</p>
-        <p class="date">12月16日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">150</span>
-        </p>
+
+<div class="hangxians-all">
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">银川</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">太原</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">南京</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">西安</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">合肥</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">天津</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">银川</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">海口→长沙</p>
-        <p class="date">10月15日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">110</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">10月09日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">武汉</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">450</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">500</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">兰州</p>
+            <p class="date">10月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">240</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">09月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">427</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">沈阳</p>
+            <p class="date">06月12日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">749</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">06月07日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">518</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">北京</p>
+            <p class="date">05月27日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">748</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">重庆</p>
+            <p class="date">10月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">410</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">深圳</p>
+            <div class="to"></div>
+            <p class="place2">成都</p>
+            <p class="date">10月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">470</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">武汉→神农架</p>
-        <p class="date">05月18日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">117</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">427</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">北京</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">银川→昆明</p>
-        <p class="date">05月18日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">220</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海浦东</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">哈尔滨</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+
+        <div class="hangxian">
+            <p class="place1">上海浦东</p>
+            <div class="to"></div>
+            <p class="place2">西安</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">温州</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海浦东</p>
+            <div class="to"></div>
+            <p class="place2">宁波</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">上海</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">太原→昆明</p>
-        <p class="date">11月11日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">250</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">太原</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">常春</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">广州</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">南京→上海浦东</p>
-        <p class="date">07月03日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">150</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">武汉</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">西安→上海浦东</p>
-        <p class="date">01月25日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">200</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">成都</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">合肥→海口</p>
-        <p class="date">05月28日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">279</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">西安</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">合肥</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">天津→三亚</p>
-        <p class="date">05月22日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">399</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">西安</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">重庆</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
-    <div class="hangxian">
-        <p class="place">银川→大连</p>
-        <p class="date">06月23日</p>
-        <p><span class="piaojia">票价：</span>
-            <span class="¥">¥</span>
-            <span class="price">209</span>
-        </p>
+    <div class="hangxians">
+
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">郑州</p>
+            <p class="date">12月16日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">海口</p>
+            <div class="to"></div>
+            <p class="place2">长沙</p>
+            <p class="date">10月15日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">110</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">神农架</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">117</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">05月18日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">220</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">昆明</p>
+            <p class="date">11月11日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">250</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">上海浦东</p>
+            <p class="date">07月03日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">150</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">西安</p>
+            <p class="date">01月25日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">200</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">海口</p>
+            <p class="date">05月28日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">279</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">三亚</p>
+            <p class="date">05月22日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">399</span></p>
+        </div>
+        <div class="hangxian">
+            <p class="place1">沈阳</p>
+            <div class="to"></div>
+            <p class="place2">大连</p>
+            <p class="date">06月23日</p>
+            <p class="icon"></p>
+            <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">209</span></p>
+        </div>
+
     </div>
 </div>
 <!--热门航空公司-->
-
-<div class="mod-hk">
-    <div class="hk-all">
-        <div class="mod-hd">
-            <h2 class="coach-header">
-                热门航空公司
-            </h2>
+<div class="hot-menu1">
+    <div class="left">
+        <p>热门航空公司</p>
+    </div>
+    <div class="right1">
+        <p>>></p>
+    </div>
+</div>
+<div class="hot-company">
+    <div class="company-left">
+        <div class="company-imgbox">
+            <div class="company-img" id="ca3"></div>
+            <div class="company-name"><p>中国国际航空公司</p></div>
+        </div>
+        <div class="company-text">
+            <p>中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身
+                中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础
+                ，组建新的中国国际航空公司。</p>
+        </div>
+        <div class="icon">
         </div>
     </div>
-    <div class="hk-btm">
-        <div class="btm-left">
-            <div class="btn-all">
-                <div class="btm-lt-left">
-                    <div class="left-img"></div>
-                    <span>中国国际航空公司</span>
-                </div>
-                <div class="bt-lt-right">
-                    <p class="bt-lt-info">&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身
-                        中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础
-                        ，组建新的中国国际航空公司。</p>
-                </div>
-            </div>
+    <div class="company-right">
+        <div class="company-imgbox">
+            <div class="company-img" id="cz3"></div>
+            <div class="company-name"><p>中国南方航空公司</p></div>
         </div>
-        <div class="btm-right">
-            <ul class="btm-rt-top">
-                <li>
-                    <div class=" btm-rt-tp-in11">
-                        <div class="label">中国南方航空公司</div>
-                    </div>
-                </li>
-                <li>
-                    <div class=" btm-rt-tp-in12">
-                        <div class="label">中国东方航空公司</div>
-                    </div>
-                </li>
-                <li>
-                    <div class=" btm-rt-tp-in13">
-                        <div class="label">海南航空公司</div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="btm-rt-btm">
-                <li>
-                    <div class=" btm-rt-tp-in21">
-                        <div class="label">深圳航空公司</div>
-                    </div>
-                </li>
-                <li>
-                    <div class=" btm-rt-tp-in22">
-                        <div class="label">四川航空公司</div>
-                    </div>
-                </li>
-                <li>
-                    <div class=" btm-rt-tp-in23">
-                        <div class="label">春秋航空公司</div>
-                    </div>
-                </li>
-            </ul>
+        <div class="company-imgbox">
+            <div class="company-img" id="mu3"></div>
+            <div class="company-name"><p>中国东方航空公司</p></div>
         </div>
+        <div class="company-imgbox">
+            <div class="company-img" id="hu3"></div>
+            <div class="company-name"><p>海南航空公司</p></div>
+        </div>
+        <div class="company-imgbox">
+            <div class="company-img" id="zh3"></div>
+            <div class="company-name"><p>深圳航空公司</p></div>
+        </div>
+        <div class="company-imgbox">
+            <div class="company-img" id="sc3"></div>
+            <div class="company-name"><p>四川航空公司</p></div>
+        </div>
+        <div class="company-imgbox">
+            <div class="company-img" id="cq3"></div>
+            <div class="company-name"><p>春秋航空公司</p></div>
+        </div>
+
     </div>
 </div>
 <!--热门国际机场-->
-<div class="last">
+<div class="hot-airport">
     <div class="left">
         <span style="font-size: x-large">热门国际机场</span>
         <span style="float: right; cursor: pointer; line-height: 35px;">全球机场>></span>
@@ -402,75 +1192,245 @@
             </ul>
         </div>
     </div>
-    <div class="left middle">
+    <div class="middle">
         <span style="font-size: x-large">最新客户咨询</span>
         <span style="float: right; cursor: pointer; line-height: 35px;">更多>></span>
         <div class="inner">
             <ul class="ul_middle">
-                <li class="black">2019/5/16 21:35:27 </li>
-                <li>>><a href="">你好，小孩才32个月，没有身份证，怎么取...</a></li>
-                <li class="black">2019/5/16 17:57:21 </li>
+                <li class="black">&nbsp;&nbsp;&nbsp;&nbsp;2019/5/16 21:35:27 </li>
+                <li>>><a href="">你好，小孩才32个月，没有身份证，怎..</a></li>
+                <li class="black">&nbsp;&nbsp;&nbsp;&nbsp;2019/5/16 17:57:21 </li>
                 <li>>><a href="">护照可以定机票登机嘛</a></li>
-                <li class="black">2019/5/16 14:44:39 </li>
-                <li>>><a href="">你好，请问出生两个月的婴儿应该在网上怎么...</a></li>
-                <li class="black">2019/5/16 14:28:19 </li>
-                <li>>><a href="">你好我现在有事情飞机赶不上了能改签一下吗</a></li>
-                <li class="black">2019/5/16 12:15:01 </li>
+                <li class="black">&nbsp;&nbsp;2019/5/16 14:44:39 </li>
+                <li>>><a href="">你好，请问出生两个月的婴儿应该在网...</a></li>
+                <li class="black">&nbsp;&nbsp;&nbsp;&nbsp;2019/5/16 14:28:19 </li>
+                <li>>><a href="">你好我现在有事情飞机赶不上了能改签..</a></li>
+                <li class="black">&nbsp;&nbsp;&nbsp;&nbsp;2019/5/16 12:15:01 </li>
                 <li>>><a href="">温州到徐州的机票哪里买</a></li>
-                <li class="black">2019/5/15 15:54:39 </li>
+                <li class="black">&nbsp;&nbsp;&nbsp;&nbsp;2019/5/15 15:54:39 </li>
                 <li>>><a href="">临沂至哈尔滨</a></li>
             </ul>
         </div>
     </div>
-    <div class="right">
-        <span style="font-size: x-large;line-height: 40px">国际特价</span>
-        <span class="one_right">
-                <a href="#" class="link active">北美</a>
-                <a href="#" class="link">亚洲</a>
-                <a href="#" class="link">欧洲</a>
-            </span>
-        <div class="right_inner">
-            <div class="list">
-                <div>
-                    <span>上海&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>华盛顿</span>
-                    <span>06月10日</span>
-                    <div class="flight"></div>
-                    <span class="top">票价<strong class="red">￥1395</strong></span>
+    <div class="tejia">
+        <div class="tejia-menu">
+            <div class="left">
+                <p>国际特价</p>
+            </div>
+            <div class="right-tab2">
+                <a href="javascript:;" class="beimei">北美</a>
+                <a href="javascript:;">亚洲</a>
+                <a href="javascript:;">欧洲</a>
+            </div>
+        </div>
+        <div class="tejia-all">
+            <div class="tejia-hangxian">
+                <div class="hangxian">
+                    <p class="place1">上海</p>
+                    <div class="to"></div>
+                    <p class="place2">华盛顿</p>
+                    <p class="date">06月10日</p>
+                    <p class="icon"></p>
+                    <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">1395</span></p>
                 </div>
-                <div>
-                    <span>北京&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>洛杉矶</span>
-                    <span>06月10日</span>
-                    <div class="flight"></div>
-                    <span class="top">票价<strong class="red">￥1395</strong></span>
+                <div class="hangxian">
+                    <p class="place1">北京</p>
+                    <div class="to"></div>
+                    <p class="place2">洛杉矶</p>
+                    <p class="date">07月19日</p>
+                    <p class="icon"></p>
+                    <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">2950</span></p>
                 </div>
             </div>
-            <div class="list">
-                <div>
-                    <span>广州&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>首尔</span>
-                    <span>06月10日</span>
-                    <div class="flight"></div>
-                    <span class="top">票价<strong class="red">￥139</strong></span>
+            <div class="tejia-hangxian">
+                <div class="hangxian">
+                    <p class="place1">上海</p>
+                    <div class="to"></div>
+                    <p class="place2">东京</p>
+                    <p class="date">08月11日</p>
+                    <p class="icon"></p>
+                    <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">1035</span></p>
                 </div>
-                <div>
-                    <span>北京&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="jiantou"></div>东京</span>
-                    <span>06月10日</span>
-                    <div class="flight"></div>
-                    <span class="top">票价<strong class="red">￥135</strong></span>
+                <div class="hangxian">
+                    <p class="place1">北京</p>
+                    <div class="to"></div>
+                    <p class="place2">首尔</p>
+                    <p class="date">10月20日</p>
+                    <p class="icon"></p>
+                    <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">2730</span></p>
+                </div>
+            </div>
+            <div class="tejia-hangxian">
+                <div class="hangxian">
+                    <p class="place1">北京</p>
+                    <div class="to"></div>
+                    <p class="place2">伦敦</p>
+                    <p class="date">02月10日</p>
+                    <p class="icon"></p>
+                    <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">2152</span></p>
+                </div>
+                <div class="hangxian">
+                    <p class="place1">北京</p>
+                    <div class="to"></div>
+                    <p class="place2">巴黎</p>
+                    <p class="date">12月19日</p>
+                    <p class="icon"></p>
+                    <p><span class="piaojia">票价：</span><span class="¥">¥</span><span class="price">3050</span></p>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <!--公用底部-->
-<div class="foot-main"><div class="foot-nav clearfix">
-    <ul>
-        <li><span class="foot-n1"></span><strong>支付安全</strong><p>在线支付100%认证</p></li>
-        <li><span class="foot-n2"></span><strong>实时同步</strong><p>全球机票联网售票</p></li>
-        <li><span class="foot-n3"></span><strong>全天服务</strong><p>7*24小时专业客服人员为您服务</p></li>
-        <li><span class="foot-n4"></span><strong>方便快捷</strong><p>电子客票，身份证直接换登机牌</p></li>
-    </ul>
+<div class="foot-main">
+    <div class="foot-nav">
+        <ul>
+            <li><span class="foot-n1"></span>
+                <strong>支付安全</strong>
+                <p>在线支付100%认证</p>
+            </li>
+            <li><span class="foot-n2"></span><strong>实时同步</strong><p>全球机票联网售票</p></li>
+            <li><span class="foot-n3"></span><strong>全天服务</strong><p>7*24小时专业客服为您服务</p></li>
+            <li><span class="foot-n4"></span><strong>方便快捷</strong><p>电子客票，身份证可换登机牌</p></li>
+        </ul>
+    </div>
+</div>
+<!--服务链接-->
+<div class="server">
+    <div class="server-link">
+        <div class="hml">
+            <div class="hml-1">新手上路</div>
+            <div class="hml-2">
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-查询预订</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-订单填写</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-支付出票</a>
+                </div>
+            </div>
+        </div>
+        <div class="hml">
+            <div class="hml-1">付款方式</div>
+            <div class="hml-2">
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-网上银行</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-微信支付</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-信用卡</a>
+                </div>
+            </div>
+        </div>
+        <div class="hml">
+            <div class="hml-1">旅客保障</div>
+            <div class="hml-2">
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-航协认证</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-支付出票</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-安全保障</a>
+                </div>
+            </div>
+        </div>
+        <div class="hml">
+            <div class="hml-1">常见问题</div>
+            <div class="hml-2">
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-洛阳北郊机场怎</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-不太清楚连云港</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-了解多彩贵州航空</a>
+                </div>
+            </div>
+        </div>
+        <div class="hml">
+            <div class="hml-1">关于我们</div>
+            <div class="hml-2">
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-联系我们</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-网站介绍</a>
+                </div>
+                <div class="cm">
+                    <div class="cm1"></div>
+                    <a class="cm2" href="">-公司简介</a>
+                </div>
+            </div>
+        </div>
+        <div class="hmm">
+            <div class="hmm-1"></div>
+            <div class="hmm-2">
+                <input type="text" class="gjz" placeholder="请输入关键词" >
+                <input type="submit" class="sousuo"  value="搜索">
+            </div>
+        </div>
+    </div>
 </div></div>
-</body>
-</html>
+<!--结束-->
+<div class="end">
+    <div class=end1>
+        <span>© 2019 http://www.161580.com 民航在线</span><b>|</b>
+        <span><a href="">沪ICP备12008257号-2</a></span>
+        <span><a href="">关于161580</a></span><b>|</b>
+        <span><a href="">联系我们</a></span><b>|</b>
+        <span><a href="">合作伙伴</a></span><b>|</b>
+        <span><a href="">诚征英才</a></span><b>|</b>
+        <span><a href="">用户建议</a></span>
+    </div>
+    <div class="end2">
+        <a href=""><img src="./imgs/2.jpg"></a>
+    </div>
+    <div class="end3">
+        <span class="end31">161580官方网站：</span>
+        <span class="end32">161580.com</span><b>|</b>
+        <span class="end33">全国统一服务热线</span>
+        <span class="end34">4000-161580</span><b>|</b>
+        <span class="end35"><a href="">在线咨询</a></span>
+    </div>
+    <div class="end4">
+        <span>61580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、
+            航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，
+            整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。
+            订火车票上12306订机票最便宜的网站，上中国民航机票网。
+        </span>
+    </div>
+    <div class="end5">
+        <span>友情链接QQ434441778:</span>
+    </div>
+    <div class="end6">
+        <span>&nbsp;&nbsp;美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|
+            酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|
+            四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|
+            重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿
+        </span>
+    </div>
+</div>
 </body>
 </html>

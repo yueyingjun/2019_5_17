@@ -257,9 +257,10 @@ header .logo{
     box-sizing:border-box;
     float:left;
 }
+
 .assist{
     width:155px;height:40px;
-    margin: 20px ;
+    margin:22px 36px;
 }
 .info_images1{
     width:40px;height:40px;
@@ -299,7 +300,7 @@ header .logo{
 }
 .info_images5{
     width:40px;height:40px;
-    background: url("../imgs/main.png") no-repeat -67px -52px;
+    background: url("../imgs/main.png") no-repeat -70px -52px;
     float: left;
 }
 .info_images5:hover{
@@ -308,26 +309,17 @@ header .logo{
 }
 .info_images6{
     width:40px;height:40px;
-    background: url("../imgs/main.png") no-repeat -67px -188px;
+    background: url("../imgs/main.png") no-repeat -72px -188px;
     float: left;
 }
 .info_images6:hover{
     transform-origin: center;
     animation:ani .2s linear alternate 5;
 }
-.content span{
-    width:100px;
-    height:40px;
-    margin-left: 10px;
-    float:right;
-    text-align: center;
-    line-height: 40px;
-}
-.content a{
-    text-decoration: none;
-    float:left;
-}
+
 .a_picture{
+    margin-top: -12px;
+    margin-right: 10px;
     width:30px;height:30px;
     background: url("../imgs/main.png") no-repeat -250px 7px;
     float:right;
@@ -409,293 +401,355 @@ header .logo{
     color: orange;
     background: white;
 }
-/*热门航线*/
-.hothangxian{
+/*热门航线预定*/
+.hot-menu {
     height: 44px;
-    width: 1200px;
-    margin:  auto;
-    border-bottom:2px solid darkgray;
+    width: 1180px;
+    margin: auto;
+    border-bottom: 2px solid darkgray;
+}
 
-}
-.hothangxian .left{
+.hot-menu .left {
     height: 44px;
-    width:175px;
+    width: 175px;
 }
-.hothangxian .right{
-    height: 44px;
-    width: 800px;
 
+#hot-hangxian .right-tab1 {
+    height: 44px;width: 800px;
+    float: right;
 }
-.hothangxian .left p{
+
+.hot-menu .left p {
     line-height: 44px;
-    font-size:26px;
-    color:rgb(85,85,85);
+    font-size: 26px;
+    color: rgb(85, 85, 85);
     margin: 0;
     padding: 0;
 }
-.hothangxian .right a{
+
+#hot-hangxian .right-tab1 a {
     float: left;
-    height: 44px;
-    width: 80px;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
+    height: 43px;width: 80px;
     text-align: center;
     line-height: 44px;
-    color: rgb(85,85,85);
+    color: rgb(85, 85, 85);
+    text-decoration: none;
 }
-.hothangxian .right .quanguo{
-    background:rgb(200,227,252);
+
+#hot-hangxian .right-tab1 .show {
+    background: rgb(200, 227, 252);
     border-bottom: 2px solid #3b8de3;
     color: #3b8de3;
 }
-.hothangxian .right a:hover{
+
+#hot-hangxian .right-tab1 a:hover {
     border-bottom: 2px solid #3b8de3;
     color: #3b8de3;
-    background: white;
+}
+
+.hangxians-all{
+    width: 1220px;
+    height: 315px;
+    margin: auto;
+    position: relative;
+
 }
 .hangxians{
-    width: 1200px;
-    height: 335px;
+    width: 1220px;
+    height: 315px;
     margin: auto;
+
+    position: absolute;
+    padding: 5px 10px;
 }
-.hangxian{
+.hangxian {
     float: left;
-    width:220px;
-    height: 135px;
-    margin: 15px 7px;
-    border: 1px solid darkgray;
-    background:rgb(249,249,249);
+    width: 223px;
+    height: 140px;
+    margin:5px 8px;
+    color: rgb(0, 85, 170);
+
+    background: #fff url(../imgs/carl_bg.png) 0 0;
 }
-.hangxian:hover{
-    background: white;
-    border: 1px solid rgb(200,227,252);
+
+.hangxian:hover {
+    background: #fff url(../imgs/carl_bg.png) 225px 0;
+    color: rgb(85, 85, 85);
 }
-.hangxian p{
-    text-align: center;
-    color: rgb(0,85,170);
+
+div.hangxian:hover .to{
+    transform:translate(5px,0);
 }
-.hangxian .place{
-    margin-top: 15px;
+.hangxian .place1 {
+    float: left;
+    width: 35px;
+    height: 30px;
+    margin: 15px 50px;
+}
+.hangxian .to{
+    float: left;
+    width: 45px;
+    height: 30px;
+    margin: 15px -48px;
+    transition:.3s all ease-in 0s;
+    background: url("../imgs/img.png") -25px 676px;
+}
+
+.hangxian .place2 {
+    float: left;
+    width: 70px;
+    height: 30px;
+    margin: 15px 3px;
 
 }
-.hangxian .date{
-    font-size: small;
-    margin-top: 15px;
-}
-.hangxian .¥{
-    color: rgb(255,102,0);
-}
-.hangxian .price{
-    color: rgb(255,102,0);
-    font-size: large;
-}
-.hangxian p:hover{
+.hangxian .date {
+    float: left;
+    width: 75px;
+    height: 25px;
+    margin: 0 80px;
     text-align: center;
-    color: rgb(85,85,85);
+    font-size: small;
+
+}
+.hangxian .icon{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 0 50px;
+    background: url("../imgs/img.png") -32px 643px;
+
+}
+.hangxian .piaojia{
+    float: left;
+    width: 50px;
+    height: 25px;
+    margin: 0 -45px;
+}
+.hangxian .¥ {
+    float: left;
+    width: 15px;
+    height: 25px;
+    color: rgb(255, 102, 0);
+    margin: 0 8px;
+}
+
+.hangxian .price {
+    float: left;
+    width: 40px;
+    height: 25px;
+    color: rgb(255, 102, 0);
+    margin: -8px -8px;
+    font-size: 25px;
 }
 /*热门航空公司*/
-.coach-header{
-    font-size: 24px;
-    line-height: 100%;
-    padding-top: 30px;
-}
-.hk-all{
+.hot-menu1 {
+    height: 44px;
     width: 1180px;
-    height: 60px;
     margin: auto;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(204, 204, 204);
+    border-bottom: 2px solid darkgray;
     position: relative;
-
 }
-.hk-btm{
-    width: 1180px;height: 400px;
-    margin: auto;
+.hot-menu1 .left {
+    height: 44px;
+    width: 175px;
 }
-.btm-left{
-    width: 450px;height: 310px;
-    padding: 10px;
-    float: left;
-    position: relative;
-
-}
-.btm-right{
-    width: 700px;height: 310px;
+.hot-menu1 .right1 {
+    height: 44px;width: 20px;
     float: right;
 }
-.btm-right li{
-    float: left;
-    width: 33%;
-    height: 150px;
-    list-style: none;
+
+.hot-menu1 .left p {
+    line-height: 44px;
+    font-size: 26px;
+    color: rgb(85, 85, 85);
+    margin: 0;
+    padding: 0;
 }
-.btm-lt-left span {
+.hot-menu1 .right1 p{
+    lint-height: 44px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    float: left;
+}
+.hot-company{
+    width: 1180px;
+    height: 336px;
+    margin: 20px auto;
+}
+.company-left{
+    float: left;
+    width: 460px;
+    height: 100%;
+    margin: 0;
+    background: rgb(246,246,246);
+}
+.company-left .company-imgbox{
+    float: left;
     width: 220px;
-    color: #555;
-    text-align: center;
-    background: #ccc;
-    height: 37px;
-    line-height: 37px;
-    display: block;
+    height: 245px;
+    margin: 20px 15px;
+    background: rgb(219,227,247);
 }
-.bt-lt-right p{
-    font-size: 14px;
-    letter-spacing: 1px;
+.company-left .company-imgbox .company-img{
+    width: 200px;
+    height: 188px;
+    margin: 10px 10px;
+    transition: all .3s linear;
+    background-size:cover;
 }
-.left-img{
-    width: 220px;height: 200px;
-    background: url("../imgs/ca3.png") ;
+.company-left .company-imgbox .company-img:hover{
+    transform: scale(1.05);
+    cursor:pointer;
 }
-.bt-lt-info{
+#ca3{
+    background: url("../imgs/ca3.png") -10px -7px;
+}
+.company-left .company-imgbox .company-name{
+    width: 220px;
+    height: 35px;
+    margin: 10px 0;
+    background:rgb(204,204,204);
+}
+.company-left .company-imgbox .company-name p{
+    float: left;
+    margin: auto 27%;
+    line-height: 35px;
+    font-size: 12px;
+    color: rgb(85,85,85);
+}
+.company-left .company-text{
+    float: left;
+    width: 200px;
+    height: 245px;
+    margin: 20px 0px;
+}
+.company-left .company-text p{
+    font-size: 12px;
+    text-indent:25px;
+    line-height:20px;
+    color:rgb(85,85,85);
+
+}
+.company-left .icon{
     float: right;
-    color: #555;
-    padding: 0 1px 0 0;
-    width: 192px;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    margin-top: -20px;
+    background: url("../imgs/main.png") -374px -270px;
+}
+.company-right{
+    float: right;
+    width: 715px;
+    height: 336px;
+    margin: 0;
+    background: rgb(246,246,246);
+}
+.company-right .company-imgbox{
+    float: left;
+    width: 220px;
+    height: 160px;
+    margin: 4px 8px;
+
+    background:rgb(204,204,204);
+}
+.company-right .company-imgbox .company-img{
+    width: 200px;
+    height: 143px;
+    margin: 7px 9px;
+    transition: all .3s linear;
+    background-size:cover;
+    z-index: 1;
+}
+.company-right .company-imgbox .company-img:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+.company-right .company-imgbox .company-name{
+    width: 220px;
+    height: 35px;
+    margin: -35px 0;
+    background:rgba(85,85,85,0.7);
     position: relative;
-    line-height: 14px;
+    z-index: 2;
 }
-.btn-all{
-    width: 450px;
-    height: 230px;
-    margin: 20px auto 30px;
+.company-right .company-imgbox .company-name p{
+    float: left;
+    margin: auto;
+    width: 220px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
 }
-.btm-lt-left{
-    width: 50%;height: 100%;
+#cz3{
+    background: url("../imgs/cz3.png") -10px -10px no-repeat;
+}
+
+#hu3{
+    background: url("../imgs/hu3.png") -10px -10px no-repeat;
+}
+#mu3{
+    background: url("../imgs/mu3.png") -10px -10px no-repeat;
+}
+#zh3{
+    background: url("../imgs/zh3.png") -10px -10px no-repeat;
+}
+#cq3{
+    background: url("../imgs/3u3.png") -10px -10px no-repeat;
+}
+#sc3{
+    background: url("../imgs/9c3.png") -10px -10px no-repeat;
+}
+/*热门国际机场*/
+.hot-airport{
+    width:1180px ;height:350px;
+    margin: 50px 30px;
+    text-decoration: none;
+    position: relative;
+}
+.hot-airport .left{
+    width: 28%; height: 95%;
+    position: absolute;
+    top: 5px; left: 5px;
     float: left;
 }
-.bt-lt-right{
-    width: 50%;height: 100%;
-    float: right;
-    background: #f8f6f6;
-}
-.btm-rt-tp-in11 .label{
-    margin-top: 5px;
-    width: 95%;
-    height: 100%;
-    background: url("../imgs/cz3.png") no-repeat;
-}
-.btm-rt-tp-in12 .label{
-    margin-top: 5px;
-    width: 95%;
-    height: 100%;
-    background: url("../imgs/mu3.png")no-repeat;
-}
-.btm-rt-tp-in13 .label{
-    margin-top: 5px;
-    width: 95%;
-    height: 100%;
-    background: url("../imgs/hu3.png")no-repeat;
-}
-.btm-rt-tp-in21 .label{
-    margin-top: 60px;
-    width: 95%;
-    height: 100%;
-    background: url("../imgs/zh3.png")no-repeat;
-
-}
-.btm-rt-tp-in22 .label{
-    margin-top: 60px;
-    width: 95%;
-    height: 100%;
-    background: url("../imgs/3u3.png")no-repeat;
-
-}
-.btm-rt-tp-in23 .label{
-    margin-top: 60px;
-    width: 95%;
-    height: 100%;
-    background: url("../imgs/9c3.png")no-repeat;
-}
-.label{
-    width: 100%;height: 100%;
-    text-align: center;
-    line-height: 270px;
-}
-@keyframes hk-ani {
-    0%{
-        transform:scale(1,1);
-    }
-    100%{
-        transform:scale(1.1,1.1);
-    }
-}
-.btm-rt-tp-in23:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-
-}
-.btm-rt-tp-in22:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-
-}
-.btm-rt-tp-in21:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-
-}
-.btm-rt-tp-in13:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-
-}
-.btm-rt-tp-in12:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-
-}
-.btm-rt-tp-in11:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-
-}
-.left-img:hover{
-    animation:hk-ani .5s linear 1 ;
-    animation-direction: alternate;
-    animation-fill-mode:forwards;
-}
-
-.last{
-    width:1200px ;height:400px;
+.hot-airport .middle{
+    width: 28%; height: 95%;
     position: absolute;
-    left:20px;top:1850px;
+    top: 5px; left: 360px;
+    float: left;
 }
-.last .left{
-    width: 30%; height: 95%;
-    margin-right: 10px;
-}
-.last .right{
-    width: 38%;height: 100%;
-    position: relative;
+.hot-airport .tejia{
+    width: 36%; height: 95%;
+    position: absolute;
+    top: -6px; left: 700px;
     float: right;
 }
-.left .inner{
-    width: 100%;height: 360px;
+.hot-airport .inner{
+    width: 100%;height: 380px;
     margin-top: 10px;
     border-top: 2px solid gray;
-
+    text-decoration: none;
 }
 .ul_left{
-    width: 40%;height: 100%;
-    position: relative;
-    left:0px;top:25px;
+    width: 180px;height: 100%;
+    float: left;
     color: #0055AA;
+    padding: 10px;
     list-style: none;
+    line-height: 30px;
 }
 .ul_right{
-    width: 40%;height: 100%;
-    position: relative;
-    left:220px;top:-350px;
+    width: 180px;height: 100%;
+    float: left;
     color: #0055AA;
     list-style: none;
+    position: absolute;
+    left: 170px;top: 40px;
+    padding: 10px;
+    line-height: 30px;
 }
 .ul_left a{
     text-decoration: none;
@@ -713,99 +767,88 @@ header .logo{
     border-top: none;
     color: orangered;
 }
-.last li{
-    margin-top: 15px;
-}
-.black{
-    color: black;
-}
+
 .ul_middle{
-    width: 90%;height: 100%;
-    position: relative;
-    left:0px;top:-5px;
-    color: #0055AA;
+    width: 100%;height: 100%;
     list-style: none;
+    padding-left: 0;
+    margin-top: 18px;
+    line-height: 25px;
 }
-.ul_middle li{
-    margin-top: 5px;
+
+.ul_middle.black{
+    color: black;
+    font-size: 12px;
 }
 .ul_middle a{
     color: #0055AA;
     text-decoration: none;
+    font-size: 16px;
 }
 .ul_middle a:hover{
     border-top: none;
     color: orangered;
 }
-.one_right{
-    width: 250px;height: 40px;
-    float: right;
-}
-.one_right a{
-    margin: 0px;padding:12px 15px;
-    text-decoration: none;
-    font-size: large;
-}
-.one_right a:hover{
-    background-color: white;
-    text-decoration: none;
-    color: #0055AA;
-    border-bottom: 1px solid blue;
-}
-.right_inner{
-    width: 100%;height: 55%;
-    border-top: 2px solid gray;
-    overflow: hidden;
-}
-.right_inner .list div{
-    width:200px;
-    height: 165px;
-    margin-top: 25px;
-    position: relative;
-    background:url("../imgs/carl_bg.png") no-repeat 0px 0px;
-    background-size: 200% 100%;
-    float: left;
-}
-.right_inner .list div:hover{
-    background:url("../imgs/carl_bg.png") no-repeat 100% 0px;
-    background-size: 200% 100%;
-}
-.right_inner .list div .jiantou{
-    width:50px;
-    height: 15px;
-    position: absolute;
-    left: 110px;
-    top: 3px;
-    z-index: 3;
-    background:url("../imgs/img.png") no-repeat -25px -72px;
-    float: left;
-}
-.right_inner .list div span{
-    width: 100%;height: 30%;
-    float: left;
-    color: #0055AA;
-    margin-top: 10px;
-    text-align: center;
-}
-.right_inner .list div .top{
-    width: 100%;height: 30%;
-    float: left;
-    color: #0055AA;
-    margin-top: -15px;
-    text-align: center;
-}
-.right_inner .list div .flight{
-    margin: 0;padding: 0;
-    width: 30%;height: 15px;
-    position: relative;
-    left:45px;
-    background: url("../imgs/img.png") no-repeat -10px -105px;
-    float: left;
 
+.tejia-menu {
+    float: left;
+    height: 45px;
+    width: 470px;
+    margin: 8px;
+    border-bottom: 2px solid gray;
 }
-.one_right .active{
-    background-color: #49a2f8;
-    color: #163daa;
+
+.tejia-menu .left {
+    margin-left: 5px;
+    height: 45px;
+    width: 120px;
+}
+
+.tejia-menu .right-tab2 {
+    float: right;
+    height: 45px;
+    width: 182px;
+}
+
+.tejia-menu .left p {
+    line-height: 45px;
+    font-size: 26px;
+    color: rgb(85, 85, 85);
+    margin: 0;
+    padding: 0;
+}
+
+.tejia-menu .right-tab2 a {
+    float: left;
+    height: 44px;
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 55px;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+.tejia-menu .right-tab2 .beimei {
+    background: rgb(200, 227, 252);
+    border-bottom: 2px solid rgb(200, 227, 252);
+    color: rgb(85,85,85);
+}
+
+.tejia-menu .right-tab2 a:hover {
+    color: #3b8de3;
+}
+.tejia-all{
+    float: left;
+    width:481px ;
+    height: 345px;
+    position: relative;
+}
+.tejia-hangxian{
+    width:481px ;
+    height: 345px;
+    position: absolute;
 }
 /*底部导航*/
 @keyframes foottubiao {
@@ -817,29 +860,27 @@ header .logo{
     }
 }
 .foot-main{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;height: 50px;
     background: #3b8de3;
     list-style: none;
 }
 .foot-nav{
-    width: 1200px;
-    height: 56px;
-    margin: 0 auto;
+    width: 100%;height: 100%;
     position: relative;
-    overflow: hidden;
     list-style: none;
+    float: left;
 }
 .foot-nav ul{
-    padding: 5px 0;
-    width: 1281px;
+    width: 100%;height: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 20px;top: 0;
+
+    margin: 0;
     list-style: none;
 }
 .foot-nav li{
-    width: 320px;
+    width: 280px;
     float: left;
     color: #fff;
     position: relative;
@@ -886,7 +927,7 @@ header .logo{
 }
 
 .foot-nav li span.foot-n1:hover{
-    animation: tubiao .5s linear 2;
+    animation: foottubiao .5s linear 2;
     animation-direction: alternate;
     list-style: none;
 }
@@ -906,4 +947,212 @@ header .logo{
     animation: foottubiao .5s linear 1;
     animation-direction: alternate;
     list-style: none;
+}
+/*服务*/
+.server{
+    width: 100%;
+    height: 200px;
+    background:  rgb(247,247,246);
+    margin-top: 2px;
+    margin-left: 0;
+    padding: 10px;
+}
+.server .server-link{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.server-link .hml{
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.hml .hml-1{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 160px;
+    height: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+}
+.hml .hml-2{
+    width: 160px;
+    height: 120px;
+}
+.hml-2 .cm{
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+
+}
+
+.cm .cm1{
+    width:10px;
+    height: 20px;
+    margin-top: 6px;
+    margin-left: 36px;
+    float: left;
+    background: url("../imgs/1.png") 0 -43px;
+}
+
+.cm .cm2:hover{
+    color: red;
+}
+.cm .cm2{
+    width:107px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    font-size: 13px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #656565;
+}
+.server-link .hmm{
+    width: 24%;
+    height: 100%;
+    float: left;
+
+}
+.hmm .hmm-1{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 220px;
+    height: 90px;
+    background: url("../imgs/footer.png") no-repeat -100px -60px;
+}
+.hmm .hmm-2{
+    width: 350px;
+    height: 90px;
+}
+.hmm-2 .gjz{
+    height: 40px;
+    width: 240px;
+    line-height: 36px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid #494bff;
+    float: left;
+}
+.hmm-2 .sousuo{
+    border-color: #1c89ea;
+    height: 44px;width: 64px;
+    background-color: #1c89ea;
+    color: #ffffff;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    border-radius: 0px;
+    margin-top: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+/*结束*/
+
+.end{
+    width: 1400px;
+    height: 500px;
+    margin:10px 100px 10px
+}
+
+.end1{
+    width: 1000px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 10px 100px;
+}
+.end1 span{
+    line-height: 20px;
+    font-family: 微软雅黑;
+    color: #555555;
+}
+.end1 span a:hover{
+    color: red;
+}
+.end1 span a{
+    text-decoration: none;
+    color: #555555;
+
+}
+.end .end2{
+    height: 76px;
+    width: 65px;
+    margin: 10px 480px;
+}
+
+.end .end3{
+    width: 660px;
+    height: 50px;
+    margin: 10px 260px;
+}
+
+.end3 span{
+    text-align: center;
+    line-height: 30px;
+}
+
+.end3 .end31{
+    font-family: 微软雅黑;
+    color: #555555;
+    background: rgb(238,245,254);
+}
+
+.end3 .end32{
+    font-family:微软雅黑;
+    color: red;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.end3 .end33{
+    background: rgb(238,245,254);
+}
+.end3 .end34{
+    font-family:微软雅黑;
+    color: red;
+    font-size: 12px;
+    background: rgb(238,245,254);
+}
+.end3 .end35 a:hover{
+    color: red;
+}
+.end3 .end35 a{
+    text-decoration: none;
+    color: #555555;
+    background: rgb(238,245,254);
+}
+
+.end4{
+    width: 900px;
+    height: 55px;
+    color: #555555;
+    margin: 10px 100px;
+}
+.end4 span{
+    line-height: 30px;
+    font-size: 12px;
+}
+.end5{
+    width: 900px;
+    height: 55px;
+    color: #555555;
+    margin: 50px 110px 0;
+}
+.end5 span{
+    line-height: 30px;
+    font-size: 12px;
+}
+.end6{
+    width: 900px;
+    height: 55px;
+    color: #555555;
+    margin: -30px 100px 20px;
+}
+.end6 span{
+    line-height: 30px;
+    font-size: 12px;
 }
