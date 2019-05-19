@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Title</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <script>
+
+
+
+    window.onload=function () {
+            var   banners = document.querySelectorAll(".banner");
+            var   btns = document.querySelectorAll(".btn");
+            var num= 0;
+           setInterval(function () {
+
+               if(num==2){
+                    num=0
+                }else{
+
+                  for(var i = 0;i<banners.length;i++){
+                      banners[i].style.display="none"
+                      btns[i].style.backgroundColor="#000000"
+                  }
+                  banners[num].style.display="block"
+                   btns[num].style.backgroundColor="#FFA500"
+                   num++
+               }
+           },3000)
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+<!--头部信息-->
+<header>
+    <img src="./image/logo.png" alt=""style="height:70px;">
+    <img src="./image/code.jpg" alt="" class="code">
+</header>
+<!--导航栏-->
+  <div class="box">
+      <div class="con">
+          <div class="left">
+              <a href="" class="active">首页</a>
+              <a href="">国内机票</a>
+              <a href="">国际机票</a>
+              <a href="">民航咨询</a>
+              <a href="">民航问答</a>
+          </div>
+          <div class="right">
+              <a href="" class="login">登陆</a>
+              <a href="">注册</a>
+              <a href="" >用户中心</a>
+              <div class="sanjiao"></div>
+          </div>
+      </div>
+  </div>
+<!--城市信息-->
+          <div class="hot">
+              <span>热门城市：</span>
+              <a href="" >深圳</a>
+              <a href="">北京</a>
+              <a href="">上海</a>
+              <a href="">广州</a>
+              <a href="">南京</a>
+              <a href="">天津</a>
+              <a href="">武汉</a>
+              <a href="">长沙</a>
+              <a href="">昆明</a>
+              <a href="">贵阳</a>
+              <a href="">成都</a>
+              <a href="">重庆</a>
+              <a href="">海口</a>
+              <a href="">哈尔滨</a>
+              <a href="">更多</a>
+          </div>
+<!--轮播图-->
+  <div class="wheel-box">
+      <div class="banner banner1"></div>
+      <div class="banner banner2"></div>
+
+      <div class="btns">
+          <div class="btn" style="background-color: orange" ></div>
+          <div class="btn"></div>
+      </div>
+  </div>
+<!--购票流程-->
+<div class="piao">
+    <div class="piao-left">
+        购票流程:
+    </div>
+    <ul class="piao-right">
+               <li>
+                  <div class="icon">
+                       <div class="icon-out">
+                       <div class="icon-in1 icon-in"></div>
+                           </div>
+                   </div>
+                   <div class="text">
+                       <div class="text-title">航班查询</div>
+                       <div class="text-content">选择出行航班</div>
+                   </div>
+                   <div class="pic1"></div>
+
+               </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in2 icon-in"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">提交订单</div>
+                <div class="text-content">登记乘机人和联系人</div>
+            </div>
+            <div class="pic1"></div>
+
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in3 icon-in"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">在线支付</div>
+                <div class="text-content">支付机票款</div>
+            </div>
+            <div class="pic1"></div>
+
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in4 icon-in" ></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">无需取票</div>
+                <div class="text-content">凭电子客票号换登机牌</div>
+            </div>
+            <div class="pic1"></div>
+
+        </li>
+
+    </ul>
+</div>
+<div class="blank"></div>
+<!--功能区-->
+<div class="domain">
+    <div class="domain-1">
+        <div class="domain1c">
+            <div class="domain1icon1 domain1icon"></div>
+            <div class="domain1content">订单管理</div>
+        </div>
+        <div class="domain1c">
+            <div class="sfg"></div>
+            <div class="domain1icon2 domain1icon"></div>
+            <div class="sfg"></div>
+            <div class="domain1content">支付中心</div>
+        </div>
+        <div class="domain1c">
+            <div class="domain1icon3 domain1icon"></div>
+            <div class="domain1content">价格趋势</div>
+        </div>
+        <div class="domain1c">
+            <div class="domain1icon4 domain1icon"></div>
+            <div class="domain1content">机票验真</div>
+        </div>
+        <div class="domain1c">
+            <div class="domain1icon5 domain1icon"></div>
+            <div class="domain1content">航班动态</div>
+        </div>
+        <div class="domain1c">
+            <div class="domain1icon6 domain1icon"></div>
+            <div class="domain1content">新手指南</div>
+        </div>
+    </div>
+    <div class="domain-2">
+        <h3><span>最新资讯</span> <a href="">更多>></a></h3>
+
+            <ul>
+                <li> <a href="" title="简单了解一下金鹏航空官网机票购买流程，金鹏航空手机版订票流程介绍">简单了解一下金鹏航空官网机票购买流程</a></li>
+                <li> <a href="" title="东方航空去哪儿网合作举办“校园旅行家”推广活动" >东方航空去哪儿网合作举办“校园旅行家</a></li>
+                <li><a href="" title="网上买飞机票为什么只能买9张,10人以上怎么办">网上买飞机票为什么只能买9张,10人</a></li>
+                <li><a href="" title="想知道南方航空机票购买流程，南航手机版订票流程介绍">想知道南方航空机票购买流程，南航手机</a></li>
+            </ul>
+    </div>
+    <div class="domain-3">
+        <h3><span>网站公告</span><a href="">更多>></a></h3>
+        <ul>
+            <li><a href="" title="带你认识飞机经停是什么意思">带你认识飞机经停是什么意思</a></li>
+            <li><a href="" title="12306机票网上订票官网请上民航在线安全有保障">12306机票网上订票官网请上民航在</a></li>
+            <li><a href="" title="1岁婴儿机票怎么买 能够从网上购买婴儿机票吗" >1岁婴儿机票怎么买 能够从网上购买婴</a></li>
+            <li><a href="" title="了解订机票用什么软件好对你出门旅游帮助很大">了解订机票用什么软件好对你出门旅游帮</a></li>
+        </ul>
+    </div>
+</div>
+<!--航线预定-->
+<div class="airline">
+    <span>热门航线预订</span>
+    <div class="city">
+    <a href="javascirpt:void(0);" title="全国特价机票" class="country cc" >全国</a>
+    <a href="javascirpt:void(0);" title="深圳特价机票"  class="cc" >深圳</a>
+    <a href="javascirpt:void(0);" title="北京特价机票" class="cc" >北京</a>
+    <a href="javascirpt:void(0);" title="上海特价机票" class="cc" >上海</a>
+    <a href="javascirpt:void(0);" title="广州特价机票" class="cc" >广州</a>
+    <a href="javascirpt:void(0);" title="武汉特价机票" class="cc" >武汉</a>
+    <a href="javascirpt:void(0);" title="成都特价机票" class="cc" >成都</a>
+    <a href="javascirpt:void(0);" title="海口特价机票" class="cc" >海口</a>
+    <a href="javascirpt:void(0);" title="重庆特价机票" class="cc" >重庆</a>
+    <a href="javascirpt:void(0);" title="沈阳特价机票" class="cc" >沈阳</a>
+    </div>
+</div>
+
+
+<div class="lines">
+    <!--全国航线-->
+    <div class="lines2 linesQG">
+        <a class="line listitem">
+
+                <div class="cityto">
+                    <div class="city-1">海口1</div>
+                    <div class="jiantou"></div>
+                    <div class="city-2">郑州</div>
+                </div>
+                <div class="date" style="text-align:center;margin-top: 10px">
+                    <span>12月16日</span></div>
+                <div class="price" >
+                    <div  class="jpg1"></div>
+                    <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+                </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口5</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口6</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口7</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口8</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口9</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口10</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口2</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+    <div class="lines2 ">
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口9</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+        <a class="line listitem2">
+
+            <div class="cityto">
+                <div class="city-1">海口</div>
+                <div class="jiantou"></div>
+                <div class="city-2">郑州</div>
+            </div>
+            <div class="date" style="text-align:center;margin-top: 10px">
+                <span>12月16日</span></div>
+            <div class="price" >
+                <div  class="jpg1"></div>
+                <span style="font-size: 14px">票价：</span><span class="rm">￥</span><span class="rmb">150</span>
+            </div>
+
+        </a>
+    </div>
+
+
+</div>
+<!--热门航空公司-->
+ <div class="remengongsi">热门航空公司</div>
+  <div class="company">
+  <div class="company-info">
+      <div class="info-pic">
+      </div>
+            <div class="guojiinfo">中国国际航空公司</div>
+
+      <div class="span1">&nbsp;&nbsp;&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，
+          其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，
+          2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，
+          并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。
+      </div>
+      <div class="poc"></div>
+  </div>
+  <div class="company-pic">
+  <div class="compic1 compic">
+      <div class="dgs"></div>
+      <div class="cominfo">中国南方航空公司</div>
+  </div>
+  <div class="compic2 compic">
+      <div class="dgs"></div>
+      <div class="cominfo">中国东方航空公司</div>
+  </div>
+  <div class="compic3 compic">
+      <div class="dgs"></div>
+      <div class="cominfo">海南航空公司</div>
+  </div>
+  <div class="compic4 compic">
+      <div class="dgs"></div>
+      <div class="cominfo">深圳航空公司</div>
+  </div>
+  <div class="compic5 compic">
+      <div class="dgs"></div>
+      <div class="cominfo">四川航空公司</div>
+  </div>
+  <div class="compic6 compic">
+      <div class="dgs"></div>
+      <div class="cominfo">春秋航空公司</div>
+  </div>
+
+  </div>
+  </div>
+<!--机场信息 客户咨询-->
+<div class="fgh"></div>
+<div class="airport">
+    <div class="jichang">
+        <span class="jichang-1">热门国际机场</span> <span class="jichang-2"><a href="" style="text-decoration: none">全球机场>></a></span>
+    </div>
+    <div class="jichang">
+        <span class="jichang-1">最新客户咨询</span> <span class="jichang-2"><a href=""  style="text-decoration: none">更多>></a></span>
+    </div>
+    <div class="jichang2">
+        <div class="aa"><span class="jichang-1">国际特价</span></div>
+        <div class="aa2"><a href="" ><span class="aa21">北美</span></a>
+            <a href="">亚洲</a>
+            <a href="">欧洲</a></div>
+</div>
+</div>
+<div class="fdsg"></div>
+<div class="Info">
+   <div class="Info-air">
+       <div class="jic1 jic2">
+           <div class="left1"><div class="leftpic"></div><a href="" >香港赤腊角机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >首尔仁川机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >首尔金浦机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >澳门国际机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >东京羽田机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >东京成田机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >新加坡樟宜机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >台中桃园中正机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >曼谷素万那普机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >曼谷廊曼机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >大阪伊丹机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >马尼拉国际机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >胡志明市国际机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >伦敦国际机场</a></div>
+       </div>
+       <div class="jic1">
+           <div class="left1"><div class="leftpic"></div><a href="" >吉隆坡国际机场</a></div>
+           <div class="right1"><div class="leftpic"></div><a href="" >釜山国际机场</a></div>
+       </div>
+
+
+   </div>
+    <div class="Info-an">
+        <div class="answer">
+            <div class="an11">2019/5/16 22:31:30</div>
+            <div class="an12"><div class="leftpic"></div><a href="">怀孕28+6周可以坐飞机吗，还需要什么东...</a> </div>
+        </div>
+        <div class="answer">
+            <div class="an11">2019/5/16 22:00:35</div>
+            <div class="an12"><div class="leftpic"></div><a href="">你好。怀孕7个月需要办理证明吗</a> </div>
+        </div>
+        <div class="answer">
+            <div class="an11">2019/5/16 21:59:07</div>
+            <div class="an12"><div class="leftpic"></div><a href="">你好。怀孕期乘坐需要证明吗</a> </div>
+        </div>
+        <div class="answer">
+            <div class="an11">2019/5/16 21:35:27</div>
+            <div class="an12"><div class="leftpic"></div><a href="">你好，小孩才32个月，没有身份证，怎么取...</a> </div>
+        </div>
+        <div class="answer">
+            <div class="an11">2019/5/16 17:57:21</div>
+            <div class="an12"><div class="leftpic"></div><a href="">护照可以订机票登机嘛</a> </div>
+        </div>
+        <div class="answer">
+            <div class="an11">2019/5/16 14:44:39</div>
+            <div class="an12"><div class="leftpic"></div><a href="">你好，请问出生两个月的婴儿应该在网上怎么</a> </div>
+        </div>
+
+    </div>
+    <div class="Info-ticket">
+
+
+                 <a class="listitem"> <div class="cityto">
+                     <div class="city-1">上海</div>
+                     <div class="jiantou"></div>
+                     <div class="city-2">纽约</div>
+                 </div>
+                     <div class="date" style="text-align:center;margin-top: 10px">
+                         <span>06月10日</span></div>
+                     <div class="price" >
+                         <div  class="jpg1"></div>
+                         <span style="font-size: 14px">票价：</span><span class="rmb">￥995</span>
+                     </div>
+                 </a>
+
+                 <a class="listitem"> <div class="cityto">
+                     <div class="city-1">北京</div>
+                     <div class="jiantou"></div>
+                     <div class="city-2">首尔</div>
+                 </div>
+                     <div class="date" style="text-align:center;margin-top: 10px">
+                         <span>07月19日</span></div>
+                     <div class="price" >
+                         <div  class="jpg1"></div>
+                         <span style="font-size: 14px">票价：</span><span class="rmb">￥950</span>
+                     </div></a>
+
+
+    </div>
+</div>
+<!--安全-->
+<div class="safe">
+
+    <div class="safe-2 safe-1">
+        <div class="saicon">
+            <div class="icon-out2">
+               <div class="anicon-in1 an-in"></div>
+            </div>
+        </div>
+        <div class="antext">
+            <div class="an-title">支付安全</div>
+            <div class="an-content">在线支付100%认证</div>
+        </div>
+    </div>
+
+    <div class="safe-2">
+        <div class="saicon">
+            <div class="icon-out2">
+                <div class="anicon-in2 an-in"></div>
+            </div>
+        </div>
+        <div class="antext">
+            <div class="an-title">实时同步</div>
+            <div class="an-content">全球机票联网售票%认证</div>
+        </div>
+    </div>
+    <div class="safe-2">
+        <div class="saicon">
+            <div class="icon-out2">
+                <div class="anicon-in3 an-in"></div>
+            </div>
+        </div>
+        <div class="antext">
+            <div class="an-title">全天服务</div>
+            <div class="an-content">7*24小时专业客服人员为你服务</div>
+        </div>
+    </div>
+    <div class="safe-2">
+        <div class="saicon">
+            <div class="icon-out2">
+                <div class="anicon-in4 an-in"></div>
+            </div>
+        </div>
+        <div class="antext">
+            <div class="an-title">方便快捷</div>
+            <div class="an-content">电子客票，身份证直接换登机牌</div>
+        </div>
+    </div>
+
+</div>
+<!--联系方式-->
+<div class="notice">
+ <div class="model model1">
+     <h3>新手上路</h3>
+     <ul>
+         <li><a href="">-查询预定</a></li>
+         <li><a href="">-订单填出</a></li>
+         <li><a href="">-支付出票</a></li>
+     </ul>
+ </div>
+
+
+    <div class="model">
+        <h3>付款方式</h3>
+        <ul>
+            <li><a href="">-网上银行</a></li>
+            <li><a href="">-微信支付</a></li>
+            <li><a href="">-信用卡</a></li>
+        </ul>
+    </div>
+    <div class="model">
+        <h3>旅客保障</h3>
+        <ul>
+            <li><a href="">-航协认证</a></li>
+            <li><a href="">-支付出票</a></li>
+            <li><a href="">-安全保障</a></li>
+        </ul>
+    </div>
+    <div class="model">
+        <h3>常见问题</h3>
+        <ul>
+            <li><a href="">-了解多彩贵州航空</a></li>
+            <li><a href="">-关于南昌</a></li>
+            <li><a href="">-在网上买机票</a></li>
+        </ul>
+    </div>
+    <div class="model">
+        <h3>关于我们</h3>
+        <ul>
+            <li><a href="">-联系我们</a></li>
+            <li><a href="">-网站介绍</a></li>
+            <li><a href="">-公司简介</a></li>
+        </ul>
+    </div>
+    <div class="picph1"></div>
+    <div class="picph2">
+
+            <input class="hint"  type="text" value="请输入关键词">
+        <input type="submit" class="sousuo" value="搜索">
+
+    </div>
+</div>
+ <p align="center">© 2019 http://www.161580.com 民航在线|沪ICP备12008257号-2 关于161580|联系我们|合作伙伴|诚征英才|用户建议</p>
+ <div class="jkh"></div>
+<p align="center" class="webinfo">161580官方网站：<a href="" style="font-size: 18px;color: orangered;">161580.com</a> | 全国统一服务热线：<span style="font-size: 18px;color: orangered;">4000-161580</span>  |
+    <a href="">在线咨询 </a>  </p>
+
+<p align="center" style="margin-left:300px;">161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、
+    飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，
+    围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。 </p>
+<p align="center">友情链接QQ434441778:</p>
+<p align="center" style="margin-left:300px;">
+    美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游
+    |美国旅游|深圳旅游论坛|重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿 </p>
+</body>
+<script>
+    var lines = document.querySelectorAll(".lines2");
+    var citys2 = document.querySelectorAll(".cc");
+   for(var i=0;i<citys2.length;i++){
+       var index=i;
+
+       citys2[this.index].onclick=function () {
+           alert(index)
+           for(var j=0;j<lines.length;j++){
+               lines[j].style.display="none";
+               citys2[j].style.backgroundColor="#ffffff";
+           }
+           lines[index].style.display="block";
+           citys2[index].style.backgroundColor="#DCE3FC";
+       }
+
+   }
+
+</script>
+</html>
