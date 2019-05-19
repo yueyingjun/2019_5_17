@@ -43,7 +43,12 @@ transition-delay:2s;等待时间
             }
              border-radius: 50% 50px; 圆
               box-shadow: 10px 10px 20px black;阴影
-
+ <div class="mo3">
+            <h2>国际特价</h2>
+            <a href="">北美</a>
+            <a href="">亚洲</a>
+            <a href="">欧洲</a>
+        </div>
 
 ```
 

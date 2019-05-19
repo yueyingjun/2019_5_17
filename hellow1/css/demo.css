@@ -13,6 +13,27 @@ ul,li{
     margin: 0;
     list-style: none;
 }
+.o{
+    width: 1200px;
+    height: 50px;
+}
+.p{
+    width: 1180px;
+    height: 20px;
+}
+.s{
+    float: right;
+    width: 11px;
+    height: 9px;
+    background: url("../pic/img.png") no-repeat -324px -415px;
+}
+.sanjiao2{
+    margin-left: 5px;
+    float: left;
+    border-left: 7.5px solid #bfbfbf;
+    border-top:4.5px solid #f0efec;;
+    border-bottom: 4.5px solid #f0efec;
+}
 /*header*/
 .header{
     width:1200px;
@@ -256,7 +277,6 @@ ul,li{
     100%{
         transform: rotate(15deg);
     }
-
 }
 .icon_in:hover{
     animation: ani 75ms linear alternate 5;
@@ -470,11 +490,6 @@ ul,li{
 
 }
 
-
-.o{
-    width: 1200px;
-    height: 50px;
-}
 /*热门航线*/
 .hotline{
     width: 1200px;
@@ -556,10 +571,7 @@ ul,li{
 }
 
 /*热门航空公司*/
-.p{
-    width: 1180px;
-    height: 20px;
-}
+
 .mod_hd{
     width: 1180px;
     height: 42px;
@@ -574,13 +586,11 @@ ul,li{
     color: #555555;
     font-size: 28px;
 }
-.mod_hd .s{
-
+.s{
     float: right;
     width: 11px;
     height: 9px;
     background: url("../pic/img.png") no-repeat -324px -415px;
-    margin-bottom: 10px;
 }
 .stations{
     width: 1180px;
@@ -605,6 +615,10 @@ ul,li{
     margin-left: 20px;
    float: left;
     background: url("../pic/ca3.png") no-repeat;
+    transition: transform 0.5s linear;
+}
+.t0:hover{
+    transform: scale(1.03);
 }
 .t00{
     padding-top: 30px;
@@ -629,9 +643,13 @@ float: left;
     float: left;
     width: 220px;
     height: 180px;
-    background: url("../pic/2.png") no-repeat;
+    background: url("../pic/2.png") no-repeat top;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
     /*transform: scale(0.7,0.7);*/
 }
+
 .stat2{
     margin: 5px;
     float: left;
@@ -639,6 +657,7 @@ float: left;
     height: 180px;
     background: url("../pic/3.png") no-repeat;
     /*transform: scale(0.7,0.7);*/
+    transition: transform 0.5s linear;
 }
 .stat3{
     margin: 5px;
@@ -646,6 +665,7 @@ float: left;
     width: 220px;
     height: 180px;
     background: url("../pic/hu3.png") no-repeat;
+    transition: transform 0.5s linear;
     /*transform: scale(0.7,0.7);*/
 }
 .stat4{
@@ -654,6 +674,7 @@ float: left;
     width: 220px;
     height: 180px;
     background: url("../pic/6.png") no-repeat;
+    transition: transform 0.5s linear;
     /*transform: scale(0.7,0.7);*/
 }
 .stat5{
@@ -662,6 +683,7 @@ float: left;
     width: 220px;
     height: 180px;
     background: url("../pic/3u3.png") no-repeat;
+    transition: transform 0.5s linear;
     /*transform: scale(0.7,0.7);*/
 }
 .stat6{
@@ -671,21 +693,43 @@ float: left;
     height: 180px;
     background: url("../pic/9c3.png") ;
     background-color: #0055AA;
-    background-size: auto;
+    transition: transform 0.5s linear;
+}
+.stat1:hover{
+    transform: scale(1.03);
+}
+.stat2:hover{
+    transform: scale(1.03);
+}
+.stat3:hover{
+    transform: scale(1.03);
+}
+.stat4:hover{
+    transform: scale(1.03);
+}
+.stat5:hover{
+    transform: scale(1.03);
+}
+.stat6:hover{
+    transform: scale(1.03);
 }
 .titleeee{
     float: left;
     width: 220px;
     height: 37px;
-    margin-top: 130px;
-    background: #CCCCCC;
+    margin-top: 142px;
+    background: #898989;
     text-align: center;
     line-height: 37px;
+
 }
+
+/*热门国际机场*/
 .mo{
     width: 1200px;
-    height: 13px;
+    height: 50px;
     margin: auto;
+    position: relative;
 }
 .mo1{
     float: left;
@@ -699,14 +743,350 @@ float: left;
     width: 204px;
     height: 28px;
     display: block;
+    float: left;
 }
+.mm a{
+    float: left;
 
+    width: 48px;
+    height: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 50px;
+    color: #424242;
+}
+.mm .s{
+    margin-top: 22px;
+    float: right;
+    width: 11px;
+    height: 9px;
+}
+.mo1 .mm{
+    float: right;
+    width: 64px;
+    height: 49px;
+}
 .mo3{
     float: left;
-    width: 460px;
+    width: 470px;
+    height: 42px;
+    margin-left: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.mo3 h2{
+    font-size: 28px;
+    width: 204px;
+    height: 28px;
+    display: block;
+    float: left;
+}
+.mo3 a{
+    float: left;
+    font-size: 18px;
+    text-decoration: none;
+    color: #424242;
+    line-height: 42px;
+    width: 50px;
+    margin-left: 10px;
+}
+.h2a{
+    float: right;
+    width: 180px;
     height: 42px;
 }
+.moo{
+    width: 1200px;
+    height: 320px;
+    margin: auto;
+    position: relative;
+
+}
+.moo1{
+    float: left;
+    width: 365px;
+    height: 310px;
+
+}
+.moo1 a{
+    width: 165px;
+    height: 37px;
+    font-size: 16px;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-left: 12px;
+}
+.moo1 .s{
+
+    float: left;
+    width: 180px;
+    height: 37px;
+
+    background: url("../pic/img.png") no-repeat -324px -402px;
+}
+.moo2{
+    margin-left: 10px;
+    float: left;
+    width: 340px;
+    height: 310px;
+
+}
+.moo2 span{
+    float: left;
+    display: block;
+    height: 11px;
+    width: 100%;
+    padding-left: 10px;
+}
+.moo2-part{
+    width: 330px;
+    height: 50px;
+
+}
+.moo2 .s{
+    float: left;
+    width: 100%;
+    height: 37px;
+    background: url("../pic/img.png") no-repeat -324px -402px;
+
+}
+.moo2 a{
+    padding-top: 5px;
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-left: 12px;
+}
+.moo a{
+    color: #3275bf;
+}
+.moo3{
+    margin-left: 15px;
+    float: left;
+    width: 465px;
+    height: 310px;
+
+}
+.moo3 .one {
+    width: 225px;
+    height: 140px;
+    float: left;
+    text-align: center;
+    color: #0055AA;
+    margin: 15px 0px 0px 0px;
+    background: url("../pic/carl.png") no-repeat;
+}
+.moo3 .one .content{
+    margin: auto;
+}
+.moo3 .one .content .chufa{
+    margin: 10px auto;
+}
+.moo3 .one .content .date{
+    margin: 10px auto 20px;
+}
+.moo3 .one .content .price{
+    margin: 25px auto 15px;
+    font-size: 14px;
+}
+.moo3 .one .content .price span{
+    color: orange;
+}
+.moo3 .one .content .price .money{
+    font-size: 14px;
+}
+.moo3 .one .content .price .number{
+    font-size: 20px;
+}
+
+/*支付安全*/
+.safety{
+    width: 1360px;
+    height: 202px;
 
 
+}
+.safety_top{
+    width: 1360px;
+    height: 60px;
+
+    background: #3b8de3;
+}
+.safety_top_one{
+    float: left;
+    width: 215px;
+    height: 59px;
+
+    margin: 0 60px;
+}
+.ic{
+    float: left;
+    width: 50px;
+    height: 59px;
+
+}
+@keyframes ani1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.ic_in:hover{
+    animation: ani 75ms linear alternate 5;
+}
+.ic_in2:hover{
+    animation: ani1 500ms linear 2;
+}
+.ic_in3:hover{
+    animation: ani1 500ms linear  2;
+}
+.ic_in4:hover{
+    animation: ani 75ms linear alternate 5;
+}
+.ic_out{
+    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+
+    background: url("../pic/footer.png") no-repeat -281px -5px;
+}
+.ic_in{
+    width: 40px;
+    height: 40px;
+
+    background: url("../pic/footer.png") no-repeat -2px -5px;
+}
+.ic_in2{
+    width: 40px;
+    height: 40px;
+
+    background: url("../pic/footer.png") no-repeat -79px -7px;
+}
+.ic_in3{
+    width: 40px;
+    height: 40px;
+
+    background: url("../pic/footer.png") no-repeat -158px -4px;
+}
+.ic_in4{
+    width: 40px;
+    height: 40px;
+
+    background: url("../pic/footer.png") no-repeat -224px -5px;
+}
+.te{
+    float: left;
+    color: white;
+}
+.te_title{
+    font-size: 16px;
+    padding-top: 10px;
+
+}
+.te_info{
+
+    font-size: 12px;
+}
+.safety_bottom{
+    width: 1360px;
+    height: 140px;
+    background: #f0efec;
 
 
+}
+.safety_bottom_one{
+    float: left;
+    width: 177px;
+    height: 92px;
+   border-right:1px solid #b4b3b0;
+    margin: 25px 5px 0 0;
+
+}
+.safety_bottom_one .bo{
+    width: 64px;
+    height: 30px;
+    font-size: 16px;
+   padding: 0;
+}
+.safety_bottom_one bot{
+
+
+    width: 110px;
+    height: 24px;
+
+}
+.safety_bottom_one .sanjiao2{
+    margin-top: 5px;
+}
+.safety_bottom_one a{
+    display: block;
+
+    padding-left: 18px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.safety_bottom_two{
+    float: left;
+    width: 177px;
+    height: 92px;
+    background: url("../pic/footer.png") no-repeat -125px -63px;
+    margin: 25px 5px 0 10px;
+
+}
+
+/*foot*/
+.foott{
+    width: 1366px;
+    height: 280px;
+
+    margin:auto;
+}
+.foott_one{
+    width: 1180px;
+    height: 45px;
+    padding-left: 250px;
+    padding-top: 10px;
+
+    margin:auto;
+    font-size: 15px;
+    color: #444444;
+
+}
+.foott_two{
+    padding-left: 600px;
+    padding-top: 10px;
+    width: 1180px;
+    height: 80px;
+    margin:auto;
+
+}
+.foott_three{
+    padding-left: 200px;
+    padding-top: 10px;
+    width: 950px;
+    height: 27px;
+    margin:auto;
+
+}
+.foott_fore{
+    width: 765px;
+    height: 108px;
+    margin:auto;
+    font-size: 10px;
+    color: #999999;
+
+}
+.foott a:hover{
+    color: red;
+}
+.foott a{
+    text-decoration: none;
+    color: black;
+
+}
