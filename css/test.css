@@ -194,7 +194,6 @@ body{
     background: url("../imgs/main.png") no-repeat 10px -160px;
 
 }
-
 .step2 .iconin{
     width: 50px; height: 100px;
     background: url("../imgs/main.png") no-repeat -190px -38px;
@@ -272,6 +271,7 @@ body{
     height: 245px;
     border: 1px solid #000000;
     margin: 30px 110px;
+    position: relative;
 }
 .table .tool{
     float: left;
@@ -279,6 +279,12 @@ body{
     width: 400px;
 }
 
+.table .newtu{
+    float: left;
+    width: 30px; height: 30px;
+    position:absolute; top:40px; left: 120px;
+    background: url("../imgs/main.png") no-repeat -250px 0px;
+}
 .tool .new{
     float: left;
     height: 80px;width:198px;
@@ -389,7 +395,6 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-
 }
 .jiage:hover{
     animation:animate 0.5s;
@@ -458,7 +463,6 @@ body{
 .hotloadfoot a:hover{
     color: #3b8de3;
     border-bottom: 5px solid #3b8de3;
-
 }
 
 .hotloadfoot .active a{
@@ -466,20 +470,17 @@ body{
     background-color: #3b8de3;
     border-bottom: 5px solid #3b8de3;
 }
-.piaobox{
 
+.piaobox{
     width: 1300px;height: 400px;
     margin: 60px 110px;
-
 }
 
-.piaobox div:hover{
+.piaobox .piao:hover{
     background: url("../imgs/go.png") repeat-x -250px 0px;
     background-size: 200% 100%;
-
-
 }
-.piaobox div{
+.piaobox .piao{
 
     width: 250px; height: 170px;
     float: left;
@@ -493,7 +494,66 @@ body{
     line-height: 30px;
 
 }
+.piaoone{
+    width: 100%; height: 30px;
+}
+.piaotwo{
+    width: 100%; height: 30px;
+}
+.piaosan{
+    width: 100%; height: 30px;
+}
+.startaddress{
+    width: 80px; height: 100%;
+    float: left;
+    padding-left: 20px;
+}
+.dongjiantou{
+    width: 60px; height: 100%;
+    float: left;
+    background: url("../imgs/logo.png") no-repeat -21px -68px;
+}
+.endaddress{
+    width: 80px; height: 100%;
+    float: left;
+}
+.planetu{
+    margin-left: 38px;
+    width: 30px;height: 100%;
+    float: left;
+    background: url("../imgs/logo.png") no-repeat -26px -104px;
+}
 
+
+.moneyly{
+    width: 60px; height: 100%;
+     float: left;
+
+}
+
+.renminbi{
+    width: 30px; height: 100%;
+     float: left;
+     color: red;
+}
+.num{
+    width: 30px; height: 100%;
+    float: left;
+    color: red;
+    font-size: 20px;
+
+}
+
+ .piao .dongjiantou:hover{
+
+    animation:yidong 0.5s;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+
+}
 .jiantou{
     width: 1300px; height: 300px;
     position: relative;
@@ -521,7 +581,7 @@ body{
 .dagongsi{
     width: 500px;height: 364px;
     padding: 20px;
-    background-color: #e8e8e8;
+    background-color: #f1f1f1;
     position: relative;
 }
 .dagongsi .img{
@@ -546,8 +606,8 @@ body{
 }
 .biaodian{
     float: right;
-    width: 500px; height: 100px;
-    background:url("../imgs/main.png") no-repeat -250px -250px;
+    width: 50px; height: 50px;
+    background:url("../imgs/main.png") no-repeat -351px -260px;
 }
 
 .xiaogongsi{
@@ -589,7 +649,324 @@ body{
     text-align: center;
     position: absolute;bottom: 0px;left: 0px;
 }
+.san{
+    width: 1300px; height: 400px;
+    margin: auto;
+}
+.leftone{
+    height: 100%; width: 340px;
+    float: left;
+}
+.modtwo{
+    height: 100%; width: 400px;
+    float: left;
+}
+.rightsan{
+    height: 100%; width: 550px;
+    float: left;
+}
 
+.titles{
+  width: 90%; height: 80px;
+    border-bottom: 5px solid #cccccc;
+    box-sizing: border-box;
+
+}
+
+.biaoti{
+    margin-top: 35px;
+    float: left;
+    height: 35px; width: 190px;
+    font-size: 30px;
+    padding-bottom: 0;
+}
+.quanguo{
+    margin-top: 50px;
+    float: right;
+    height: 20px; width: 100px;
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.alianjie{
+   width: 340px; height: 400px;
+}
+.xiaoa{
+    float: left;
+    width: 165px; height: 36.8px;
+
+}
+.xiaoa1{
+    float: left;
+    width: 318px; height: 20.8px;
+
+}
+.alianjie p{
+    width: 318px; height: 20.8px;
+}
+.xiaoa a{
+    text-decoration: none;
+    color: #0055AA;
+}
+.xiaoa1 a{
+    text-decoration: none;
+
+    color: #0055AA;
+}
+.hotload1{
+    height: 75px; width: 550px; margin: auto;
+    border-bottom: 5px solid #ccc;
+    position: relative;
+
+}
+.hotloadhead1{
+    font-size: 30px;
+    position: absolute; left: 30px; bottom: 10px;
+}
+.hotloadfoot1{
+    float: right;
+    position: absolute;bottom: -10px; right: 15px;
+    z-index: 2;
+}
+.hotloadfoot1 a{
+
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0px 20px;
+    line-height: 50px;
+    color: black;
+}
+
+.hotloadfoot1 a:hover{
+    color: #3b8de3;
+    border-bottom: 5px solid #3b8de3;
+
+}
+
+.hotloadfoot1 .active a{
+    color: #3b8de3;
+    background-color: #3b8de3;
+    border-bottom: 5px solid #3b8de3;
+}
+
+.piaobox2{
+    width: 550px;height: 400px;
+    margin: 30px 0px;
+}
+.piaobox2 .piao:hover{
+    background: url("../imgs/go.png") repeat-x -250px 0px;
+    background-size: 200% 100%;
+}
+.piaobox2 .piao{
+
+    width: 250px; height: 170px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 28px;
+    background: url("../imgs/go.png") repeat-x 0px 0px;
+    background-size: 200% 100%;
+
+    line-height: 30px;
+
+}
+
+.webfoot .liucheng{
+    width: 100%; height: 80px;
+    margin: 0px 110px;
+}
+.webfoot .step{
+
+    width:315px; height: 80px;
+    float: left;
+
+}
+
+.webfoot {
+    width: 100%; height: 60px;
+    margin: auto;
+    background-color: #0185e1;
+
+}
+
+.step .webrightliucheng{
+    padding-top: 10px;
+    float: right;
+    width: 250px; height: 30px;
+    color: #fff;
+    padding-bottom: 0px;
+}
+.step .webblackliucheng{
+
+    float: right;
+    width: 250px; height: 50px;
+    color: white;
+
+}
+.webfoot .step .icon{
+    float: left;
+    width: 60px; height: 60px ;
+    background: url("../imgs/footer.png") no-repeat -273px -0px;
+}
+
+.webfoot .step1 .iconin{
+    width: 50px; height: 60px;
+    background: url("../imgs/footer.png") no-repeat 7px -3px;
+
+}
+.webfoot .step2 .iconin{
+    width: 50px; height: 60px;
+    background: url("../imgs/footer.png") no-repeat -73px -3px;
+
+}
+.webfoot .step3 .iconin{
+    width: 50px; height: 60px;
+    background: url("../imgs/footer.png") no-repeat -150px -3px;
+
+}
+.webfoot .step4 .iconin{
+    width: 50px; height: 60px;
+    background: url("../imgs/footer.png") no-repeat -215px -3px;
+}
+
+.footccc{
+    width: 100%; height: 200px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.fankui{
+    position: absolute; top: 20px; left: 0px;
+    width: 100%; height: 130px;
+
+}
+
+.block1{
+
+    display: inline;
+    float: left;
+    margin: 10px -100px 0 120px;
+    width: 177px;
+    background: url("../imgs/vline_l.png") 122px top repeat-y;
+}
+
+.block1 a{
+    text-decoration: none;
+
+}
+
+.block2 {
+
+    width: 177px; float:right;
+    margin-right: 200px;
+    position: relative;
+
+}
+ul,li{ padding:0;margin:0;list-style:none}
+.block1 ul li{
+    background: url("../imgs/page-bg.png") no-repeat -50px -170px;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    width: 100px;
+
+}
+
+.block2 .fuwu{
+    font-size: 14px;
+}
+.block2 .phone{
+    width: 350px; height: 100px;
+}
+.block2 .phonenumner{
+    position: absolute;top:30px;
+    width: 200px; height: 100px;
+    font-size: 30px;
+}
+.block2 .phonephoto{
+    width: 20px;
+    height: 30px;
+    position: absolute; right: 180px;top:35px;
+    background: url("../imgs/footer.png") no-repeat -135px -108px;
+}
+.block2 .select2{
+  width: 350px; height: 80px;
+    position: absolute; top: 80px; left: -80px;
+}
+.block2 .searchinput {
+    float: left;
+    border-color: #ffffff;
+    margin-right: -1px;
+    width: 246px;
+    height: 34px;
+    line-height: 34px;
+    font-family: Arial,SimSun,sans-serif;
+    color: #000000;
+    font-size: 14px;
+    border-radius: 1px;
+    background-color: #FFFFFF;
+}
+.block2 .searchsubmit{
+    float: left;
+    border-color: #1c89ea;
+    height: 34px;
+    width: 50px;
+    background-color: #1c89ea;
+    color: #ffffff;
+    font-family: Arial,SimSun,sans-serif;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+.last{
+    width: 100%; height: 500px;
+
+}
+.foot1{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background: url("../imgs/footer.png") no-repeat right -154px;
+    padding-bottom: 10px;
+}
+.foot1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.erhang a{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+}
+.si{
+    width: 70%;
+    text-align: center;
+    height: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+.lianjie{
+    width: 70%;
+    text-align: left;
+    height: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+    color: rgb(153,153,153);;
+}
+.lastly {
+    width: 70%;
+    text-align: left;
+    height: 100px;
+    margin: auto;
+    color: rgb(153,153,153);
+}
+.lastly a{
+    text-decoration: none;
+    color: rgb(153,153,153);
+}
 
 @keyframes animate {
     0%{
@@ -607,3 +984,12 @@ body{
         transform: scale(1.05,1.04);
     }
 }
+@keyframes yidong {
+    0%{
+        transform: translate(-10px);
+    }
+    100%{
+        transform: translate(10px);
+    }
+}
+
