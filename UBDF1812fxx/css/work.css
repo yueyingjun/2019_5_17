@@ -165,10 +165,17 @@ body .active{
     height: 23px;
 }
 
+.ticketBox{
+    width: 1200px;
+    height: 308px;
+    margin: auto;
+    position: relative;
+}
 .out .tickten{
     width: 1200px;
     height: 308px;
     float: left;
+    position: absolute;
 }
 .tickten .quanguo{
     position: relative;
