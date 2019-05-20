@@ -26,6 +26,24 @@
             },3000)
         }
     </script>
+    <script>
+        // 热门航线
+        window.onload=function(ev) {
+
+            var links = document.querySelectorAll(".city a");
+            var con = document.querySelectorAll(".tickten");
+
+            for (var i = 0; i < links.length; i++) {
+                links[i].index = i;
+                links[i].onclick = function (ev) {
+                    for (var j = 0; j < con.length; j++) {
+                        con[j].style.display = "none";
+                    }
+                    con[this.index].style.display = "block";
+                }
+            }
+        }
+    </script>
 </head>
 <header>
     <img src="./images/top.png" alt="">
@@ -224,181 +242,1650 @@
         <div class="daohang">
             <span>热门航线预定</span>
             <div class="city">
-                <a href="">全国</a>
-                <a href="">深圳</a>
-                <a href="">北京</a>
-                <a href="">上海</a>
-                <a href="">广州</a>
-                <a href="">武汉</a>
-                <a href="">成都</a>
-                <a href="">海口</a>
-                <a href="">重庆</a>
-                <a href="">沈阳</a>
+                <a href="javascript:;" class="all">全国</a>
+                <a href="javascript:;" class="all">深圳</a>
+                <a href="javascript:;" class="all">北京</a>
+                <a href="javascript:;" class="all">上海</a>
+                <a href="javascript:;" class="all">广州</a>
+                <a href="javascript:;" class="all">武汉</a>
+                <a href="javascript:;" class="all">成都</a>
+                <a href="javascript:;" class="all">海口</a>
+                <a href="javascript:;" class="all">重庆</a>
+                <a href="javascript:;" class="all">沈阳</a>
             </div>
 
         </div>
-        <div class="tickten">
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">郑州</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">150</span>
-                    </div>
-                </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">长沙</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">200</span>
+        <div class="ticktenBox">
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">武汉</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">250</span>
-                    </div>
-                </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">广州</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">200</span>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">太原</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">300</span>
-                    </div>
-                </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">沈阳</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">300</span>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">深圳</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">300</span>
-                    </div>
-                </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">北京</span>
-                    </div>
-                    <div class="mid">5月16日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">200</span>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">石家庄</span>
-                    </div>
-                    <div class="mid">5月15日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">250</span>
-                    </div>
-                </div>
-            </div>
-            <div class="quanguo">
-                <div class="i">
-                    <div class="top">
-                        <span class="start">海口</span>
-                        <span class="jiantou"></span>
-                        <span class="end">重庆</span>
-                    </div>
-                    <div class="mid">5月15日</div>
-                    <div class="down">
-                        <span class="ji"></span>
-                        <span class="type1">票价:</span>
-                        <span class="type2">￥</span>
-                        <span class="type3">250</span>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">海口</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">深圳</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">北京</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">上海</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tickten">
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">郑州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">长沙</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">武汉</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">广州</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">太原</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">沈阳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">深圳</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">300</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">北京</span>
+                        </div>
+                        <div class="mid">5月16日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">石家庄</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="quanguo">
+                    <div class="i">
+                        <div class="top">
+                            <span class="start">广州</span>
+                            <span class="jiantou"></span>
+                            <span class="end">重庆</span>
+                        </div>
+                        <div class="mid">5月15日</div>
+                        <div class="down">
+                            <span class="ji"></span>
+                            <span class="type1">票价:</span>
+                            <span class="type2">￥</span>
+                            <span class="type3">250</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
