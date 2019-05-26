@@ -43,6 +43,7 @@ a{
     line-height: 40px;
     text-decoration: none;
     color: #fff;
+    z-index: 10;
 }
 .daohang-left a{
     width: 20%;
@@ -63,25 +64,30 @@ a{
     color: #3b8de3;
     border-top: 2px solid orange;
 }
-/*.daohang-right a:hover{
-    background: #fff;
-    color: #3b8de3;
-    border-top: 2px solid orange;
-}*/
+.daohang-right a:hover{
+    background: #0185e1;
+    color: #fff;
+
+}
+
+
+
 /*显示用户图标*/
 .login{
     background: url("../image/img.png") no-repeat -315px -500px;
+
 }
 /*三角形*/
 .sanjiao {
     width: 0;
     height: 0;
-    border-top: 10px solid #fff;
+    border-top: 5px solid #fff;
     border-left: 5px solid #3b8de3;
     border-right: 5px solid #3b8de3;
     position: absolute;
-    right: 0px;
-    top: 15px;
+    right: 160px;
+    top: 88px;
+
 }
 
 
@@ -575,9 +581,11 @@ a{
 
 }
 /*车票城市鼠标移入事件*/
-.list .top a:hover{
+/*.list .top a:hover{
     color: #000;
-}
+}*/
+
+
 
 .list .middle{
     width: 220px;
@@ -599,8 +607,19 @@ a{
     margin: 0 10px 0 10px;
     display: inline-block;
 }
+
+.feiji-img{
+    width: 22px;
+    height: 20px;
+    background: url("../image/img.png") no-repeat -40px -105px;
+
+    display: inline-block;
+}
+
+
 .jiantou:hover{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+    transform: translate(10px,0);
 }
 .list .span{
     color: red;
@@ -672,6 +691,7 @@ a{
     height: 160px;
     margin-left: 18px;
     background: url("../image/cz3.png") no-repeat 100% 100%;
+    transition: all 0.6s;
 }
 .company-right-img2{
     width: 220px;
@@ -720,19 +740,20 @@ a{
 /*热门国际机场*/
 .bottom-box{
     width: 1180px;
-    height: 42px;
+    height: 360px;
     margin: auto;
+   /* border: 1px solid darkorchid;*/
 }
 .hotAirPlane{
-    width: 340px;
+    width: 335px;
     height: 42px;
     float: left;
-   /* border: 1px solid red;*/
+   /* border: 1px solid yellow;*/
     text-align: left;
     font-size: 28px;
     color: #555;
     border-bottom: 2px solid #ccc;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .more{
@@ -749,21 +770,20 @@ a{
 }
 
 .guoji{
-    width: 445px;
+    width: 470px;
     height: 42px;
-    float: left;
-    border: 1px solid red;
+    float: right;
+   /* border: 1px solid green;*/
     text-align: left;
     font-size: 28px;
     color: #555;
     border-bottom: 2px solid #ccc;
-  /*  margin-right: 20px;*/
     display: inline-block;
 }
 .guoji-right{
     width: 300px;
     height: 42px;
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     float: right;
 }
 .guoji-more{
@@ -772,53 +792,252 @@ a{
     float: left;
     font-size: 18px;
     color: #555;
-    border: 1px solid red;
+ /*   border: 1px solid red;*/
     line-height: 42px;
     text-align: center;
 }
+.guoji-more-active{
+    width: 98px;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: #555;
+    /*   border: 1px solid red;*/
+    line-height: 42px;
+    text-align: center;
+    background-color: #c8e3fc;
+}
+.guoji-more-active a{
+    color: #555;
+    text-align: center;
+}
+
+
 
 /*国际热门机场链接*/
 .airplane{
     width: 1180px;
     height: 310px;
-    border: 1px solid red;
+/*    border: 1px solid  darkmagenta;*/
     margin: auto;
     margin-top: 5px;
 
 }
 .airplane-left{
-    width: 340px;
+    width: 335px;
     height: 310px;
-    border: 1px solid red;
+  /*  border: 1px solid red;*/
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
 
 
 }
 .airplane-right{
-    width: 430px;
+    width: 473px;
     height: 154px;
-    border: 1px solid red;
-    float: left;
-    margin-right: 20px;
-
-
+    /*border: 1px solid yellow;*/
+    float: right;
+    margin-right: 0px;
 }
-.airplane a{
+.airplane-right2{
+    width: 473px;
+    height: 154px;
+    /*border: 1px solid yellow;*/
+    float: right;
+    margin-right: 0px;
+    display: none;
+}
+.airplane-left a{
     float: left;
     width: 165px;
     height: 36.8px;
     color: #0055AA;
+    text-align: left;
+}
+.airplane-left a:hover{
+    color: orangered;
+}
+
+
+
+.middle-text{
+    width: 320px;
+    height: 45px;
+    /*border: 1px solid darkmagenta;*/
+    margin-left: 5px;
 }
 .middle-text a{
-    width: 318px;
-    height: 42px;
+    width: 320px;
+    height: 28px;
     color: #0055AA;
     float: left;
     overflow: hidden;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+.middle-span{
+    width: 320px;
+    height: 20.8px;
+    color: #000;
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: -15px;
+
 }
 
 
+/*底部导航栏*/
+.daohang-bottom-box{
+    width: 100%;
+    height: 55px;
+    background-color: #3b8de3; /*16进制*/
+    /* position: fixed;*/  /*设置固定样式*/
+}
+/*底部导航栏内容*/
+.daohang-bottom-content{
+    width: 1180px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    margin: auto;
+}
+.content-item{
+    width: 25%;
+    height: 100%;
+   /* border: 1px solid red;*/
+    float: left;
+}
+.bottom-circle{
+    width: 55px;
+    height: 55px;
+    background: url("../image/main.png") no-repeat -167px -136px;
+    margin: -3px 10px 5px 5px;
+    display: inline-block;
+}
+/*导航栏文字显示*/
+.bottom-titletop{
+    width: 100px;
+    height: 25.6px;
+    margin: -55px 0px 0px 80px;
+    font-size: 17px;
+    color: #fff;
+}
+.bottom-titlebottom{
+    width: 200px;
+    height: 25.6px;
+    margin: 0 0px 30px 80px;
+    font-size: 13px;
+    color: #fff;
+}
+/*遮罩*/
+/*.bottom-iconback{
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    background: url("../image/footer.png") no-repeat -280px -6px;
+}*/
+.bottom-icon1{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -152px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+.bottom-icon2{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -202px -76px;
+    margin-left: 11px;
+    margin-top: 12px;
+    display: inline-block;
+}
+.bottom-icon3{
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    background: url("../image/main.png") no-repeat -256px -78px;
+    margin-left: 11px;
+    margin-top: 13px;
+    display: inline-block;
+}
+.bottom-icon4{
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    background: url("../image/main.png") no-repeat -310px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+/*设置动画*/
+.bottom-icon1:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.bottom-icon2:hover{
+    animation-name: animate2;
+    animation-duration: 1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 1;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.bottom-icon3:hover{
+    animation-name: animate2;
+    animation-duration: 1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 1;/*次数*/
+    animation-direction: unset;  /*反向动画*/
+}
+.bottom-icon4:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+@keyframes  animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(30deg);
+    }
+}
+/*720度旋转动画*/
+@keyframes animate2 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/*缩放*/
+.company-right-img1:hover{
+    transform: scale(1.05);
+}
+.company-right-img2:hover{
+    transform: scale(1.1);
+}
+.company-right-img3:hover{
+    transform: scale(1.1);
+}
+.company-right-img4:hover{
+    transform: scale(1.1);
+}
+.company-right-img5:hover{
+    transform: scale(1.1);
+}
+.company-right-img6:hover{
+    transform: scale(1.1);
+}
+.company-left-img:hover{
+    transform: scale(1.1);
+}
 
 
 

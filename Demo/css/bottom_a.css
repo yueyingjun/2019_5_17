@@ -1,0 +1,139 @@
+/*底部链接*/
+.bottom-abox{
+    width: 100%;
+    height: 180px;
+    background-color: #f6f6f6; /*16进制*/
+    /* position: fixed;*/  /*设置固定样式*/
+}
+/*底部内容盒子*/
+.bottom-abox-content{
+    width: 1180px;
+    height: 100%;
+   /* border: 1px solid black;*/
+    margin: auto;
+}
+.bottom-item{
+    width: 177px;
+    height: 113px;
+    margin-top: 30px;
+  /*  border: 1px solid red;*/
+    float: left;
+    margin-right: 2px;
+}
+.bottom-item-box{
+    width: 130px;
+    height: 100%;
+   /* border: 1px solid yellow;*/
+}
+
+.item-title{
+    width: 64px;
+    height: 20.6px;
+
+}
+.item-a a{
+    width: 120px;
+    height: 24px;
+    color: #555;
+    font-size: 13px;
+    margin-top: 0;
+    line-height: 24px;
+    text-align: left;
+
+}
+.item-a a:hover{
+    color:orange;
+}
+
+.item-a-img{
+    width: 5px;
+    height: 10px;
+    margin: 5px 3px 0 2px;
+    background: url("../image/page-bg.png") no-repeat 0px -50px;
+    float: left;
+   /* border: 1px solid red;*/
+    display: inline-block;
+}
+
+/*右竖线*/
+.line{
+    width: 0.5px;
+    height: 80%;
+    border: 0.5px solid #ccc;
+    float: right;
+    margin-top: -93px;
+}
+
+/*服务热线*/
+.bottom-right{
+    width: 273px;
+    height: 113px;
+/*    border: 1px solid yellow;*/
+    float: left;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.bottom-right-title{
+    width: 96px;
+    height: 14.4px;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 12px;
+    line-height: 100%;
+
+
+}
+/*电话图标*/
+.phone-box{
+    width: 273px;
+    height:50px;
+  /*  border: 1px solid red;*/
+}
+.phone-img{
+    width: 152px;
+    height: 25.6px;
+    margin-left: 30px;
+    margin-top: 15px;
+    background: url("../image/footer.png") no-repeat  -131px -108px;
+}
+/*搜索框*/
+.search-box{
+    margin-top: 5px;
+    width: 258px;
+    height: 38px;
+   /* border: 1px solid #000;*/
+   /* border-radius: 10px;*/
+    box-sizing: border-box;
+    float: left;
+}
+.search-box input{
+    width: 205px;
+    height: 36px;
+    float: left;
+   /* margin-left: -206px;*/
+    margin-top: 0px;
+    border: 2px solid #3b8de3;
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+
+}
+/*搜索按钮*/
+.button-box button{
+    width: 50px;
+    height: 36px;
+    background: #3b8de3;
+    border-radius: 0 10px 10px 0;
+    float: left;
+    box-sizing: border-box;
+    border: 0;
+}
+.button-box button:before{
+    color: #fff;
+    content: "搜索";
+    font-size: 12px;
+    line-height: 36px;
+    margin-left: 0px;
+
+}
+
