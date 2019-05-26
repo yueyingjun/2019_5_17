@@ -524,14 +524,14 @@ input{
     width: 1200px;
     height: 308px;
 }
+.quanguo{
+    z-index: 11;
+}
 .feiji .kuai{
-
     position: relative;
     float: left;
     width: 240px;
     height: 154px;
-
-
 }
 
 .kuai a{
