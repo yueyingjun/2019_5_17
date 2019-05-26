@@ -1251,43 +1251,6 @@
     </div>
 </div>
 <!--热门航空公司-->
-
-<script>
-
-    var links=document.querySelectorAll(".hot_air .air .all a")
-    var con=document.querySelectorAll(".city_air")
-    links.forEach(function (ele,index) {
-        ele.onclick=function () {
-            con.forEach(function (item) {
-                //ele.classList.remove(".active");
-                /*ele.classList.remove()*/
-                item.style.zIndex="0";
-            });
-            //ele.classList.add("active");
-            con[index].style.zIndex="999";
-        }
-    })
-    // alert(links.length);
-   /* for(var i=0;i<links.length;i++){
-        // alert(i);
-        // links[i].index=i;
-        links[i].onclick=function (ev) {
-
-            for(var j=0;j<con.length;j++){
-                con[i].style.display="none"
-                links[j].style.background="none"
-            }
-            con[this.links[i].index].style.display="block"
-            links[i].style.background="blue"
-        }
-
-    }*/
-
-
-</script>
-
-
-
 <div class="company">
     <div class="company_top">
         <h3>热门航空公司</h3><i class="top_more"></i>
@@ -1434,18 +1397,52 @@
                 <div class="time">05月20日</div>
                 <div class="price"><i class="time_air"></i>票价：<span>￥448</span></div>
             </div>
-            <div class="special_bottom_box">
-                <!--<div class="city_name">
+            <!--<div class="special_bottom_box">
+                <div class="city_name">
                     <span class="city_left">西安咸阳</span>
                     <i class="city_name_arrow"></i>
                     <span class="city_right">伦敦</span>
                 </div>
                 <div class="time">05月20日</div>
-                <div class="price"><i class="time_air"></i>票价：<span>￥448</span></div>-->
-            </div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥448</span></div>
+            </div>-->
         </div>
     </div>
 </div>
+<script>
+    var links=document.querySelectorAll(".hot_air .air .all a")
+    var con=document.querySelectorAll(".city_air")
+    for(var i=0;i<links.length;i++){
+        links[i].index=i;
+        links[i].onclick=function (ev) {
+            for(var j=0;j<con.length;j++){
+                con[j].style.display="none"
+                links[j].style.background="#fff"
+                links[j].style.borderBottom="#fff"
+                links[j].style.color="#000"
+            }
+            con[this.index].style.display="block"
+            links[this.index].style.background="#7b9ce2"
+            links[this.index].style.borderBottom="2px solid #217ee2"
+        }
+    }
+    var links1=document.querySelectorAll(".special .special_top .spcial_all a")
+    var con1=document.querySelectorAll(".special_bottom")
+    for(var i=0;i<links1.length;i++){
+        links1[i].index=i;
+        links1[i].onclick=function (ev) {
+            for(var j=0;j<con1.length;j++){
+                con1[j].style.display="none"
+                links1[j].style.background="#fff"
+                links1[j].style.borderBottom="#fff"
+                links1[j].style.color="#000"
+            }
+            con1[this.index].style.display="block"
+            links1[this.index].style.background="#7b9ce2"
+            links1[this.index].style.borderBottom="1px solid #217ee2"
+        }
+    }
+</script>
 <!--<script>
     var links=document.querySelectorAll(".special .special_top .spcial_all a")
     var con=document.querySelectorAll(".special_bottom")

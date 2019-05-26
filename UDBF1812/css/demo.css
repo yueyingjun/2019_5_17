@@ -1224,6 +1224,7 @@ i:hover{
     height:320px;
     margin:10px 0;
     position: absolute;
+    background: #fff;
     /*border:1px solid red;*/
 }
 .special_bottom_box{
