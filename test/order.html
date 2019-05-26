@@ -2094,19 +2094,19 @@
 
 </script>
 <script>
-    var lines = document.querySelectorAll(".info-t1");
-    var citys2 = document.querySelectorAll(".aa22");
-    for(var i=0;i<citys2.length;i++){
+    var info = document.querySelectorAll(".info-t1");
+    var cit = document.querySelectorAll(".aa22");
+    for(var i=0;i<cit.length;i++){
 
         (function(i){
-            citys2[i].onclick=function () {
+            cit[i].onclick=function () {
 
-                for(var j=0;j<lines.length;j++){
-                    lines[j].style.display="none";
-                    citys2[j].style.color="#000000";
+                for(var j=0;j<info.length;j++){
+                    info[j].style.display="none";
+                    cit[j].style.color="#000000";
                 }
-                lines[i].style.display="block";
-                citys2[i].style.color="#DCE3FC";
+                info[i].style.display="block";
+                cit[i].style.color="#DCE3FC";
             }
         })(i)
 
