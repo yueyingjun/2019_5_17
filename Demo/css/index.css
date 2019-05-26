@@ -1,0 +1,1054 @@
+/*去掉浏览器边框*/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*顶部图片*/
+header{
+    width: 1180px;
+    height:70px;
+    margin: auto;
+}
+/*导航栏*/
+        /*外部大小*/
+.daohang-box{
+    width: 100%;
+    height: 40px;
+    background-color: #3b8de3; /*16进制*/
+   /* position: fixed;*/  /*设置固定样式*/
+}
+        /*内容大小*/
+.daohang-content{
+    width: 1180px;
+    height: 100%;
+    margin: auto;  /*自动居中*/
+}
+.daohang-left{
+    width: 690px;
+    height: 100%;
+    line-height: 40px;
+    float: left;   /*设置浮动*/
+}
+.daohang-right{
+    width: 240px;
+    height: 100%;
+    line-height: 40px;
+    float: right;   /*设置浮动*/
+}
+    /*设置超链接颜色*/
+a{
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 10;
+}
+.daohang-left a{
+    width: 20%;
+    height: 100%;
+}
+.daohang-right a{
+    width: 33.33333%;
+    height: 100%;
+}
+.active{
+    background: #fff;
+    color: #3b8de3;
+    border-top: 2px solid orange;
+}
+/*鼠标移入*/
+.daohang-left a:hover{
+    background: #fff;
+    color: #3b8de3;
+    border-top: 2px solid orange;
+}
+.daohang-right a:hover{
+    background: #0185e1;
+    color: #fff;
+
+}
+
+
+
+/*显示用户图标*/
+.login{
+    background: url("../image/img.png") no-repeat -315px -500px;
+
+}
+/*三角形*/
+.sanjiao {
+    width: 0;
+    height: 0;
+    border-top: 5px solid #fff;
+    border-left: 5px solid #3b8de3;
+    border-right: 5px solid #3b8de3;
+    position: absolute;
+    right: 160px;
+    top: 88px;
+
+}
+
+
+
+
+/*热门城市*/
+.hotCity{
+    width: 1180px;
+    height: 35px;
+    margin: auto;
+}
+.hotCity span{
+    color: #000;
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+.hotCity a{
+    float: left;
+    text-decoration: none;
+    color: #3b8de3;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+}
+.hotCity a:hover{
+    color: orange;
+}
+
+
+
+
+/*轮播*/
+.lunbo-box{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    /* border: 1px solid red;*/
+}
+.banner1{
+    width: 100%;
+    height: 100%;
+    background: url("../image/1.png") no-repeat 98% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner2{
+    width: 100%;
+    height: 100%;
+    background: url("../image/2.png") no-repeat 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.btns{
+    position: absolute;
+    width: 200px;height: 20px;
+    position: absolute;right: 20px;bottom: 0px;
+}
+.btn{
+    width: 28px;height: 5px;
+    background: black;
+    float: left;
+    margin-left: 15px;
+
+}
+.btn.active{
+    background: orange;
+}
+
+
+
+
+
+/*购票流程*/
+.process{
+    width: 1180px;
+    height: 80px;
+    margin: auto;
+    background: rgb(247,247,246);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.process-left{
+    width: 145px;
+    height: 100%;
+    float: left;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.process-right{
+    width: 1000px;
+    height: 100%;
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.process-item{
+    width: 250px;
+    height: 100%;
+  /*  border: 1px solid red;*/
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+/*圆圈*/
+.circle{
+    width: 55px;
+    height: 55px;
+    background: url("../image/main.png") no-repeat -167px -136px;
+    margin: 9px 10px 7px 0;
+    display: inline-block;
+}
+/*放大镜*/
+.icon1{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -152px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+    z-index: 1;
+}
+.icon2{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -205px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+.icon3{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -259px -81px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+.icon4{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -310px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+/*动画*/
+@keyframes  animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(30deg);
+    }
+}
+.icon1:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.icon2:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.icon3:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.icon4:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+
+
+/*标题信息*/
+.process-titletop{
+    width: 100px;
+    height: 25.6px;
+    margin: -55px 0px 0px 60px;
+    font-size: 18px;
+    color: #3b8de3;
+}
+.process-titletbottom{
+    width: 130px;
+    height: 25.6px;
+    margin: 0 0px 30px 60px;
+    font-size: 14px;
+    color: #999;
+}
+.process-jiantou{
+    width: 74px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  /*  border: 1px solid green;
+    box-sizing: border-box;*/
+}
+.process-jiantou-img{
+    width: 74px;
+    height: 80px;
+    background: url("../image/main.png") no-repeat -355px -123px;
+}
+
+
+/*空白*/
+.whiteSpace{
+    width: 1180px;
+    height: 20px;
+    margin: auto;
+}
+
+
+
+/*功能模块和资讯模块*/
+.module{
+    width: 1180px;
+    height: 214px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin: auto;
+    box-sizing: border-box;
+
+}
+.module-left{
+    width: 378px;
+    height: 211px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    float: left;
+}
+.module-table{
+    width: 188px;
+    height: 71px;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.module-tableleft{
+    width: 50%;
+    height: 71px;
+    float: left;
+   /* border: 1px solid #ccc;
+    box-sizing: border-box;*/
+}
+.tableleft-img1{
+    width: 40px;
+    height: 40px;
+    margin: 20px 27px 15px 27px ;
+    background: url("../image/main.png") no-repeat -4px -58px;
+}
+.tableleft-img2{
+    width: 40px;
+    height: 40px;
+    margin: 20px 27px 15px 27px ;
+    background: url("../image/main.png") no-repeat -259px -81px;
+}
+.tableleft-img3{
+    width: 40px;
+    height: 40px;
+    margin: 20px 27px 15px 27px ;
+    background: url("../image/main.png") no-repeat -75px -123px;
+}
+.tableleft-img4{
+    width: 40px;
+    height: 40px;
+    margin: 20px 27px 15px 27px ;
+    background: url("../image/main.png") no-repeat -152px -80px;
+}
+.tableleft-img5{
+    width: 40px;
+    height: 40px;
+    margin: 20px 27px 15px 27px ;
+    background: url("../image/main.png") no-repeat -74px -58px;
+}
+.tableleft-img6{
+    width: 40px;
+    height: 40px;
+    margin: 20px 27px 15px 27px ;
+    background: url("../image/main.png") no-repeat -75px -196px;
+}
+/*设置动画*/
+.tableleft-img1:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.tableleft-img2:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.tableleft-img3:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.tableleft-img4:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.tableleft-img5:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.tableleft-img6:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+
+
+
+.module-tableright{
+    width: 50%;
+    height: 71px;
+    float: left;
+    /*border: 1px solid #ccc;*/
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 70px;
+
+}
+
+/*资讯*/
+.module-right{
+    width: 800px;
+    height: 211px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    display: inline-block;
+}
+.zixun-left{
+    width: 50%;
+    height: 211px;
+   /* border: 1px solid red;*/
+    float: left;
+    box-sizing: border-box;
+
+}
+.zixun-right{
+    width:50%;
+    height: 211px;
+   /* border: 1px solid green;*/
+    float: right;
+    box-sizing: border-box;
+}
+
+
+
+/**/
+.right-span{
+    width: 73.6px;
+    height: 29.6px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.test{
+    width: 100px;
+    height: 18px;
+    float: right;
+    margin-top: 23px;
+    margin-right: 15px;
+}
+.test a{
+    color: #555555;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.right-a a{
+      height: 20px;
+      margin-left: 20px;
+      color: #000;
+      margin-top: 8px;
+      font-size: 15px;
+  }
+.right-right-a a{
+    height: 20px;
+    margin-left: 20px;
+    color: #3b8de3;
+    margin-top: 8px;
+    font-size: 15px;
+}
+.right-a a:hover,.right-right-a a:hover{
+    color: orange;
+}
+
+/*热门航线预定*/
+.space{
+    width: 1180px;
+    height: 40px;
+    margin: auto;
+}
+.order{
+    width: 1190px;
+    height: 36.8px;
+    margin: auto;
+   /* border-bottom: 2px solid #ccc;
+    overflow: hidden;*/
+}
+.order-left-title{
+    width: 177.6px;
+    height: 36.8px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: #555;
+    float: left;
+    font-size: 28px;
+
+}
+.order-right-title{
+    width:800px;
+    height: 100%;
+    float: right;
+}
+.order-right-title a{
+    width: 10%;
+    height: 36.8px;
+    color: #555;
+    float: left;
+    font-size: 18px;
+    display: block;
+    position: relative;
+
+}
+.bottom-line{
+    width: 1180px;
+    margin: auto;
+    border-bottom: 2px solid #ccc;
+}
+.order-right-title a:hover{
+    color: #3b8de3;
+    border-bottom: 2px solid #3b8de3;
+}
+
+/*车票*/
+.picket{
+    float: left;
+    width: 236px;
+    height: 154px;
+    /* border: 1px solid red;*/
+}
+
+
+.picket .list{
+    width: 220px;
+    height: 136px;
+    display: block;
+    float: left;
+    margin-top: 18px;
+    /*border: 1px solid #ccc;*/
+    background: url("../image/go.png") no-repeat -3px;
+}
+/*车票抵达城市字体*/
+.list .top{
+    width: 220px;
+    height: 45px;
+    margin-top: 10px;
+    text-align: center;
+    color: #0055AA;
+
+}
+/*车票城市鼠标移入事件*/
+/*.list .top a:hover{
+    color: #000;
+}*/
+
+
+
+.list .middle{
+    width: 220px;
+    height: 21.2px;
+    text-align: center;
+    margin-top: -10px;
+}
+.list .bottom{
+    width: 220px;
+    height: 68px;
+    text-align: center;
+    margin-top: 20px;
+}
+/*车票抵达城市之间的箭头*/
+.jiantou{
+    width: 40px;
+    height: 10px;
+    background: url("../image/img.png") no-repeat -30px -77px;
+    margin: 0 10px 0 10px;
+    display: inline-block;
+}
+
+.feiji-img{
+    width: 22px;
+    height: 20px;
+    background: url("../image/img.png") no-repeat -40px -105px;
+
+    display: inline-block;
+}
+
+
+.jiantou:hover{
+    /*border: 1px solid white;*/
+    transform: translate(10px,0);
+}
+.list .span{
+    color: red;
+}
+.list .span2{
+    color: red;
+    font-size: 28px;
+}
+
+.space2{
+    width: 1180px;
+    height: 50px;
+    margin: auto;
+    margin-top: 305px;
+}
+
+/*航空公司介绍*/
+.company{
+    width: 1180px;
+    height: 337px;
+   /* border: 1px solid red;*/
+    margin: auto;
+}
+.company-left{
+    width: 460px;
+    height: 337px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.company-left-img{
+    width: 220px;
+    height: 206px;
+    margin-top: 15px;
+    margin-left: 20px;
+    background: url("../image/ca3.png") no-repeat 100% 00%;
+}
+.company-left-text{
+    width: 220px;
+    height: 37px;
+    margin-top: -7px;
+    margin-left: 20px;
+    background: #ccc;
+    line-height: 37px;
+    text-align: center;
+}
+.company-left-right{
+    width: 193px;
+    height: 240px;
+    float: right;
+    margin: -240px 10px 20px 20px;
+   /* border: 1px solid #ccc;*/
+    font-size: 14px;
+}
+.company-right{
+    width: 715px;
+    height: 335px;
+   /* border: 1px solid #ccc;*/
+    float: left;
+    margin-left: 0;
+}
+.company-right-card{
+    width: 235px;
+    height: 178px;
+   /* border: 1px solid red;*/
+    float: left;
+}
+.company-right-img1{
+    width: 220px;
+    height: 160px;
+    margin-left: 18px;
+    background: url("../image/cz3.png") no-repeat 100% 100%;
+    transition: all 0.6s;
+}
+.company-right-img2{
+    width: 220px;
+    height: 160px;
+    margin-left: 18px;
+    background: url("../image/mu3.png") no-repeat 100% 100%;
+}
+.company-right-img3{
+    width: 220px;
+    height: 160px;
+    margin-left: 18px;
+    background: url("../image/hu3.png") no-repeat 100% 100%;
+}
+.company-right-img4{
+    width: 220px;
+    height: 160px;
+    margin-left: 18px;
+    background: url("../image/zh3.png") no-repeat 100% 100%;
+}
+.company-right-img5{
+    width: 220px;
+    height: 160px;
+    margin-left: 18px;
+    background: url("../image/3u3.png") no-repeat 100% 100%;
+}
+.company-right-img6{
+    width: 220px;
+    height: 160px;
+    margin-left: 18px;
+    background: url("../image/9c3.png") no-repeat 100% 100%;
+}
+
+/*文字说明*/
+.text{
+    width: 220px;
+    height: 37px;
+    line-height: 100%;
+    text-align: center;
+    background: #ccc;
+    margin-left: 18px;
+    margin-top: -37px;
+}
+
+
+
+/*热门国际机场*/
+.bottom-box{
+    width: 1180px;
+    height: 360px;
+    margin: auto;
+   /* border: 1px solid darkorchid;*/
+}
+.hotAirPlane{
+    width: 335px;
+    height: 42px;
+    float: left;
+   /* border: 1px solid yellow;*/
+    text-align: left;
+    font-size: 28px;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+}
+
+.more{
+    width: 220px;
+    height: 37px;
+    line-height: 100%;
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
+.guoji{
+    width: 470px;
+    height: 42px;
+    float: right;
+   /* border: 1px solid green;*/
+    text-align: left;
+    font-size: 28px;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+}
+.guoji-right{
+    width: 300px;
+    height: 42px;
+   /* border: 1px solid black;*/
+    float: right;
+}
+.guoji-more{
+    width: 98px;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: #555;
+ /*   border: 1px solid red;*/
+    line-height: 42px;
+    text-align: center;
+}
+.guoji-more-active{
+    width: 98px;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: #555;
+    /*   border: 1px solid red;*/
+    line-height: 42px;
+    text-align: center;
+    background-color: #c8e3fc;
+}
+.guoji-more-active a{
+    color: #555;
+    text-align: center;
+}
+
+
+
+/*国际热门机场链接*/
+.airplane{
+    width: 1180px;
+    height: 310px;
+/*    border: 1px solid  darkmagenta;*/
+    margin: auto;
+    margin-top: 5px;
+
+}
+.airplane-left{
+    width: 335px;
+    height: 310px;
+  /*  border: 1px solid red;*/
+    float: left;
+    margin-right: 10px;
+
+
+}
+.airplane-right{
+    width: 473px;
+    height: 154px;
+    /*border: 1px solid yellow;*/
+    float: right;
+    margin-right: 0px;
+}
+.airplane-right2{
+    width: 473px;
+    height: 154px;
+    /*border: 1px solid yellow;*/
+    float: right;
+    margin-right: 0px;
+    display: none;
+}
+.airplane-left a{
+    float: left;
+    width: 165px;
+    height: 36.8px;
+    color: #0055AA;
+    text-align: left;
+}
+.airplane-left a:hover{
+    color: orangered;
+}
+
+
+
+.middle-text{
+    width: 320px;
+    height: 45px;
+    /*border: 1px solid darkmagenta;*/
+    margin-left: 5px;
+}
+.middle-text a{
+    width: 320px;
+    height: 28px;
+    color: #0055AA;
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+.middle-span{
+    width: 320px;
+    height: 20.8px;
+    color: #000;
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: -15px;
+
+}
+
+
+/*底部导航栏*/
+.daohang-bottom-box{
+    width: 100%;
+    height: 55px;
+    background-color: #3b8de3; /*16进制*/
+    /* position: fixed;*/  /*设置固定样式*/
+}
+/*底部导航栏内容*/
+.daohang-bottom-content{
+    width: 1180px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    margin: auto;
+}
+.content-item{
+    width: 25%;
+    height: 100%;
+   /* border: 1px solid red;*/
+    float: left;
+}
+.bottom-circle{
+    width: 55px;
+    height: 55px;
+    background: url("../image/main.png") no-repeat -167px -136px;
+    margin: -3px 10px 5px 5px;
+    display: inline-block;
+}
+/*导航栏文字显示*/
+.bottom-titletop{
+    width: 100px;
+    height: 25.6px;
+    margin: -55px 0px 0px 80px;
+    font-size: 17px;
+    color: #fff;
+}
+.bottom-titlebottom{
+    width: 200px;
+    height: 25.6px;
+    margin: 0 0px 30px 80px;
+    font-size: 13px;
+    color: #fff;
+}
+/*遮罩*/
+/*.bottom-iconback{
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    background: url("../image/footer.png") no-repeat -280px -6px;
+}*/
+.bottom-icon1{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -152px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+.bottom-icon2{
+    width: 34px;
+    height: 34px;
+    background: url("../image/main.png") no-repeat -202px -76px;
+    margin-left: 11px;
+    margin-top: 12px;
+    display: inline-block;
+}
+.bottom-icon3{
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    background: url("../image/main.png") no-repeat -256px -78px;
+    margin-left: 11px;
+    margin-top: 13px;
+    display: inline-block;
+}
+.bottom-icon4{
+    width: 34px;
+    height: 34px;
+    margin: auto;
+    background: url("../image/main.png") no-repeat -310px -80px;
+    margin: 15px 4px 4px 13px;
+    display: inline-block;
+}
+/*设置动画*/
+.bottom-icon1:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.bottom-icon2:hover{
+    animation-name: animate2;
+    animation-duration: 1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 1;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+.bottom-icon3:hover{
+    animation-name: animate2;
+    animation-duration: 1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 1;/*次数*/
+    animation-direction: unset;  /*反向动画*/
+}
+.bottom-icon4:hover{
+    animation-name: animate;
+    animation-duration: .1s;
+    animation-timing-function: linear ;
+    animation-iteration-count: 6;/*次数*/
+    animation-direction: alternate;  /*反向动画*/
+}
+@keyframes  animate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(30deg);
+    }
+}
+/*720度旋转动画*/
+@keyframes animate2 {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/*缩放*/
+.company-right-img1:hover{
+    transform: scale(1.05);
+}
+.company-right-img2:hover{
+    transform: scale(1.1);
+}
+.company-right-img3:hover{
+    transform: scale(1.1);
+}
+.company-right-img4:hover{
+    transform: scale(1.1);
+}
+.company-right-img5:hover{
+    transform: scale(1.1);
+}
+.company-right-img6:hover{
+    transform: scale(1.1);
+}
+.company-left-img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

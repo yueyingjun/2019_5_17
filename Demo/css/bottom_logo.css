@@ -1,0 +1,148 @@
+/*底部logo区域*/
+.logo-box{
+    width: 100%;
+    height: 138px;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+}
+/*显示内容区域*/
+.logo-content{
+    width: 1180px;
+    height: 123px;
+  /*  border: 1px solid yellow;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+/*上部超链接*/
+.top-a{
+    width: 1180px;
+    height: 17.6px;
+/*    border: 1px solid black;*/
+    box-sizing: border-box;
+}
+
+.top-a-text{
+    width: 250px;
+    height: 17.6px;
+    margin-left: 200px;
+    margin-top: -2px;
+    color: #555555;
+    margin-right: 20px;
+/*    border: 1px solid red;*/
+    box-sizing: border-box;
+    font-size: 12px;
+    float: left;
+}
+.top-a a{
+    width: fit-content;
+    height: 17.6px;
+    margin-top: -2px;
+    float: left;
+    color: #555555;
+    font-size: 12px;
+    margin-right: 20px;
+ /*   border: 1px solid darkred;*/
+    line-height: 17.6px;
+}
+.top-a a:hover{
+    color: orange;
+}
+.logo-area{
+    width: 100%;
+    height: 104px;
+ /*   border: 1px solid red;*/
+    box-sizing: border-box;
+    display: inline-block;
+
+ }
+
+.logo-area-img{
+
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 550px;
+
+
+}
+
+
+/*官方网站电话*/
+.website-call{
+    width: 950px;
+    height: 27px;
+    margin: auto;
+    /*border: 1px solid black;*/
+}
+.white{
+    width: 150px;
+    height: 27px;
+    float: left;
+   /* border: 1px solid black;*/
+}
+.website-call-text{
+    width: fit-content;
+    height: 100%;
+    margin-right: 20px;
+  /*  border: 1px solid red;*/
+    font-size: 12px;
+    line-height: 27px;
+    float: left;
+}
+.website-call-text a{
+    width: fit-content;
+    height: 100%;
+    margin-top: -9px;
+    color: orangered;
+    font-size: 18px;
+    text-decoration: none;
+    float: right;
+    margin-left: 5px;
+}
+
+.website-call-a a{
+    width: fit-content;
+    height: 27px;
+    color: #0055AA;
+    font-size: 12px;
+/*    border: 1px solid blue;*/
+    margin-left: 30px;
+    line-height: 27px;
+}
+.website-call-a a:hover{
+    color: orange;
+}
+
+
+/*底部说明文字*/
+.bottom-font{
+    width: 970px;
+    height: 33px;
+/*    border: 1px solid red;*/
+    margin: auto;
+    color: #9E9C9C;
+    font-size: 12px;
+}
+/*友情链接*/
+.friend-url{
+    width: fit-content;
+    height: 15px;
+/*    border: 1px solid red;*/
+    margin-left: 300px;
+    color: #9E9C9C;
+    font-size: 12px;
+}
+/*最底部链接*/
+.last{
+    width: 970px;
+    height: 32px;
+/*    border: 1px solid black;*/
+    margin: auto;
+}
+.last a{
+    color: #9E9C9C;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: -7px;
+
+}
