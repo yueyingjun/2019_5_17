@@ -46,7 +46,7 @@ header{
 header .logo{
     float: left;
     width: 300px; height:70px;
-    background: url("../imgs/logo.png") no-repeat left;
+    background: url("../imgs/imgs-demo/logo.png") no-repeat left;
     margin: 0 auto;
 }
 /* 导航 */
@@ -93,7 +93,7 @@ header .logo{
     border-top: 2px solid orange;
 }
 .box .login{
-    background: url("../imgs/img.png") no-repeat -315px -500px;
+    background: url("../imgs/imgs-demo/img.png") no-repeat -315px -500px;
 }
 .box .right .sanjiao{
     width:0px;height: 0px;
@@ -134,7 +134,7 @@ header .logo{
     position: absolute;
     left: 0;
     top:0px;
-    background: url("../imgs/banner1.png") no-repeat left;
+    background: url("../imgs/imgs-demo/banner1.png") no-repeat left;
 }
 .wheel-box .banner2{
     width: 100%;
@@ -142,7 +142,7 @@ header .logo{
     position: absolute;
     left: 0;
     top:0px;
-    background: url("../imgs/banner2.png") no-repeat left;
+    background: url("../imgs/imgs-demo/banner2.png") no-repeat left;
 }
 .wheel-box .bots{
     position: absolute;
@@ -206,7 +206,7 @@ header .logo{
 }
 .piao .icon-out{
     width: 80px; height: 80px;
-    background:url("../imgs/main.png") no-repeat -160px -130px ;
+    background:url("../imgs/imgs-demo/main.png") no-repeat -160px -130px ;
 }
 .piao .icon-in{
     width: 40px; height: 40px;
@@ -218,16 +218,16 @@ header .logo{
     animation:in1 0.5s linear alternate infinite;
 }
 .piao .icon-in1{
-    background:url("../imgs/main.png") no-repeat -2px -195px ;
+    background:url("../imgs/imgs-demo/main.png") no-repeat -2px -195px ;
 }
 .piao .icon-in2{
-    background:url("../imgs/main.png") no-repeat -204px -80px ;
+    background:url("../imgs/imgs-demo/main.png") no-repeat -204px -80px ;
 }
 .piao .icon-in3{
-    background:url("../imgs/main.png") no-repeat -258px -80px ;
+    background:url("../imgs/imgs-demo/main.png") no-repeat -258px -80px ;
 }
 .piao .icon-in4{
-    background:url("../imgs/main.png") no-repeat -309px -80px ;
+    background:url("../imgs/imgs-demo/main.png") no-repeat -309px -80px ;
 }
 .piao .text{
     width: 120px; height: 60px;
@@ -245,7 +245,7 @@ header .logo{
 .piao .jiantou{
     width:45px;height:75px;
     float:right;
-    background: url("../imgs/main.png") no-repeat -359px -126px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat -359px -126px;
 }
 /* 详情页*/
 div.page {
@@ -276,22 +276,22 @@ div.page {
     animation:in1 0.5s linear alternate infinite;
 }
 .page .zhidao .tu1{
-    background: url("../imgs/main.png") no-repeat 5px -45px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat 5px -45px;
 }
 .page .zhidao .tu2{
-    background: url("../imgs/main.png") no-repeat 5px -115px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat 5px -115px;
 }
 .page .zhidao .tu3{
-    background: url("../imgs/main.png") no-repeat -65px -115px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat -65px -115px;
 }
 .page .zhidao .tu4{
-    background: url("../imgs/main.png") no-repeat 5px -180px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat 5px -180px;
 }
 .page .zhidao .tu5{
-    background: url("../imgs/main.png") no-repeat -65px -45px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat -65px -45px;
 }
 .page .zhidao .tu6{
-    background: url("../imgs/main.png") no-repeat -65px -185px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat -65px -185px;
 }
 .page .zhidao .a{
     /*border: #cccccc 1px solid;*/
@@ -303,7 +303,7 @@ div.page {
     width: 30px;
     height: 50px;
     float: right;
-    background: url("../imgs/main.png") no-repeat -245px 5px;
+    background: url("../imgs/imgs-demo/main.png") no-repeat -245px 5px;
 }
 /*最新资讯*/
 .page .new{
@@ -356,7 +356,7 @@ div.page {
     color:orange;
 }
 /*热门航线预定*/
-.top{
+/*.top{
     width:1180px;height: 60px;
     margin:20px auto;
     line-height: 60px;
@@ -389,15 +389,15 @@ div.page {
     border-bottom: blue 2px solid;
     color: blue;
 }
-/*ticket-list*/
+!*ticket-list*!
 .ticket-list{
     width: 1180px; height:312px;
-    /*border:1px solid red;*/
+    !*border:1px solid red;*!
     margin: 0 auto;
     position:relative;
 }
 .ticket .arrow:hover{
-    background: url("../imgs/img.png") no-repeat -10px -55px;
+    background: url("../imgs/imgs-demo/img.png") no-repeat -10px -55px;
 }
 .ticket{
     float:left;
@@ -405,7 +405,7 @@ div.page {
     position:relative;
     background: #ccc;
     margin: 5px;
-    background: url("../imgs/carl.png") no-repeat 0 0;
+    background: url("../imgs/imgs-demo/carl.png") no-repeat 0 0;
 }
 .ticket:hover{
     float: left;
@@ -414,7 +414,7 @@ div.page {
     position: relative;
     background: #ccc;
     margin: 5px;
-    background: url("../imgs/carl.png") no-repeat -225px 0;
+    background: url("../imgs/imgs-demo/carl.png") no-repeat -225px 0;
 }
 .ticket .name{
     width: 220px; height:50px;
@@ -429,7 +429,7 @@ div.page {
 .ticket .arrow{
     width: 60px; height:50px;
     position:absolute;left:80px;top:0;
-    background: url("../imgs/img.png") no-repeat -16px -55px;
+    background: url("../imgs/imgs-demo/img.png") no-repeat -16px -55px;
 }
 .ticket .end{
     width: 80px; height:50px;
@@ -448,7 +448,7 @@ div.page {
 .ticket .t1{
     width: 60px; height:50px;
     position:absolute;left:0px;top:90px;
-    background: url("../imgs/img.png") no-repeat -10px -90px;
+    background: url("../imgs/imgs-demo/img.png") no-repeat -10px -90px;
 }
 .ticket .t2{
     width: 40px; height:50px;
@@ -467,7 +467,139 @@ div.page {
     text-align: left;
     font-size: 28px;
     line-height: 50px;
+}*/
+
+/*热门航线*/
+.hotline{
+    width: 1200px;
+    height: 360px;
+    margin: 20px auto;
 }
+.hotline .top{
+    width: 100%;
+    height: 45px;
+    border-bottom: 2px solid #cccccc;
+
+}
+.hotline .top .left{
+    font-size: 26px;
+    float: left;
+    color: #5C5B58;
+}
+.hotline .top .rright{
+    font-size: 20px;
+    float: right;
+}
+.hotline .top .rright a{
+    text-decoration: none;
+    color: #555;
+    float: left;
+    padding: 5px 20px 14px;
+}
+.hotline .top .rright .contry{
+    background-color: #a6e3fc;
+    color: #3b8de3;
+    border-bottom: 1px solid #3b8de3;
+}
+.hotline .top .rright .contry:hover{
+    background-color: #a6e3fc;
+    color: #3b8de3;
+    border-bottom: 1px solid #3b8de3;
+}
+.hotline .top .rright a:hover{
+    color: #3b8de3;
+    border-bottom: 2px solid #3b8de3;
+}
+.hotline .bottom{
+    width: 1220px;
+    height: 310px;
+    position: relative;
+}
+.hotline .bottom .head1{
+    width: 1220px;
+    height: 310px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.hotline .bottom .head-in {
+    width: 20%;
+    height: 140px;
+    float: left;
+    text-align: center;
+    color: #0055AA;
+    cursor: pointer;
+    margin-top: 17px;
+}
+.hotline .bottom .head-in:hover .content-top-arrow{
+    transform:translate(5px,0);
+}
+.hotline .bottom .head-in .one{
+    width: 225px;
+    height: 120px;
+    background: url("../imgs/imgs-demo/carl.png") no-repeat;
+    padding-top: 20px;
+
+}
+.hotline .bottom .head-in .one:hover{
+    background: url("../imgs/imgs-demo/carl.png") no-repeat -225px 0px;
+}
+.hotline .bottom .head-in .one .content .content-top{
+    width: 190px;
+    height: 30px;
+    margin-left: 20px;
+}
+.hotline .bottom .head-in .one .content .content-middle{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.hotline .bottom .head-in .one .content .content-bottom{
+    width: 180px;
+    height: 50px;
+    margin: 25px 0px 0px 50px;
+}
+
+.hotline .bottom .head-in .one .content .content-bottom .content-bottom-one{
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background: url("../imgs/imgs-demo/img.png") no-repeat -40px -106px;
+}
+.hotline .bottom .head-in .one .content .content-bottom .content-bottom-two{
+    float: left;
+    font-family: Simsun;
+}
+.hotline .bottom .head-in .one .content .content-bottom .content-bottom-three{
+    float: left;
+    color: #ff7640;
+
+}
+.hotline .bottom .head-in .one .content .content-bottom .content-bottom-four{
+    float: left;
+    color: #ff7640;
+    font-size: 25px;
+    line-height: 10px;
+}
+.hotline .bottom .head-in .one .content .content-top .content-top-left{
+    width: 65px;
+    height: 30px;
+    text-align: right;
+    float: left;
+}
+.hotline .bottom .head-in .one .content .content-top .content-top-arrow{
+    float: left;
+    width:40px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: url("../imgs/imgs-demo/img.png") no-repeat -30px -70px;
+}
+.hotline .bottom .head-in .one .content .content-top .content-top-right{
+    float: left;
+}
+
 /*热门航空公司*/
 .hotcompany{
     width: 1180px;
@@ -510,7 +642,7 @@ div.page {
 .hotcompany .bottom .boxleft .imagedisplay .image{
     width:220px;
     height: 200px;
-    background: #a6e3fc url("../imgs/hang0.png") no-repeat;
+    background: #a6e3fc url("../imgs/imgs-demo/hang0.png") no-repeat;
 }
 .hotcompany .bottom .boxleft .imagedisplay .companyname{
     width:220px;
@@ -534,7 +666,7 @@ div.page {
 .hotcompany .bottom .boxleft .textdisplay .fenhao{
     width:25px;
     height: 25px;
-    background:url("../imgs/main.png") no-repeat -375px -265px;
+    background:url("../imgs/imgs-demo/main.png") no-repeat -375px -265px;
     position: absolute;
     right: 0;
 }
@@ -548,7 +680,7 @@ div.page {
     float: left;
     width: 218px;
     height: 160px;
-    background: url("../imgs/hang1.png") no-repeat;
+    background: url("../imgs/imgs-demo/hang1.png") no-repeat;
     background-size: 100% 100%;
     margin: 0px 0px 20px 27px;
     line-height: 280px;
@@ -571,7 +703,7 @@ div.page {
     float: left;
     width: 218px;
     height: 160px;
-    background: url("../imgs/hang2.png") no-repeat;
+    background: url("../imgs/imgs-demo/hang2.png") no-repeat;
     background-size: 100% 100%;
     margin: 0px 0px 20px 27px;
     line-height: 280px;
@@ -594,7 +726,7 @@ div.page {
     float: left;
     width: 218px;
     height: 160px;
-    background: url("../imgs/hang3.png") no-repeat;
+    background: url("../imgs/imgs-demo/hang3.png") no-repeat;
     background-size: 100% 100%;
     margin: 0px 0px 20px 27px;
     line-height: 280px;
@@ -617,7 +749,7 @@ div.page {
     float: left;
     width: 218px;
     height: 160px;
-    background: url("../imgs/hang4.png") no-repeat;
+    background: url("../imgs/imgs-demo/hang4.png") no-repeat;
     background-size: 100% 100%;
     margin: 0px 0px 20px 27px;
     line-height: 280px;
@@ -640,7 +772,7 @@ div.page {
     float: left;
     width: 218px;
     height: 160px;
-    background: url("../imgs/hang5.png") no-repeat;
+    background: url("../imgs/imgs-demo/hang5.png") no-repeat;
     background-size: 100% 100%;
     margin: 0px 0px 20px 27px;
     line-height: 280px;
@@ -663,7 +795,7 @@ div.page {
     float: left;
     width: 218px;
     height: 160px;
-    background: url("../imgs/hang6.png") no-repeat;
+    background: url("../imgs/imgs-demo/hang6.png") no-repeat;
     background-size: 100% 100%;
     margin: 0px 0px 20px 27px;
     line-height: 280px;
@@ -712,7 +844,7 @@ div.page {
 .jichang ul li{
     padding-left: 10px;
     margin-top: 10px;
-    background: url("../imgs/up.gif") no-repeat left center;
+    background: url("../imgs/imgs-demo/up.gif") no-repeat left center;
     margin-left: 5px;
     color: #0055AA;
 }
@@ -764,7 +896,7 @@ div.page {
 
     width: 80px; height: 65px;
     float:left;
-    background:url("../imgs/footer.png") no-repeat -260px 0px ;
+    background:url("../imgs/imgs-demo/footer.png") no-repeat -260px 0px ;
 }
 .foot-mains .part-in{
     width: 40px; height: 40px;
@@ -776,16 +908,16 @@ div.page {
     animation:in2 0.5s linear alternate forwards;
 }
 .foot-main .part-in1{
-    background:url("../imgs/footer.png") no-repeat -2px -8px;
+    background:url("../imgs/imgs-demo/footer.png") no-repeat -2px -8px;
 }
 .foot-main .part-in2{
-    background:url("../imgs/footer.png") no-repeat -80px -8px ;
+    background:url("../imgs/imgs-demo/footer.png") no-repeat -80px -8px ;
 }
 .foot-main .part-in3{
-    background:url("../imgs/footer.png") no-repeat -160px -8px ;
+    background:url("../imgs/imgs-demo/footer.png") no-repeat -160px -8px ;
 }
 .foot-main .part-in4{
-    background:url("../imgs/footer.png") no-repeat -226px -8px ;
+    background:url("../imgs/imgs-demo/footer.png") no-repeat -226px -8px ;
 }
 .foot-main .text{
     width: 200px; height: 50px;
@@ -826,7 +958,7 @@ div.page {
     width:100px ;
     float:left;
     margin:5px;
-    background: url("../imgs/page-bg.png") no-repeat -50px -170px;
+    background: url("../imgs/imgs-demo/page-bg.png") no-repeat -50px -170px;
 }
 .helpserver .help a{
     font-size:13px;
@@ -850,7 +982,7 @@ div.page {
 .helpserver .help6 .middle{
     width:200px;height:50px;
     margin-left:40px;
-    background: url("../imgs/footer.png") no-repeat -130px -97px;
+    background: url("../imgs/imgs-demo/footer.png") no-repeat -130px -97px;
 }
 .helpserver .help6 .bottom{
     width:300px;height:40px;
@@ -885,7 +1017,7 @@ div.page {
 .zheng-middle{
     width:62px;height:74px;
     margin:40px auto 10px;
-    background: url("../imgs/zhizhao.jpg") no-repeat 0 0 ;
+    background: url("../imgs/imgs-demo/zhizhao.jpg") no-repeat 0 0 ;
 }
 .zheng-bottom{
     width:610px ;height:25px;
