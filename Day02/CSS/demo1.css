@@ -546,13 +546,19 @@ li{
     font-size: 30px;
     color: #555555;
 }
-.hotfir a{
+.city{
+    width: 800px;
+    height: 40px;
     float: right;
+}
+.hotfir a{
+    float: left;
     text-decoration: none;
     margin: auto;
     color: #555555;
     width: 80px;height: 40px;
     line-height: 40px;
+    padding-bottom: 7px;
     text-align: center;
 }
 .hotfir .contry{
@@ -568,6 +574,9 @@ li{
 }
 .msandprice{
     width: 1180px;height:310px;
+    position: absolute;
+    left: 95px;
+    top: 950px;
     margin:auto;
 }
 .msandprice .msandprice-card{
@@ -634,6 +643,7 @@ li{
     padding: 17px 0px;
     border-bottom: 2px solid darkgrey;
     position: relative;
+    margin-top: 310px;
 }
 .hotcompany .spanOne{
     float: left;
