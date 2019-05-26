@@ -1,0 +1,1577 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/demo.css">
+    <!--给元素添加样式的方式：
+        1.行内样式
+        2.嵌入式
+        3.外部样式（把内容和样式进行分离）-->
+    <title>民航订票系统</title>
+   <!-- javascript-->
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                    for (var i = 0; i < banner.length; i++) {
+                        banner[i].style.display = "none"
+                        btns[i].style.background="#000"
+                    }
+                    banner[num].style.display = "block";
+                btns[num].style.background="orange"
+                num++
+            },3000)
+        }
+        /*window.onload=function(e)
+        {
+            var city = document.querySelectorAll(".city_air");
+                var count=0;
+                setInterval(function () {
+                    if(count==11){
+                        count=0;
+                    }
+                    for(var i=0;i<city.length;i++){
+                        city[i].style.display="none"
+                    }
+                    city[num].style.display="block";
+                    count++;
+                },5000)
+            }*/
+        function getValue2()
+        {
+            var x=document.getElementById("pid").value
+            if(x==document.getElementById("all")){
+                /*x.style.display="block";*/
+                x.style.display="block";
+            }else if(x==document.getElementById("SZ")){
+                x.style.display="block";
+                /*x.innerHTML;*/
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+<!--头部-->
+<header>
+    <img src="./images/logo.png" alt="">
+    <img src="./images/title.png" alt="">
+</header>
+<!--导航-->
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="" class="active">首页</a>
+            <a href="">国内机票</a>
+            <a href="">国际机票</a>
+            <a href="">民航咨询</a>
+            <a href="">民航问答</a>
+        </div>
+        <div class="right">
+            <a href="" class="login">登陆</a>
+            <a href="">注册</a>
+            <a href="">用户中心</a>
+            <div class="sanjiao"></div>
+</div>
+</div>
+</div>
+<!--热门城市-->
+<div class="hot">
+    <span>热门城市：</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+</div>
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="banner banner1"></div>
+    <div class="banner banner2"></div>
+    <div class="btns">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+<!--查询机票详情-->
+<div class="ticket_details">
+    <div class="ticket_details_box">
+        <div class="ticket_details_top">
+            <div class="ticket_details_top_left">
+                <i></i><a src="" class="active">国内机票 <img src="http://www.161580.com//images/v2/vp57/line.png" alt=""></a>
+            </div>
+            <div class="ticket_details_top_right">
+                <i></i><a src="">国际机票<img src="http://www.161580.com//images/v2/vp57/line.png" alt=""></a>
+            </div>
+        </div>
+        <div class="ticket_details_bottom">
+            <ul class="ticket_details_bottom_box">
+                <li class="ticket_details_bottom_top">
+                    <div class="ticket_details_bottom_top_one">行程类别</div>
+                    <div class="ticket_details_bottom_top_two"><label for=""><input type="radio" name="type" value="1">单程</label><label
+                            for=""><input type="radio" name="type" value="2">往返</label> </div>
+
+                </li>
+                <li class="ticket_details_bottom_top">
+                    <div class="ticket_details_bottom_top_one">出发城市</div>
+                    <div class="ticket_details_bottom_top_two"><div><input type="text" name="go" value="上海"><i></i></div></div>
+                </li>
+                <li class="ticket_details_bottom_top">
+                    <div class="ticket_details_bottom_top_one">到达城市</div>
+                    <div class="ticket_details_bottom_top_two"><div><input type="text" name="go" value="中文/拼音"><i></i></div></div>
+                </li>
+                <li class="ticket_details_bottom_top">
+                    <div class="ticket_details_bottom_top_one">出发日期</div>
+                    <div class="ticket_details_bottom_top_two"><div><input type="text" name="go" value="YYYY-MM-DD"><span></span></div></div>
+                </li>
+                <li class="ticket_details_bottom_top">
+                    <div class="ticket_details_bottom_top_one">到达日期</div>
+                    <div class="ticket_details_bottom_top_two"><div><input type="text" name="go" value="YYYY-MM-DD"><span></span></div></div>
+                </li>
+                <li class="ticket_details_bottom_top">
+                    <div class="ticket_details_bottom_top_three"><i></i><span>搜索</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!--购买流程-->
+<div class="piao">
+    <div class="piao_left">
+        <h3>购票流程</h3>
+    </div>
+    <ul class="piao_right">
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in1"></div>
+                </div>
+
+            </div>
+            <div class="text">
+                <div class="text-title">航班查询</div>
+                <div class="text-info">选择航班出行</div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in2"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">提交订单</div>
+                <div class="text-info">登记乘机人和联系人</div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in3"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">在线支付</div>
+                <div class="text-info">支付机票款</div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+
+        <li>
+            <div class="icon">
+                <div class="icon-out">
+                    <div class="icon-in4"></div>
+                </div>
+            </div>
+            <div class="text">
+                <div class="text-title">无需取票</div>
+                <div class="text-info">凭电子客票换登机牌</div>
+            </div>
+            <div class="arrow"></div>
+        </li>
+    </ul>
+</div>
+
+<!--消息显示-->
+<div class="info">
+    <div class="info_left">
+        <div class="info_left_table">
+            <div class="content">
+                <div class="info_picture"></div>
+                <span>
+                    <a href="">订单管理</a><i class="a_picture"></i>
+                </span>
+            </div>
+        </div>
+        <div class="info_left_table">
+            <div class="content">
+                <div class="info_picture2"></div>
+                <span>
+                    <a href="">支付中心</a>
+                </span>
+            </div>
+        </div>
+        <div class="info_left_table">
+            <div class="content">
+                <div class="info_picture3"></div>
+                <span>
+                    <a href="">价格趋势</a>
+                </span>
+            </div>
+        </div>
+        <div class="info_left_table">
+            <div class="content">
+                <div class="info_picture4"></div>
+                <span>
+                    <a href="">机票验真</a>
+                </span>
+            </div>
+        </div>
+        <div class="info_left_table">
+            <div class="content">
+                <div class="info_picture5"></div>
+                <span>
+                    <a href="">航班动态</a>
+                </span>
+            </div>
+        </div>
+        <div class="info_left_table">
+            <div class="content">
+                <div class="info_picture6"></div>
+                <span>
+                    <a href="">新手指南</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="info_right">
+        <div class="info_consult">
+            <div class="consult_top">
+                <h3>最新资讯</h3><a href="">更多<i class="consult_more"></i></a>
+            </div>
+            <ul class="consult_bottom">
+                <li><a href="">简单了解一下金鹏航空官网机票购买流程</a></li>
+                <li><a href="">东方航空去哪儿网合作举办“校园旅行家</a></li>
+                <li><a href="">网上买飞机票为什么只能买9张,10人</a></li>
+                <li><a href="">想知道南方航空机票购买流程，南航手机</a></li>
+            </ul>
+        </div>
+        <div class="info_announce">
+            <div class="announce_top">
+                <h3>网站公告</h3><a href="">更多<i class="announce_more"></i></a>
+            </div>
+            <ul class="announce_bottom">
+                <li><a href="">带你认识飞机经停是什么意思</a></li>
+                <li><a href="">12306机票网上订票官网请上民航在</a></li>
+                <li><a href="">1岁婴儿机票怎么买 能够从网上购买婴</a></li>
+                <li><a href="">了解订机票用什么软件好对你出门旅游帮</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--热门航线预定-->
+<div class="hot_air">
+    <div class="air">
+        <h3>热门航线预订</h3>
+        <div class="all">
+            <a href="javascript:;" class="active">全国</a>
+            <a href="javascript:;">深圳</a>
+            <a href="javascript:;">北京</a>
+            <a href="javascript:;">上海</a>
+            <a href="javascript:;">广州</a>
+            <a href="javascript:;">武汉</a>
+            <a href="javascript:;">成都</a>
+            <a href="javascript:;">海口</a>
+            <a href="javascript:;">重庆</a>
+            <a href="javascript:;">沈阳</a>
+        </div>
+    </div>
+    <hr>
+    <div class="city_all">
+        <div class="line city_air" style="z-index: 10" id="all">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">郑州</span>
+                </div>
+                <div class="time">12月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥150</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">长沙</span>
+                </div>
+                <div class="time">10月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥110</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">神农架</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥117</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">银川</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥220</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">太原</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">11月11日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥250</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">南京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">上海浦东</span>
+                </div>
+                <div class="time">07月03日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥150</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">西安</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">上海浦东</span>
+                </div>
+                <div class="time">01月25日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥200</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">合肥</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海口</span>
+                </div>
+                <div class="time">05月28日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥279</span></div>
+            </div>
+            <div class="line_top">
+            <div class="city_name">
+                <span class="city_left">天津</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">三亚</span>
+            </div>
+            <div class="time">05月22日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥399</span></div>
+        </div>
+            <div class="line_top">
+            <div class="city_name">
+                <span class="city_left">哈尔滨</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">三亚</span>
+            </div>
+            <div class="time">05月15日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥540</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 9" id="SZ">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">10月09日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥399</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">武汉</span>
+                </div>
+                <div class="time">10月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥450</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">兰州</span>
+                </div>
+                <div class="time">10月22日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥500</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海口</span>
+                </div>
+                <div class="time">09月11日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥240</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">沈阳</span>
+                </div>
+                <div class="time">06月12日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥749</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">上海浦东</span>
+                </div>
+                <div class="time">06月07日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥518</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">北京</span>
+                </div>
+                <div class="time">05月27日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥518</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">深圳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">重庆</span>
+                </div>
+                <div class="time">10月11日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥410</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">深圳</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">成都</span>
+            </div>
+            <div class="time">10月11日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥470</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">深圳</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">郑州</span>
+            </div>
+            <div class="time">09月03日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥520</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 8" id="BJ">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海口</span>
+                </div>
+                <div class="time">05月25日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥427</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">武汉</span>
+                </div>
+                <div class="time">01月21日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥320</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">太原</span>
+                </div>
+                <div class="time">11月17日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥190</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">南京</span>
+                </div>
+                <div class="time">05月22日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥437</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">长春</span>
+                </div>
+                <div class="time">06月27日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥357</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">05月24日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥691</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">无锡</span>
+                </div>
+                <div class="time">05月19日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥480</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">银川</span>
+                </div>
+                <div class="time">06月01日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥340</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">北京</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">常州</span>
+            </div>
+            <div class="time">05月20日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥457</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">北京</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">大连</span>
+            </div>
+            <div class="time">06月01日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥320</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 7" id="SH">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">温州</span>
+                </div>
+                <div class="time">05月31日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥307</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">郑州</span>
+                </div>
+                <div class="time">05月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥280</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">重庆</span>
+                </div>
+                <div class="time">05月20日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥370</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海口</span>
+                </div>
+                <div class="time">05月28日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥379</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥460</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">宁波</span>
+                </div>
+                <div class="time">07月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥150</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">厦门</span>
+                </div>
+                <div class="time">07月09日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥325</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">南京</span>
+                </div>
+                <div class="time">07月12日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥250</span></div>
+            </div>
+            <div class="line_top">
+            <div class="city_name">
+                <span class="city_left">上海浦东</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">济南</span>
+            </div>
+            <div class="time">05月17日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥310</span></div>
+        </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">上海浦东</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">天津</span>
+                </div>
+                <div class="time">09月07日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥420</span></div>
+            </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 6" id="GZ">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">长沙</span>
+                </div>
+                <div class="time">07月01日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥237</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海口</span>
+                </div>
+                <div class="time">06月11日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥327</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">北京</span>
+                </div>
+                <div class="time">09月25日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥440</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">三亚</span>
+                </div>
+                <div class="time">06月25日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥380</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">哈尔滨</span>
+                </div>
+                <div class="time">06月26日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥980</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">重庆</span>
+                </div>
+                <div class="time">06月03日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥430</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">成都</span>
+                </div>
+                <div class="time">10月31日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥470</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">天津</span>
+                </div>
+                <div class="time">05月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥640</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">广州</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">青岛</span>
+            </div>
+            <div class="time">10月09日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥630</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">广州</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">西宁</span>
+            </div>
+            <div class="time">05月25日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥850</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 5" id="WH">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">神农架</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥117</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">06月06日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥329</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">广州</span>
+                </div>
+                <div class="time">11月21日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥350</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">上海浦东</span>
+                </div>
+                <div class="time">05月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥330</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海拉尔</span>
+                </div>
+                <div class="time">05月20日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥467</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">三亚</span>
+                </div>
+                <div class="time">05月31日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥397</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">北京</span>
+                </div>
+                <div class="time">06月08日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥477</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">武汉</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">乌鲁木齐</span>
+                </div>
+                <div class="time">06月12日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥680</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">武汉</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">青岛</span>
+            </div>
+            <div class="time">06月25日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥270</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">武汉</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">沈阳</span>
+            </div>
+            <div class="time">05月27日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥459</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 4" id="CD">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">三亚</span>
+                </div>
+                <div class="time">05月27日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥298</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">西安</span>
+                </div>
+                <div class="time">05月24日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥289</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">上海浦东</span>
+                </div>
+                <div class="time">11月09日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥600</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">大连</span>
+                </div>
+                <div class="time">06月30日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥640</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">南京</span>
+                </div>
+                <div class="time">05月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥648</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">06月08日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥440</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">沈阳</span>
+                </div>
+                <div class="time">06月13日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥778</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">成都</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">哈尔滨</span>
+                </div>
+                <div class="time">06月06日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥889</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">成都</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">长春</span>
+            </div>
+            <div class="time">05月15日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥839</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">成都</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">乌鲁木齐</span>
+            </div>
+            <div class="time">06月08日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥939</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 3" id="HK">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">郑州</span>
+                </div>
+                <div class="time">12月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥150</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">长沙</span>
+                </div>
+                <div class="time">10月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥110</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">北京</span>
+                </div>
+                <div class="time">10月29日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥380</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">武汉</span>
+                </div>
+                <div class="time">05月30日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥347</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">哈尔滨</span>
+                </div>
+                <div class="time">06月23日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥828</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">阜阳</span>
+                </div>
+                <div class="time">06月02日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥439</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">合肥</span>
+                </div>
+                <div class="time">05月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥519</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">海口</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">南京</span>
+                </div>
+                <div class="time">05月20日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥549</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">海口</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">南宁</span>
+            </div>
+            <div class="time">07月15日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥319</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">海口</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">广州</span>
+            </div>
+            <div class="time">06月14日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥459</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 2" id="CQ">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">三亚</span>
+                </div>
+                <div class="time">05月27日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥338</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">广州</span>
+                </div>
+                <div class="time">12月17日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥360</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">合肥</span>
+                </div>
+                <div class="time">11月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥250</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">福州</span>
+                </div>
+                <div class="time">05月16日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥348</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">揭阳</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥460</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">郑州</span>
+                </div>
+                <div class="time">10月12日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥381</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">沈阳</span>
+                </div>
+                <div class="time">05月23日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥617</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">重庆</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">乌鲁木齐</span>
+                </div>
+                <div class="time">05月29日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥749</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">重庆</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">宁波</span>
+            </div>
+            <div class="time">06月06日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥509</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">重庆</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">昆明</span>
+            </div>
+            <div class="time">06月06日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥367</span></div>
+        </div>
+
+
+
+        </div>
+        <div class="line city_air" style="z-index: 1" id="SY">
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">海口</span>
+                </div>
+                <div class="time">05月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥578</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">昆明</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥769</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">武汉</span>
+                </div>
+                <div class="time">05月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥459</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">南昌</span>
+                </div>
+                <div class="time">05月20日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥469</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">深圳</span>
+                </div>
+                <div class="time">06月06日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥748</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">烟台</span>
+                </div>
+                <div class="time">06月15日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥280</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">北京</span>
+                </div>
+                <div class="time">10月18日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥310</span></div>
+            </div>
+            <div class="line_top">
+                <div class="city_name">
+                    <span class="city_left">沈阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">扬州</span>
+                </div>
+                <div class="time">05月17日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥420</span></div>
+            </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">沈阳</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">西安</span>
+            </div>
+            <div class="time">06月05日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥500</span></div>
+        </div><div class="line_top">
+            <div class="city_name">
+                <span class="city_left">沈阳</span>
+                <i class="city_name_arrow"></i>
+                <span class="city_right">重庆</span>
+            </div>
+            <div class="time">05月19日</div>
+            <div class="price"><i class="time_air"></i>票价：<span>￥539</span></div>
+        </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!--热门航空公司-->
+<div class="company">
+    <div class="company_top">
+        <h3>热门航空公司</h3><i class="top_more"></i>
+    </div>
+    <hr>
+    <div class="company_bottom">
+        <div class="bottom_left">
+            <div class="bottom_left_picture">
+                <i></i>
+                <h3>中国国际航空公司</h3>
+            </div>
+            <div class="bottom_left_text">
+                <p>中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。 </p>
+            </div>
+            <i class="text_picture"></i>
+        </div>
+        <div class="bottom_right">
+            <ul class="bottom_right_box">
+                <li class="bottom_right_brond"><a href=""><img src="images/cz3.png" alt=""><h3>中国南方航空公司</h3></a></li>
+                <li class="bottom_right_brond"><a href=""><img src="images/mu3.png" alt=""><h3>中国东方航空公司</h3></a></li>
+                <li class="bottom_right_brond"><a href=""><img src="images/hu3.png" alt=""><h3>海南航空公司</h3></a></li>
+                <li class="bottom_right_brond"><a href=""><img src="images/zh3.png" alt=""><h3>深圳航空公司</h3></a></li>
+                <li class="bottom_right_brond"><a href=""><img src="images/3u3.png" alt=""><h3>四川航空公司</h3></a></li>
+                <li class="bottom_right_brond"><a href=""><img src="images/9c3.png" alt=""><h3>春秋航空公司</h3></a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="more_case">
+    <!--热门国际机场-->
+    <div class="internal">
+        <div class="internal_top">
+            <h3>热门国际机场</h3><a src="">全球机场</a><i class="top_more"></i>
+        </div>
+        <div class="internal_bottom">
+            <div class="internal_bottom_left">
+                <ul>
+                    <li ><i></i><a href="">香港赤腊角机场</a></li>
+                    <li><i></i><a href="">首尔金浦机场</a></li>
+                    <li><i></i><a href="">东京羽田机场</a></li>
+                    <li><i></i><a href="">新加坡樟宜机场</a></li>
+                    <li><i></i><a href="">曼谷素万那普机场</a></li>
+                    <li><i></i><a href="">大阪伊丹机场</a></li>
+                    <li><i></i><a href="">胡志明市国际机场</a></li>
+                    <li><i></i><a href="">吉隆坡国际机场</a></li>
+                </ul>
+            </div>
+            <div class="internal_bottom_right">
+                <ul>
+                    <li><i></i><a href="">首尔仁川机场</a></li>
+                    <li><i></i><a href="">澳门国际机场</a></li>
+                    <li><i></i><a href="">东京成田机场</a></li>
+                    <li><i></i><a href="">台北桃园中正机场</a></li>
+                    <li><i></i><a href="">曼谷廊曼机场</a></li>
+                    <li><i></i><a href="">马尼拉国际机场</a></li>
+                    <li><i></i><a href="">伦敦国际机场</a></li>
+                    <li><i></i><a href="">釜山国际机场</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--最新客户咨询-->
+    <div class="custom">
+        <div class="custom_top">
+            <h3>最新客户咨询</h3><a src="">更多</a><i class="top_more"></i>
+        </div>
+        <div class="custom_bottom">
+            <ul>
+                <li><span>2019/5/16 17:57:21</span></li>
+                <li><i></i><a href="">怀孕28+6周可以坐飞机吗，还需要什么东西</a></li>
+                <li><span>2019/5/16 22:00:35</span></li>
+                <li><i></i><a href="">你好。怀孕7个月乘坐需要办理证明吗</a></li>
+                <li><span>2019/5/16 21:59:07</span></li>
+                <li><i></i><a href="">你好。怀孕7乘坐需要办理证明吗</a></li>
+                <li><span>2019/5/16 21:35:27</span></li>
+                <li><i></i><a href="">你好，小孩才32个月，没有身份证，怎么取...</a></li>
+                <li><span>2019/5/16 17:57:21</span></li>
+                <li><i></i><a href="">护照可以定机票登机嘛</a></li>
+                <li><span>2019/5/16 14:44:39</span></li>
+                <li><i></i><a href="">你好，请问出生两个月的婴儿应该在网上怎么...</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--国际特价-->
+    <div class="special">
+        <div class="special_top">
+            <h3>国际特价</h3>
+            <div class="spcial_all">
+                <a href="javascript:;" class="pid active">北美</a>
+                <a href="javascript:;" class="pid ">亚洲</a>
+                <a href="javascript:;" class="pid ">欧洲</a>
+            </div>
+        </div>
+        <div class="special_bottom" style="z-index: 10">
+                <div class="special_bottom_box">
+                    <div class="city_name">
+                        <span class="city_left">上海</span>
+                        <i class="city_name_arrow"></i>
+                        <span class="city_right">华盛顿</span>
+                    </div>
+                    <div class="time">06月10日</div>
+                    <div class="price"><i class="time_air"></i>票价：<span>￥1395</span></div>
+                </div>
+                <div class="special_bottom_box">
+                    <div class="city_name">
+                        <span class="city_left">北京</span>
+                        <i class="city_name_arrow"></i>
+                        <span class="city_right">洛杉矶</span>
+                    </div>
+                    <div class="time">07月19日</div>
+                    <div class="price"><i class="time_air"></i>票价：<span>￥2950</span></div>
+                </div>
+        </div>
+        <div class="special_bottom" style="z-index: 9">
+            <div class="special_bottom_box">
+                <div class="city_name">
+                    <span class="city_left">广州</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">首尔</span>
+                </div>
+                <div class="time">07月01日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥1265</span></div>
+            </div>
+            <div class="special_bottom_box">
+                <div class="city_name">
+                    <span class="city_left">北京</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">东京</span>
+                </div>
+                <div class="time">07月19日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥2320</span></div>
+            </div>
+        </div>
+        <div class="special_bottom" style="z-index: 8">
+            <div class="special_bottom_box">
+                <div class="city_name">
+                    <span class="city_left">西安咸阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">伦敦</span>
+                </div>
+                <div class="time">05月20日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥448</span></div>
+            </div>
+            <!--<div class="special_bottom_box">
+                <div class="city_name">
+                    <span class="city_left">西安咸阳</span>
+                    <i class="city_name_arrow"></i>
+                    <span class="city_right">伦敦</span>
+                </div>
+                <div class="time">05月20日</div>
+                <div class="price"><i class="time_air"></i>票价：<span>￥448</span></div>
+            </div>-->
+        </div>
+    </div>
+</div>
+<script>
+    var links=document.querySelectorAll(".hot_air .air .all a")
+    var con=document.querySelectorAll(".city_air")
+    for(var i=0;i<links.length;i++){
+        links[i].index=i;
+        links[i].onclick=function (ev) {
+            for(var j=0;j<con.length;j++){
+                con[j].style.display="none"
+                links[j].style.background="#fff"
+                links[j].style.borderBottom="#fff"
+                links[j].style.color="#000"
+            }
+            con[this.index].style.display="block"
+            links[this.index].style.background="#7b9ce2"
+            links[this.index].style.borderBottom="2px solid #217ee2"
+        }
+    }
+    var links1=document.querySelectorAll(".special .special_top .spcial_all a")
+    var con1=document.querySelectorAll(".special_bottom")
+    for(var i=0;i<links1.length;i++){
+        links1[i].index=i;
+        links1[i].onclick=function (ev) {
+            for(var j=0;j<con1.length;j++){
+                con1[j].style.display="none"
+                links1[j].style.background="#fff"
+                links1[j].style.borderBottom="#fff"
+                links1[j].style.color="#000"
+            }
+            con1[this.index].style.display="block"
+            links1[this.index].style.background="#7b9ce2"
+            links1[this.index].style.borderBottom="1px solid #217ee2"
+        }
+    }
+</script>
+<!--<script>
+    var links=document.querySelectorAll(".special .special_top .spcial_all a")
+    var con=document.querySelectorAll(".special_bottom")
+    links.forEach(function (ele,index) {
+        ele.onclick=function () {
+            con.forEach(function (item) {
+                //ele.classList.remove("active");
+                item.style.zIndex="0";
+            });
+            //ele.classList.add("active");
+            con[index].style.zIndex="999";
+        }
+    })
+</script>-->
+
+<!--支付-->
+<div class="box2">
+    <div class="pay">
+        <ul>
+            <li>
+                <div class="pay_picture">
+                    <div class="pay_picture2"></div>
+                </div>
+                <div class="pay_text">
+                    <div class="pay_text_top">支付安全</div>
+                    <div class="pay_text_bottom">在线支付100%认证</div>
+                </div>
+            </li>
+            <li>
+                <div class="pay_picture">
+                    <div class="pay_picture3"></div>
+                </div>
+                <div class="pay_text">
+                    <div class="pay_text_top">实时同步</div>
+                    <div class="pay_text_bottom">全球机票联网售票</div>
+                </div>
+            </li>
+            <li>
+                <div class="pay_picture">
+                    <div class="pay_picture4"></div>
+                </div>
+                <div class="pay_text">
+                    <div class="pay_text_top">全天服务</div>
+                    <div class="pay_text_bottom">7*24小时专业客服人员为您服务</div>
+                </div>
+            </li>
+            <li>
+                <div class="pay_picture">
+                    <div class="pay_picture5"></div>
+                </div>
+                <div class="pay_text">
+                    <div class="pay_text_top">方便快捷</div>
+                    <div class="pay_text_bottom">电子售票，身份证直接换登记票</div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!--最后-->
+<div class="last">
+    <div class="last_box">
+            <h3>新手上路</h3>
+            <ul>
+                <li><i></i><a href="">-查询预定</a></li>
+                <li><i></i><a href="">-订单填写</a></li>
+                <li><i></i><a href="">-支付出票</a></li>
+            </ul>
+    </div>
+    <div class="last_box">
+        <h3>付款方式</h3>
+        <ul>
+            <li><i></i><a href="">-网上银行</a></li>
+            <li><i></i><a href="">-微信支付</a></li>
+            <li><i></i><a href="">-信用卡</a></li>
+        </ul>
+    </div>
+    <div class="last_box">
+        <h3>旅客保障</h3>
+        <ul>
+            <li><i></i><a href="">-肮胁认证</a></li>
+            <li><i></i><a href="">-支付出票</a></li>
+            <li><i></i><a href="">-安全保障</a></li>
+        </ul>
+    </div>
+    <div class="last_box">
+        <h3>常见问题</h3>
+        <ul>
+            <li><i></i><a href="">-了解多彩贵州肮</a></li>
+            <li><i></i><a href="">-关于南昌昌北机</a></li>
+            <li><i></i><a href="">-不再网上买机票</a></li>
+        </ul>
+    </div>
+    <div class="last_box">
+        <h3>关于我们</h3>
+        <ul>
+            <li><i></i><a href="">-联系我们</a></li>
+            <li><i></i><a href="">-网站介绍</a></li>
+            <li><i></i><a href="">-公司简介</a></li>
+        </ul>
+    </div>
+    <div class="last_box2">
+        <i></i>
+        <div class="last_box2_b">
+            <div class="last_box2_b_left">请输入关键词</div>
+            <div class="last_box2_b_right">搜索</div>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer">
+    <div class="footer_top"><span>© 2019 http://www.161580.com 民航在线</span>&nbsp;|&nbsp;<a href="">沪ICP备12008257号-2</a>&nbsp;&nbsp;<a
+            href="">关于161580</a>&nbsp;|&nbsp;<a href="">联系我们</a>&nbsp;|&nbsp;<a href="">合作伙伴</a>&nbsp;|&nbsp;<a
+            href="">诚征英才</a>&nbsp;|&nbsp;<a
+            href="">用户建议</a></div>
+    <div class="footer_picture"><img src="images/footer.jpg" alt=""></div>
+    <div class="footer_top2"><p>161580官方网站：<span >161580.com</span>&nbsp;|&nbsp;全国统一服务热线：<span>4000-161580</span>&nbsp;|&nbsp;<a
+            href="">在线咨询</a></p></div>
+    <div class="footer_text">
+        <p>161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。</p>
+    </div>
+    <div class="footer_text2">
+        <p>友情链接QQ434441778:</p>
+        <p><a href="">美国旅游</a>&nbsp;|&nbsp;<a href="">韩国旅游攻略</a>&nbsp;|&nbsp;<a href="">订机票最便宜的网站</a>&nbsp;|&nbsp;<a href="">北京旅行社</a>&nbsp;|&nbsp;<a href="">打折机票</a><a href="">酒店加盟代理</a>&nbsp;|&nbsp;<a
+                href="">爱侣游网</a>&nbsp;|&nbsp;<a href="">杭州户外俱乐部</a>&nbsp;|&nbsp;<a href="">四喜居门票网</a>&nbsp;|&nbsp;<a href="">深圳国旅</a>&nbsp;|&nbsp;<a href="">澳洲自由行</a>&nbsp;|&nbsp;<a href="">汽车票预定</a>&nbsp;|&nbsp;<a
+                href="">四川青年旅行社</a>&nbsp;|&nbsp;<a href="">百程旅行网</a>&nbsp;|&nbsp;<a href="">重庆青年旅行社</a>&nbsp;|&nbsp;<a href="">俄罗斯旅游</a>&nbsp;|&nbsp;<a href="">美国旅游</a>&nbsp;|&nbsp;<a href="">深圳旅游论坛</a>&nbsp;|&nbsp;<a
+                href="">重庆中国青年旅行社</a>&nbsp;|&nbsp;<a href="">青岛崂山</a>&nbsp;|&nbsp;<a href="">长岛旅游</a>&nbsp;|&nbsp;<a href="">南宁旅行社</a>&nbsp;|&nbsp;<a href="">青驿</a></p>
+    </div>
+</div>
+</body>
+</html>
