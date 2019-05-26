@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /**
+            首先清除body边框的内外边距
+            然后将总的div标签设置宽高背景色字体大小
+            类标签 设置左浮动让其之间没有分隔
+            左外边距  宽度
+            右外边距  宽度
+            a标签:设置颜色 内边距 行高 下划线
+         */
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 40px;
+            background: #3b8de3;
+            font-size: 20px;
+            font-family: 微软雅黑;
+            text-align: center;
+        }
+        .two{
+            float: left;
+            margin-left: 40px;
+            width: 660px;
+        }
+        .three{
+            float: right;
+            margin-right: 50px;
+            width:240px;
+        }
+
+        .two a{
+            color: white;
+            padding:0 25px;
+            line-height: 40px;
+            text-decoration: none;
+        }
+        .three a{
+            color: white;
+            padding:0 10px;
+            line-height: 40px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="two">
+    <a href="" >首页</a>
+    <a href="">国内机票</a>
+    <a href="">国际机票</a>
+    <a href="">民航咨询</a>
+    <a href="">民航问答</a>
+    </div>
+    <div class="three">
+    <a href="">登录</a>
+    <a href="">注册</a>
+    <a href="">用户中心</a>
+    </div>
+</div>
+</body>
+</html>
