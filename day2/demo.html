@@ -28,11 +28,6 @@
 
                 num++
             },3000)
-
-        }
-    </script>
-    <script>
-        window.onload=function () {
             var selections=document.querySelectorAll(".head1")
             var buttons=document.querySelectorAll(".hotline .top .rright a")
             for(var i=0;i<buttons.length;i++){
@@ -50,6 +45,24 @@
                     selections[this.index].style.display="block"
                 }
             }
+            var nativeticket=document.querySelectorAll(".hotaircraft .hotright .bottom")
+            var butts=document.querySelectorAll(".hotaircraft .hotright .rright a")
+            for(var i=0;i<butts.length;i++){
+                butts[i].index=i;
+                butts[i].onclick=function () {
+                    for(var j=0;j<butts.length;j++){
+                        nativeticket[j].style.display="none"
+                        butts[j].style.background="white"
+                        butts[j].style.color="black"
+                        butts[j].style.borderBottom="none"
+                    }
+                    butts[this.index].style.background="#a6e3fc"
+                    butts[this.index].style.color="#3b8de3"
+                    butts[this.index].style.borderBottom="1px solid #3b8de3"
+                    nativeticket[this.index].style.display="block"
+                }
+            }
+
         }
     </script>
 
@@ -2194,9 +2207,9 @@
             <div class="top">
                 <div class="left">国际特价</div>
                 <div class="rright">
-                    <a href="" class="contry">北美</a>
-                    <a href="">亚洲</a>
-                    <a href="">欧洲</a>
+                    <a href="javascript:;" class="contry">北美</a>
+                    <a href="javascript:;">亚洲</a>
+                    <a href="javascript:;">欧洲</a>
                 </div>
             </div>
             <div class="bottom">
@@ -2225,6 +2238,82 @@
                                 <div class="content-top-left">北京</div>
                                 <div class="content-top-arrow"></div>
                                 <div class="content-top-right">洛杉矶</div>
+                            </div>
+                            <div class="content-middle">07月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">2950</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">首尔</div>
+                            </div>
+                            <div class="content-middle">07月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">1235</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">东京</div>
+                            </div>
+                            <div class="content-middle">07月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">2320</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">西班牙</div>
+                            </div>
+                            <div class="content-middle">06月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">1395</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">伦敦</div>
                             </div>
                             <div class="content-middle">07月19日</div>
                             <div class="content-bottom">

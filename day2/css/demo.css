@@ -672,6 +672,7 @@ h1,h2,h3,h4,h5,h6,ul,li{
     width:220px;
     height: 200px;
     cursor: pointer;
+    overflow: hidden;
     background: #a6e3fc url("../pic/ca3.png") no-repeat;
 }
 .hotcompany .bottom .boxleft .imagedisplay .image:hover{
