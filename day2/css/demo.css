@@ -905,6 +905,7 @@ h1,h2,h3,h4,h5,h6,ul,li{
     width: 50%;
     height: 400px;
     float: left;
+
 }
 .hotaircraft .hotleft .bottom .right ul li{
     padding-left: 10px;
@@ -965,6 +966,7 @@ h1,h2,h3,h4,h5,h6,ul,li{
     width: 470px;
     height:100%;
     margin-left: 5px;
+    position: relative;
 }
 .hotaircraft .hotright .top{
     width: 100%;
@@ -993,6 +995,9 @@ h1,h2,h3,h4,h5,h6,ul,li{
 .hotaircraft .hotright .bottom{
     width:490px;
     height: 300px;
+    position: absolute;
+    left: 0px;
+    top: 50px;
 }
 .hotaircraft .hotright .bottom .head-in {
     width: 50%;
