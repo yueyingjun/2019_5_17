@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/shouye.css">
 
     <script>
-        window.onload = function () {
+        window.onload = function () {a();b()}
+        function a(){
             var banners = document.querySelectorAll(".banner");
             var btns = document.querySelectorAll(".btn");
             var num = 0;
@@ -24,6 +25,21 @@
                     num++
                 }
             }, 5000)
+        }
+        function  b(){
+            var borders = document.querySelectorAll(".border");
+            var btns = document.querySelectorAll(".detail");
+            for (var i=0; i<borders.length; i++){
+                borders[i].index=i;
+                borders[i].onclick=function (ev) {
+                    for (var j=0;j<btns.length;j++){
+                        btns[j].style.display="none";
+                        borders[j].style.backgroundColor="#ffffff";
+                    }
+                    btns[this.index].style.display="block";
+                    borders[this.index].style.backgroundColor="#b0b0b0";
+                }
+            }
         }
     </script>
 
@@ -145,29 +161,29 @@
             <h1>热门航线预订</h1>
         </div>
         <div class="yuding-right">
-            <a href="">&nbsp;&nbsp;&nbsp;深圳</a>
-            <a href="">&nbsp;&nbsp;&nbsp;北京</a>
-            <a href="">&nbsp;&nbsp;&nbsp;上海</a>
-            <a href="">&nbsp;&nbsp;&nbsp;广州</a>
-            <a href="">&nbsp;&nbsp;&nbsp;南京</a>
-            <a href="">&nbsp;&nbsp;&nbsp;天津</a>
-            <a href="">&nbsp;&nbsp;&nbsp;武汉</a>
-            <a href="">&nbsp;&nbsp;&nbsp;长沙</a>
-            <a href="">&nbsp;&nbsp;&nbsp;昆明</a>
-            <a href="">&nbsp;&nbsp;&nbsp;重庆</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;深圳</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;北京</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;上海</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;广州</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;南京</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;天津</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;武汉</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;长沙</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;昆明</a>
+            <a href="javascript:;" class="border" onclick style="background-color: white;">&nbsp;&nbsp;&nbsp;重庆</a>
         </div>
 
     </div>
 
     <!-- 机票-->
-    <div class="detail deta1">
+    <div class="detail one-2" style="display: none;">
         <div>
-
-            <p class="a">上海--->温州</p>
+            <p class="a">上海1--->温州</p>
             <p class="b">05月31日</p>
             <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
 
         </div>
+        
         <div>
             <p class="a">上海浦东--->郑州</p>
             <p class="b">05月16日</p>
@@ -205,6 +221,414 @@
         </div>
 
     </div>
+    <div class="detail one" style="display: none;">
+        <div>
+            <p class="a">上海2--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one-2" style="display: none;">
+        <div>
+            <p class="a">上海3--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one" style="display: none;">
+        <div>
+            <p class="a">上海4--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one" style="display: none;">
+        <div>
+            <p class="a">上海5--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one-2" style="display: none;">
+        <div>
+            <p class="a">上海6--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one" style="display: none;">
+        <div>
+            <p class="a">上海7--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one-2" style="display: none;">
+        <div>
+            <p class="a">上海8--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one" style="display: none;">
+        <div>
+            <p class="a">上海9--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+    <div class="detail one-2" style="display: block;">
+        <div>
+            <p class="a">上海10--->温州</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">307</span></p>
+
+        </div>
+
+        <div>
+            <p class="a">上海浦东--->郑州</p>
+            <p class="b">05月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">280</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->重庆</p>
+            <p class="b">05月20日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">370</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->海口</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">379</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->昆明</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">460</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->宁波</p>
+            <p class="b">05月31日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">150</span></p>
+        </div>
+        <div>
+            <p class="a">上海--->厦门</p>
+            <p class="b">07月16日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">325</span></p>
+        </div>
+        <div>
+            <p class="a">上海浦东--->南京</p>
+            <p class="b">07月12日</p>
+            <p class="c">票价：<span class="d">￥</span><span class="e">250</span></p>
+        </div>
+
+    </div>
+
+
+
 
 
 </div>

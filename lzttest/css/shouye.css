@@ -486,6 +486,7 @@ ul, li {
     left:165px;
     top: 800px;
     left: 210px;
+    display: block;
     /*overflow:hidden;*/
 }
 .detail div{
