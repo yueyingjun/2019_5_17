@@ -1,0 +1,2530 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner")
+            var btns = document.querySelectorAll(".btn")
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="orange"
+
+                num++
+            },3000)
+            var selections=document.querySelectorAll(".head1")
+            var buttons=document.querySelectorAll(".hotline .top .rright a")
+            for(var i=0;i<buttons.length;i++){
+                buttons[i].index=i;
+                buttons[i].onclick=function () {
+                    for(var j=0;j<buttons.length;j++){
+                        selections[j].style.display="none"
+                        buttons[j].style.background="white"
+                        buttons[j].style.color="black"
+                        buttons[j].style.borderBottom="none"
+                    }
+                    buttons[this.index].style.background="#a6e3fc"
+                    buttons[this.index].style.color="#3b8de3"
+                    buttons[this.index].style.borderBottom="1px solid #3b8de3"
+                    selections[this.index].style.display="block"
+                }
+            }
+            var nativeticket=document.querySelectorAll(".hotaircraft .hotright .bottom")
+            var butts=document.querySelectorAll(".hotaircraft .hotright .rright a")
+            for(var i=0;i<butts.length;i++){
+                butts[i].index=i;
+                butts[i].onclick=function () {
+                    for(var j=0;j<butts.length;j++){
+                        nativeticket[j].style.display="none"
+                        butts[j].style.background="white"
+                        butts[j].style.color="black"
+                        butts[j].style.borderBottom="none"
+                    }
+                    butts[this.index].style.background="#a6e3fc"
+                    butts[this.index].style.color="#3b8de3"
+                    butts[this.index].style.borderBottom="1px solid #3b8de3"
+                    nativeticket[this.index].style.display="block"
+                }
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="logo">
+            <img src="pic/logo.png">
+        </div>
+        <div class="code">
+            <img src="pic/code.jpg">
+        </div>
+    </div>
+    <!--导航栏-->
+    <div class="box">
+        <div class="con">
+            <div class="left">
+                <a href="" class="active">首页</a>
+                <a href="">国内机票</a>
+                <a href="">国际机票</a>
+                <a href="">民航资讯</a>
+                <a href="">民航问答</a>
+            </div>
+            <div class="right">
+                <a href="" class="login">登录</a>
+                <a href="">注册</a>
+                <a href="">用户中心</a>
+            </div>
+            <div class="san"></div>
+        </div>
+    </div>
+    <!--城市-->
+    <div class="city">
+        <span>热门城市：</span>
+        <div class="hot">
+            <a href="">深圳</a>
+            <a href="">北京</a>
+            <a href="">上海</a>
+            <a href="">广州</a>
+            <a href="">南京</a>
+            <a href="">天津</a>
+            <a href="">武汉</a>
+            <a href="">长沙</a>
+            <a href="">昆明</a>
+            <a href="">贵阳</a>
+            <a href="">成都</a>
+            <a href="">重庆</a>
+            <a href="">海口</a>
+            <a href="">哈尔滨</a>
+            <a href="">更多</a>
+        </div>
+    </div>
+    <!--轮播图-->
+    <div class="wheel-box">
+            <div class="banner banner1"></div>
+            <div class="banner banner2"></div>
+        <div class="bots">
+            <div class="btn btn1 select"></div>
+            <div class="btn btn2"></div>
+        </div>
+    </div>
+    <!--购票流程-->
+    <div class="piao">
+        <div class="piao-left">
+            <h3>购票流程:</h3>
+        </div>
+        <div class="piao-right">
+            <ul>
+                <li>
+                    <div class="icon">
+                        <div class="icon-in"></div>
+                    </div>
+                    <div class="text">
+                        <div class="title">航班查询</div>
+                        <div class="text-info">选择出行航班</div>
+                    </div>
+                    <div class="arrow"></div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <div class="icon-in-1"></div>
+                    </div>
+                    <div class="text">
+                        <div class="title">提交订单</div>
+                        <div class="text-info">登记乘机人和联系人</div>
+                    </div>
+                    <div class="arrow"></div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <div class="icon-in-2"></div>
+                    </div>
+                    <div class="text">
+                        <div class="title">在线支付</div>
+                        <div class="text-info">支付机票款</div>
+                    </div>
+                    <div class="arrow"></div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <div class="icon-in-3"></div>
+                    </div>
+                    <div class="text">
+                        <div class="title">无需取票</div>
+                        <div class="text-info">凭电子客票号换登机牌</div>
+                    </div>
+                    <div class="arrow last"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--订单管理-->
+    <div class="order">
+        <div class="left">
+            <div class="ordermanager">
+                <div class="picleft"></div>
+                <div class="piccenter">订单管理</div>
+                <div class="picright"></div>
+            </div>
+            <div class="paycenter">
+                <div class="picleft"></div>
+                <div class="piccenter">支付中心</div>
+            </div>
+            <div class="price">
+                <div class="picleft"></div>
+                <div class="piccenter">价格趋势</div>
+            </div>
+            <div class="tickcheck">
+                <div class="picleft"></div>
+                <div class="piccenter">机票验真</div>
+            </div>
+            <div class="planeact">
+                <div class="picleft"></div>
+                <div class="piccenter">航班动态</div>
+            </div>
+            <div class="guid">
+                <div class="picleft"></div>
+                <div class="piccenter">新手指南</div>
+            </div>
+        </div>
+        <div class="center">
+            <h3>最新资讯</h3>
+            <div>
+                <a href="">简单了解一下金鹏航空官网机票购买流程</a>
+            </div>
+            <div>
+            <a href="">东方航空去哪儿网合作举办"校园旅行家"</a>
+            </div>
+            <div>
+            <a href="">网上买飞机票为什么只能买9张，10人</a>
+            </div>
+            <div>
+            <a href="">想知道南方航空机票购买流程，南航手机</a>
+            </div>
+            <div class="more"><a href="">更多>></a></div>
+        </div>
+        <div class="right">
+            <h3>网站公告</h3>
+
+            <div>
+                <a href="">带你认识飞机经停是什么意思</a>
+            </div>
+            <div>
+                <a href="">12306机票网上订票官网请上民航在</a>
+            </div>
+            <div>
+                <a href="">1岁婴儿机票怎么买 能够从网上购买婴</a>
+            </div>
+            <div>
+                <a href="">了解订机票用什么软件好对你出门旅游帮</a>
+            </div>
+            <div class="more"><a href="">更多>></a></div>
+        </div>
+    </div>
+    <!--热门航线-->
+    <div class="hotline">
+        <div class="top">
+            <div class="left">热门航线预订</div>
+            <div class="rright">
+                <a href="javascript:;" class="contry">全国</a>
+                <a href="javascript:;">深圳</a>
+                <a href="javascript:;">北京</a>
+                <a href="javascript:;">上海</a>
+                <a href="javascript:;">广州</a>
+                <a href="javascript:;">武汉</a>
+                <a href="javascript:;">成都</a>
+                <a href="javascript:;">海口</a>
+                <a href="javascript:;">重庆</a>
+                <a href="javascript:;">沈阳</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">郑州</div>
+                            </div>
+                            <div class="content-middle">12月16日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">长沙</div>
+                            </div>
+                            <div class="content-middle">10月15日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">110</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">神农架</div>
+                            </div>
+                            <div class="content-middle">05月18日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">117</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">银川</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">昆明</div>
+                            </div>
+                            <div class="content-middle">05月18日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">220</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">济南</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">309</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">太原</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">昆明</div>
+                            </div>
+                            <div class="content-middle">11月11日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">南昌</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">赣州</div>
+                            </div>
+                            <div class="content-middle">05月27日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">180</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">南京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">上海浦东</div>
+                            </div>
+                            <div class="content-middle">07月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">西安</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">上海浦东</div>
+                            </div>
+                            <div class="content-middle">01月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">合肥</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">279</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">昆明</div>
+                            </div>
+                            <div class="content-middle">10月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">399</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">10月15日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">450</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">兰州</div>
+                            </div>
+                            <div class="content-middle">10月22日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">500</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">09月11日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">240</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">06月15日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">599</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">郑州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">449</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">榆林</div>
+                            </div>
+                            <div class="content-middle">06月06日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">607</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">沈阳</div>
+                            </div>
+                            <div class="content-middle">06月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">749</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">深圳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">上海浦东</div>
+                            </div>
+                            <div class="content-middle">06月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">518</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">昆明</div>
+                            </div>
+                            <div class="content-middle">06月08日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">497</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">01月21日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">320</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">太原</div>
+                            </div>
+                            <div class="content-middle">11月17日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">190</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">杭州</div>
+                            </div>
+                            <div class="content-middle">05月30日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">389</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">长春</div>
+                            </div>
+                            <div class="content-middle">06月27日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">357</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">贵阳</div>
+                            </div>
+                            <div class="content-middle">06月08日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">480</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">银川</div>
+                            </div>
+                            <div class="content-middle">06月01日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">340</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">大连</div>
+                            </div>
+                            <div class="content-middle">06月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">320</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">870</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海浦东</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">武汉</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">成都</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">海口</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">重庆</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="head1">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">三亚</div>
+                            </div>
+                            <div class="content-middle">05月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">427</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">温州</div>
+                            </div>
+                            <div class="content-middle">05月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">307</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">武汉</div>
+                            </div>
+                            <div class="content-middle">06月03日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">319</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">海口</div>
+                            </div>
+                            <div class="content-middle">05月28日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">379</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">宁波</div>
+                            </div>
+                            <div class="content-middle">07月31日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">150</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">厦门</div>
+                            </div>
+                            <div class="content-middle">06月09日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">325</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">重庆</div>
+                            </div>
+                            <div class="content-middle">05月29日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">南京</div>
+                            </div>
+                            <div class="content-middle">07月12日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">天津</div>
+                            </div>
+                            <div class="content-middle">09月07日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">420</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">沈阳</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">烟台</div>
+                            </div>
+                            <div class="content-middle">05月25日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">369</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--热门航空公司-->
+    <div class="hotcompany">
+        <div class="top">
+            <div class="left">热门航线公司</div>
+            <div class="right">
+                >>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="boxleft">
+                <div class="imagedisplay">
+                    <div class="image"></div>
+                    <div class="companyname"><a>中国国际航空公司</a></div>
+                </div>
+                <div class="textdisplay">
+                    中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。
+                    <div class="fenhao"></div>
+                </div>
+            </div>
+            <div class="boxright">
+                <div class="one">
+
+                    <div class="back">中国南方航空公司</div>
+                </div>
+                <div class="two">
+
+                    <div class="back">中国东方航空公司</div>
+                </div>
+                <div class="three">
+
+                    <div class="back">海南航空公司</div>
+                </div>
+                <div class="four">
+
+                    <div class="back">深圳航空公司</div>
+                </div>
+                <div class="five">
+
+                    <div class="back">四川航空公司</div>
+                </div>
+                <div class="six">
+
+                    <div class="back">春秋航空公司</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--热门国际机场-->
+    <div class="hotaircraft">
+        <div class="hotleft">
+            <div class="top">
+                <div class="left">热门国际机场</div>
+                <div class="right">
+                    全球机场>>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <ul>
+                        <li><a>香港赤腊角机场</a></li>
+                        <li><a>首尔金浦机场</a></li>
+                        <li><a>东京羽田机场</a></li>
+                        <li><a>新加坡樟宜机场</a></li>
+                        <li><a>曼谷素万纳普机场</a></li>
+                        <li><a>大阪伊丹机场</a></li>
+                        <li><a>胡志明市国际机场</a></li>
+                        <li><a>吉隆坡国际机场</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a>首尔仁川机场</a></li>
+                        <li><a>澳门国际机场</a></li>
+                        <li><a>东京成田机场</a></li>
+                        <li><a>台北桃园中正机场</a></li>
+                        <li><a>曼谷廊曼机场</a></li>
+                        <li><a>马尼拉国际机场</a></li>
+                        <li><a>伦敦国际机场</a></li>
+                        <li><a>釜山国际机场</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hotcenter">
+            <div class="top">
+                <div class="left">最新客户咨询</div>
+                <div class="right">
+                    更多>>
+                </div>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <div class="date">2019/5/16 22:00:35</div>
+                        <a>你好。怀孕7个月乘坐需要办理证明吗</a>
+                    </li>
+                    <li>
+                        <div class="date">2019/5/16 21:59:07</div>
+                        <a>你好。怀孕7乘坐需要办理证明吗</a>
+                    </li>
+                    <li>
+                        <div class="date">2019/5/16 21:35:27</div>
+                        <a>你好，小孩才32个月，没有身份证，怎么取...</a>
+                    </li>
+                    <li>
+                        <div class="date">2019/5/16 17:57:21</div>
+                        <a>护照可以订机票登机嘛</a>
+                    </li>
+                    <li>
+                        <div class="date">2019/5/16 14:44:39</div>
+                        <a>你好，请问出生两个月的婴儿应该在网上怎么</a>
+                    </li>
+                    <li>
+                        <div class="date">2019/5/16 14:28:19</div>
+                        <a>你好我现在有事情飞机赶不上了能改签一下吗</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="hotright">
+            <div class="top">
+                <div class="left">国际特价</div>
+                <div class="rright">
+                    <a href="javascript:;" class="contry">北美</a>
+                    <a href="javascript:;">亚洲</a>
+                    <a href="javascript:;">欧洲</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">华盛顿</div>
+                            </div>
+                            <div class="content-middle">06月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">1395</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">洛杉矶</div>
+                            </div>
+                            <div class="content-middle">07月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">2950</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">广州</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">首尔</div>
+                            </div>
+                            <div class="content-middle">07月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">1235</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">东京</div>
+                            </div>
+                            <div class="content-middle">07月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">2320</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">上海</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">西班牙</div>
+                            </div>
+                            <div class="content-middle">06月10日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">1395</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-in">
+                    <div class="one">
+                        <div class="content">
+                            <div class="content-top">
+                                <div class="content-top-left">北京</div>
+                                <div class="content-top-arrow"></div>
+                                <div class="content-top-right">伦敦</div>
+                            </div>
+                            <div class="content-middle">07月19日</div>
+                            <div class="content-bottom">
+                                <div class="content-bottom-one"></div>
+                                <div class="content-bottom-two">票价：</div>
+                                <div class="content-bottom-three">￥</div>
+                                <div class="content-bottom-four">2950</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <div class="bottombox">
+        <div class="content">
+            <div class="piao-right">
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <div class="icon-in"></div>
+                        </div>
+                        <div class="text">
+                            <div class="title">支付安全</div>
+                            <div class="text-info">在线支付100%认证</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <div class="icon-in-1"></div>
+                        </div>
+                        <div class="text">
+                            <div class="title">实时同步</div>
+                            <div class="text-info">全球机票联网售票</div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <div class="icon-in-2"></div>
+                        </div>
+                        <div class="text">
+                            <div class="title">全天服务</div>
+                            <div class="text-info">7*24小时专业客服人员为您服务</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <div class="icon-in-3"></div>
+                        </div>
+                        <div class="text">
+                            <div class="title">方便快捷</div>
+                            <div class="text-info">电子客票，身份证直接换登记牌</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--关于我们-->
+    <div class="about">
+        <div class="aboutus">
+            <div class="footinfo">
+                <h3>新手上路</h3>
+                <div>
+                    <a href="">-查询预定</a>
+                </div>
+                <div>
+                    <a href="">-订单填写</a>
+                </div>
+                <div>
+                    <a href="">-支付出票</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>付款方式</h3>
+                <div>
+                    <a href="">-网上银行</a>
+                </div>
+                <div>
+                    <a href="">-微信支付</a>
+                </div>
+                <div>
+                    <a href="">-信用卡</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>旅客保障</h3>
+                <div>
+                    <a href="">-航协认证</a>
+                </div>
+                <div>
+                    <a href="">-支付出票</a>
+                </div>
+                <div>
+                    <a href="">-安全保障</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>常见问题</h3>
+                <div>
+                    <a href="">-了解多彩贵州航空</a>
+                </div>
+                <div>
+                    <a href="">-关于南昌昌北机场</a>
+                </div>
+                <div>
+                    <a href="">-不在网上买机票直</a>
+                </div>
+            </div>
+            <div class="footinfo">
+                <h3>关于我们</h3>
+                <div>
+                    <a href="">-联系我们</a>
+                </div>
+                <div>
+                    <a href="">-网站介绍</a>
+                </div>
+                <div>
+                    <a href="">-公司简介</a>
+                </div>
+            </div>
+            <div class="connectus">
+                <div class="servicephone">服务热线</div>
+                <div class="phonenumber">
+                    <div class="number-icon"></div>
+                    <div class="number">
+                        4000161580
+                    </div>
+
+                </div>
+                <div class="serach">
+                    <div class="ser">
+                        <input type="search"  value="请输入关键字">
+                    </div>
+                    <div class="btn">
+                        <input type="button"  value="搜索">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部说明-->
+    <div class="bottom-info">
+        <div class="copy">
+            <div class="left">&copy;2019 http://www.161580.com 民航在线&nbsp;|</div>
+            <div class="right">
+                <div class="one"><a href="">沪ICP备12008257号-2</a></div>
+                <div class="two"><a href="">关于161580</a></div>
+                <div class="three">
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;联系我们</a></div>
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;合作伙伴</a></div>
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;诚征英才</a></div>
+                    <div class="three-in">|<a href="">&nbsp;&nbsp;用户建议</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="licence"></div>
+        <div class="regularweb">
+            <div class="webcenter">
+                <div class="one">161580官方网站：</div>
+                <div class="two"><a href=""><span>161580</span>.com</a>&nbsp;&nbsp;</div>
+                <div class="three">
+                    |&nbsp;全国统一服务热线：
+                    <span>4000-161580</span>
+                    |&nbsp;
+                    <a href="">在线咨询</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="web-info">
+            161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预
+            订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港
+            航班实时售票系统，围绕客户提供方 便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订
+            机票最便宜的网站，上中国民航机票网。
+        </div>
+        <div class="friendlink">
+            <div class="friendlink-top">
+                友情链接QQ434441778:
+            </div>
+            <div class="friendlink-bottom">
+                <div class="otherweb">
+                    <div class="otherweb-in"><a href="" class="aa">美国旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">韩国旅游攻略</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">订机票最便宜的网站</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">北京旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="" class="bold">打折机票</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">酒店加盟代理</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">爱侣游网</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">杭州户外俱乐部</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">四喜居门票网</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">深圳国旅</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="" class="bold">澳洲自由行</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">汽车票预定</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">四川青年旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">百程旅行网</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">重庆青年旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">俄罗斯旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">美国旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">深圳旅游论坛</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">重庆中国青年旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">青岛崂山</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">长岛旅游</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">南宁旅行社</a>&nbsp;|&nbsp;</div>
+                    <div class="otherweb-in"><a href="">青驿</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
