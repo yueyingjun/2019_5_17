@@ -1,0 +1,140 @@
+body{
+    margin:0;
+}
+.tou{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(51 51 51);
+}
+.toutou{
+    color:rgb(66 60 55) ;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 1228px;
+    line-height: 30px;
+}
+.toutou a{
+    color: rgb(176 176 176);
+    text-decoration: none;
+    font-size: 12px;
+}
+.toutou a:hover{
+    color: white;
+}
+.righttou{
+    position: relative;
+float: right;
+    height: 100%;
+    width: 25%;
+}
+.righttou1{
+    background-color: rgb(66 66 66);
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 45%;
+    text-align: center;
+    background-image: url("../imgs/购物车0.png");
+    background-position: 10px;
+    background-size: 12% 50%;
+    background-repeat: no-repeat;
+}
+.righttou1:hover{
+    background-image: url("../imgs/购物车.png");
+}
+.righttou1:hover a{
+    color: rgb(252 102 1);
+}
+/*搜索栏*/
+.sousuotou{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+}
+.sousuo{
+    color:rgb(66 60 55) ;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 1228px;
+}
+.shangbiao{
+    background-image: url("../imgs/图标.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 5%;
+    height: 60%;
+    float: left;
+    position: relative;
+    top: 20%;
+}
+.shangbiao1{
+    width: 55%;
+    height: 20%;
+    float: left;
+    position: relative;
+    left: 15%;
+    top: 40%;
+}
+.shangbiao1 a{
+    text-decoration: none;
+    color: black;
+}
+.shangbiao1 a:hover{
+    color: rgb(255 103 0);
+}
+.shangbiao11{
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+.sousuokang{
+    width: 20%;
+    height: 50%;
+    float: right;
+    position: relative;
+    top: 20%;
+}
+.sousuokang1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.sousuokang1>input:first-of-type{
+    position: relative;
+    left: 8%;
+    width: 70%;
+    height: 88%;
+
+}
+.sousuokang2{
+    float: right;
+    width: 22%;
+    height: 100%;
+    background-image: url("../imgs/搜索图标.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.sousuokang2:hover{
+    background-image: url("../imgs/搜索图标1.png");
+}
+/*大屏滚动*/
+.gundongtou{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 464px;
+}
+.gundong{
+    color:rgb(66 60 55) ;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    width: 1228px;
+    background-color: lime;
+}

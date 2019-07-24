@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>161580</title>
+
+    <link rel="stylesheet" href="css/demo1.css">
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner");
+            var btns=document.querySelectorAll(".btn");
+            var num=0
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    btns[i].style.background="#000"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="orange"
+                num++
+            },3000)
+        }
+    </script>
+</head>
+<body>
+<div class="tou">
+    <img  style="position: absolute;left: 550px" src="imgs/tou2.jpg" alt="">
+</div>
+<div class="one" >
+<div class="two" >
+<div class="left">
+   <div class="shou"> <a href="">首页</a></div>
+    <a href="">国内机票</a>
+    <a href="">国际机票</a>
+    <a href="">民航资讯</a>
+    <a href="">民航问答</a>
+</div>
+    <div class="right">
+    <a href="">登录</a>
+    <a href="">注册</a>
+    <a href="" ><div class="sanjiao"></div>用户中心</a>
+</div>
+</div>
+</div>
+    <div class="chengshi" style="height: 10px">
+        <div class="chengshitou"><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            &nbsp;热门城市:&nbsp;&nbsp;&nbsp;</a></div>
+        <a href="">太原&nbsp;&nbsp;&nbsp;</a>
+        <a href="">北京&nbsp;&nbsp;&nbsp;</a>
+        <a href="">上海&nbsp;&nbsp;&nbsp;</a>
+        <a href="">广州&nbsp;&nbsp;&nbsp;</a>
+        <a href="">南京&nbsp;&nbsp;&nbsp;</a>
+        <a href="">天津&nbsp;&nbsp;&nbsp;</a>
+        <a href="">武汉&nbsp;&nbsp;&nbsp;</a>
+        <a href="">长沙&nbsp;&nbsp;&nbsp;</a>
+        <a href="">昆明&nbsp;&nbsp;&nbsp;</a>
+        <a href="">贵阳&nbsp;&nbsp;&nbsp;</a>
+        <a href="">成都&nbsp;&nbsp;&nbsp;</a>
+        <a href="">重庆&nbsp;&nbsp;&nbsp;</a>
+        <a href="">海口&nbsp;&nbsp;&nbsp;</a>
+        <a href="">哈尔滨&nbsp;&nbsp;&nbsp;</a>
+        <a href="">更多</a>
+    </div>
+
+<div class="duzi">
+    <div class="banner"></div>
+    <div class="banner"></div>
+
+    <!--<img  style="float: right;position: absolute;width: 100% ;height: 400px" src="imgs/duzi1.png" alt="">
+    <img  style="float: right;position: absolute;width: 100% ;height: 400px" src="imgs/duzi2.png" alt="">-->
+
+    <div class="btns">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+    </div></div>
+
+<div class="goupiaoliucheng">
+<div class="goupiaoliucheng1">
+<div class="goupiaoliucheng2"><a style="">购票流程:</a></div>
+<div class="goupiaoliucheng3"><div class="goupiaoliucheng5"><div class="goupiaoliucheng6"></div></div>
+<div class="goupiaoliucheng7"><a>航班查询</a> </div>
+<div class="goupiaoliucheng8"><a>选择出行航班</a> </div>
+    <div class="goupiaoliucheng9"> </div>
+</div>
+<div class="goupiaoliucheng3">
+    <div class="goupiaoliucheng5"><div class="goupiaoliucheng10"></div></div>
+    <div class="goupiaoliucheng7"><a >提交订单</a> </div>
+    <div class="goupiaoliucheng8"><a>支付机票款</a> </div>
+    <div class="goupiaoliucheng9"> </div>
+</div>
+<div class="goupiaoliucheng3">
+    <div class="goupiaoliucheng5"><div class="goupiaoliucheng11"></div></div>
+    <div class="goupiaoliucheng7"><a>在线支付</a> </div>
+    <div class="goupiaoliucheng8"><a>选择出行航班</a> </div>
+    <div class="goupiaoliucheng9"> </div>
+</div>
+<div class="goupiaoliucheng4">
+    <div class="goupiaoliucheng5"><div class="goupiaoliucheng12"></div></div>
+    <div class="goupiaoliucheng7"><a>无须取票</a> </div>
+    <div class="goupiaoliucheng8"><a>电子票换登机牌</a> </div>
+
+</div>
+
+</div>
+    <div class="zixun">
+        <div class="zixun1">
+            <div class="zixun11">
+                <div class="goupiaoliucheng5"><div class="zixun111"></div></div>
+                <div class="zixun17"><a href="">订单管理</a> </div>
+            </div>
+            <div class="zixun12">
+                <div class="goupiaoliucheng5"><div class="zixun121"></div></div>
+                <div class="zixun17"><a href="">支付中心</a> </div>
+            </div>
+            <div class="zixun13">
+                <div class="goupiaoliucheng5"><div class="zixun131"></div></div>
+                <div class="zixun17"><a href="">价格趋势</a> </div>
+            </div>
+            <div class="zixun14">
+                <div class="goupiaoliucheng5"><div class="zixun141"></div></div>
+                <div class="zixun17"><a href="">机票验真</a> </div>
+            </div>
+            <div class="zixun15">
+                <div class="goupiaoliucheng5"><div class="zixun151"></div></div>
+                <div class="zixun17"><a href="">航班动态</a> </div>
+            </div>
+            <div class="zixun16">
+                <div class="goupiaoliucheng5"><div class="zixun161"></div></div>
+                <div class="zixun17"><a href="">新手指南</a> </div>
+            </div>
+        </div>
+        <div class="zixun2">
+            <div class="zixun21"><div  class="zixun22">最新资讯</div>
+               <div class="zixun23"><a href="">简单了解一下金鹏航空官网机票购买流程</a> </div>
+                <div class="zixun25"> <a href="">东方航空去哪儿网合作举办“校园旅行家</a> </div>
+                <div class="zixun26"><a href="">网上买飞机票为什么只能买9张,10人</a> </div>
+                <div class="zixun27"><a href="">想知道南方航空机票购买流程，南航手机</a>
+               </div>
+                <div class="zixun24"><a href="">更多>></a></div>
+            </div>
+            <div class="zixun21">
+                <div  class="zixun22">网站公告</div>
+                <div class="zixun23"><a href="">带你认识飞机经停是什么意思</a> </div>
+                <div class="zixun25"> <a href="">12306机票网上订票官网请上民航在</a> </div>
+                <div class="zixun26"><a href="">岁婴儿机票怎么买 能够从网上购买婴</a> </div>
+                <div class="zixun27"><a href="">了解订机票用什么软件好对你出门旅游帮</a>
+                </div>
+                <div class="zixun24"><a href="">更多>></a></div></div>
+        </div>
+
+    </div>
+</div>
+<div  class="hangxian" style="height: 0;position: relative">
+    <div class="hangxian0" style="font-size: 40px"><a>热门航线预订</a></div>
+    <div class="hangxian1"><div class="hangxian3"><a href="">全国</a></div>
+
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">武汉</a>
+    <a href="">成都</a>
+    <a href="">海口</a>
+    <a href="">重庆</a>
+    <a href="">沈阳</a></div>
+</div>
+<div class="hangxianshows">
+<div class="hangxianshow" style="left: 100px;">
+    <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+       <div class="hangxianshow12"></div>
+        <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+    <div class="hangxianshow2">5月18日</div>
+    <div class="hangxianshow3">
+        <div class="hangxianshow31"></div>
+        <div class="hangxianshow32">票价:</div>
+        <div class="hangxianshow33">￥</div>
+        <div class="hangxianshow34">150</div>
+    </div>
+
+</div>
+<div class="hangxianshow" style="left: 350px;">
+    <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+        <div class="hangxianshow12"></div>
+        <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+    <div class="hangxianshow2">5月18日</div>
+    <div class="hangxianshow3">
+        <div class="hangxianshow31"></div>
+        <div class="hangxianshow32">票价:</div>
+        <div class="hangxianshow33">￥</div>
+        <div class="hangxianshow34">150</div>
+    </div>
+</div>
+<div class="hangxianshow" style="left: 600px;">
+    <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+        <div class="hangxianshow12"></div>
+        <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+    <div class="hangxianshow2">5月18日</div>
+    <div class="hangxianshow3">
+        <div class="hangxianshow31"></div>
+        <div class="hangxianshow32">票价:</div>
+        <div class="hangxianshow33">￥</div>
+        <div class="hangxianshow34">150</div>
+    </div>
+</div>
+<div class="hangxianshow" style="left: 850px;">
+    <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+        <div class="hangxianshow12"></div>
+        <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+    <div class="hangxianshow2">5月18日</div>
+    <div class="hangxianshow3">
+        <div class="hangxianshow31"></div>
+        <div class="hangxianshow32">票价:</div>
+        <div class="hangxianshow33">￥</div>
+        <div class="hangxianshow34">150</div>
+    </div>
+</div>
+<div class="hangxianshow" style="left: 1100px;">
+    <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+        <div class="hangxianshow12"></div>
+        <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+    <div class="hangxianshow2">5月18日</div>
+    <div class="hangxianshow3">
+        <div class="hangxianshow31"></div>
+        <div class="hangxianshow32">票价:</div>
+        <div class="hangxianshow33">￥</div>
+        <div class="hangxianshow34">150</div>
+    </div>
+</div>
+
+    <div class="hangxianshow" style="left: 100px;top: 200px;">
+        <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+            <div class="hangxianshow12"></div>
+            <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+        <div class="hangxianshow2">5月18日</div>
+        <div class="hangxianshow3">
+            <div class="hangxianshow31"></div>
+            <div class="hangxianshow32">票价:</div>
+            <div class="hangxianshow33">￥</div>
+            <div class="hangxianshow34">150</div>
+        </div>
+    </div>
+    <div class="hangxianshow" style="left: 350px;top: 200px;">
+        <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+            <div class="hangxianshow12"></div>
+            <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+        <div class="hangxianshow2">5月18日</div>
+        <div class="hangxianshow3">
+            <div class="hangxianshow31"></div>
+            <div class="hangxianshow32">票价:</div>
+            <div class="hangxianshow33">￥</div>
+            <div class="hangxianshow34">150</div>
+        </div>
+    </div>
+    <div class="hangxianshow" style="left: 600px;top: 200px;">
+        <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+            <div class="hangxianshow12"></div>
+            <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+        <div class="hangxianshow2">5月18日</div>
+        <div class="hangxianshow3">
+            <div class="hangxianshow31"></div>
+            <div class="hangxianshow32">票价:</div>
+            <div class="hangxianshow33">￥</div>
+            <div class="hangxianshow34">150</div>
+        </div>
+    </div>
+    <div class="hangxianshow" style="left: 850px;top: 200px;">
+        <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+            <div class="hangxianshow12"></div>
+            <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+        <div class="hangxianshow2">5月18日</div>
+        <div class="hangxianshow3">
+            <div class="hangxianshow31"></div>
+            <div class="hangxianshow32">票价:</div>
+            <div class="hangxianshow33">￥</div>
+            <div class="hangxianshow34">150</div>
+        </div>
+    </div>
+    <div class="hangxianshow" style="left: 1100px;top: 200px;">
+        <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+            <div class="hangxianshow12"></div>
+            <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+        <div class="hangxianshow2">5月18日</div>
+        <div class="hangxianshow3">
+            <div class="hangxianshow31"></div>
+            <div class="hangxianshow32">票价:</div>
+            <div class="hangxianshow33">￥</div>
+            <div class="hangxianshow34">150</div>
+        </div>
+    </div>
+
+</div>
+<div class="gongsi">
+<div class="hangxian0" style="font-size: 40px"><a>热门航空公司</a></div>
+<div class="gongsi1">
+    <div class="gongsi14"><div class="gongsi111" ><div class="gongsi11"></div></div>
+        中国国际航空公司
+</div>
+    <div class="gongsi13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身 中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础 ，组建新的中国国际航空公司。</div>
+</div>
+    <div class="gongsi2">
+        <div class="gongsi21"><div class="gongsi211">中国南方航空公司</div></div>
+        <div class="gongsi22"><div class="gongsi211">中国东方航空公司</div></div>
+        <div class="gongsi23"><div class="gongsi211">海南航空公司</div></div>
+        <div class="gongsi24"><div class="gongsi211">深圳航空公司</div></div>
+        <div class="gongsi25"><div class="gongsi211">四川航空公司</div></div>
+        <div class="gongsi26"><div class="gongsi211">春秋航空公司</div></div>
+    </div>
+</div>
+<div class="guoji">
+    <div class="guoji1"><div  class="guoji11"> &nbsp;热门国际机场<a href="">全球机场>></a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+     <div class="guoji13"><a href="">>>香港赤腊角机场</a></div><div class="guoji14"><a href="">>>首尔仁川机场</a></div>
+
+    </div>
+    <div class="guoji2">
+        <div  class="guoji11"> &nbsp;最新客户咨询<a href="">更多>></a></div>
+        <div class="guoji17">
+        <div class="guoji15">
+           <a>2019/5/16 22:31:30</a>
+       </div><div class="guoji16">
+           <a href="">你好。怀孕7个月乘坐需要办理证明吗</a>
+       </div></div>
+        <div class="guoji17">
+            <div class="guoji15">
+                <a>2019/5/16 22:31:30</a>
+            </div><div class="guoji16">
+            <a href="">你好。怀孕7个月乘坐需要办理证明吗</a>
+        </div></div>
+        <div class="guoji17">
+            <div class="guoji15">
+                <a>2019/5/16 22:31:30</a>
+            </div><div class="guoji16">
+            <a href="">怀孕28+6周可以坐飞机吗，还需要什么东...</a>
+        </div></div>
+        <div class="guoji17">
+            <div class="guoji15">
+                <a>2019/5/16 22:31:30</a>
+            </div><div class="guoji16">
+            <a href="">怀孕28+6周可以坐飞机吗，还需要什么东...</a>
+        </div></div>
+        <div class="guoji17">
+            <div class="guoji15">
+                <a>2019/5/16 22:31:30</a>
+            </div><div class="guoji16">
+            <a href="">怀孕28+6周可以坐飞机吗，还需要什么东...</a>
+        </div></div>
+        <div class="guoji17">
+            <div class="guoji15">
+                <a>2019/5/16 22:31:30</a>
+            </div><div class="guoji16">
+            <a href="">怀孕28+6周可以坐飞机吗，还需要什么东...</a>
+        </div></div>
+
+    </div>
+    <div class="guoji3">
+        <div  class="guoji11"> &nbsp;国际特价
+            <div class="guoji12"><a href="">北美</a></div>
+           <div class="guoji12"><a href="">亚洲</a></div>
+        <div class="guoji12"><a href="">欧洲</a></div></div>
+        <div class="hangxianshow" style="left: 0px;top: 100px">
+            <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+                <div class="hangxianshow12"></div>
+                <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+            <div class="hangxianshow2">5月18日</div>
+            <div class="hangxianshow3">
+                <div class="hangxianshow31"></div>
+                <div class="hangxianshow32">票价:</div>
+                <div class="hangxianshow33">￥</div>
+                <div class="hangxianshow34">150</div>
+            </div>
+
+        </div>
+        <div class="hangxianshow" style="left: 250px;top: 100px">
+            <div class="hangxianshow1"><a href="" class="hangxianshow11">海口</a>
+                <div class="hangxianshow12"></div>
+                <a href="" class="hangxianshow13">深圳</a><a href=""></a></div>
+            <div class="hangxianshow2">5月18日</div>
+            <div class="hangxianshow3">
+                <div class="hangxianshow31"></div>
+                <div class="hangxianshow32">票价:</div>
+                <div class="hangxianshow33">￥</div>
+                <div class="hangxianshow34">150</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jieweitou">
+<div class="kuai1">
+    <div class="kuai15"><div class="kuai16"></div></div>
+        <div class="kuai17"><a>支付安全</a> </div>
+        <div class="kuai18"><a>在线支付100%认证</a> </div>
+</div>
+<div class="kuai2">
+    <div class="kuai15"><div class="kuai19"></div></div>
+    <div class="kuai17"><a>实时同步</a> </div>
+    <div class="kuai18"><a>全球机票联网售票</a> </div>
+</div>
+<div class="kuai3">
+    <div class="kuai15"><div class="kuai20"></div></div>
+    <div class="kuai17"><a>全天服务</a> </div>
+    <div class="kuai18"><a>7*24小时客服人员服务</a> </div>
+</div>
+<div class="kuai4">
+    <div class="kuai15"><div class="kuai21"></div></div>
+    <div class="kuai17"><a>方便快捷</a> </div>
+    <div class="kuai18"><a>电子售票,直接登机</a> </div>
+</div>
+</div>
+
+<div class="zuihou">
+    <div class="zuihou1" style="left: 110px"></div>
+    <div class="zuihou1">
+        <div class="zuihou11">
+        <div class="zuihou111">新手上路</div>
+       <div class="zuihou111" style="font-size: 10px"><a href="">->查询预订</a></div>
+       <div class="zuihou111" style="font-size: 10px"><a href="">->订单填写</a></div>
+       <div class="zuihou111" style="font-size: 10px"><a href="">->支付出票</a></div>
+
+        </div>
+    </div>
+    <div class="zuihou1">
+        <div class="zuihou111">付款方式</div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->网上银行</a></div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->微信支付</a></div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->信用卡</a></div>
+    </div>
+    <div class="zuihou1">
+        <div class="zuihou111">旅客保障</div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->航协认证</a></div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->支付出票</a></div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->安全保障</a></div>
+    </div>
+    <div class="zuihou1">
+        <div class="zuihou111">常见问题</div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->洛阳北郊机场怎么</a></div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->不太清楚连云港白</a></div>
+        <div class="zuihou111" style="font-size: 10px"><a href="">->了解多彩贵州航空</a></div>
+    </div>
+    <div class="zuihou1">
+        <div class="zuihou1111"></div>
+    </div>
+</div>
+<div class="zuihou2">© 2019 http://www.161580.com &nbsp;&nbsp;民航在线 &nbsp;&nbsp;| &nbsp;&nbsp;沪ICP备12008257号-2  &nbsp;&nbsp;关于161580 &nbsp;&nbsp;| &nbsp;&nbsp;联系我们 &nbsp;&nbsp;| &nbsp;&nbsp;合作伙伴 &nbsp;&nbsp;| &nbsp;&nbsp;诚征英才 &nbsp;&nbsp;| &nbsp;&nbsp;用户建议</div>
+<div class="zuihou21"></div>
+
+<div class="zuihou2" style="left: 450px">161580官方网站：<a href="" class="zuihou22">161580.com</a> | 全国统一服务热线：<a href=""  class="zuihou22"> 4000-161580 </a> |  在线咨询</div>
+<div class="zuihou23">&nbsp;&nbsp;&nbsp;&nbsp;161580网成立于2009年5月，飞机票网上订票官网提供在线机票查询及预订服务：飞机票查询、飞机票预订、航班时刻查询、全球机场指南。通过互联网、电话呼叫中心以及无线技术为主，整合全国机场进出港航班实时售票系统，围绕客户提供方便快捷的在线飞机票预订服务的电子商务网站。 订火车票上12306订机票最便宜的网站，上中国民航机票网。</div>
+<div class="zuihou23">&nbsp;&nbsp; </div>
+<div class="zuihou23"> &nbsp;&nbsp;&nbsp;&nbsp;友情链接QQ434441778:</div>
+        <div class="zuihou23"> &nbsp;&nbsp;&nbsp;&nbsp;美国旅游|韩国旅游攻略|订机票最便宜的网站|北京旅行社|打折机票|酒店加盟代理|爱侣游网|杭州户外俱乐部|四喜居门票网|深圳国旅|澳洲自由行|汽车票预定|四川青年旅行社|百程旅行网|重庆青年旅行社|俄罗斯旅游|美国旅游|深圳旅游论坛|重庆中国青年旅行社|青岛崂山|长岛旅游|南宁旅行社|青驿</div>
+
+</body>
+</html>
+
